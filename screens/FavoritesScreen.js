@@ -2,9 +2,11 @@
 import * as Speech from 'expo-speech';
 import { useEffect, useState } from 'react';
 import { ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useTheme } from '../App';
 import { CARDS, CAT_COLOR, DIFF_LABELS } from '../data';
 
 export default function FavoritesScreen() {
+  const { theme: t } = useTheme();
   const [favs, setFavs] = useState([]);
   const [search, setSearch] = useState('');
   const [speaking, setSpeaking] = useState(null);
@@ -54,50 +56,50 @@ export default function FavoritesScreen() {
   );
 
   return (
-    <ScrollView style={styles.bg} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+    <ScrollView style={[styles.bg, { backgroundColor: t.bg }]} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
       <View style={styles.header}>
-        <Text style={styles.title}>⭐ Favorites</Text>
-        <Text style={styles.sub}>Your personal knowledge menu</Text>
+        <Text style={[styles.title, { color: t.text }]}>⭐ Favorites</Text>
+        <Text style={[styles.sub, { color: t.textMuted }]}>Your personal knowledge menu</Text>
       </View>
 
       <TextInput
-        style={styles.input}
+        style={[styles.input, { backgroundColor: t.input, borderColor: t.inputBorder, color: t.text }]}
         placeholder="Search favorites…"
-        placeholderTextColor="rgba(255,255,255,0.2)"
+        placeholderTextColor={t.textMuted}
         value={search}
         onChangeText={setSearch}
       />
 
       {favCards.length === 0 ? (
-        <Text style={styles.empty}>
+        <Text style={[styles.empty, { color: t.textMuted }]}>
           {search ? 'No matches found.' : 'No favorites yet.\nTap ☆ on any card to save it! ⭐'}
         </Text>
       ) : (
         favCards.map((card) => {
           const col = CAT_COLOR[card.cat] || '#aaa';
           return (
-            <View key={card.id} style={styles.card}>
+            <View key={card.id} style={[styles.card, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
               <View style={styles.cardTop}>
                 <View style={[styles.badge, { backgroundColor: col + '22' }]}>
                   <Text style={[styles.badgeTxt, { color: col }]}>{card.emoji} {card.subject}</Text>
                 </View>
                 <View style={styles.cardTopRight}>
-                  <Text style={styles.diff}>{DIFF_LABELS[card.diff]}</Text>
+                  <Text style={[styles.diff, { color: t.textMuted }]}>{DIFF_LABELS[card.diff]}</Text>
                   <TouchableOpacity onPress={() => toggleFav(card.id)}>
                     <Text style={styles.favBtn}>⭐</Text>
                   </TouchableOpacity>
                 </View>
               </View>
-              <Text style={styles.hook}>"{card.hook}"</Text>
-              <Text style={styles.fact}>{card.fact}</Text>
-              <Text style={styles.tip}>{card.tip}</Text>
+              <Text style={[styles.hook, { color: t.textSub, borderLeftColor: t.cardBorder }]}>"{card.hook}"</Text>
+              <Text style={[styles.fact, { color: t.text }]}>{card.fact}</Text>
+              <Text style={[styles.tip, { color: t.textMuted }]}>{card.tip}</Text>
               <View style={styles.cardFoot}>
-                <Text style={styles.footLeft}>{DIFF_LABELS[card.diff]}</Text>
+                <Text style={[styles.footLeft, { color: t.textMuted }]}>{DIFF_LABELS[card.diff]}</Text>
                 <View style={styles.footBtns}>
-                  <TouchableOpacity onPress={() => shareCard(card)} style={styles.footBtn}>
+                  <TouchableOpacity onPress={() => shareCard(card)} style={[styles.footBtn, { backgroundColor: t.input }]}>
                     <Text style={styles.footBtnTxt}>📤</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity onPress={() => speakCard(card)} style={styles.footBtn}>
+                  <TouchableOpacity onPress={() => speakCard(card)} style={[styles.footBtn, { backgroundColor: t.input }]}>
                     <Text style={styles.footBtnTxt}>{speaking === card.id ? '⏹️' : '🔊'}</Text>
                   </TouchableOpacity>
                 </View>
@@ -111,26 +113,26 @@ export default function FavoritesScreen() {
 }
 
 const styles = StyleSheet.create({
-  bg: { flex: 1, backgroundColor: '#0d1117' },
+  bg: { flex: 1 },
   content: { padding: 16, paddingTop: 56, paddingBottom: 40, gap: 12 },
   header: { marginBottom: 4 },
-  title: { fontSize: 24, fontWeight: '900', color: '#fff' },
-  sub: { fontSize: 12, fontWeight: '700', color: 'rgba(255,255,255,0.28)', marginTop: 3 },
-  input: { backgroundColor: 'rgba(255,255,255,0.05)', borderWidth: 1.5, borderColor: 'rgba(255,255,255,0.08)', borderRadius: 13, padding: 10, color: '#fff', fontSize: 14, fontWeight: '600' },
-  empty: { textAlign: 'center', color: 'rgba(255,255,255,0.2)', fontSize: 14, fontWeight: '700', paddingVertical: 40, lineHeight: 24 },
-  card: { backgroundColor: 'rgba(255,255,255,0.04)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.08)', borderRadius: 16, padding: 14, gap: 6 },
+  title: { fontSize: 24, fontWeight: '900' },
+  sub: { fontSize: 12, fontWeight: '700', marginTop: 3 },
+  input: { borderWidth: 1.5, borderRadius: 13, padding: 10, fontSize: 14, fontWeight: '600' },
+  empty: { textAlign: 'center', fontSize: 14, fontWeight: '700', paddingVertical: 40, lineHeight: 24 },
+  card: { borderWidth: 1, borderRadius: 16, padding: 14, gap: 6 },
   cardTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   badge: { borderRadius: 8, paddingHorizontal: 9, paddingVertical: 3 },
   badgeTxt: { fontSize: 10, fontWeight: '900', textTransform: 'uppercase', letterSpacing: 1 },
   cardTopRight: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  diff: { fontSize: 10, color: 'rgba(255,255,255,0.5)' },
+  diff: { fontSize: 10 },
   favBtn: { fontSize: 16 },
-  hook: { fontSize: 12, fontWeight: '700', color: 'rgba(255,255,255,0.4)', fontStyle: 'italic', paddingLeft: 8, borderLeftWidth: 2, borderLeftColor: 'rgba(255,255,255,0.12)' },
-  fact: { fontSize: 14, fontWeight: '700', color: 'rgba(255,255,255,0.86)', lineHeight: 22 },
-  tip: { fontSize: 12, fontWeight: '600', color: 'rgba(255,255,255,0.36)', lineHeight: 18 },
+  hook: { fontSize: 12, fontWeight: '700', fontStyle: 'italic', paddingLeft: 8, borderLeftWidth: 2 },
+  fact: { fontSize: 14, fontWeight: '700', lineHeight: 22 },
+  tip: { fontSize: 12, fontWeight: '600', lineHeight: 18 },
   cardFoot: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 4 },
-  footLeft: { fontSize: 10, color: 'rgba(255,255,255,0.2)', fontWeight: '700' },
+  footLeft: { fontSize: 10, fontWeight: '700' },
   footBtns: { flexDirection: 'row', gap: 6 },
-  footBtn: { backgroundColor: 'rgba(255,255,255,0.06)', borderRadius: 14, width: 30, height: 30, alignItems: 'center', justifyContent: 'center' },
+  footBtn: { borderRadius: 14, width: 30, height: 30, alignItems: 'center', justifyContent: 'center' },
   footBtnTxt: { fontSize: 14 },
 });
