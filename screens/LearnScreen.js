@@ -18,16 +18,6 @@ import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 const CATS = [
   { id: 'all', label: '🌍 All' },
   { id: 'pub', label: '🍺 Pub Quiz' },
-  { id: 'science', label: '🔬 Science' },
-  { id: 'history', label: '📜 History' },
-  { id: 'geo', label: '🗺️ Geography' },
-  { id: 'body', label: '🫀 Body' },
-  { id: 'grammar', label: '✍️ Grammar' },
-  { id: 'psychology', label: '🧠 Psychology' },
-  { id: 'economics', label: '💰 Economics' },
-  { id: 'inventions', label: '💡 Inventions' },
-  { id: 'food', label: '🍕 Food' },
-  { id: 'math', label: '🔢 Maths' },
 ];
 
 function getStreakEmoji(streak) {
@@ -153,7 +143,7 @@ export default function LearnScreen() {
   }
 
   function getPool(c) {
-    return CARDS.filter(x => x.cat === 'pub');
+    return c === 'pub' ? CARDS.filter(x => x.cat === 'pub') : CARDS.filter(x => x.cat !== 'pub');
   }
 
   function pickCard(used, c) {
@@ -383,7 +373,6 @@ export default function LearnScreen() {
             ))}
           </View>
         </ScrollView>
-
         {/* CARD */}
         {card && (
           <Animated.View style={[styles.card, { opacity: fadeAnim, backgroundColor: grad }]}>
@@ -530,6 +519,9 @@ const styles = StyleSheet.create({
   modalBtn: { borderRadius: 16, paddingHorizontal: 32, paddingVertical: 14 },
   modalBtnTxt: { fontSize: 16, fontWeight: '900', color: '#1a0533' },
 });
+
+
+
 
 
 
