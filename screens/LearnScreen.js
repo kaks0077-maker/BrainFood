@@ -153,7 +153,7 @@ export default function LearnScreen() {
   }
 
   function getPool(c) {
-    return c === 'all' ? CARDS : CARDS.filter(x => x.cat === c);
+    return CARDS.filter(x => x.cat === 'pub');
   }
 
   function pickCard(used, c) {
@@ -357,8 +357,8 @@ export default function LearnScreen() {
           </View>
         </View>
 
-        {/* PROGRESS */}
-        <View style={styles.progWrap}>
+        {/* PROGRESS HIDDEN */}
+        {false && <View style={styles.progWrap}>
           <View style={styles.progTop}>
             <Text style={[styles.progLbl, { color: t.textMuted }]}>{cat === 'all' ? 'All' : cat} · {seenInCat}/{pool.length}</Text>
             <Text style={[styles.progPct, { color: t.accent }]}>{pct}%</Text>
@@ -366,8 +366,7 @@ export default function LearnScreen() {
           <View style={[styles.progBar, { backgroundColor: t.mode === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)' }]}>
             <View style={[styles.progFill, { width: `${pct}%`, backgroundColor: t.accent }]} />
           </View>
-        </View>
-
+        </View>}
         {/* CATEGORIES */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View style={styles.catRow}>
@@ -531,3 +530,6 @@ const styles = StyleSheet.create({
   modalBtn: { borderRadius: 16, paddingHorizontal: 32, paddingVertical: 14 },
   modalBtnTxt: { fontSize: 16, fontWeight: '900', color: '#1a0533' },
 });
+
+
+
