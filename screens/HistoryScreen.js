@@ -1,7 +1,7 @@
 ﻿import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useTheme } from '../App';
+import { useTheme } from '../ThemeContext';
 import { CAT_COLOR, DIFF_LABELS } from '../data';
 
 export default function HistoryScreen() {
@@ -71,3 +71,4 @@ const styles = StyleSheet.create({
   fact: { fontSize: 14, fontWeight: '700', lineHeight: 22 },
   diff: { fontSize: 10, fontWeight: '700' },
 });
+

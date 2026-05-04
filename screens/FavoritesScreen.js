@@ -2,7 +2,7 @@
 import * as Speech from 'expo-speech';
 import { useEffect, useState } from 'react';
 import { ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { useTheme } from '../App';
+import { useTheme } from '../ThemeContext';
 import { CARDS, CAT_COLOR, DIFF_LABELS } from '../data';
 
 export default function FavoritesScreen() {
@@ -136,3 +136,4 @@ const styles = StyleSheet.create({
   footBtn: { borderRadius: 14, width: 30, height: 30, alignItems: 'center', justifyContent: 'center' },
   footBtnTxt: { fontSize: 14 },
 });
+

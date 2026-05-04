@@ -11,7 +11,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import { useTheme } from '../App';
+import { useTheme } from '../ThemeContext';
 import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
@@ -519,6 +519,8 @@ const styles = StyleSheet.create({
   modalBtn: { borderRadius: 16, paddingHorizontal: 32, paddingVertical: 14 },
   modalBtnTxt: { fontSize: 16, fontWeight: '900', color: '#1a0533' },
 });
+
+
 
 
 
