@@ -39,8 +39,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "YOUR_EAS_PROJECT_ID"
+        "projectId": "99246801-7882-4c3a-a678-a9a81b5d4704"
       }
-    }
+    },
+    "owner": "deva0077"
   }
 }
