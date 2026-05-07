@@ -34,7 +34,7 @@ export default function FavoritesScreen() {
   }
 
   async function shareCard(card) {
-    await Share.share({ message: `🍕 BrainFood\n\n"${card.hook}"\n\n${card.fact}\n\n${card.tip}` });
+    await Share.share({ message: `🍕 BrainFood\n\n"${card.hook}"\n\n${card.fact}` });
   }
 
   function speakCard(card) {
@@ -93,7 +93,7 @@ export default function FavoritesScreen() {
               </View>
               <Text style={[styles.hook, { color: t.textSub, borderLeftColor: t.cardBorder }]}>"{card.hook}"</Text>
               <Text style={[styles.fact, { color: t.text }]}>{card.fact}</Text>
-              <Text style={[styles.tip, { color: t.textMuted }]}>{card.tip}</Text>
+              {!!card.tip && <Text style={[styles.tip, { color: t.textMuted }]}>{card.tip}</Text>}
               <View style={styles.cardFoot}>
                 <Text style={[styles.footLeft, { color: t.textMuted }]}>{DIFF_LABELS[card.diff]}</Text>
                 <View style={styles.footBtns}>
