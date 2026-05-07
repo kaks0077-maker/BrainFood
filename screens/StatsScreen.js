@@ -2,13 +2,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../ThemeContext';
-import { CARDS } from '../data';
-
-const TOTAL_CARDS = CARDS.filter(c => c.cat !== 'pub').length;
-
 export default function StatsScreen() {
   const { theme: t } = useTheme();
-  const [cards, setCards] = useState({ streak: 0, bestStreak: 0, seen: 0, favs: 0, used: 0 });
+  const [cards, setCards] = useState({ streak: 0, bestStreak: 0, seen: 0, favs: 0 });
   const [quiz, setQuiz] = useState(null);
 
   useEffect(() => { load(); }, []);
@@ -22,7 +18,6 @@ export default function StatsScreen() {
         bestStreak: s.bestStreak || 0,
         seen: s.seen || 0,
         favs: (s.favs || []).length,
-        used: (s.usedIds || []).length,
       });
     } catch (e) {}
     try {
@@ -37,9 +32,6 @@ export default function StatsScreen() {
       setQuiz({ sessions: hist.length, avgAcc, bestAcc, totalQ, correct, wrong });
     } catch (e) {}
   }
-
-  const remaining = Math.max(0, TOTAL_CARDS - cards.used);
-  const pctSeen = TOTAL_CARDS > 0 ? Math.min(100, Math.round((cards.used / TOTAL_CARDS) * 100)) : 0;
 
   return (
     <ScrollView
@@ -60,18 +52,6 @@ export default function StatsScreen() {
       <View style={styles.row}>
         <StatTile emoji="📚" label="Cards Seen" value={cards.seen} accent={t.accent} t={t} />
         <StatTile emoji="⭐" label="Favourites" value={cards.favs} accent="#f5c842" t={t} />
-      </View>
-
-      {/* PROGRESS BAR */}
-      <View style={[styles.progressCard, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
-        <View style={styles.progressTop}>
-          <Text style={[styles.progressLabel, { color: t.text }]}>Cards unlocked</Text>
-          <Text style={[styles.progressPct, { color: t.accent }]}>{pctSeen}%</Text>
-        </View>
-        <View style={[styles.progressBg, { backgroundColor: t.mode === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)' }]}>
-          <View style={[styles.progressFill, { width: `${pctSeen}%`, backgroundColor: t.accent }]} />
-        </View>
-        <Text style={[styles.progressSub, { color: t.textMuted }]}>{cards.used} of {TOTAL_CARDS} cards seen · {remaining} remaining</Text>
       </View>
 
       {/* QUIZ SECTION */}
@@ -144,13 +124,6 @@ const styles = StyleSheet.create({
   tileEmoji: { fontSize: 24 },
   tileValue: { fontSize: 26, fontWeight: '900' },
   tileLabel: { fontSize: 10, fontWeight: '800', letterSpacing: 0.8 },
-  progressCard: { borderRadius: 16, borderWidth: 1, padding: 16, gap: 10 },
-  progressTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  progressLabel: { fontSize: 13, fontWeight: '800' },
-  progressPct: { fontSize: 13, fontWeight: '900' },
-  progressBg: { height: 6, borderRadius: 4, overflow: 'hidden' },
-  progressFill: { height: '100%', borderRadius: 4 },
-  progressSub: { fontSize: 11, fontWeight: '600' },
   emptyQuiz: { borderRadius: 16, borderWidth: 1, padding: 28, alignItems: 'center' },
   emptyTxt: { fontSize: 13, fontWeight: '700', textAlign: 'center', lineHeight: 22 },
   correctWrongCard: { borderRadius: 16, borderWidth: 1, flexDirection: 'row', overflow: 'hidden' },

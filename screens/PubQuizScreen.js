@@ -12,6 +12,29 @@ function shuffle(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
 }
 
+function shuffleAnswers(q) {
+  const shuffled = shuffle(LETTERS);
+  const newAnswers = {};
+  let newCorrect = 'A';
+  shuffled.forEach((orig, i) => {
+    const dest = LETTERS[i];
+    newAnswers[dest] = q.answers[orig];
+    if (orig === q.correct) newCorrect = dest;
+  });
+  return { ...q, answers: newAnswers, correct: newCorrect };
+}
+
+function saveSession(correct, wrong) {
+  if (correct + wrong === 0) return;
+  const total = correct + wrong;
+  const accuracy = Math.round((correct / total) * 100);
+  const entry = { ts: Date.now(), correct, wrong, total, accuracy };
+  AsyncStorage.getItem('bf_quiz_history').then(raw => {
+    const hist = raw ? JSON.parse(raw) : [];
+    AsyncStorage.setItem('bf_quiz_history', JSON.stringify([entry, ...hist].slice(0, 100)));
+  }).catch(() => {});
+}
+
 export default function PubQuizScreen({ navigation }) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
@@ -22,7 +45,7 @@ export default function PubQuizScreen({ navigation }) {
   const [fadeAnim] = useState(new Animated.Value(1));
 
   useEffect(() => {
-    setQuestions(shuffle(QUIZ_DATA));
+    setQuestions(shuffle(QUIZ_DATA).map(shuffleAnswers));
   }, []);
 
   const q = questions[index];
@@ -48,14 +71,15 @@ export default function PubQuizScreen({ navigation }) {
 
   useEffect(() => {
     if (!finished) return;
-    const total = correct + wrong;
-    const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
-    const entry = { ts: Date.now(), correct, wrong, total, accuracy };
-    AsyncStorage.getItem('bf_quiz_history').then(raw => {
-      const hist = raw ? JSON.parse(raw) : [];
-      AsyncStorage.setItem('bf_quiz_history', JSON.stringify([entry, ...hist].slice(0, 100)));
-    }).catch(() => {});
+    saveSession(correct, wrong);
   }, [finished]);
+
+  useEffect(() => {
+    const unsub = navigation.addListener('beforeRemove', () => {
+      if (!finished) saveSession(correct, wrong);
+    });
+    return unsub;
+  }, [navigation, correct, wrong, finished]);
 
   const diffColor = (d) => {
     if (d === 'easy') return '#2ecc71';
