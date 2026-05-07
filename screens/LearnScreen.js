@@ -15,10 +15,6 @@ import { useTheme } from '../ThemeContext';
 import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
-const CATS = [
-  { id: 'all', emoji: '🌍', label: 'All' },
-  { id: 'pub', emoji: '🍺', label: 'Pub Quiz' },
-];
 
 function getStreakEmoji(streak) {
   if (streak >= 365) return '🏆';
@@ -296,21 +292,6 @@ export default function LearnScreen({ navigation }) {
 
       <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
-        {/* PUB QUIZ SPECIAL BANNER */}
-        <TouchableOpacity
-          onPress={() => navigation.navigate('PubQuiz')}
-          style={{ borderRadius: 18, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(255,215,0,0.5)', backgroundColor: '#12120a' }}
-          activeOpacity={0.85}
-        >
-          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
-            <View>
-              <Text style={{ color: 'gold', fontWeight: '900', fontSize: 13, letterSpacing: 1.5 }}>{'🍺 PUB QUIZ SPECIAL'}</Text>
-              <Text style={{ color: 'rgba(255,215,0,0.6)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Who Wants to Be a Millionaire style</Text>
-            </View>
-            <Text style={{ fontSize: 28 }}>🎯</Text>
-          </View>
-        </TouchableOpacity>
-
         {/* HERO */}
         <View style={styles.hero}>
           <View style={styles.heroRow}>
@@ -362,32 +343,6 @@ export default function LearnScreen({ navigation }) {
           </View>
         </View>
 
-        {/* PROGRESS HIDDEN */}
-        {false && <View style={styles.progWrap}>
-          <View style={styles.progTop}>
-            <Text style={[styles.progLbl, { color: t.textMuted }]}>{cat === 'all' ? 'All' : cat} · {seenInCat}/{pool.length}</Text>
-            <Text style={[styles.progPct, { color: t.accent }]}>{pct}%</Text>
-          </View>
-          <View style={[styles.progBar, { backgroundColor: t.mode === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)' }]}>
-            <View style={[styles.progFill, { width: `${pct}%`, backgroundColor: t.accent }]} />
-          </View>
-        </View>}
-        {/* CATEGORIES */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <View style={styles.catRow}>
-            {CATS.map(c => (
-              <TouchableOpacity key={c.id} onPress={() => changeCat(c.id)}
-                style={[styles.catBtn, { borderColor: t.cardBorder, backgroundColor: t.input },
-                  cat === c.id && { backgroundColor: t.mode === 'dark' ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.1)', borderColor: t.mode === 'dark' ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.3)' },
-                  c.id === 'pub' && { borderColor: 'rgba(255,215,0,0.35)' },
-                  c.id === 'pub' && cat === c.id && { backgroundColor: 'rgba(255,215,0,0.12)', borderColor: 'gold' }]}>
-                <Text style={[styles.catTxt, { color: t.textSub }, cat === c.id && { color: t.text }, c.id === 'pub' && cat === c.id && { color: 'gold' }]}>
-                  {c.emoji} {c.label.toUpperCase()}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-        </ScrollView>
         {/* CARD */}
         {card && (
           <Animated.View style={[styles.card, { opacity: fadeAnim, backgroundColor: grad }]}>
@@ -434,6 +389,21 @@ export default function LearnScreen({ navigation }) {
         <Text style={[styles.nextHint, { color: t.textMuted }]}>
           {autoplay ? '🚗 Hands-free on — sit back and listen' : 'One card a day keeps the ignorance away 🏆'}
         </Text>
+
+        {/* PUB QUIZ SPECIAL BANNER */}
+        <TouchableOpacity
+          onPress={() => { Speech.stop(); setSpeaking(false); stopAutoplay(); setAutoplay(false); navigation.navigate('PubQuiz'); }}
+          style={{ borderRadius: 18, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(255,215,0,0.5)', backgroundColor: '#12120a' }}
+          activeOpacity={0.85}
+        >
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
+            <View>
+              <Text style={{ color: 'gold', fontWeight: '900', fontSize: 13, letterSpacing: 1.5 }}>{'🍺 PUB QUIZ SPECIAL'}</Text>
+              <Text style={{ color: 'rgba(255,215,0,0.6)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Who Wants to Be a Millionaire style</Text>
+            </View>
+            <Text style={{ fontSize: 28 }}>🎯</Text>
+          </View>
+        </TouchableOpacity>
 
         {/* STATS */}
         <View style={styles.statsRow}>
