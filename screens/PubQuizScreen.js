@@ -17,6 +17,7 @@ export default function PubQuizScreen({ navigation }) {
   const [selected, setSelected] = useState(null);
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
+  const [finished, setFinished] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(1));
 
   useEffect(() => {
@@ -35,10 +36,14 @@ export default function PubQuizScreen({ navigation }) {
   const nextQuestion = useCallback(() => {
     Animated.timing(fadeAnim, { toValue: 0, duration: 200, useNativeDriver: true }).start(() => {
       setSelected(null);
-      setIndex(i => (i + 1) % questions.length);
+      if (index + 1 >= questions.length) {
+        setFinished(true);
+      } else {
+        setIndex(i => i + 1);
+      }
       Animated.timing(fadeAnim, { toValue: 1, duration: 200, useNativeDriver: true }).start();
     });
-  }, [fadeAnim, questions]);
+  }, [fadeAnim, questions, index]);
 
   const diffColor = (d) => {
     if (d === 'easy') return '#2ecc71';
@@ -72,6 +77,40 @@ export default function PubQuizScreen({ navigation }) {
       <Text style={styles.loading}>Loading questions...</Text>
     </SafeAreaView>
   );
+
+  if (finished) {
+    const total = correct + wrong;
+    const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const emoji = accuracy >= 80 ? '🏆' : accuracy >= 60 ? '🎯' : '💪';
+    return (
+      <SafeAreaView style={styles.safe}>
+        <StatusBar barStyle="light-content" backgroundColor="#0a0a0f" />
+        <View style={styles.header}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
+            <Text style={styles.backText}>← Back</Text>
+          </TouchableOpacity>
+          <View style={styles.titleWrap}>
+            <Text style={styles.title}>🍺 Pub Quiz</Text>
+            <Text style={styles.titleSub}>Special</Text>
+          </View>
+          <View style={styles.scoreRow}>
+            <Text style={styles.scoreCorrect}>✅ {correct}</Text>
+            <Text style={styles.scoreWrong}>❌ {wrong}</Text>
+          </View>
+        </View>
+        <View style={styles.finishedWrap}>
+          <Text style={styles.finishedEmoji}>{emoji}</Text>
+          <Text style={styles.finishedTitle}>You've smashed all our questions!</Text>
+          <Text style={styles.finishedScore}>{correct}/{total} correct · {accuracy}% accuracy</Text>
+          <View style={styles.finishedDivider} />
+          <Text style={styles.finishedTeaser}>{'🍺 Stay tuned — more questions\ncoming soon!'}</Text>
+          <TouchableOpacity style={styles.finishedBtn} onPress={() => navigation.goBack()}>
+            <Text style={styles.finishedBtnTxt}>Back to BrainFood</Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
 
   const total = correct + wrong;
   const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
@@ -113,7 +152,6 @@ export default function PubQuizScreen({ navigation }) {
         {/* QUESTION CARD */}
         <View style={styles.card}>
           <View style={styles.cardTop}>
-            <Text style={styles.qCounter}>Question {index + 1} of {questions.length}</Text>
             <View style={[styles.diffBadge, { backgroundColor: diffColor(q.difficulty) + '22' }]}>
               <Text style={[styles.diffText, { color: diffColor(q.difficulty) }]}>
                 {q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1)}
@@ -310,4 +348,12 @@ const styles = StyleSheet.create({
   },
   milestoneEmoji: { fontSize: 36, marginBottom: 8 },
   milestoneTxt: { color: 'gold', fontWeight: '700', fontSize: 14 },
+  finishedWrap: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32 },
+  finishedEmoji: { fontSize: 72, marginBottom: 16 },
+  finishedTitle: { fontSize: 22, fontWeight: '900', color: '#fff', textAlign: 'center', lineHeight: 30, marginBottom: 10 },
+  finishedScore: { fontSize: 14, fontWeight: '700', color: 'rgba(255,215,0,0.7)', marginBottom: 24 },
+  finishedDivider: { width: 48, height: 2, backgroundColor: 'rgba(255,215,0,0.25)', borderRadius: 1, marginBottom: 24 },
+  finishedTeaser: { fontSize: 16, fontWeight: '700', color: 'rgba(255,215,0,0.55)', textAlign: 'center', lineHeight: 26, marginBottom: 36 },
+  finishedBtn: { backgroundColor: 'gold', borderRadius: 100, paddingHorizontal: 32, paddingVertical: 14 },
+  finishedBtnTxt: { color: '#0a0a0f', fontWeight: '900', fontSize: 15 },
 });
