@@ -16,30 +16,29 @@ import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
 const CATS = [
-  { id: 'all', label: '🌍 All' },
-  { id: 'pub', label: '🍺 Pub Quiz' },
+  { id: 'all', label: 'đźŚŤ All' },
 ];
 
 function getStreakEmoji(streak) {
-  if (streak >= 365) return '🏆';
-  if (streak >= 100) return '💎';
-  if (streak >= 30) return '🔥';
-  if (streak >= 7) return '⚡';
-  if (streak >= 3) return '✨';
-  return '🌱';
+  if (streak >= 365) return '??';
+  if (streak >= 100) return '??';
+  if (streak >= 30) return '??';
+  if (streak >= 7) return '?';
+  if (streak >= 3) return '?';
+  return '??';
 }
 
 function getStreakMessage(streak) {
-  if (streak === 1) return "Welcome back! Day 1 — every streak starts here.";
-  if (streak < 3) return `Day ${streak} — you're building a habit!`;
+  if (streak === 1) return "Welcome back! Day 1 ? every streak starts here.";
+  if (streak < 3) return `Day ${streak} ? you're building a habit!`;
   if (streak < 7) return `${streak} days straight! Keep it up!`;
-  if (streak < 14) return `${streak} days! You're on fire! 🔥`;
+  if (streak < 14) return `${streak} days! You're on fire! ??`;
   if (streak < 30) return `${streak} days! Impressive consistency!`;
   if (streak < 100) return `${streak} days! You're a BrainFood legend!`;
-  return `${streak} days! Absolutely unstoppable! 🏆`;
+  return `${streak} days! Absolutely unstoppable! ??`;
 }
 
-export default function LearnScreen() {
+export default function LearnScreen({ navigation }) {
   const { theme, toggleTheme } = useTheme();
   const [card, setCard] = useState(null);
   const [cat, setCat] = useState('all');
@@ -198,17 +197,17 @@ export default function LearnScreen() {
     if (!card) return;
     try {
       const uri = await shareRef.current.capture();
-      await Share.share({ url: uri, message: '🍕 BrainFood — Feed your brain!' });
+      await Share.share({ url: uri, message: 'đźŤ• BrainFood ? Feed your brain!' });
     } catch (e) {
       // Fallback to text share
-      await Share.share({ message: `🍕 BrainFood\n\n${card.fact}\n\nbrainfood.app` });
+      await Share.share({ message: `?? BrainFood\n\n${card.fact}\n\nbrainfood.app` });
     }
   }
 
   function speakCard() {
     if (!card) return;
     if (speaking) { Speech.stop(); setSpeaking(false); return; }
-    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('🧠 ', '')}`, {
+    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('?? ', '')}`, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => setSpeaking(false),
       onError: () => setSpeaking(false),
@@ -220,7 +219,7 @@ export default function LearnScreen() {
     if (!card) return;
     Speech.stop();
     clearInterval(apInterval.current);
-    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('🧠 ', '')}`, {
+    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('?? ', '')}`, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => {
         let secs = apSpeed;
@@ -256,7 +255,7 @@ export default function LearnScreen() {
         <View style={[styles.shareInner, { backgroundColor: cardColor }]}>
           <View style={styles.shareGlow} />
           <View style={styles.shareRing} />
-          <Text style={styles.shareLogo}>Brain<Text style={{ color: '#ffd93d' }}>Food</Text> 🍕</Text>
+          <Text style={styles.shareLogo}>Brain<Text style={{ color: '#ffd93d' }}>Food</Text> ??</Text>
           {card && <Text style={styles.shareEmoji}>{card.emoji}</Text>}
           {card && <Text style={styles.shareFact}>{card.fact}</Text>}
           <View style={styles.shareFooter}>
@@ -285,10 +284,10 @@ export default function LearnScreen() {
             <Text style={[styles.modalStreakLabel, { color: t.textMuted }]}>DAY STREAK</Text>
             <Text style={[styles.modalMessage, { color: t.text }]}>{getStreakMessage(todayStreak)}</Text>
             {bestStreak > 1 && (
-              <Text style={[styles.modalBest, { color: t.textMuted }]}>🏅 Best streak: {bestStreak} days</Text>
+              <Text style={[styles.modalBest, { color: t.textMuted }]}>?? Best streak: {bestStreak} days</Text>
             )}
             <TouchableOpacity style={[styles.modalBtn, { backgroundColor: t.accent }]} onPress={closeStreakModal}>
-              <Text style={styles.modalBtnTxt}>Let's go! 🍕</Text>
+              <Text style={styles.modalBtnTxt}>Let's go! ??</Text>
             </TouchableOpacity>
           </Animated.View>
         </View>
@@ -296,16 +295,31 @@ export default function LearnScreen() {
 
       <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
-        {/* HERO */}
+        {/* PUB QUIZ SPECIAL BANNER */}
+      <TouchableOpacity
+        onPress={() => navigation.navigate('PubQuiz')}
+        style={{ borderRadius: 18, marginBottom: 4, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(255,215,0,0.5)', backgroundColor: '#12120a' }}
+        activeOpacity={0.85}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
+          <View>
+            <Text style={{ color: 'gold', fontWeight: '900', fontSize: 13, letterSpacing: 1.5, textTransform: 'uppercase' }}>đźŤş Pub Quiz Special</Text>
+            <Text style={{ color: 'rgba(255,215,0,0.6)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Who Wants to Be a Millionaire style</Text>
+          </View>
+          <Text style={{ fontSize: 28 }}>??</Text>
+        </View>
+      </TouchableOpacity>
+
+  
         <View style={styles.hero}>
           <View style={styles.heroRow}>
-            <Text style={[styles.logo, { color: t.text }]}>Brain<Text style={{ color: t.accent }}>Food</Text> 🍕</Text>
+            <Text style={[styles.logo, { color: t.text }]}>Brain<Text style={{ color: t.accent }}>Food</Text> ??</Text>
             <View style={styles.heroRight}>
               <TouchableOpacity onPress={() => showStreakPopup(streak)} style={[styles.streakBadge, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
                 <Text style={styles.streakBadgeTxt}>{getStreakEmoji(streak)} {streak}</Text>
               </TouchableOpacity>
               <TouchableOpacity onPress={toggleTheme} style={[styles.themeBtn, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
-                <Text style={styles.themeBtnTxt}>{t.mode === 'dark' ? '☀️' : '🌙'}</Text>
+                <Text style={styles.themeBtnTxt}>{t.mode === 'dark' ? '??' : '??'}</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -314,7 +328,7 @@ export default function LearnScreen() {
 
         {/* WORD OF THE DAY */}
         <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
-          <Text style={[styles.wotdLbl, { color: t.textMuted }]}>📖 Word of the Day</Text>
+          <Text style={[styles.wotdLbl, { color: t.textMuted }]}>đź“– Word of the Day</Text>
           <Text style={[styles.wotdWord, { color: t.text }]}>{wotd.word}</Text>
           <Text style={[styles.wotdPhon, { color: t.textSub }]}>{wotd.phonetic}</Text>
           <Text style={[styles.wotdDef, { color: t.textSub }]}>{wotd.def}</Text>
@@ -324,9 +338,9 @@ export default function LearnScreen() {
         {/* AUTOPLAY BAR */}
         <View style={[styles.apBar, { backgroundColor: t.card, borderColor: t.cardBorder }, autoplay && { backgroundColor: t.mode === 'dark' ? 'rgba(255,193,7,0.08)' : 'rgba(230,168,0,0.1)', borderColor: 'rgba(255,193,7,0.3)' }]}>
           <View style={{ flex: 1 }}>
-            <Text style={[styles.apTitle, { color: t.text }]}>🚗 Hands-Free Mode</Text>
+            <Text style={[styles.apTitle, { color: t.text }]}>đźš— Hands-Free Mode</Text>
             <Text style={[styles.apSub, { color: t.textMuted }]}>
-              {autoplay ? (apCountdown > 0 ? `Next card in ${apCountdown}s…` : 'Reading aloud…') : 'Reads cards aloud automatically'}
+              {autoplay ? (apCountdown > 0 ? `Next card in ${apCountdown}s?` : 'Reading aloud?') : 'Reads cards aloud automatically'}
             </Text>
           </View>
           <View style={styles.apRight}>
@@ -350,7 +364,7 @@ export default function LearnScreen() {
         {/* PROGRESS HIDDEN */}
         {false && <View style={styles.progWrap}>
           <View style={styles.progTop}>
-            <Text style={[styles.progLbl, { color: t.textMuted }]}>{cat === 'all' ? 'All' : cat} · {seenInCat}/{pool.length}</Text>
+            <Text style={[styles.progLbl, { color: t.textMuted }]}>{cat === 'all' ? 'All' : cat} ? {seenInCat}/{pool.length}</Text>
             <Text style={[styles.progPct, { color: t.accent }]}>{pct}%</Text>
           </View>
           <View style={[styles.progBar, { backgroundColor: t.mode === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)' }]}>
@@ -393,19 +407,19 @@ export default function LearnScreen() {
             </View>
             <Text style={styles.factTxt}>{card.fact}</Text>
             <View style={styles.tipRow}>
-              <Text style={styles.tipIcon}>🧠</Text>
-              <Text style={styles.tipTxt}>{card.tip.replace('🧠 ', '')}</Text>
+              <Text style={styles.tipIcon}>??</Text>
+              <Text style={styles.tipTxt}>{card.tip.replace('?? ', '')}</Text>
             </View>
             <View style={styles.cardBot}>
               <View style={styles.actionRow}>
                 <TouchableOpacity onPress={toggleFav} style={[styles.iconBtn, favs.includes(card.id) && styles.iconBtnFav]}>
-                  <Text style={styles.iconTxt}>{favs.includes(card.id) ? '⭐' : '☆'}</Text>
+                  <Text style={styles.iconTxt}>{favs.includes(card.id) ? '?' : '?'}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={speakCard} style={[styles.iconBtn, speaking && styles.iconBtnSpeak]}>
-                  <Text style={styles.iconTxt}>{speaking ? '⏹️' : '🔊'}</Text>
+                  <Text style={styles.iconTxt}>{speaking ? '??' : '??'}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={shareCard} style={styles.iconBtn}>
-                  <Text style={styles.iconTxt}>📤</Text>
+                  <Text style={styles.iconTxt}>??</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -414,15 +428,15 @@ export default function LearnScreen() {
 
         {/* NEXT BUTTON */}
         <TouchableOpacity onPress={nextCard} style={[styles.nextBtn, { backgroundColor: t.accent }, autoplay && { opacity: 0.5 }]} disabled={autoplay}>
-          <Text style={styles.nextTxt}>Next Card ⚡</Text>
+          <Text style={styles.nextTxt}>Next Card ?</Text>
         </TouchableOpacity>
         <Text style={[styles.nextHint, { color: t.textMuted }]}>
-          {autoplay ? '🚗 Hands-free on — sit back and listen' : 'One card a day keeps the ignorance away 🏆'}
+          {autoplay ? '?? Hands-free on ? sit back and listen' : 'One card a day keeps the ignorance away ??'}
         </Text>
 
         {/* STATS */}
         <View style={styles.statsRow}>
-          {[['Seen', seen], [`Streak ${getStreakEmoji(streak)}`, streak], ['Saved ⭐', favs.length]].map(([l, v]) => (
+          {[['Seen', seen], [`Streak ${getStreakEmoji(streak)}`, streak], ['Saved ?', favs.length]].map(([l, v]) => (
             <View key={l} style={[styles.statBox, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
               <Text style={[styles.statNum, { color: t.accent }]}>{v}</Text>
               <Text style={[styles.statLbl, { color: t.textMuted }]}>{l}</Text>
@@ -519,6 +533,12 @@ const styles = StyleSheet.create({
   modalBtn: { borderRadius: 16, paddingHorizontal: 32, paddingVertical: 14 },
   modalBtnTxt: { fontSize: 16, fontWeight: '900', color: '#1a0533' },
 });
+
+
+
+
+
+
 
 
 
