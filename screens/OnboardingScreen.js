@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import {
-  Animated, Dimensions, SafeAreaView, StyleSheet,
+  Animated, Dimensions, SafeAreaView, ScrollView, StyleSheet,
   Text, TouchableOpacity, View,
 } from 'react-native';
 
-const { width, height } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 const SLIDES = [
   {
@@ -28,35 +28,68 @@ const SLIDES = [
   {
     emoji: '🔔',
     title: 'Daily Reminder',
-    sub: 'When should we nudge you? Pick a time and we\'ll send a daily reminder.',
+    sub: "When should we nudge you? Scroll to pick a time.",
     accent: '#a29bfe',
     isNotif: true,
   },
 ];
 
-const NOTIF_TIMES = [
-  { label: '6am', hour: 6 },
-  { label: '7am', hour: 7 },
-  { label: '8am', hour: 8 },
-  { label: '9am', hour: 9 },
-  { label: '10am', hour: 10 },
-  { label: '11am', hour: 11 },
-  { label: '12pm', hour: 12 },
-  { label: '1pm', hour: 13 },
-  { label: '2pm', hour: 14 },
-  { label: '3pm', hour: 15 },
-  { label: '4pm', hour: 16 },
-  { label: '5pm', hour: 17 },
-  { label: '6pm', hour: 18 },
-  { label: '7pm', hour: 19 },
-  { label: '8pm', hour: 20 },
-  { label: '9pm', hour: 21 },
-  { label: '10pm', hour: 22 },
-];
+const HOURS = ['12', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
+const PERIODS = ['AM', 'PM'];
+const ITEM_H = 54;
+
+function toHour24(hourIdx, periodIdx) {
+  if (periodIdx === 0) return hourIdx === 0 ? 0 : hourIdx;
+  return hourIdx === 0 ? 12 : hourIdx + 12;
+}
+
+function WheelPicker({ items, selectedIndex, onSelect, accent, width: w }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const t = setTimeout(() => {
+      ref.current?.scrollTo({ y: selectedIndex * ITEM_H, animated: false });
+    }, 80);
+    return () => clearTimeout(t);
+  }, []);
+
+  const onScrollEnd = (e) => {
+    const idx = Math.max(0, Math.min(Math.round(e.nativeEvent.contentOffset.y / ITEM_H), items.length - 1));
+    onSelect(idx);
+  };
+
+  return (
+    <View style={{ width: w, height: ITEM_H * 5, overflow: 'hidden' }}>
+      <View pointerEvents="none" style={[styles.highlight, { borderColor: accent, backgroundColor: accent + '18', top: ITEM_H * 2 }]} />
+      <ScrollView
+        ref={ref}
+        showsVerticalScrollIndicator={false}
+        snapToInterval={ITEM_H}
+        decelerationRate="fast"
+        onMomentumScrollEnd={onScrollEnd}
+        onScrollEndDrag={onScrollEnd}
+        contentContainerStyle={{ paddingVertical: ITEM_H * 2 }}
+      >
+        {items.map((item, i) => (
+          <View key={i} style={{ height: ITEM_H, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{
+              fontSize: i === selectedIndex ? 28 : 20,
+              fontWeight: i === selectedIndex ? '900' : '400',
+              color: i === selectedIndex ? '#fff' : 'rgba(255,255,255,0.2)',
+            }}>
+              {item}
+            </Text>
+          </View>
+        ))}
+      </ScrollView>
+    </View>
+  );
+}
 
 export default function OnboardingScreen({ onDone }) {
   const [page, setPage] = useState(0);
-  const [selectedHour, setSelectedHour] = useState(9);
+  const [hourIdx, setHourIdx] = useState(9);
+  const [periodIdx, setPeriodIdx] = useState(0);
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const slideAnim = useRef(new Animated.Value(0)).current;
 
@@ -69,7 +102,7 @@ export default function OnboardingScreen({ onDone }) {
       Animated.timing(slideAnim, { toValue: -30, duration: 200, useNativeDriver: true }),
     ]).start(() => {
       if (isLast) {
-        onDone(selectedHour);
+        onDone(toHour24(hourIdx, periodIdx));
         return;
       }
       setPage(p => p + 1);
@@ -83,38 +116,43 @@ export default function OnboardingScreen({ onDone }) {
 
   const skipNotif = () => onDone(null);
 
+  const pickerW = (width - 56) * 0.4;
+
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
-        {/* Dots */}
         <View style={styles.dots}>
           {SLIDES.map((_, i) => (
             <View key={i} style={[styles.dot, i === page && { backgroundColor: slide.accent, width: 20 }]} />
           ))}
         </View>
 
-        {/* Content */}
         <Animated.View style={[styles.content, { opacity: fadeAnim, transform: [{ translateY: slideAnim }] }]}>
           <Text style={styles.emoji}>{slide.emoji}</Text>
           <Text style={[styles.title, { color: slide.accent }]}>{slide.title}</Text>
           <Text style={styles.sub}>{slide.sub}</Text>
 
           {slide.isNotif && (
-            <View style={styles.timeGrid}>
-              {NOTIF_TIMES.map(t => (
-                <TouchableOpacity
-                  key={t.hour}
-                  onPress={() => setSelectedHour(t.hour)}
-                  style={[styles.timeBtn, selectedHour === t.hour && { backgroundColor: slide.accent }]}
-                >
-                  <Text style={[styles.timeTxt, selectedHour === t.hour && { color: '#000' }]}>{t.label}</Text>
-                </TouchableOpacity>
-              ))}
+            <View style={styles.pickerRow}>
+              <WheelPicker
+                items={HOURS}
+                selectedIndex={hourIdx}
+                onSelect={setHourIdx}
+                accent={slide.accent}
+                width={pickerW}
+              />
+              <View style={[styles.pickerDivider, { backgroundColor: 'rgba(255,255,255,0.08)' }]} />
+              <WheelPicker
+                items={PERIODS}
+                selectedIndex={periodIdx}
+                onSelect={setPeriodIdx}
+                accent={slide.accent}
+                width={pickerW}
+              />
             </View>
           )}
         </Animated.View>
 
-        {/* Buttons */}
         <View style={styles.footer}>
           <TouchableOpacity style={[styles.btn, { backgroundColor: slide.accent }]} onPress={goNext}>
             <Text style={styles.btnTxt}>{isLast ? "LET'S GO 🚀" : 'NEXT →'}</Text>
@@ -139,16 +177,27 @@ const styles = StyleSheet.create({
   emoji: { fontSize: 80, marginBottom: 24 },
   title: { fontSize: 28, fontWeight: '900', textAlign: 'center', marginBottom: 16, letterSpacing: -0.5 },
   sub: { fontSize: 16, color: 'rgba(255,255,255,0.55)', textAlign: 'center', lineHeight: 24, maxWidth: 300 },
-  timeGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 24, justifyContent: 'center' },
-  timeBtn: {
-    paddingHorizontal: 14, paddingVertical: 10, borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.08)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.12)',
+  pickerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 32,
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.08)',
+    overflow: 'hidden',
   },
-  timeTxt: { fontSize: 14, fontWeight: '700', color: 'rgba(255,255,255,0.7)' },
+  pickerDivider: { width: 1, height: ITEM_H * 5 },
+  highlight: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    height: ITEM_H,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+  },
   footer: { paddingBottom: 32, gap: 12 },
-  btn: {
-    height: 56, borderRadius: 16, justifyContent: 'center', alignItems: 'center',
-  },
+  btn: { height: 56, borderRadius: 16, justifyContent: 'center', alignItems: 'center' },
   btnTxt: { fontSize: 16, fontWeight: '900', color: '#000', letterSpacing: 1 },
   skipBtn: { alignItems: 'center', paddingVertical: 8 },
   skipTxt: { color: 'rgba(255,255,255,0.3)', fontSize: 14 },
