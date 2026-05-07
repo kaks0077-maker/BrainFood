@@ -3,6 +3,7 @@ import {
   View, Text, TouchableOpacity, StyleSheet,
   SafeAreaView, StatusBar, Animated, ScrollView
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import QUIZ_DATA from '../quiz_data.js';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
@@ -44,6 +45,17 @@ export default function PubQuizScreen({ navigation }) {
       Animated.timing(fadeAnim, { toValue: 1, duration: 200, useNativeDriver: true }).start();
     });
   }, [fadeAnim, questions, index]);
+
+  useEffect(() => {
+    if (!finished) return;
+    const total = correct + wrong;
+    const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const entry = { ts: Date.now(), correct, wrong, total, accuracy };
+    AsyncStorage.getItem('bf_quiz_history').then(raw => {
+      const hist = raw ? JSON.parse(raw) : [];
+      AsyncStorage.setItem('bf_quiz_history', JSON.stringify([entry, ...hist].slice(0, 100)));
+    }).catch(() => {});
+  }, [finished]);
 
   const diffColor = (d) => {
     if (d === 'easy') return '#2ecc71';

@@ -9137,6 +9137,2106 @@ const QUIZ_DATA = [
     },
     "correct": "A",
     "difficulty": "easy"
+  },
+  {
+    "id": "pq704",
+    "question": "What is the capital of Australia?",
+    "answers": { "A": "Sydney", "B": "Melbourne", "C": "Canberra", "D": "Brisbane" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq705",
+    "question": "Which country has the most natural lakes?",
+    "answers": { "A": "Russia", "B": "USA", "C": "Brazil", "D": "Canada" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq706",
+    "question": "What is the longest river in Africa?",
+    "answers": { "A": "Congo", "B": "Nile", "C": "Niger", "D": "Zambezi" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq707",
+    "question": "Which country is home to the Patagonia region?",
+    "answers": { "A": "Chile and Argentina", "B": "Brazil and Bolivia", "C": "Peru and Ecuador", "D": "Colombia and Venezuela" },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq708",
+    "question": "The Strait of Gibraltar connects the Atlantic Ocean to which sea?",
+    "answers": { "A": "Red Sea", "B": "Black Sea", "C": "Mediterranean Sea", "D": "Caspian Sea" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq709",
+    "question": "Which African country was formerly known as Rhodesia?",
+    "answers": { "A": "Zambia", "B": "Mozambique", "C": "Zimbabwe", "D": "Malawi" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq710",
+    "question": "What is the smallest country in South America by area?",
+    "answers": { "A": "Guyana", "B": "Suriname", "C": "Uruguay", "D": "Ecuador" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq711",
+    "question": "Which ocean is the deepest?",
+    "answers": { "A": "Atlantic", "B": "Indian", "C": "Arctic", "D": "Pacific" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq712",
+    "question": "Istanbul is located on which two continents?",
+    "answers": { "A": "Europe and Asia", "B": "Africa and Asia", "C": "Europe and Africa", "D": "Asia and Oceania" },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq713",
+    "question": "Which country has the most official languages?",
+    "answers": { "A": "India", "B": "South Africa", "C": "Bolivia", "D": "Switzerland" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq714",
+    "question": "The Atacama Desert is located primarily in which country?",
+    "answers": { "A": "Peru", "B": "Bolivia", "C": "Chile", "D": "Argentina" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq715",
+    "question": "What is the capital of New Zealand?",
+    "answers": { "A": "Auckland", "B": "Wellington", "C": "Christchurch", "D": "Dunedin" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq716",
+    "question": "Which country does the island of Sardinia belong to?",
+    "answers": { "A": "France", "B": "Spain", "C": "Italy", "D": "Greece" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq717",
+    "question": "The Mekong River flows through how many countries?",
+    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq718",
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "answers": { "A": "South Korea", "B": "China", "C": "Japan", "D": "Thailand" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq719",
+    "question": "What is the currency of Norway?",
+    "answers": { "A": "Krone", "B": "Krona", "C": "Euro", "D": "Florin" },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq720",
+    "question": "Which desert is the largest hot desert in the world?",
+    "answers": { "A": "Arabian Desert", "B": "Gobi Desert", "C": "Sahara Desert", "D": "Kalahari Desert" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq721",
+    "question": "The Amazon Rainforest covers approximately what percentage of Earth's land surface?",
+    "answers": { "A": "2%", "B": "4%", "C": "6%", "D": "8%" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq722",
+    "question": "Which European country has the most castles per square kilometre?",
+    "answers": { "A": "Germany", "B": "France", "C": "Wales", "D": "Czech Republic" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq723",
+    "question": "What is the largest country in Africa by area?",
+    "answers": { "A": "Sudan", "B": "Congo", "C": "Nigeria", "D": "Algeria" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq724",
+    "question": "The element gold has which chemical symbol?",
+    "answers": { "A": "Go", "B": "Gd", "C": "Au", "D": "Ag" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq725",
+    "question": "What is the powerhouse of the cell?",
+    "answers": { "A": "Nucleus", "B": "Ribosome", "C": "Mitochondria", "D": "Golgi apparatus" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq726",
+    "question": "How many bones are in the adult human body?",
+    "answers": { "A": "196", "B": "206", "C": "216", "D": "226" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq727",
+    "question": "What is the speed of light in a vacuum (approximately)?",
+    "answers": { "A": "200,000 km/s", "B": "250,000 km/s", "C": "300,000 km/s", "D": "350,000 km/s" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq728",
+    "question": "Which planet has the most moons?",
+    "answers": { "A": "Jupiter", "B": "Saturn", "C": "Uranus", "D": "Neptune" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq729",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "answers": { "A": "Oxygen", "B": "Carbon dioxide", "C": "Argon", "D": "Nitrogen" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq730",
+    "question": "DNA stands for what?",
+    "answers": { "A": "Deoxyribonucleic Acid", "B": "Diribonucleic Acid", "C": "Deoxyribonitric Acid", "D": "Dinitrogen Acid" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq731",
+    "question": "Which scientist formulated the three laws of motion?",
+    "answers": { "A": "Galileo Galilei", "B": "Albert Einstein", "C": "Isaac Newton", "D": "Nikola Tesla" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq732",
+    "question": "What is the hardest natural substance on Earth?",
+    "answers": { "A": "Quartz", "B": "Graphite", "C": "Diamond", "D": "Corundum" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq733",
+    "question": "The human body has how many pairs of chromosomes?",
+    "answers": { "A": "21", "B": "23", "C": "25", "D": "46" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq734",
+    "question": "Which organ produces insulin?",
+    "answers": { "A": "Liver", "B": "Kidney", "C": "Pancreas", "D": "Spleen" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq735",
+    "question": "What is the chemical formula for water?",
+    "answers": { "A": "HO", "B": "H2O", "C": "H3O", "D": "OH2" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq736",
+    "question": "Which planet is known as the Red Planet?",
+    "answers": { "A": "Venus", "B": "Jupiter", "C": "Mars", "D": "Mercury" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq737",
+    "question": "How many chambers does the human heart have?",
+    "answers": { "A": "2", "B": "3", "C": "4", "D": "6" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq738",
+    "question": "What type of animal is a Komodo dragon?",
+    "answers": { "A": "Snake", "B": "Lizard", "C": "Crocodilian", "D": "Salamander" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq739",
+    "question": "Which gas do plants absorb during photosynthesis?",
+    "answers": { "A": "Oxygen", "B": "Nitrogen", "C": "Carbon monoxide", "D": "Carbon dioxide" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq740",
+    "question": "What is the atomic number of carbon?",
+    "answers": { "A": "4", "B": "6", "C": "8", "D": "12" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq741",
+    "question": "Which blood type is the universal donor?",
+    "answers": { "A": "A positive", "B": "B negative", "C": "O negative", "D": "AB positive" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq742",
+    "question": "A light year measures what?",
+    "answers": { "A": "Time", "B": "Weight", "C": "Distance", "D": "Energy" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq743",
+    "question": "What is the largest organ of the human body?",
+    "answers": { "A": "Liver", "B": "Brain", "C": "Lungs", "D": "Skin" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq744",
+    "question": "Which planet has a great red spot?",
+    "answers": { "A": "Saturn", "B": "Neptune", "C": "Jupiter", "D": "Uranus" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq745",
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "answers": { "A": "90°C", "B": "95°C", "C": "100°C", "D": "105°C" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq746",
+    "question": "Penicillin was discovered by which scientist?",
+    "answers": { "A": "Louis Pasteur", "B": "Alexander Fleming", "C": "Joseph Lister", "D": "Robert Koch" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq747",
+    "question": "Which animal has the largest brain relative to its body size?",
+    "answers": { "A": "Dolphin", "B": "Chimpanzee", "C": "Human", "D": "Elephant" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq748",
+    "question": "What is the name of the force that keeps planets in orbit?",
+    "answers": { "A": "Magnetism", "B": "Gravity", "C": "Centrifugal force", "D": "Nuclear force" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq749",
+    "question": "How many legs does a spider have?",
+    "answers": { "A": "6", "B": "8", "C": "10", "D": "12" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq750",
+    "question": "What is the most common element in the universe?",
+    "answers": { "A": "Oxygen", "B": "Carbon", "C": "Helium", "D": "Hydrogen" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq751",
+    "question": "Who was the first person to walk on the moon?",
+    "answers": { "A": "Buzz Aldrin", "B": "Yuri Gagarin", "C": "Neil Armstrong", "D": "John Glenn" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq752",
+    "question": "In which year did World War I begin?",
+    "answers": { "A": "1912", "B": "1914", "C": "1916", "D": "1918" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq753",
+    "question": "The Berlin Wall fell in which year?",
+    "answers": { "A": "1987", "B": "1988", "C": "1989", "D": "1990" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq754",
+    "question": "Which empire was ruled by Genghis Khan?",
+    "answers": { "A": "Ottoman Empire", "B": "Mongol Empire", "C": "Roman Empire", "D": "Byzantine Empire" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq755",
+    "question": "The French Revolution began in which year?",
+    "answers": { "A": "1776", "B": "1783", "C": "1789", "D": "1799" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq756",
+    "question": "Who was the first female Prime Minister of the UK?",
+    "answers": { "A": "Theresa May", "B": "Margaret Thatcher", "C": "Hillary Clinton", "D": "Angela Merkel" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq757",
+    "question": "The ancient wonder, the Colossus of Rhodes, was located in which country?",
+    "answers": { "A": "Italy", "B": "Turkey", "C": "Greece", "D": "Egypt" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq758",
+    "question": "Julius Caesar was assassinated in which year BC?",
+    "answers": { "A": "23 BC", "B": "44 BC", "C": "63 BC", "D": "100 BC" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq759",
+    "question": "The Titanic sank in which year?",
+    "answers": { "A": "1910", "B": "1911", "C": "1912", "D": "1913" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq760",
+    "question": "Which civilisation built Machu Picchu?",
+    "answers": { "A": "Aztec", "B": "Maya", "C": "Inca", "D": "Olmec" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq761",
+    "question": "In which century did the Black Death devastate Europe?",
+    "answers": { "A": "12th", "B": "13th", "C": "14th", "D": "15th" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq762",
+    "question": "The Cold War was primarily a conflict between which two nations?",
+    "answers": { "A": "USA and China", "B": "USA and USSR", "C": "UK and Germany", "D": "France and Russia" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq763",
+    "question": "Which country first gave women the right to vote?",
+    "answers": { "A": "Australia", "B": "UK", "C": "New Zealand", "D": "USA" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq764",
+    "question": "Who was the last pharaoh of ancient Egypt?",
+    "answers": { "A": "Nefertiti", "B": "Cleopatra VII", "C": "Hatshepsut", "D": "Tutankhamun" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq765",
+    "question": "The D-Day landings took place in which country?",
+    "answers": { "A": "Belgium", "B": "Netherlands", "C": "France", "D": "Germany" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq766",
+    "question": "Which ancient wonder was located in Alexandria?",
+    "answers": { "A": "Hanging Gardens", "B": "Colossus", "C": "Temple of Artemis", "D": "Lighthouse" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq767",
+    "question": "Napoleon Bonaparte was exiled to which island after his final defeat?",
+    "answers": { "A": "Elba", "B": "Corsica", "C": "Saint Helena", "D": "Sardinia" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq768",
+    "question": "The Great Wall of China was primarily built to defend against which people?",
+    "answers": { "A": "Persians", "B": "Mongols", "C": "Japanese", "D": "Russians" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq769",
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "answers": { "A": "Argentina", "B": "Mexico", "C": "Brazil", "D": "Colombia" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq770",
+    "question": "In football, how many players are on the pitch per team?",
+    "answers": { "A": "10", "B": "11", "C": "12", "D": "13" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq771",
+    "question": "Which country has won the most FIFA World Cups?",
+    "answers": { "A": "Germany", "B": "Argentina", "C": "Italy", "D": "Brazil" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq772",
+    "question": "In tennis, what is the term for a score of 40-40?",
+    "answers": { "A": "Tie", "B": "Deuce", "C": "Love", "D": "Fault" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq773",
+    "question": "The Tour de France is primarily a race involving which sport?",
+    "answers": { "A": "Running", "B": "Swimming", "C": "Cycling", "D": "Triathlon" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq774",
+    "question": "How many rings are on the Olympic flag?",
+    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq775",
+    "question": "In basketball, how many points is a shot worth from beyond the arc?",
+    "answers": { "A": "2", "B": "3", "C": "4", "D": "1" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq776",
+    "question": "Which country invented the sport of rugby?",
+    "answers": { "A": "Scotland", "B": "Australia", "C": "New Zealand", "D": "England" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq777",
+    "question": "The Masters golf tournament is held annually in which US state?",
+    "answers": { "A": "Florida", "B": "Georgia", "C": "South Carolina", "D": "Texas" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq778",
+    "question": "How many players are on a cricket team?",
+    "answers": { "A": "9", "B": "10", "C": "11", "D": "12" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq779",
+    "question": "Which boxer was known as 'The Greatest'?",
+    "answers": { "A": "Joe Frazier", "B": "George Foreman", "C": "Mike Tyson", "D": "Muhammad Ali" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq780",
+    "question": "In which sport would you perform a slam dunk?",
+    "answers": { "A": "Volleyball", "B": "Basketball", "C": "Handball", "D": "Netball" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq781",
+    "question": "Which country won the first ever Rugby World Cup in 1987?",
+    "answers": { "A": "Australia", "B": "England", "C": "New Zealand", "D": "South Africa" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq782",
+    "question": "Usain Bolt is from which country?",
+    "answers": { "A": "Trinidad and Tobago", "B": "Barbados", "C": "Jamaica", "D": "Bahamas" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq783",
+    "question": "Which artist had a 2009 hit with 'Poker Face'?",
+    "answers": { "A": "Katy Perry", "B": "Beyonce", "C": "Rihanna", "D": "Lady Gaga" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq784",
+    "question": "Which band performed 'Bohemian Rhapsody'?",
+    "answers": { "A": "Led Zeppelin", "B": "The Rolling Stones", "C": "Queen", "D": "The Who" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq785",
+    "question": "Elvis Presley was nicknamed 'The King of...' what?",
+    "answers": { "A": "Soul", "B": "Rock and Roll", "C": "Pop", "D": "Blues" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq786",
+    "question": "Which instrument does a pianist play?",
+    "answers": { "A": "Harpsichord", "B": "Organ", "C": "Piano", "D": "Clavichord" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq787",
+    "question": "Glastonbury Festival takes place in which English county?",
+    "answers": { "A": "Devon", "B": "Cornwall", "C": "Somerset", "D": "Wiltshire" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq788",
+    "question": "Which music genre originated in Jamaica in the late 1960s?",
+    "answers": { "A": "Calypso", "B": "Ska", "C": "Reggae", "D": "Dancehall" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq789",
+    "question": "Michael Jackson's 'Thriller' was released in which year?",
+    "answers": { "A": "1980", "B": "1981", "C": "1982", "D": "1983" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq790",
+    "question": "Which British band released 'Wonderwall' in 1995?",
+    "answers": { "A": "Blur", "B": "Oasis", "C": "Pulp", "D": "Suede" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq791",
+    "question": "The Grammy Award is given for excellence in which field?",
+    "answers": { "A": "Film", "B": "Television", "C": "Music", "D": "Theatre" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq792",
+    "question": "Which singer is known as the 'Queen of Pop'?",
+    "answers": { "A": "Mariah Carey", "B": "Celine Dion", "C": "Whitney Houston", "D": "Madonna" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq793",
+    "question": "How many strings does a standard guitar have?",
+    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq794",
+    "question": "Which film won the first ever Academy Award for Best Picture?",
+    "answers": { "A": "All Quiet on the Western Front", "B": "Wings", "C": "The Jazz Singer", "D": "Ben-Hur" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq795",
+    "question": "The movie 'The Godfather' was based on a novel by whom?",
+    "answers": { "A": "Stephen King", "B": "Mario Puzo", "C": "Francis Ford Coppola", "D": "Elmore Leonard" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq796",
+    "question": "Which actor played Jack Sparrow in Pirates of the Caribbean?",
+    "answers": { "A": "Orlando Bloom", "B": "Geoffrey Rush", "C": "Johnny Depp", "D": "Javier Bardem" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq797",
+    "question": "Who directed the film 'Jurassic Park'?",
+    "answers": { "A": "James Cameron", "B": "George Lucas", "C": "Steven Spielberg", "D": "Ron Howard" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq798",
+    "question": "Which Disney film features the song 'Let It Go'?",
+    "answers": { "A": "Tangled", "B": "Brave", "C": "Moana", "D": "Frozen" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq799",
+    "question": "In which film does the character Hannibal Lecter first appear?",
+    "answers": { "A": "Red Dragon", "B": "The Silence of the Lambs", "C": "Manhunter", "D": "Hannibal" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq800",
+    "question": "The TV show 'Breaking Bad' is set in which US city?",
+    "answers": { "A": "Phoenix", "B": "Denver", "C": "Albuquerque", "D": "El Paso" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq801",
+    "question": "Which actor played Tony Stark / Iron Man in the Marvel Cinematic Universe?",
+    "answers": { "A": "Chris Evans", "B": "Robert Downey Jr.", "C": "Chris Hemsworth", "D": "Mark Ruffalo" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq802",
+    "question": "How many seasons does the TV show 'Game of Thrones' have?",
+    "answers": { "A": "6", "B": "7", "C": "8", "D": "9" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq803",
+    "question": "Which film is set on the spaceship Nostromo?",
+    "answers": { "A": "2001: A Space Odyssey", "B": "Predator", "C": "Interstellar", "D": "Alien" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq804",
+    "question": "Who played the Terminator in the original 1984 film?",
+    "answers": { "A": "Sylvester Stallone", "B": "Bruce Willis", "C": "Arnold Schwarzenegger", "D": "Dolph Lundgren" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq805",
+    "question": "The phrase 'You talking to me?' is from which film?",
+    "answers": { "A": "Goodfellas", "B": "Raging Bull", "C": "Taxi Driver", "D": "The Godfather" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq806",
+    "question": "Which country produces Champagne?",
+    "answers": { "A": "Italy", "B": "Spain", "C": "Germany", "D": "France" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq807",
+    "question": "What type of pastry is used to make a croissant?",
+    "answers": { "A": "Shortcrust", "B": "Choux", "C": "Filo", "D": "Laminated/puff" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq808",
+    "question": "Sushi originates from which country?",
+    "answers": { "A": "China", "B": "South Korea", "C": "Japan", "D": "Vietnam" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq809",
+    "question": "Which spice is derived from the Crocus flower?",
+    "answers": { "A": "Turmeric", "B": "Saffron", "C": "Paprika", "D": "Cardamom" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq810",
+    "question": "What is the main ingredient in guacamole?",
+    "answers": { "A": "Tomato", "B": "Lime", "C": "Onion", "D": "Avocado" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq811",
+    "question": "Which country is the world's largest producer of coffee?",
+    "answers": { "A": "Colombia", "B": "Ethiopia", "C": "Vietnam", "D": "Brazil" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq812",
+    "question": "Haggis is the national dish of which country?",
+    "answers": { "A": "Ireland", "B": "Wales", "C": "Scotland", "D": "Iceland" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq813",
+    "question": "What is the main grain used in beer production?",
+    "answers": { "A": "Wheat", "B": "Rye", "C": "Barley", "D": "Oats" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq814",
+    "question": "A 'Margherita' pizza traditionally has which toppings?",
+    "answers": { "A": "Pepperoni, olives, cheese", "B": "Tomato, mozzarella, basil", "C": "Ham, pineapple, cheese", "D": "Mushrooms, peppers, onions" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq815",
+    "question": "Which fruit is used to make wine?",
+    "answers": { "A": "Apple", "B": "Cherry", "C": "Grapes", "D": "Plum" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq816",
+    "question": "What gives red wine its colour?",
+    "answers": { "A": "Tannins", "B": "Grape juice", "C": "Grape skins", "D": "Yeast" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq817",
+    "question": "Which country is famous for its Gouda cheese?",
+    "answers": { "A": "France", "B": "Belgium", "C": "Netherlands", "D": "Denmark" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq818",
+    "question": "What is sake brewed from?",
+    "answers": { "A": "Barley", "B": "Rice", "C": "Corn", "D": "Wheat" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq819",
+    "question": "Stilton is a variety of which type of food?",
+    "answers": { "A": "Bread", "B": "Meat", "C": "Cheese", "D": "Wine" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq820",
+    "question": "Which cocktail is made with vodka, tomato juice and spices?",
+    "answers": { "A": "Screwdriver", "B": "Cosmopolitan", "C": "Bloody Mary", "D": "Harvey Wallbanger" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq821",
+    "question": "What is the main ingredient in hummus?",
+    "answers": { "A": "Lentils", "B": "Chickpeas", "C": "Broad beans", "D": "Black beans" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq822",
+    "question": "Which country is the largest producer of olive oil?",
+    "answers": { "A": "Italy", "B": "Greece", "C": "Tunisia", "D": "Spain" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq823",
+    "question": "Which author wrote 'Pride and Prejudice'?",
+    "answers": { "A": "Charlotte Bronte", "B": "Jane Austen", "C": "George Eliot", "D": "Emily Bronte" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq824",
+    "question": "In Shakespeare's 'Romeo and Juliet', what are the two feuding families?",
+    "answers": { "A": "Capulet and Montague", "B": "Verona and Mantua", "C": "Capulet and Benvolio", "D": "Montague and Tybalt" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq825",
+    "question": "Who wrote '1984'?",
+    "answers": { "A": "Aldous Huxley", "B": "Ray Bradbury", "C": "George Orwell", "D": "Arthur Koestler" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq826",
+    "question": "What is the name of the whale in 'Moby-Dick'?",
+    "answers": { "A": "Moby", "B": "Leviathan", "C": "The White Whale", "D": "Moby Dick is the whale's name" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq827",
+    "question": "J.K. Rowling published Harry Potter and the Philosopher's Stone in which year?",
+    "answers": { "A": "1995", "B": "1996", "C": "1997", "D": "1998" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq828",
+    "question": "Which fictional detective lived at 221B Baker Street?",
+    "answers": { "A": "Hercule Poirot", "B": "Miss Marple", "C": "Sherlock Holmes", "D": "Inspector Morse" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq829",
+    "question": "Franz Kafka wrote which novel featuring a man who wakes as an insect?",
+    "answers": { "A": "The Trial", "B": "Amerika", "C": "The Castle", "D": "The Metamorphosis" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq830",
+    "question": "Which author created the character Atticus Finch?",
+    "answers": { "A": "Truman Capote", "B": "Harper Lee", "C": "John Steinbeck", "D": "William Faulkner" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq831",
+    "question": "Don Quixote was written by which author?",
+    "answers": { "A": "Gabriel Garcia Marquez", "B": "Pablo Neruda", "C": "Miguel de Cervantes", "D": "Lope de Vega" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq832",
+    "question": "What is the first book of the Bible?",
+    "answers": { "A": "Exodus", "B": "Psalms", "C": "Leviticus", "D": "Genesis" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq833",
+    "question": "Which Dickens novel features the character Ebenezer Scrooge?",
+    "answers": { "A": "Oliver Twist", "B": "Great Expectations", "C": "A Christmas Carol", "D": "David Copperfield" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq834",
+    "question": "The Booker Prize is awarded annually for fiction written in which language?",
+    "answers": { "A": "French", "B": "English", "C": "Spanish", "D": "German" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq835",
+    "question": "How many plays did Shakespeare write?",
+    "answers": { "A": "27", "B": "37", "C": "47", "D": "57" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq836",
+    "question": "Which element is represented by the symbol 'Fe'?",
+    "answers": { "A": "Fluorine", "B": "Iron", "C": "Francium", "D": "Fermium" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq837",
+    "question": "The Eiffel Tower is located in which city?",
+    "answers": { "A": "Brussels", "B": "Lyon", "C": "Paris", "D": "Marseille" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq838",
+    "question": "What does 'www' stand for in a website address?",
+    "answers": { "A": "World Wide Web", "B": "Western Web Works", "C": "Wireless World Web", "D": "Web Wide World" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq839",
+    "question": "Which company created the iPhone?",
+    "answers": { "A": "Samsung", "B": "Google", "C": "Apple", "D": "Microsoft" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq840",
+    "question": "How many sides does a hexagon have?",
+    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq841",
+    "question": "In Greek mythology, who flew too close to the sun?",
+    "answers": { "A": "Prometheus", "B": "Daedalus", "C": "Hermes", "D": "Icarus" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq842",
+    "question": "What is the largest planet in our solar system?",
+    "answers": { "A": "Saturn", "B": "Neptune", "C": "Jupiter", "D": "Uranus" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq843",
+    "question": "Which currency is used in Japan?",
+    "answers": { "A": "Won", "B": "Yuan", "C": "Yen", "D": "Ringgit" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq844",
+    "question": "How many continents are there on Earth?",
+    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq845",
+    "question": "What is the phobia of spiders called?",
+    "answers": { "A": "Arachnophobia", "B": "Acrophobia", "C": "Agoraphobia", "D": "Ophidiophobia" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq846",
+    "question": "Which gas makes up most of the air we breathe (by volume)?",
+    "answers": { "A": "Oxygen", "B": "Carbon dioxide", "C": "Nitrogen", "D": "Hydrogen" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq847",
+    "question": "What do bees collect from flowers to make honey?",
+    "answers": { "A": "Pollen only", "B": "Nectar", "C": "Resin", "D": "Sap" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq848",
+    "question": "A group of lions is called a what?",
+    "answers": { "A": "Pack", "B": "Herd", "C": "Pride", "D": "Colony" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq849",
+    "question": "Which planet is closest to the Sun?",
+    "answers": { "A": "Venus", "B": "Earth", "C": "Mars", "D": "Mercury" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq850",
+    "question": "What is two to the power of ten?",
+    "answers": { "A": "512", "B": "1024", "C": "2048", "D": "256" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq851",
+    "question": "The Louvre museum is located in which city?",
+    "answers": { "A": "Rome", "B": "Madrid", "C": "London", "D": "Paris" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq852",
+    "question": "Which US state has the most people?",
+    "answers": { "A": "Texas", "B": "New York", "C": "Florida", "D": "California" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq853",
+    "question": "The Great Barrier Reef is located off the coast of which country?",
+    "answers": { "A": "New Zealand", "B": "Australia", "C": "Philippines", "D": "Indonesia" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq854",
+    "question": "Which language is spoken in Brazil?",
+    "answers": { "A": "Spanish", "B": "English", "C": "Portuguese", "D": "French" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq855",
+    "question": "How many days are in a leap year?",
+    "answers": { "A": "364", "B": "365", "C": "366", "D": "367" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq856",
+    "question": "What shape is a stop sign?",
+    "answers": { "A": "Circle", "B": "Hexagon", "C": "Octagon", "D": "Pentagon" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq857",
+    "question": "Which country gifted the Statue of Liberty to the USA?",
+    "answers": { "A": "UK", "B": "France", "C": "Italy", "D": "Spain" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq858",
+    "question": "Which is the only mammal capable of true flight?",
+    "answers": { "A": "Flying squirrel", "B": "Sugar glider", "C": "Bat", "D": "Colugos" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq859",
+    "question": "How many zeros are in one million?",
+    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq860",
+    "question": "The tallest building in the world (as of 2024) is in which city?",
+    "answers": { "A": "Shanghai", "B": "New York", "C": "Dubai", "D": "Kuala Lumpur" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq861",
+    "question": "What is the name of the largest ocean current system?",
+    "answers": { "A": "Gulf Stream", "B": "Thermohaline circulation", "C": "El Nino", "D": "Pacific Gyre" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq862",
+    "question": "Which country has the longest coastline in the world?",
+    "answers": { "A": "Russia", "B": "USA", "C": "Norway", "D": "Canada" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq863",
+    "question": "The philosopher Socrates was from which ancient city?",
+    "answers": { "A": "Sparta", "B": "Corinth", "C": "Athens", "D": "Thebes" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq864",
+    "question": "Mahatma Gandhi led independence movement in which country?",
+    "answers": { "A": "Pakistan", "B": "India", "C": "Bangladesh", "D": "Ceylon" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq865",
+    "question": "In which decade was the internet made publicly available?",
+    "answers": { "A": "1970s", "B": "1980s", "C": "1990s", "D": "2000s" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq866",
+    "question": "What is the national animal of Scotland?",
+    "answers": { "A": "Stag", "B": "Lion", "C": "Unicorn", "D": "Eagle" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq867",
+    "question": "Which TV show features the Stark family?",
+    "answers": { "A": "The Crown", "B": "Peaky Blinders", "C": "Game of Thrones", "D": "Vikings" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq868",
+    "question": "A dodecagon has how many sides?",
+    "answers": { "A": "10", "B": "11", "C": "12", "D": "13" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq869",
+    "question": "Which country's flag features a maple leaf?",
+    "answers": { "A": "Australia", "B": "New Zealand", "C": "Ireland", "D": "Canada" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq870",
+    "question": "What does the 'E' stand for in E=mc²?",
+    "answers": { "A": "Electrons", "B": "Entropy", "C": "Energy", "D": "Electromagnetism" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq871",
+    "question": "Which country invented paper?",
+    "answers": { "A": "Egypt", "B": "Greece", "C": "China", "D": "India" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq872",
+    "question": "The Pyramids of Giza are located near which city?",
+    "answers": { "A": "Luxor", "B": "Alexandria", "C": "Aswan", "D": "Cairo" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq873",
+    "question": "What fraction of the Earth is covered by water?",
+    "answers": { "A": "About 50%", "B": "About 61%", "C": "About 71%", "D": "About 81%" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq874",
+    "question": "Which famous scientist was born on Pi Day (March 14)?",
+    "answers": { "A": "Isaac Newton", "B": "Nikola Tesla", "C": "Stephen Hawking", "D": "Albert Einstein" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq875",
+    "question": "Which sport uses a shuttlecock?",
+    "answers": { "A": "Squash", "B": "Badminton", "C": "Racquetball", "D": "Pickleball" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq876",
+    "question": "In which year did the first iPhone launch?",
+    "answers": { "A": "2005", "B": "2006", "C": "2007", "D": "2008" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq877",
+    "question": "Which programming language shares its name with a type of coffee?",
+    "answers": { "A": "Python", "B": "Ruby", "C": "Java", "D": "Perl" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq878",
+    "question": "What is the most spoken language in the world by number of native speakers?",
+    "answers": { "A": "English", "B": "Spanish", "C": "Hindi", "D": "Mandarin Chinese" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq879",
+    "question": "Which organ is affected by cirrhosis?",
+    "answers": { "A": "Kidney", "B": "Heart", "C": "Liver", "D": "Lung" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq880",
+    "question": "What is the tallest mountain in the world?",
+    "answers": { "A": "K2", "B": "Kangchenjunga", "C": "Lhotse", "D": "Mount Everest" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq881",
+    "question": "Which vitamin is produced by the skin in sunlight?",
+    "answers": { "A": "Vitamin A", "B": "Vitamin B12", "C": "Vitamin C", "D": "Vitamin D" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq882",
+    "question": "What is the largest internal organ in the human body?",
+    "answers": { "A": "Heart", "B": "Lungs", "C": "Liver", "D": "Brain" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq883",
+    "question": "Which gas is commonly called 'laughing gas'?",
+    "answers": { "A": "Carbon dioxide", "B": "Nitrous oxide", "C": "Helium", "D": "Nitrogen" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq884",
+    "question": "The speed of sound at sea level is approximately how many km/h?",
+    "answers": { "A": "900 km/h", "B": "1100 km/h", "C": "1234 km/h", "D": "1500 km/h" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq885",
+    "question": "What is the capital of Canada?",
+    "answers": { "A": "Toronto", "B": "Montreal", "C": "Vancouver", "D": "Ottawa" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq886",
+    "question": "Which country has the longest land border with Russia?",
+    "answers": { "A": "China", "B": "Kazakhstan", "C": "Mongolia", "D": "Finland" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq887",
+    "question": "The Amazon River flows into which ocean?",
+    "answers": { "A": "Pacific", "B": "Caribbean Sea", "C": "Atlantic", "D": "Gulf of Mexico" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq888",
+    "question": "Which country has the most UNESCO World Heritage Sites?",
+    "answers": { "A": "France", "B": "China", "C": "Italy", "D": "Spain" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq889",
+    "question": "What is pi (approximately) to two decimal places?",
+    "answers": { "A": "3.12", "B": "3.14", "C": "3.16", "D": "3.18" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq890",
+    "question": "How many keys are on a standard piano?",
+    "answers": { "A": "76", "B": "80", "C": "84", "D": "88" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq891",
+    "question": "Which artist painted 'The Starry Night'?",
+    "answers": { "A": "Paul Gauguin", "B": "Claude Monet", "C": "Vincent van Gogh", "D": "Paul Cezanne" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq892",
+    "question": "Which planet rotates on its side?",
+    "answers": { "A": "Neptune", "B": "Saturn", "C": "Uranus", "D": "Venus" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq893",
+    "question": "Which famous ship sank on its maiden voyage in 1912?",
+    "answers": { "A": "Lusitania", "B": "Olympic", "C": "Britannic", "D": "Titanic" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq894",
+    "question": "In the human body, where are red blood cells produced?",
+    "answers": { "A": "Liver", "B": "Spleen", "C": "Bone marrow", "D": "Kidneys" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq895",
+    "question": "Which war was fought between the North and South in the United States?",
+    "answers": { "A": "The Revolutionary War", "B": "The Civil War", "C": "The War of 1812", "D": "The Spanish-American War" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq896",
+    "question": "What is the currency of India?",
+    "answers": { "A": "Rupee", "B": "Taka", "C": "Lira", "D": "Baht" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq897",
+    "question": "Who wrote 'The Canterbury Tales'?",
+    "answers": { "A": "William Shakespeare", "B": "John Milton", "C": "Geoffrey Chaucer", "D": "Edmund Spenser" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq898",
+    "question": "Which country is the birthplace of the Olympic Games?",
+    "answers": { "A": "Italy", "B": "Greece", "C": "Turkey", "D": "France" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq899",
+    "question": "How many players are on a standard volleyball team on court?",
+    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq900",
+    "question": "What is the chemical symbol for sodium?",
+    "answers": { "A": "So", "B": "Sd", "C": "Na", "D": "Nm" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq901",
+    "question": "Which US president appears on the $100 bill?",
+    "answers": { "A": "Abraham Lincoln", "B": "George Washington", "C": "Benjamin Franklin", "D": "Thomas Jefferson" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq902",
+    "question": "A group of crows is called a what?",
+    "answers": { "A": "Flock", "B": "Murder", "C": "Colony", "D": "Gaggle" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq903",
+    "question": "Which vitamin is most associated with eyesight?",
+    "answers": { "A": "Vitamin A", "B": "Vitamin B", "C": "Vitamin C", "D": "Vitamin E" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq904",
+    "question": "Who painted the Sistine Chapel ceiling?",
+    "answers": { "A": "Leonardo da Vinci", "B": "Raphael", "C": "Donatello", "D": "Michelangelo" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq905",
+    "question": "What is the capital of Argentina?",
+    "answers": { "A": "Montevideo", "B": "Santiago", "C": "Buenos Aires", "D": "Lima" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq906",
+    "question": "Which monarch was known as the 'Virgin Queen'?",
+    "answers": { "A": "Mary Queen of Scots", "B": "Queen Victoria", "C": "Queen Elizabeth I", "D": "Queen Anne" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq907",
+    "question": "What is the main component of the Sun?",
+    "answers": { "A": "Liquid lava", "B": "Helium plasma", "C": "Hydrogen plasma", "D": "Carbon gas" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq908",
+    "question": "Which country is home to the Taj Mahal?",
+    "answers": { "A": "Pakistan", "B": "Bangladesh", "C": "India", "D": "Nepal" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq909",
+    "question": "How many planets are in our solar system?",
+    "answers": { "A": "7", "B": "8", "C": "9", "D": "10" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq910",
+    "question": "Which of these is NOT a primary colour (in traditional painting)?",
+    "answers": { "A": "Red", "B": "Blue", "C": "Green", "D": "Yellow" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq911",
+    "question": "In computing, what does CPU stand for?",
+    "answers": { "A": "Central Processing Unit", "B": "Computer Power Unit", "C": "Core Processing Unit", "D": "Coded Program Utility" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq912",
+    "question": "Which country gave us the word 'sauna'?",
+    "answers": { "A": "Sweden", "B": "Norway", "C": "Finland", "D": "Iceland" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq913",
+    "question": "What is the smallest prime number?",
+    "answers": { "A": "0", "B": "1", "C": "2", "D": "3" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq914",
+    "question": "Which country has a flag with just one colour and one symbol (a cedar tree)?",
+    "answers": { "A": "Jordan", "B": "Lebanon", "C": "Cyprus", "D": "Bahrain" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq915",
+    "question": "Who invented the telephone?",
+    "answers": { "A": "Thomas Edison", "B": "Nikola Tesla", "C": "Alexander Graham Bell", "D": "Guglielmo Marconi" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq916",
+    "question": "How many sides does a pentagon have?",
+    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq917",
+    "question": "The battle of Waterloo took place in which modern-day country?",
+    "answers": { "A": "France", "B": "Netherlands", "C": "Belgium", "D": "Germany" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq918",
+    "question": "What is the most widely practiced religion in the world?",
+    "answers": { "A": "Islam", "B": "Hinduism", "C": "Christianity", "D": "Buddhism" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq919",
+    "question": "A horse with a mix of white and another colour coat is called what?",
+    "answers": { "A": "Roan", "B": "Pinto", "C": "Bay", "D": "Dun" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq920",
+    "question": "Which country is home to the Serengeti National Park?",
+    "answers": { "A": "Kenya", "B": "South Africa", "C": "Tanzania", "D": "Botswana" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq921",
+    "question": "Which country is home to the ancient city of Petra?",
+    "answers": { "A": "Israel", "B": "Jordan", "C": "Saudi Arabia", "D": "Lebanon" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq922",
+    "question": "What is the term for a baby kangaroo?",
+    "answers": { "A": "Cub", "B": "Pup", "C": "Joey", "D": "Kit" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq923",
+    "question": "Which famous wall runs across northern England?",
+    "answers": { "A": "Offa's Dyke", "B": "Antonine Wall", "C": "Hardian's Wall", "D": "Hadrian's Wall" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq924",
+    "question": "Who wrote 'The Divine Comedy'?",
+    "answers": { "A": "Petrarch", "B": "Boccaccio", "C": "Dante Alighieri", "D": "Virgil" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq925",
+    "question": "What is the rarest blood type?",
+    "answers": { "A": "A negative", "B": "B negative", "C": "O negative", "D": "AB negative" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq926",
+    "question": "The Great Sphinx of Giza has the head of what?",
+    "answers": { "A": "A lion", "B": "A pharaoh", "C": "A ram", "D": "A falcon" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq927",
+    "question": "Which US state is known as the 'Sunshine State'?",
+    "answers": { "A": "California", "B": "Arizona", "C": "Florida", "D": "Hawaii" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq928",
+    "question": "What is the national sport of Japan?",
+    "answers": { "A": "Judo", "B": "Karate", "C": "Baseball", "D": "Sumo" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq929",
+    "question": "Which French artist is famous for painting ballerinas?",
+    "answers": { "A": "Edouard Manet", "B": "Paul Gauguin", "C": "Edgar Degas", "D": "Henri Matisse" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq930",
+    "question": "What is the longest bone in the human body?",
+    "answers": { "A": "Humerus", "B": "Tibia", "C": "Femur", "D": "Radius" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq931",
+    "question": "The Nobel Peace Prize is awarded in which city?",
+    "answers": { "A": "Stockholm", "B": "Copenhagen", "C": "Helsinki", "D": "Oslo" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq932",
+    "question": "What is the hardest rock (geologically)?",
+    "answers": { "A": "Granite", "B": "Obsidian", "C": "Basalt", "D": "Quartzite" },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq933",
+    "question": "In which country was the game of chess invented?",
+    "answers": { "A": "Persia", "B": "China", "C": "India", "D": "Arabia" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq934",
+    "question": "Which ocean is the smallest in the world?",
+    "answers": { "A": "Indian", "B": "Southern", "C": "Atlantic", "D": "Arctic" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq935",
+    "question": "Mandela served as President of South Africa from 1994 to which year?",
+    "answers": { "A": "1997", "B": "1999", "C": "2001", "D": "2003" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq936",
+    "question": "Which chemical element is a liquid at room temperature (besides mercury)?",
+    "answers": { "A": "Phosphorus", "B": "Gallium", "C": "Bromine", "D": "Cesium" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq937",
+    "question": "How many time zones does Russia span?",
+    "answers": { "A": "9", "B": "10", "C": "11", "D": "12" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq938",
+    "question": "What is the name of the largest moon of Saturn?",
+    "answers": { "A": "Io", "B": "Europa", "C": "Ganymede", "D": "Titan" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq939",
+    "question": "The word 'robot' originates from which language?",
+    "answers": { "A": "German", "B": "Czech", "C": "Polish", "D": "Slovak" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq940",
+    "question": "Which Hitchcock film features a shower scene that became iconic?",
+    "answers": { "A": "Vertigo", "B": "The Birds", "C": "Psycho", "D": "Rear Window" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq941",
+    "question": "What is the collective noun for a group of owls?",
+    "answers": { "A": "A gaggle", "B": "A parliament", "C": "A murder", "D": "A shrewdness" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq942",
+    "question": "Which two elements make up water?",
+    "answers": { "A": "Hydrogen and Nitrogen", "B": "Oxygen and Nitrogen", "C": "Hydrogen and Oxygen", "D": "Helium and Oxygen" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq943",
+    "question": "Which continent has the most countries?",
+    "answers": { "A": "Asia", "B": "South America", "C": "Africa", "D": "Europe" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq944",
+    "question": "The Colosseum is located in which city?",
+    "answers": { "A": "Naples", "B": "Milan", "C": "Florence", "D": "Rome" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq945",
+    "question": "Which was the first country to reach the South Pole?",
+    "answers": { "A": "UK", "B": "USA", "C": "Norway", "D": "Sweden" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq946",
+    "question": "In music, what does 'fortissimo' mean?",
+    "answers": { "A": "Very slow", "B": "Very quiet", "C": "Very loud", "D": "Very fast" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq947",
+    "question": "Which country is home to the Fjords?",
+    "answers": { "A": "Sweden", "B": "Denmark", "C": "Iceland", "D": "Norway" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq948",
+    "question": "Canine teeth are also known as what?",
+    "answers": { "A": "Molars", "B": "Incisors", "C": "Fangs", "D": "Bicuspids" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq949",
+    "question": "Which letter is worth 10 points in Scrabble?",
+    "answers": { "A": "Q", "B": "Z", "C": "X", "D": "J" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq950",
+    "question": "What is the most visited city in the world (by international tourists)?",
+    "answers": { "A": "Paris", "B": "Bangkok", "C": "London", "D": "Dubai" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq951",
+    "question": "Which country has the world's oldest monarchy still in existence?",
+    "answers": { "A": "UK", "B": "Sweden", "C": "Japan", "D": "Denmark" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq952",
+    "question": "What is the name of the layer of the atmosphere closest to Earth?",
+    "answers": { "A": "Stratosphere", "B": "Mesosphere", "C": "Troposphere", "D": "Thermosphere" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq953",
+    "question": "How many teeth does an adult human have (including wisdom teeth)?",
+    "answers": { "A": "28", "B": "30", "C": "32", "D": "34" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq954",
+    "question": "What is the capital of Turkey?",
+    "answers": { "A": "Istanbul", "B": "Ankara", "C": "Izmir", "D": "Bursa" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq955",
+    "question": "Which sport is played at Wimbledon?",
+    "answers": { "A": "Cricket", "B": "Golf", "C": "Badminton", "D": "Tennis" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq956",
+    "question": "What does DNA do in cells?",
+    "answers": { "A": "Carries oxygen", "B": "Stores genetic information", "C": "Produces energy", "D": "Digests nutrients" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq957",
+    "question": "Which country has the second largest population in the world?",
+    "answers": { "A": "China", "B": "USA", "C": "India", "D": "Indonesia" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq958",
+    "question": "Big Ben is the nickname for the bell in which tower?",
+    "answers": { "A": "Tower of London", "B": "Elizabeth Tower", "C": "Victoria Tower", "D": "Westminster Abbey" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq959",
+    "question": "Which country has red and white as its flag colours (just those two)?",
+    "answers": { "A": "Poland", "B": "Austria", "C": "Switzerland", "D": "All of the above" },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq960",
+    "question": "What is the name of the fairy in Peter Pan?",
+    "answers": { "A": "Silvermist", "B": "Rosetta", "C": "Tinker Bell", "D": "Periwinkle" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq961",
+    "question": "In which country is the Uffizi Gallery?",
+    "answers": { "A": "Spain", "B": "France", "C": "Italy", "D": "Portugal" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq962",
+    "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+    "answers": { "A": "Mercury", "B": "Venus", "C": "Mars", "D": "Jupiter" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq963",
+    "question": "Which element has the atomic number 1?",
+    "answers": { "A": "Helium", "B": "Lithium", "C": "Hydrogen", "D": "Carbon" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq964",
+    "question": "In 'The Simpsons', what is the name of Homer's neighbour?",
+    "answers": { "A": "Ned Flanders", "B": "Ned Hardy", "C": "Ted Flanders", "D": "Rod Flanders" },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq965",
+    "question": "What is the fastest land animal?",
+    "answers": { "A": "Pronghorn antelope", "B": "Lion", "C": "Cheetah", "D": "Springbok" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq966",
+    "question": "Which country is known as the 'Pearl of the Indian Ocean'?",
+    "answers": { "A": "Maldives", "B": "Sri Lanka", "C": "Seychelles", "D": "Mauritius" },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq967",
+    "question": "The monetary unit of China is called what?",
+    "answers": { "A": "Won", "B": "Yen", "C": "Baht", "D": "Yuan" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq968",
+    "question": "Who was the first President of the United States?",
+    "answers": { "A": "Benjamin Franklin", "B": "John Adams", "C": "George Washington", "D": "Thomas Jefferson" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq969",
+    "question": "A decagon has how many sides?",
+    "answers": { "A": "8", "B": "9", "C": "10", "D": "11" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq970",
+    "question": "What is the most common type of star in the Milky Way?",
+    "answers": { "A": "Blue giant", "B": "Yellow dwarf", "C": "White dwarf", "D": "Red dwarf" },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq971",
+    "question": "In which year did humans first land on the Moon?",
+    "answers": { "A": "1967", "B": "1968", "C": "1969", "D": "1970" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq972",
+    "question": "What is the capital of Egypt?",
+    "answers": { "A": "Alexandria", "B": "Luxor", "C": "Cairo", "D": "Giza" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq973",
+    "question": "The Amazon river is in which continent?",
+    "answers": { "A": "Africa", "B": "Asia", "C": "South America", "D": "North America" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq974",
+    "question": "What is measured in Decibels?",
+    "answers": { "A": "Light intensity", "B": "Sound intensity", "C": "Temperature", "D": "Pressure" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq975",
+    "question": "How many letters are in the English alphabet?",
+    "answers": { "A": "24", "B": "25", "C": "26", "D": "27" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq976",
+    "question": "Which philosopher wrote 'The Republic'?",
+    "answers": { "A": "Aristotle", "B": "Socrates", "C": "Plato", "D": "Epicurus" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq977",
+    "question": "What is the largest species of shark?",
+    "answers": { "A": "Great White Shark", "B": "Bull Shark", "C": "Whale Shark", "D": "Tiger Shark" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq978",
+    "question": "Which country invented the printing press?",
+    "answers": { "A": "China", "B": "Germany", "C": "Italy", "D": "France" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq979",
+    "question": "What is the largest continent by area?",
+    "answers": { "A": "Africa", "B": "North America", "C": "Antarctica", "D": "Asia" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq980",
+    "question": "What term describes a word that reads the same forwards and backwards?",
+    "answers": { "A": "Anagram", "B": "Oxymoron", "C": "Palindrome", "D": "Homophone" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq981",
+    "question": "Mount Kilimanjaro is in which country?",
+    "answers": { "A": "Kenya", "B": "Ethiopia", "C": "Uganda", "D": "Tanzania" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq982",
+    "question": "Which country has the longest written constitution in the world?",
+    "answers": { "A": "USA", "B": "Germany", "C": "India", "D": "Brazil" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq983",
+    "question": "What is the main ingredient in falafel?",
+    "answers": { "A": "Lentils", "B": "Chickpeas", "C": "Kidney beans", "D": "Peas" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq984",
+    "question": "Which band released the album 'Dark Side of the Moon'?",
+    "answers": { "A": "Led Zeppelin", "B": "The Doors", "C": "Pink Floyd", "D": "Deep Purple" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq985",
+    "question": "How many metres in a kilometre?",
+    "answers": { "A": "100", "B": "500", "C": "1000", "D": "10000" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq986",
+    "question": "What does the term 'teetotaller' mean?",
+    "answers": { "A": "Someone who drinks only tea", "B": "Someone who abstains from alcohol entirely", "C": "Someone who only drinks beer", "D": "Someone who drinks very little" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq987",
+    "question": "What sport involves yelling 'FORE!'?",
+    "answers": { "A": "Cricket", "B": "Golf", "C": "Tennis", "D": "Polo" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq988",
+    "question": "Which country is Mount Fuji located in?",
+    "answers": { "A": "China", "B": "Japan", "C": "South Korea", "D": "Nepal" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq989",
+    "question": "The constellation Orion is named after a figure from which mythology?",
+    "answers": { "A": "Roman", "B": "Norse", "C": "Egyptian", "D": "Greek" },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq990",
+    "question": "Which number is considered unlucky in many Western cultures?",
+    "answers": { "A": "11", "B": "12", "C": "13", "D": "14" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq991",
+    "question": "In which city is the Sagrada Familia located?",
+    "answers": { "A": "Madrid", "B": "Seville", "C": "Valencia", "D": "Barcelona" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq992",
+    "question": "Which country was the first to use paper money?",
+    "answers": { "A": "Egypt", "B": "India", "C": "China", "D": "Persia" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq993",
+    "question": "Bram Stoker's 'Dracula' is set primarily in which country?",
+    "answers": { "A": "Bulgaria", "B": "Hungary", "C": "Romania", "D": "Slovakia" },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq994",
+    "question": "What is the most popular sport in the world by participation and viewership?",
+    "answers": { "A": "Basketball", "B": "Cricket", "C": "Football (Soccer)", "D": "Tennis" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq995",
+    "question": "Which country has the highest number of Nobel Prize winners per capita?",
+    "answers": { "A": "USA", "B": "UK", "C": "Sweden", "D": "Switzerland" },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq996",
+    "question": "What is the Beaufort scale used to measure?",
+    "answers": { "A": "Earthquakes", "B": "Wind speed", "C": "Ocean depth", "D": "Rainfall" },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq997",
+    "question": "Which is the only vowel not on the top row of a standard QWERTY keyboard?",
+    "answers": { "A": "A", "B": "I", "C": "O", "D": "E" },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq998",
+    "question": "What is the capital of Iceland?",
+    "answers": { "A": "Akureyri", "B": "Hafnarfjordur", "C": "Reykjavik", "D": "Selfoss" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq999",
+    "question": "Which element is used in thermometers (traditionally)?",
+    "answers": { "A": "Tin", "B": "Lead", "C": "Silver", "D": "Mercury" },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1000",
+    "question": "How many strings does a standard violin have?",
+    "answers": { "A": "3", "B": "4", "C": "5", "D": "6" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1001",
+    "question": "In which country is the Kremlin located?",
+    "answers": { "A": "Ukraine", "B": "Belarus", "C": "Russia", "D": "Kazakhstan" },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1002",
+    "question": "What is the name of the ship in which the Pilgrims sailed to America in 1620?",
+    "answers": { "A": "Santa Maria", "B": "Mayflower", "C": "Golden Hind", "D": "Discovery" },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1003",
+    "question": "Which bird is the symbol of peace?",
+    "answers": { "A": "Swan", "B": "Crane", "C": "White Dove", "D": "Albatross" },
+    "correct": "C",
+    "difficulty": "easy"
   }
 ];
 
