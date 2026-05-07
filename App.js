@@ -32,7 +32,7 @@ async function scheduleDailyNotification(hour = 9) {
     const msg = NOTIF_MSGS[Math.floor(Math.random() * NOTIF_MSGS.length)];
     await Notifications.scheduleNotificationAsync({
       content: { title: msg.title, body: msg.body, sound: true },
-      trigger: { hour, minute: 0, repeats: true },
+      trigger: { type: 'daily', hour, minute: 0 },
     });
   } catch (e) { console.log('Notif error:', e); }
 }

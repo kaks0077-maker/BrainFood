@@ -1,13 +1,14 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useFocusEffect } from '@react-navigation/native';
 import { useTheme } from '../ThemeContext';
 export default function StatsScreen() {
   const { theme: t } = useTheme();
   const [cards, setCards] = useState({ streak: 0, bestStreak: 0, seen: 0, favs: 0 });
   const [quiz, setQuiz] = useState(null);
 
-  useEffect(() => { load(); }, []);
+  useFocusEffect(useCallback(() => { load(); }, []));
 
   async function load() {
     try {

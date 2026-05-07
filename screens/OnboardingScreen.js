@@ -15,7 +15,7 @@ const SLIDES = [
   },
   {
     emoji: '🧠',
-    title: '1000 Things to Know',
+    title: 'Endless Things to Know',
     sub: 'Science, history, psychology, economics, trivia and more — all in your pocket.',
     accent: '#7bed9f',
   },
