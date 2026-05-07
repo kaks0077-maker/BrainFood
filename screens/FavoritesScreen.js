@@ -1,6 +1,7 @@
 ﻿import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Speech from 'expo-speech';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
 import { ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '../ThemeContext';
 import { CARDS, CAT_COLOR, DIFF_LABELS } from '../data';
@@ -11,7 +12,7 @@ export default function FavoritesScreen() {
   const [search, setSearch] = useState('');
   const [speaking, setSpeaking] = useState(null);
 
-  useEffect(() => { load(); }, []);
+  useFocusEffect(useCallback(() => { load(); }, []));
 
   async function load() {
     try {
@@ -39,7 +40,7 @@ export default function FavoritesScreen() {
   function speakCard(card) {
     if (speaking === card.id) { Speech.stop(); setSpeaking(null); return; }
     Speech.stop();
-    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('🧠 ', '')}`, {
+    Speech.speak(`${card.hook}. ${card.fact}.`, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => setSpeaking(null),
       onError: () => setSpeaking(null),

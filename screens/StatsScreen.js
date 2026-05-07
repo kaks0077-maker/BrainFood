@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { useTheme } from '../ThemeContext';
@@ -7,6 +7,8 @@ export default function StatsScreen() {
   const { theme: t } = useTheme();
   const [cards, setCards] = useState({ streak: 0, bestStreak: 0, seen: 0, favs: 0 });
   const [quiz, setQuiz] = useState(null);
+  const [recentSessions, setRecentSessions] = useState([]);
+  const [bestSession, setBestSession] = useState(null);
 
   useFocusEffect(useCallback(() => { load(); }, []));
 
@@ -31,6 +33,9 @@ export default function StatsScreen() {
       const avgAcc = Math.round(hist.reduce((a, b) => a + b.accuracy, 0) / hist.length);
       const bestAcc = Math.max(...hist.map(b => b.accuracy));
       setQuiz({ sessions: hist.length, avgAcc, bestAcc, totalQ, correct, wrong });
+      setRecentSessions(hist.slice(0, 3));
+      const best = hist.reduce((a, b) => b.accuracy > a.accuracy ? b : a, hist[0]);
+      setBestSession(best);
     } catch (e) {}
   }
 
@@ -92,10 +97,45 @@ export default function StatsScreen() {
               <Text style={[styles.cwLabel, { color: t.textMuted }]}>OVERALL</Text>
             </View>
           </View>
+
+          {/* BEST SESSION */}
+          {bestSession && (
+            <View style={[styles.bestCard, { backgroundColor: t.card, borderColor: 'rgba(255,215,0,0.35)' }]}>
+              <Text style={styles.bestLabel}>{'🏅 PERSONAL BEST'}</Text>
+              <View style={styles.bestRow}>
+                <Text style={[styles.bestAcc, { color: accuracyColor(bestSession.accuracy) }]}>{bestSession.accuracy}%</Text>
+                <View>
+                  <Text style={[styles.bestDetail, { color: t.text }]}>{bestSession.correct}/{bestSession.total} correct</Text>
+                  <Text style={[styles.bestDate, { color: t.textMuted }]}>{formatDate(bestSession.ts)}</Text>
+                </View>
+              </View>
+            </View>
+          )}
+
+          {/* RECENT SESSIONS */}
+          <Text style={[styles.sectionLabel, { color: t.textMuted, marginTop: 4 }]}>{'🕐 RECENT SESSIONS'}</Text>
+          {recentSessions.map((s, i) => (
+            <View key={i} style={[styles.sessionRow, { backgroundColor: t.card, borderColor: i === 0 ? 'rgba(255,215,0,0.2)' : t.cardBorder }]}>
+              <View style={styles.sessionLeft}>
+                <Text style={styles.sessionEmoji}>{s.accuracy >= 80 ? '🏆' : s.accuracy >= 60 ? '🎯' : '💪'}</Text>
+                <View>
+                  <Text style={[styles.sessionDate, { color: t.text }]}>{formatDate(s.ts)}</Text>
+                  <Text style={[styles.sessionSub, { color: t.textMuted }]}>{s.correct}/{s.total} correct</Text>
+                </View>
+              </View>
+              <View style={[styles.sessionBadge, { backgroundColor: accuracyColor(s.accuracy) + '22' }]}>
+                <Text style={[styles.sessionAcc, { color: accuracyColor(s.accuracy) }]}>{s.accuracy}%</Text>
+              </View>
+            </View>
+          ))}
         </>
       )}
     </ScrollView>
   );
+}
+
+function formatDate(ts) {
+  return new Date(ts).toLocaleDateString([], { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
 function accuracyColor(pct) {
@@ -132,4 +172,17 @@ const styles = StyleSheet.create({
   cwNum: { fontSize: 18, fontWeight: '900', color: '#fff' },
   cwLabel: { fontSize: 9, fontWeight: '800', letterSpacing: 0.8 },
   cwDivider: { width: 1 },
+  bestCard: { borderRadius: 16, borderWidth: 1, padding: 14, gap: 8 },
+  bestLabel: { fontSize: 9, fontWeight: '900', color: 'rgba(255,215,0,0.7)', letterSpacing: 1.5 },
+  bestRow: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  bestAcc: { fontSize: 36, fontWeight: '900' },
+  bestDetail: { fontSize: 14, fontWeight: '800' },
+  bestDate: { fontSize: 11, fontWeight: '600', marginTop: 2 },
+  sessionRow: { borderRadius: 14, borderWidth: 1, padding: 12, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  sessionLeft: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  sessionEmoji: { fontSize: 22 },
+  sessionDate: { fontSize: 13, fontWeight: '800' },
+  sessionSub: { fontSize: 11, fontWeight: '600', marginTop: 1 },
+  sessionBadge: { borderRadius: 8, paddingHorizontal: 10, paddingVertical: 4 },
+  sessionAcc: { fontSize: 14, fontWeight: '900' },
 });

@@ -35,11 +35,23 @@ const SLIDES = [
 ];
 
 const NOTIF_TIMES = [
+  { label: '6am', hour: 6 },
   { label: '7am', hour: 7 },
+  { label: '8am', hour: 8 },
   { label: '9am', hour: 9 },
+  { label: '10am', hour: 10 },
+  { label: '11am', hour: 11 },
   { label: '12pm', hour: 12 },
+  { label: '1pm', hour: 13 },
+  { label: '2pm', hour: 14 },
+  { label: '3pm', hour: 15 },
+  { label: '4pm', hour: 16 },
+  { label: '5pm', hour: 17 },
   { label: '6pm', hour: 18 },
+  { label: '7pm', hour: 19 },
+  { label: '8pm', hour: 20 },
   { label: '9pm', hour: 21 },
+  { label: '10pm', hour: 22 },
 ];
 
 export default function OnboardingScreen({ onDone }) {
@@ -109,7 +121,7 @@ export default function OnboardingScreen({ onDone }) {
           </TouchableOpacity>
           {slide.isNotif && (
             <TouchableOpacity onPress={skipNotif} style={styles.skipBtn}>
-              <Text style={styles.skipTxt}>Skip notifications</Text>
+              <Text style={styles.skipTxt}>Don't remind me</Text>
             </TouchableOpacity>
           )}
         </View>
@@ -127,12 +139,12 @@ const styles = StyleSheet.create({
   emoji: { fontSize: 80, marginBottom: 24 },
   title: { fontSize: 28, fontWeight: '900', textAlign: 'center', marginBottom: 16, letterSpacing: -0.5 },
   sub: { fontSize: 16, color: 'rgba(255,255,255,0.55)', textAlign: 'center', lineHeight: 24, maxWidth: 300 },
-  timeGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 28, justifyContent: 'center' },
+  timeGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 24, justifyContent: 'center' },
   timeBtn: {
-    paddingHorizontal: 20, paddingVertical: 12, borderRadius: 12,
+    paddingHorizontal: 14, paddingVertical: 10, borderRadius: 12,
     backgroundColor: 'rgba(255,255,255,0.08)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.12)',
   },
-  timeTxt: { fontSize: 16, fontWeight: '700', color: 'rgba(255,255,255,0.7)' },
+  timeTxt: { fontSize: 14, fontWeight: '700', color: 'rgba(255,255,255,0.7)' },
   footer: { paddingBottom: 32, gap: 12 },
   btn: {
     height: 56, borderRadius: 16, justifyContent: 'center', alignItems: 'center',
