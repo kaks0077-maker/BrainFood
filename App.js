@@ -7,10 +7,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
 import { ThemeContext, DARK, LIGHT } from './ThemeContext';
 import FavoritesScreen from './screens/FavoritesScreen';
-import HistoryScreen from './screens/HistoryScreen';
 import LearnScreen from './screens/LearnScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
 import PubQuizScreen from './screens/PubQuizScreen';
+import StatsScreen from './screens/StatsScreen';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -53,10 +53,10 @@ function TabNavigator({ theme }) {
     >
       <Tab.Screen name="Learn" component={LearnScreen}
         options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>🍕</Text>, tabBarLabel: 'LEARN' }} />
-      <Tab.Screen name="History" component={HistoryScreen}
-        options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>📚</Text>, tabBarLabel: 'HISTORY' }} />
       <Tab.Screen name="Favorites" component={FavoritesScreen}
         options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>⭐</Text>, tabBarLabel: 'FAVORITES' }} />
+      <Tab.Screen name="Stats" component={StatsScreen}
+        options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>📊</Text>, tabBarLabel: 'STATS' }} />
     </Tab.Navigator>
   );
 }
