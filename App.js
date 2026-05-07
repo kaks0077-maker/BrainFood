@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
 import { Text } from 'react-native';
@@ -9,6 +10,7 @@ import FavoritesScreen from './screens/FavoritesScreen';
 import HistoryScreen from './screens/HistoryScreen';
 import LearnScreen from './screens/LearnScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
+import PubQuizScreen from './screens/PubQuizScreen';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -36,6 +38,28 @@ async function scheduleDailyNotification(hour = 9) {
 }
 
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+
+function TabNavigator({ theme }) {
+  return (
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: { backgroundColor: theme.tabBg, borderTopColor: theme.tabBorder, height: 60, paddingBottom: 8 },
+        tabBarActiveTintColor: theme.accent,
+        tabBarInactiveTintColor: theme.textMuted,
+        tabBarLabelStyle: { fontSize: 11, fontWeight: '800', letterSpacing: 0.5 },
+      }}
+    >
+      <Tab.Screen name="Learn" component={LearnScreen}
+        options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>🍕</Text>, tabBarLabel: 'LEARN' }} />
+      <Tab.Screen name="History" component={HistoryScreen}
+        options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>📚</Text>, tabBarLabel: 'HISTORY' }} />
+      <Tab.Screen name="Favorites" component={FavoritesScreen}
+        options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>⭐</Text>, tabBarLabel: 'FAVORITES' }} />
+    </Tab.Navigator>
+  );
+}
 
 export default function App() {
   const [theme, setTheme] = useState(DARK);
@@ -68,22 +92,12 @@ export default function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <NavigationContainer>
-        <Tab.Navigator
-          screenOptions={{
-            headerShown: false,
-            tabBarStyle: { backgroundColor: theme.tabBg, borderTopColor: theme.tabBorder, height: 60, paddingBottom: 8 },
-            tabBarActiveTintColor: theme.accent,
-            tabBarInactiveTintColor: theme.textMuted,
-            tabBarLabelStyle: { fontSize: 11, fontWeight: '800', letterSpacing: 0.5 },
-          }}
-        >
-          <Tab.Screen name="Learn" component={LearnScreen}
-            options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>🍕</Text>, tabBarLabel: 'LEARN' }} />
-          <Tab.Screen name="History" component={HistoryScreen}
-            options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>📚</Text>, tabBarLabel: 'HISTORY' }} />
-          <Tab.Screen name="Favorites" component={FavoritesScreen}
-            options={{ tabBarIcon: () => <Text style={{ fontSize: 18 }}>⭐</Text>, tabBarLabel: 'FAVORITES' }} />
-        </Tab.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Main">
+            {() => <TabNavigator theme={theme} />}
+          </Stack.Screen>
+          <Stack.Screen name="PubQuiz" component={PubQuizScreen} />
+        </Stack.Navigator>
       </NavigationContainer>
     </ThemeContext.Provider>
   );

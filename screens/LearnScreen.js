@@ -16,8 +16,8 @@ import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
 const CATS = [
-  { id: 'all', label: '🌍 All' },
-  { id: 'pub', label: '🍺 Pub Quiz' },
+  { id: 'all', emoji: '🌍', label: 'All' },
+  { id: 'pub', emoji: '🍺', label: 'Pub Quiz' },
 ];
 
 function getStreakEmoji(streak) {
@@ -39,7 +39,7 @@ function getStreakMessage(streak) {
   return `${streak} days! Absolutely unstoppable! 🏆`;
 }
 
-export default function LearnScreen() {
+export default function LearnScreen({ navigation }) {
   const { theme, toggleTheme } = useTheme();
   const [card, setCard] = useState(null);
   const [cat, setCat] = useState('all');
@@ -208,7 +208,7 @@ export default function LearnScreen() {
   function speakCard() {
     if (!card) return;
     if (speaking) { Speech.stop(); setSpeaking(false); return; }
-    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('🧠 ', '')}`, {
+    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${(card.tip || '').replace('🧠 ', '')}`, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => setSpeaking(false),
       onError: () => setSpeaking(false),
@@ -220,7 +220,7 @@ export default function LearnScreen() {
     if (!card) return;
     Speech.stop();
     clearInterval(apInterval.current);
-    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${card.tip.replace('🧠 ', '')}`, {
+    Speech.speak(`${card.hook}. ${card.fact}. Memory tip: ${(card.tip || '').replace('🧠 ', '')}`, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => {
         let secs = apSpeed;
@@ -296,6 +296,21 @@ export default function LearnScreen() {
 
       <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
+        {/* PUB QUIZ SPECIAL BANNER */}
+        <TouchableOpacity
+          onPress={() => navigation.navigate('PubQuiz')}
+          style={{ borderRadius: 18, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(255,215,0,0.5)', backgroundColor: '#12120a' }}
+          activeOpacity={0.85}
+        >
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
+            <View>
+              <Text style={{ color: 'gold', fontWeight: '900', fontSize: 13, letterSpacing: 1.5 }}>{'🍺 PUB QUIZ SPECIAL'}</Text>
+              <Text style={{ color: 'rgba(255,215,0,0.6)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Who Wants to Be a Millionaire style</Text>
+            </View>
+            <Text style={{ fontSize: 28 }}>🎯</Text>
+          </View>
+        </TouchableOpacity>
+
         {/* HERO */}
         <View style={styles.hero}>
           <View style={styles.heroRow}>
@@ -314,7 +329,7 @@ export default function LearnScreen() {
 
         {/* WORD OF THE DAY */}
         <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
-          <Text style={[styles.wotdLbl, { color: t.textMuted }]}>📖 Word of the Day</Text>
+          <Text style={[styles.wotdLbl, { color: t.textMuted }]}>{'📖 WORD OF THE DAY'}</Text>
           <Text style={[styles.wotdWord, { color: t.text }]}>{wotd.word}</Text>
           <Text style={[styles.wotdPhon, { color: t.textSub }]}>{wotd.phonetic}</Text>
           <Text style={[styles.wotdDef, { color: t.textSub }]}>{wotd.def}</Text>
@@ -367,7 +382,7 @@ export default function LearnScreen() {
                   c.id === 'pub' && { borderColor: 'rgba(255,215,0,0.35)' },
                   c.id === 'pub' && cat === c.id && { backgroundColor: 'rgba(255,215,0,0.12)', borderColor: 'gold' }]}>
                 <Text style={[styles.catTxt, { color: t.textSub }, cat === c.id && { color: t.text }, c.id === 'pub' && cat === c.id && { color: 'gold' }]}>
-                  {c.label}
+                  {c.emoji} {c.label.toUpperCase()}
                 </Text>
               </TouchableOpacity>
             ))}
@@ -382,7 +397,7 @@ export default function LearnScreen() {
             <View style={styles.cardTop}>
               <View style={styles.cardTopL}>
                 <View style={[styles.badge, card.cat === 'pub' && styles.pubBadge]}>
-                  <Text style={[styles.badgeTxt, card.cat === 'pub' && { color: 'gold' }]}>{card.emoji} {card.subject}</Text>
+                  <Text style={[styles.badgeTxt, card.cat === 'pub' && { color: 'gold' }]}>{card.emoji} {card.subject.toUpperCase()}</Text>
                 </View>
                 <Text style={styles.diff}>{DIFF_LABELS[card.diff]}</Text>
               </View>
@@ -394,7 +409,7 @@ export default function LearnScreen() {
             <Text style={styles.factTxt}>{card.fact}</Text>
             <View style={styles.tipRow}>
               <Text style={styles.tipIcon}>🧠</Text>
-              <Text style={styles.tipTxt}>{card.tip.replace('🧠 ', '')}</Text>
+              <Text style={styles.tipTxt}>{(card.tip || '').replace('🧠 ', '')}</Text>
             </View>
             <View style={styles.cardBot}>
               <View style={styles.actionRow}>
@@ -447,7 +462,7 @@ const styles = StyleSheet.create({
   themeBtn: { borderRadius: 20, borderWidth: 1.5, width: 40, height: 40, alignItems: 'center', justifyContent: 'center' },
   themeBtnTxt: { fontSize: 18 },
   wotd: { borderWidth: 1, borderRadius: 16, padding: 14, gap: 3 },
-  wotdLbl: { fontSize: 10, fontWeight: '900', textTransform: 'uppercase', letterSpacing: 1.2 },
+  wotdLbl: { fontSize: 10, fontWeight: '900', letterSpacing: 1.2 },
   wotdWord: { fontSize: 22, fontWeight: '900' },
   wotdPhon: { fontSize: 12, fontStyle: 'italic' },
   wotdDef: { fontSize: 13, fontWeight: '700', lineHeight: 20, marginTop: 4 },
@@ -469,7 +484,7 @@ const styles = StyleSheet.create({
   progFill: { height: '100%', borderRadius: 4 },
   catRow: { flexDirection: 'row', gap: 6, paddingBottom: 4 },
   catBtn: { paddingHorizontal: 12, paddingVertical: 7, borderRadius: 20, borderWidth: 1.5 },
-  catTxt: { fontSize: 11, fontWeight: '800', textTransform: 'uppercase' },
+  catTxt: { fontSize: 11, fontWeight: '800' },
   card: { borderRadius: 26, padding: 24, overflow: 'hidden', minHeight: 280, elevation: 20 },
   cardGlow: { ...StyleSheet.absoluteFillObject, backgroundColor: 'rgba(255,255,255,0.06)', borderRadius: 26 },
   cardRing: { position: 'absolute', bottom: -35, right: -35, width: 160, height: 160, borderRadius: 80, backgroundColor: 'rgba(255,255,255,0.07)' },
@@ -478,7 +493,7 @@ const styles = StyleSheet.create({
   cardTopL: { flexDirection: 'row', alignItems: 'center', gap: 8, flexShrink: 1 },
   badge: { backgroundColor: 'rgba(0,0,0,0.22)', borderRadius: 10, paddingHorizontal: 11, paddingVertical: 4 },
   pubBadge: { backgroundColor: 'rgba(255,215,0,0.2)' },
-  badgeTxt: { fontSize: 11, fontWeight: '900', color: 'rgba(255,255,255,0.88)', textTransform: 'uppercase', letterSpacing: 0.9 },
+  badgeTxt: { fontSize: 11, fontWeight: '900', color: 'rgba(255,255,255,0.88)', letterSpacing: 0.9 },
   diff: { fontSize: 11, color: 'rgba(255,255,255,0.7)' },
   cardNum: { fontSize: 11, fontWeight: '700', color: 'rgba(255,255,255,0.38)' },
   hookBox: { backgroundColor: 'rgba(0,0,0,0.2)', borderRadius: 12, padding: 10, marginBottom: 12, borderLeftWidth: 3, borderLeftColor: 'rgba(255,255,255,0.25)' },
