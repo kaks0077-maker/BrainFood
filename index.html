@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrainFood — Open it when you're bored. Close it when you're smarter.</title>
+<meta name="description" content="BrainFood serves you bite-sized facts on science, history, pub quiz and more. Perfect for curious minds on the go.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --pink: #e8457a; --yellow: #f5c842; --green: #3ec97a; --purple: #7c5cbf;
+    --dark: #111118; --dark2: #1a1a24; --dark3: #22222f;
+    --text: #f0f0f8; --muted: #9090a8; --card-bg: #1e1e2a; --border: rgba(255,255,255,0.07);
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--dark); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 17px; line-height: 1.65; overflow-x: hidden; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; background: rgba(17,17,24,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px; display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
+  .logo-icon { width: 34px; height: 34px; border-radius: 8px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden; }
+  .logo-icon span:nth-child(1) { background: var(--pink); }
+  .logo-icon span:nth-child(2) { background: var(--yellow); }
+  .logo-icon span:nth-child(3) { background: var(--green); }
+  .logo-icon span:nth-child(4) { background: var(--purple); }
+  .nav-cta { background: var(--pink); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 15px; padding: 10px 22px; border-radius: 100px; text-decoration: none; transition: opacity 0.2s; }
+  .nav-cta:hover { opacity: 0.85; }
+
+  .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 24px 80px; position: relative; overflow: hidden; }
+  .hero-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(232,69,122,0.12) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 100px; padding: 7px 16px; font-size: 13px; color: var(--muted); margin-bottom: 32px; animation: fadeUp 0.6s ease both; }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .hero h1 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(42px, 7vw, 82px); line-height: 1.05; letter-spacing: -2px; max-width: 820px; margin-bottom: 24px; animation: fadeUp 0.6s 0.1s ease both; }
+  .hero h1 .accent-pink { color: var(--pink); }
+  .hero h1 .accent-yellow { color: var(--yellow); }
+  .hero-sub { font-size: clamp(16px, 2.5vw, 20px); color: var(--muted); max-width: 560px; margin-bottom: 48px; font-weight: 300; animation: fadeUp 0.6s 0.2s ease both; }
+  .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; animation: fadeUp 0.6s 0.3s ease both; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--pink); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 16px; padding: 15px 32px; border-radius: 100px; text-decoration: none; transition: transform 0.2s, opacity 0.2s; }
+  .btn-primary:hover { transform: translateY(-2px); opacity: 0.9; }
+  .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: rgba(245,200,66,0.08); color: gold; font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 16px; padding: 15px 32px; border-radius: 100px; text-decoration: none; border: 1px solid rgba(245,200,66,0.3); transition: border-color 0.2s, transform 0.2s; }
+  .btn-secondary:hover { border-color: rgba(245,200,66,0.6); transform: translateY(-2px); }
+
+  .phone-wrap { margin-top: 80px; position: relative; display: inline-block; animation: fadeUp 0.6s 0.4s ease both; }
+  .phone { width: 260px; height: 540px; background: var(--dark2); border-radius: 40px; border: 2px solid rgba(255,255,255,0.1); overflow: hidden; position: relative; box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05); }
+  .phone-notch { width: 90px; height: 26px; background: var(--dark); border-radius: 0 0 18px 18px; margin: 0 auto; }
+  .phone-screen { padding: 12px; height: calc(100% - 26px); overflow: hidden; }
+  .phone-quiz-banner { background: #12120a; border: 1px solid rgba(255,215,0,0.4); border-radius: 10px; padding: 7px 10px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .phone-quiz-banner-text { font-size: 8px; font-weight: 800; color: gold; text-transform: uppercase; letter-spacing: 0.5px; }
+  .phone-quiz-banner-sub { font-size: 7px; color: rgba(255,215,0,0.5); margin-top: 1px; }
+  .phone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .phone-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; }
+  .phone-streak { background: rgba(245,200,66,0.15); color: var(--yellow); font-size: 10px; font-weight: 500; padding: 3px 8px; border-radius: 100px; }
+  .phone-card { background: var(--dark3); border-radius: 14px; padding: 12px; margin-bottom: 8px; border: 1px solid var(--border); animation: cardFloat 4s ease-in-out infinite; }
+  @keyframes cardFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+  .card-cat { font-size: 8px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--pink); margin-bottom: 5px; }
+  .card-fact { font-size: 10px; color: var(--text); line-height: 1.5; }
+  .card-actions { display: flex; justify-content: flex-end; gap: 5px; margin-top: 6px; }
+  .card-btn { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.07); display: flex; align-items: center; justify-content: center; font-size: 9px; }
+  .phone-card2 { background: rgba(124,92,191,0.12); border-radius: 14px; padding: 12px; border: 1px solid rgba(124,92,191,0.2); }
+  .card-cat2 { color: var(--purple); font-size: 8px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+  .chip { position: absolute; background: var(--card-bg); border: 1px solid var(--border); border-radius: 100px; padding: 8px 16px; font-size: 13px; white-space: nowrap; color: var(--muted); }
+  .chip-1 { top: 30%; left: -60px; animation: float1 5s ease-in-out infinite; }
+  .chip-2 { top: 55%; right: -70px; animation: float2 6s ease-in-out infinite; }
+  .chip-3 { bottom: 15%; left: -40px; animation: float1 4s 1s ease-in-out infinite; }
+  @keyframes float1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes float2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+
+  .section { padding: 100px 24px; max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; color: var(--pink); margin-bottom: 16px; }
+  .section-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 48px); letter-spacing: -1px; line-height: 1.1; margin-bottom: 16px; }
+  .section-sub { color: var(--muted); font-size: 18px; max-width: 500px; font-weight: 300; margin-bottom: 56px; }
+
+  /* PUB QUIZ SPECIAL */
+  .pub-quiz-section { padding: 100px 24px; position: relative; overflow: hidden; background: #0d0d12; }
+  .pub-quiz-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(245,200,66,0.05) 0%, transparent 70%); pointer-events: none; }
+  .pub-quiz-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .pub-quiz-label { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; color: gold; margin-bottom: 16px; }
+  .pub-quiz-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(28px, 4vw, 48px); letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px; }
+  .pub-quiz-title .gold { color: gold; }
+  .pub-quiz-desc { color: var(--muted); font-size: 17px; font-weight: 300; line-height: 1.7; margin-bottom: 32px; }
+  .pub-quiz-features { display: flex; flex-direction: column; gap: 14px; }
+  .pq-feature { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--muted); }
+  .pq-feature-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(245,200,66,0.1); border: 1px solid rgba(245,200,66,0.2); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+
+  .quiz-mockup { display: flex; flex-direction: column; gap: 10px; }
+  .quiz-card { background: #12120a; border: 1px solid rgba(255,215,0,0.25); border-radius: 20px; padding: 22px; margin-bottom: 4px; }
+  .quiz-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .quiz-counter { font-size: 12px; color: rgba(255,215,0,0.4); font-weight: 600; }
+  .quiz-diff-easy { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 10px; border-radius: 100px; background: rgba(46,204,113,0.15); color: #2ecc71; }
+  .quiz-diff-medium { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 10px; border-radius: 100px; background: rgba(245,200,66,0.15); color: #f5c842; }
+  .quiz-diff-hard { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 10px; border-radius: 100px; background: rgba(232,69,122,0.15); color: #e8457a; }
+  .quiz-question { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.4; color: var(--text); }
+  .quiz-answers { display: flex; flex-direction: column; gap: 8px; }
+  .quiz-answer { display: flex; align-items: center; gap: 12px; padding: 13px 16px; border-radius: 14px; border: 1px solid rgba(255,215,0,0.15); background: rgba(255,215,0,0.03); font-size: 14px; color: var(--text); }
+  .quiz-answer.correct { border-color: #2ecc71; background: rgba(46,204,113,0.1); }
+  .quiz-answer.wrong { border-color: #e8457a; background: rgba(232,69,122,0.1); opacity: 0.6; }
+  .quiz-answer.dim { opacity: 0.25; }
+  .quiz-letter { width: 30px; height: 30px; border-radius: 8px; background: rgba(255,215,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; flex-shrink: 0; color: gold; }
+  .quiz-answer.correct .quiz-letter { background: #2ecc71; color: #fff; }
+  .quiz-answer.wrong .quiz-letter { background: #e8457a; color: #fff; }
+  .quiz-result { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-radius: 14px; border: 1px solid rgba(232,69,122,0.3); background: rgba(232,69,122,0.08); font-size: 14px; color: #e8457a; font-weight: 500; gap: 12px; }
+  .quiz-next { background: gold; color: #0a0a0f; border: none; border-radius: 100px; padding: 8px 18px; font-weight: 800; font-size: 13px; cursor: pointer; font-family: 'DM Sans', sans-serif; white-space: nowrap; }
+
+  .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .topic-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 24px 20px; transition: border-color 0.2s, transform 0.2s; cursor: default; }
+  .topic-card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-3px); }
+  .topic-emoji { font-size: 28px; margin-bottom: 12px; display: block; }
+  .topic-name { font-weight: 500; font-size: 15px; margin-bottom: 4px; }
+  .topic-count { font-size: 13px; color: var(--muted); }
+
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .feature-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 32px 28px; transition: border-color 0.2s; }
+  .feature-card:hover { border-color: rgba(255,255,255,0.15); }
+  .feature-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; }
+  .icon-pink { background: rgba(232,69,122,0.15); }
+  .icon-yellow { background: rgba(245,200,66,0.15); }
+  .icon-green { background: rgba(62,201,122,0.15); }
+  .icon-gold { background: rgba(245,200,66,0.12); border: 1px solid rgba(245,200,66,0.2); }
+  .feature-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 19px; margin-bottom: 10px; }
+  .feature-desc { color: var(--muted); font-size: 15px; line-height: 1.6; font-weight: 300; }
+
+  .cta-section { padding: 80px 24px 120px; text-align: center; }
+  .cta-box { max-width: 700px; margin: 0 auto; background: var(--card-bg); border: 1px solid var(--border); border-radius: 32px; padding: 64px 48px; position: relative; overflow: hidden; }
+  .cta-glow { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(232,69,122,0.1) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+  .cta-box h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(28px, 4vw, 44px); letter-spacing: -1px; margin-bottom: 16px; position: relative; }
+  .cta-box p { color: var(--muted); font-size: 17px; margin-bottom: 40px; font-weight: 300; position: relative; }
+  .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+  footer { border-top: 1px solid var(--border); padding: 32px 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .footer-logo { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: var(--text); text-decoration: none; }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+  .footer-copy { color: var(--muted); font-size: 13px; }
+  .full-section { background: var(--dark2); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 768px) { .pub-quiz-inner { grid-template-columns: 1fr; gap: 40px; } .quiz-mockup { display: none; } }
+  @media (max-width: 600px) { nav { padding: 16px 20px; } .chip { display: none; } .cta-box { padding: 40px 24px; } footer { flex-direction: column; align-items: flex-start; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-icon"><span></span><span></span><span></span><span></span></div>
+    BrainFood
+  </a>
+  <a href="#download" class="nav-cta">Get the app</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-badge"><span class="badge-dot"></span> Available on Android</div>
+  <h1>Open it when<br>you're <span class="accent-pink">bored</span>.<br>Close it when<br>you're <span class="accent-yellow">smarter</span>.</h1>
+  <p class="hero-sub">Bite-sized facts for curious minds — plus a full Who Wants to Be a Millionaire style pub quiz. All free, all offline.</p>
+  <div class="hero-buttons">
+    <a href="#download" class="btn-primary">⬇ Download Free</a>
+    <a href="#pubquiz" class="btn-secondary">🍺 Pub Quiz Special</a>
+  </div>
+
+  <div class="phone-wrap">
+    <div class="chip chip-1">🔬 Science</div>
+    <div class="chip chip-2">🍺 Pub Quiz</div>
+    <div class="chip chip-3">🌍 Geography</div>
+    <div class="phone">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-quiz-banner">
+          <div>
+            <div class="phone-quiz-banner-text">🍺 Pub Quiz Special</div>
+            <div class="phone-quiz-banner-sub">Who Wants to Be a Millionaire style</div>
+          </div>
+          <span style="font-size:14px;">🎯</span>
+        </div>
+        <div class="phone-header">
+          <span class="phone-title">🧠 BrainFood</span>
+          <span class="phone-streak">🔥 7 day streak</span>
+        </div>
+        <div class="phone-card">
+          <div class="card-cat">Science</div>
+          <div class="card-fact">Honey never spoils. Archaeologists have found 3000-year-old honey in Egyptian tombs that was still perfectly edible.</div>
+          <div class="card-actions"><div class="card-btn">♡</div><div class="card-btn">▶</div></div>
+        </div>
+        <div class="phone-card2">
+          <div class="card-cat2">Psychology</div>
+          <div class="card-fact" style="font-size:10px; color: #c0c0d8;">The brain treats social rejection the same way it processes physical pain.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUB QUIZ SPECIAL -->
+<section class="pub-quiz-section" id="pubquiz">
+  <div class="pub-quiz-inner">
+    <div>
+      <div class="pub-quiz-label">🍺 New Feature</div>
+      <h2 class="pub-quiz-title">Pub Quiz <span class="gold">Special</span> Mode</h2>
+      <p class="pub-quiz-desc">Think you know your facts? Put them to the test with our Who Wants to Be a Millionaire style quiz. Four answer options, and a difficulty rating on every single question.</p>
+      <div class="pub-quiz-features">
+        <div class="pq-feature"><div class="pq-feature-icon">🎯</div><span>Pub quiz questions with A/B/C/D answers</span></div>
+        <div class="pq-feature"><div class="pq-feature-icon">📊</div><span>Easy, Medium and Hard difficulty on every question</span></div>
+        <div class="pq-feature"><div class="pq-feature-icon">✅</div><span>Instant feedback — see the correct answer straight away</span></div>
+        <div class="pq-feature"><div class="pq-feature-icon">🏆</div><span>Track your score and accuracy as you go</span></div>
+        <div class="pq-feature"><div class="pq-feature-icon">📶</div><span>100% offline — no internet needed to play</span></div>
+      </div>
+    </div>
+
+    <div class="quiz-mockup">
+      <div class="quiz-card">
+        <div class="quiz-card-top">
+          <span class="quiz-counter">Question 1</span>
+          <span class="quiz-diff-easy">Easy</span>
+        </div>
+        <div class="quiz-question">In what year was the last guillotine execution carried out in France?</div>
+      </div>
+      <div class="quiz-answers">
+        <div class="quiz-answer correct"><div class="quiz-letter">A</div> 1977</div>
+        <div class="quiz-answer wrong"><div class="quiz-letter">B</div> 1961</div>
+        <div class="quiz-answer dim"><div class="quiz-letter" style="background:rgba(255,255,255,0.05);color:var(--muted);">C</div> 1945</div>
+        <div class="quiz-answer dim"><div class="quiz-letter" style="background:rgba(255,255,255,0.05);color:var(--muted);">D</div> 1989</div>
+      </div>
+      <div class="quiz-result">
+        <span>❌ The answer was A — 1977</span>
+        <button class="quiz-next">Next →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<section class="full-section" id="topics">
+  <div class="section">
+    <div class="section-label">What you'll learn</div>
+    <h2 class="section-title">Something new,<br>every single day</h2>
+    <p class="section-sub">Hundreds of topics spanning science, culture, trivia and beyond.</p>
+    <div class="topics-grid">
+      <div class="topic-card"><span class="topic-emoji">🔬</span><div class="topic-name">Science</div><div class="topic-count">How the world works</div></div>
+      <div class="topic-card"><span class="topic-emoji">📜</span><div class="topic-name">History</div><div class="topic-count">Stories from the past</div></div>
+      <div class="topic-card"><span class="topic-emoji">🌍</span><div class="topic-name">Geography</div><div class="topic-count">Around the world</div></div>
+      <div class="topic-card"><span class="topic-emoji">🧠</span><div class="topic-name">Psychology</div><div class="topic-count">The human mind</div></div>
+      <div class="topic-card"><span class="topic-emoji">📐</span><div class="topic-name">Maths</div><div class="topic-count">Numbers & logic</div></div>
+      <div class="topic-card"><span class="topic-emoji">💰</span><div class="topic-name">Economics</div><div class="topic-count">How money moves</div></div>
+      <div class="topic-card"><span class="topic-emoji">✍️</span><div class="topic-name">Grammar</div><div class="topic-count">Language & words</div></div>
+      <div class="topic-card"><span class="topic-emoji">🍕</span><div class="topic-name">Food Science</div><div class="topic-count">What you eat</div></div>
+      <div class="topic-card"><span class="topic-emoji">🍺</span><div class="topic-name">Pub Quiz</div><div class="topic-count">Win every round</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section>
+  <div class="section">
+    <div class="section-label">Features</div>
+    <h2 class="section-title">Built for the<br>curious and lazy</h2>
+    <p class="section-sub">No sign up. No accounts. Just open and learn.</p>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon icon-pink">🎴</div><div class="feature-title">Swipeable cards</div><p class="feature-desc">Flip through facts in seconds. Designed for one-handed use while you wait.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-yellow">🔥</div><div class="feature-title">Daily streaks</div><p class="feature-desc">Build a habit without even trying. Open the app, learn one thing, keep your streak.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-green">🔊</div><div class="feature-title">Hands-free autoplay</div><p class="feature-desc">Text-to-speech reads cards aloud. Learn while walking, cooking, or commuting.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-gold">🍺</div><div class="feature-title">Pub Quiz Special</div><p class="feature-desc">Who Wants to Be a Millionaire style questions. Test everything you've learned.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="download">
+  <div class="cta-box">
+    <div class="cta-glow"></div>
+    <h2>Ready to get smarter<br>on the go?</h2>
+    <p>Free forever. No account needed. Just download and start learning.</p>
+    <div class="cta-buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.camelstudio.brainfood" class="btn-primary">▶ Get it on Google Play</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="footer-logo">🧠 BrainFood</a>
+  <div class="footer-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="https://github.com/kaks0077-maker/BrainFood">GitHub</a>
+  </div>
+  <span class="footer-copy">© 2026 Camel Studio</span>
+</footer>
+
+</body>
+</html>
