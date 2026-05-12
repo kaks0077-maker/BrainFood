@@ -348,7 +348,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 14,
   },
-  qCounter: { fontSize: 12, color: 'rgba(255,215,0,0.4)', fontWeight: '700' },
   diffBadge: { borderRadius: 100, paddingHorizontal: 12, paddingVertical: 4 },
   diffText: { fontSize: 11, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.5 },
   question: {

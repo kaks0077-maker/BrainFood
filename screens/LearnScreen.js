@@ -287,13 +287,7 @@ export default function LearnScreen({ navigation }) {
     setApCountdown(0);
   }
 
-  const pool = getPool(cat);
-  const seenInCat = pool.filter(c => usedIds.includes(c.id)).length;
-  const pct = pool.length ? Math.round((seenInCat / pool.length) * 100) : 0;
-  const grad = card?.cat === 'pub' ? '#8B6914' : (GRADS[gradIdx % GRADS.length] || '#4d96ff');
   const t = theme;
-
-
   const cardColor = card?.cat === 'pub' ? '#8B6914' : (GRADS[gradIdx % GRADS.length] || '#4d96ff');
 
   const ShareCardView = () => (
@@ -496,15 +490,6 @@ const styles = StyleSheet.create({
   spdBtnOn: { backgroundColor: 'rgba(255,193,7,0.2)', borderColor: 'rgba(255,193,7,0.5)' },
   spdTxt: { fontSize: 10, fontWeight: '800' },
   spdTxtOn: { color: '#ffd93d' },
-  progWrap: { gap: 5 },
-  progTop: { flexDirection: 'row', justifyContent: 'space-between' },
-  progLbl: { fontSize: 10, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 0.8 },
-  progPct: { fontSize: 10, fontWeight: '800' },
-  progBar: { height: 4, borderRadius: 4, overflow: 'hidden' },
-  progFill: { height: '100%', borderRadius: 4 },
-  catRow: { flexDirection: 'row', gap: 6, paddingBottom: 4 },
-  catBtn: { paddingHorizontal: 12, paddingVertical: 7, borderRadius: 20, borderWidth: 1.5 },
-  catTxt: { fontSize: 11, fontWeight: '800' },
   card: { borderRadius: 26, padding: 24, overflow: 'hidden', minHeight: 280, elevation: 20 },
   cardGlow: { ...StyleSheet.absoluteFillObject, backgroundColor: 'rgba(255,255,255,0.06)', borderRadius: 26 },
   cardRing: { position: 'absolute', bottom: -35, right: -35, width: 160, height: 160, borderRadius: 80, backgroundColor: 'rgba(255,255,255,0.07)' },
@@ -554,10 +539,6 @@ const styles = StyleSheet.create({
   modalBtn: { borderRadius: 16, paddingHorizontal: 32, paddingVertical: 14 },
   modalBtnTxt: { fontSize: 16, fontWeight: '900', color: '#1a0533' },
 });
-
-
-
-
 
 
 
