@@ -41,7 +41,7 @@ export default function LearnScreen({ navigation }) {
   const { theme, toggleTheme } = useTheme();
   const insets = useSafeAreaInsets();
   const [card, setCard] = useState(null);
-  const [cat, setCat] = useState('all');
+  const cat = 'all';
   const [seen, setSeen] = useState(0);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
