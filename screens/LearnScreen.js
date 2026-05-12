@@ -61,6 +61,7 @@ export default function LearnScreen({ navigation }) {
   const apInterval = useRef(null);
   const shareRef = useRef(null);
   const isInitialized = useRef(false);
+  const cardRef = useRef(null);
   const wotd = WOTD_LIST[Math.floor(Date.now() / 86400000) % WOTD_LIST.length];
 
   useEffect(() => {
@@ -68,8 +69,9 @@ export default function LearnScreen({ navigation }) {
     const sub = AppState.addEventListener('change', (nextState) => {
       if (nextState === 'active' && isInitialized.current) checkDailyStreak();
     });
-    return () => sub.remove();
+    return () => { sub.remove(); stopAutoplay(); };
   }, []);
+  useEffect(() => { cardRef.current = card; }, [card]);
   useEffect(() => { if (autoplay && card) startAutoplay(); else stopAutoplay(); }, [autoplay]);
 
   function getTodayKey() {
@@ -250,10 +252,11 @@ export default function LearnScreen({ navigation }) {
   }
 
   function startAutoplay() {
-    if (!card) return;
+    const current = cardRef.current;
+    if (!current) return;
     Speech.stop();
     clearInterval(apInterval.current);
-    Speech.speak(card.fact, {
+    Speech.speak(current.fact, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => {
         let secs = apSpeed;
@@ -277,27 +280,23 @@ export default function LearnScreen({ navigation }) {
   const t = theme;
   const cardColor = card?.cat === 'pub' ? '#8B6914' : (GRADS[gradIdx % GRADS.length] || '#4d96ff');
 
-  const ShareCardView = () => (
-    <ViewShot ref={shareRef} options={{ format: 'png', quality: 1.0 }} style={{ position: 'absolute', top: -9999, left: -9999 }}>
-      <View style={[styles.shareCard, { backgroundColor: t.bg }]}>
-        <View style={[styles.shareInner, { backgroundColor: cardColor }]}>
-          <View style={styles.shareGlow} />
-          <View style={styles.shareRing} />
-          <Text style={styles.shareLogo}>Brain<Text style={{ color: '#ffd93d' }}>Food</Text> 🍕</Text>
-          {card && <Text style={styles.shareEmoji}>{card.emoji}</Text>}
-          {card && <Text style={styles.shareFact}>{card.fact}</Text>}
-          <View style={styles.shareFooter}>
-            <Text style={styles.shareFooterTxt}>Feed your brain. One card at a time.</Text>
-          </View>
-        </View>
-      </View>
-    </ViewShot>
-  );
-
   return (
     <View style={{ flex: 1, backgroundColor: t.bg }}>
 
-      <ShareCardView />
+      <ViewShot ref={shareRef} options={{ format: 'png', quality: 1.0 }} style={{ position: 'absolute', top: -9999, left: -9999 }}>
+        <View style={[styles.shareCard, { backgroundColor: t.bg }]}>
+          <View style={[styles.shareInner, { backgroundColor: cardColor }]}>
+            <View style={styles.shareGlow} />
+            <View style={styles.shareRing} />
+            <Text style={styles.shareLogo}>Brain<Text style={{ color: '#ffd93d' }}>Food</Text> 🍕</Text>
+            {card && <Text style={styles.shareEmoji}>{card.emoji}</Text>}
+            {card && <Text style={styles.shareFact}>{card.fact}</Text>}
+            <View style={styles.shareFooter}>
+              <Text style={styles.shareFooterTxt}>Feed your brain. One card at a time.</Text>
+            </View>
+          </View>
+        </View>
+      </ViewShot>
 
       {/* DAILY STREAK MODAL */}
       <Modal transparent visible={streakModal} animationType="none" onRequestClose={closeStreakModal}>
