@@ -4,10 +4,12 @@ import { useCallback, useEffect, useState } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
 import { ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '../ThemeContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { CARDS, CAT_COLOR, DIFF_LABELS } from '../data';
 
 export default function FavoritesScreen() {
   const { theme: t } = useTheme();
+  const insets = useSafeAreaInsets();
   const [favs, setFavs] = useState([]);
   const [search, setSearch] = useState('');
   const [speaking, setSpeaking] = useState(null);
@@ -57,7 +59,7 @@ export default function FavoritesScreen() {
   );
 
   return (
-    <ScrollView style={[styles.bg, { backgroundColor: t.bg }]} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+    <ScrollView style={[styles.bg, { backgroundColor: t.bg }]} contentContainerStyle={[styles.content, { paddingTop: insets.top + 16 }]} showsVerticalScrollIndicator={false}>
       <View style={styles.header}>
         <Text style={[styles.title, { color: t.text }]}>⭐ Favorites</Text>
         <Text style={[styles.sub, { color: t.textMuted }]}>Your personal knowledge menu</Text>
@@ -115,7 +117,7 @@ export default function FavoritesScreen() {
 
 const styles = StyleSheet.create({
   bg: { flex: 1 },
-  content: { padding: 16, paddingTop: 56, paddingBottom: 40, gap: 12 },
+  content: { padding: 16, paddingBottom: 40, gap: 12 },
   header: { marginBottom: 4 },
   title: { fontSize: 24, fontWeight: '900' },
   sub: { fontSize: 12, fontWeight: '700', marginTop: 3 },

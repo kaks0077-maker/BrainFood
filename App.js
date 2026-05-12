@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
 import { StatusBar, Text } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
 import { ThemeContext, DARK, LIGHT } from './ThemeContext';
@@ -83,27 +84,31 @@ export default function App() {
 
   if (!onboardingDone) {
     return (
-      <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <StatusBar barStyle="light-content" backgroundColor="#0d1117" />
-        <OnboardingScreen onDone={finishOnboarding} />
-      </ThemeContext.Provider>
+      <SafeAreaProvider>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+          <StatusBar barStyle="light-content" backgroundColor="#0d1117" />
+          <OnboardingScreen onDone={finishOnboarding} />
+        </ThemeContext.Provider>
+      </SafeAreaProvider>
     );
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <StatusBar
-        barStyle={theme.mode === 'dark' ? 'light-content' : 'dark-content'}
-        backgroundColor={theme.bg}
-      />
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Main">
-            {() => <TabNavigator theme={theme} />}
-          </Stack.Screen>
-          <Stack.Screen name="PubQuiz" component={PubQuizScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </ThemeContext.Provider>
+    <SafeAreaProvider>
+      <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <StatusBar
+          barStyle={theme.mode === 'dark' ? 'light-content' : 'dark-content'}
+          backgroundColor={theme.bg}
+        />
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Main">
+              {() => <TabNavigator theme={theme} />}
+            </Stack.Screen>
+            <Stack.Screen name="PubQuiz" component={PubQuizScreen} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </ThemeContext.Provider>
+    </SafeAreaProvider>
   );
 }

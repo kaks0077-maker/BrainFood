@@ -3,8 +3,10 @@ import { useCallback, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { useTheme } from '../ThemeContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 export default function StatsScreen() {
   const { theme: t } = useTheme();
+  const insets = useSafeAreaInsets();
   const [cards, setCards] = useState({ streak: 0, bestStreak: 0, seen: 0, favs: 0 });
   const [quiz, setQuiz] = useState(null);
   const [recentSessions, setRecentSessions] = useState([]);
@@ -42,7 +44,7 @@ export default function StatsScreen() {
   return (
     <ScrollView
       style={[styles.bg, { backgroundColor: t.bg }]}
-      contentContainerStyle={styles.content}
+      contentContainerStyle={[styles.content, { paddingTop: insets.top + 16 }]}
       showsVerticalScrollIndicator={false}
     >
       <View style={styles.header}>
@@ -156,7 +158,7 @@ function StatTile({ emoji, label, value, accent, t }) {
 
 const styles = StyleSheet.create({
   bg: { flex: 1 },
-  content: { padding: 16, paddingTop: 56, paddingBottom: 40, gap: 10 },
+  content: { padding: 16, paddingBottom: 40, gap: 10 },
   header: { marginBottom: 4 },
   title: { fontSize: 24, fontWeight: '900' },
   sectionLabel: { fontSize: 10, fontWeight: '800', letterSpacing: 1.5, marginBottom: 2 },

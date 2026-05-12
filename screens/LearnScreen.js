@@ -13,6 +13,7 @@ import {
     View
 } from 'react-native';
 import { useTheme } from '../ThemeContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
@@ -38,6 +39,7 @@ function getStreakMessage(streak) {
 
 export default function LearnScreen({ navigation }) {
   const { theme, toggleTheme } = useTheme();
+  const insets = useSafeAreaInsets();
   const [card, setCard] = useState(null);
   const [cat, setCat] = useState('all');
   const [seen, setSeen] = useState(0);
@@ -338,7 +340,7 @@ export default function LearnScreen({ navigation }) {
         </View>
       </Modal>
 
-      <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={[styles.content, { paddingTop: insets.top + 16 }]} showsVerticalScrollIndicator={false}>
 
         {/* HERO */}
         <View style={styles.hero}>
@@ -469,7 +471,7 @@ export default function LearnScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  content: { padding: 16, paddingTop: 56, paddingBottom: 40, gap: 14 },
+  content: { padding: 16, paddingBottom: 40, gap: 14 },
   hero: { marginBottom: 4 },
   heroRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   heroRight: { flexDirection: 'row', gap: 8, alignItems: 'center' },
