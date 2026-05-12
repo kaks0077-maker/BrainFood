@@ -45,7 +45,22 @@ export default function PubQuizScreen({ navigation }) {
   const [fadeAnim] = useState(new Animated.Value(1));
 
   useEffect(() => {
-    setQuestions(shuffle(QUIZ_DATA).map(shuffleAnswers));
+    async function loadQuiz() {
+      try {
+        const raw = await AsyncStorage.getItem('bf_quiz_seen');
+        const seenIds = raw ? JSON.parse(raw) : [];
+        const seenSet = new Set(seenIds);
+        let available = QUIZ_DATA.filter(q => !seenSet.has(q.id));
+        if (available.length === 0) {
+          available = QUIZ_DATA;
+          await AsyncStorage.setItem('bf_quiz_seen', JSON.stringify([]));
+        }
+        setQuestions(shuffle(available).map(shuffleAnswers));
+      } catch (e) {
+        setQuestions(shuffle(QUIZ_DATA).map(shuffleAnswers));
+      }
+    }
+    loadQuiz();
   }, []);
 
   const q = questions[index];
@@ -55,6 +70,13 @@ export default function PubQuizScreen({ navigation }) {
     setSelected(letter);
     if (letter === q.correct) setCorrect(c => c + 1);
     else setWrong(w => w + 1);
+    // Persist this question as seen so it doesn't repeat next session
+    AsyncStorage.getItem('bf_quiz_seen').then(raw => {
+      const seenIds = raw ? JSON.parse(raw) : [];
+      if (!seenIds.includes(q.id)) {
+        AsyncStorage.setItem('bf_quiz_seen', JSON.stringify([...seenIds, q.id]));
+      }
+    }).catch(() => {});
   }, [selected, q]);
 
   const nextQuestion = useCallback(() => {

@@ -3,6 +3,7 @@ import * as Speech from 'expo-speech';
 import { useEffect, useRef, useState } from 'react';
 import {
     Animated,
+    AppState,
     Modal,
     ScrollView,
     Share,
@@ -57,9 +58,16 @@ export default function LearnScreen({ navigation }) {
   const modalOpacity = useRef(new Animated.Value(0)).current;
   const apInterval = useRef(null);
   const shareRef = useRef(null);
+  const isInitialized = useRef(false);
   const wotd = WOTD_LIST[Math.floor(Date.now() / 86400000) % WOTD_LIST.length];
 
-  useEffect(() => { loadState(); }, []);
+  useEffect(() => {
+    loadState();
+    const sub = AppState.addEventListener('change', (nextState) => {
+      if (nextState === 'active' && isInitialized.current) checkDailyStreak();
+    });
+    return () => sub.remove();
+  }, []);
   useEffect(() => { if (autoplay && card) startAutoplay(); else stopAutoplay(); }, [autoplay]);
 
   function getTodayKey() {
@@ -111,8 +119,6 @@ export default function LearnScreen({ navigation }) {
           dailyStreak = 1;
         }
         if (dailyStreak > best) best = dailyStreak;
-        const updated = { ...s, lastLoginDay: todayKey, dailyStreak, bestStreak: best };
-        await AsyncStorage.setItem('bf_state', JSON.stringify(updated));
       }
 
       setStreak(dailyStreak);
@@ -120,14 +126,50 @@ export default function LearnScreen({ navigation }) {
       setSeen(s.seen || 0);
       setFavs(s.favs || []);
       setHistory(s.history || []);
-      setUsedIds(s.usedIds || []);
       setGradIdx(s.gradIdx || 0);
-      pickCard(s.usedIds || [], 'all');
 
-      if (newDay) {
-        setTimeout(() => showStreakPopup(dailyStreak), 800);
+      const usedArr = s.usedIds || [];
+      const picked = pickCard(usedArr, 'all');
+      // Immediately mark displayed card as seen so it won't repeat if app is closed
+      const newUsed = picked && !usedArr.includes(picked.id) ? [...usedArr, picked.id] : usedArr;
+      setUsedIds(newUsed);
+
+      await AsyncStorage.setItem('bf_state', JSON.stringify({
+        ...s,
+        lastLoginDay: todayKey,
+        dailyStreak,
+        bestStreak: best,
+        usedIds: newUsed,
+      }));
+
+      isInitialized.current = true;
+      if (newDay) setTimeout(() => showStreakPopup(dailyStreak), 800);
+    } catch (e) { pickCard([], 'all'); isInitialized.current = true; }
+  }
+
+  async function checkDailyStreak() {
+    try {
+      const raw = await AsyncStorage.getItem('bf_state');
+      const s = raw ? JSON.parse(raw) : {};
+      const todayKey = getTodayKey();
+      const yesterdayKey = getYesterdayKey();
+      const lastLogin = s.lastLoginDay || null;
+      if (lastLogin === todayKey) return;
+
+      let dailyStreak = s.dailyStreak || 0;
+      let best = s.bestStreak || 0;
+      if (lastLogin === yesterdayKey) {
+        dailyStreak += 1;
+      } else {
+        dailyStreak = 1;
       }
-    } catch (e) { pickCard([], 'all'); }
+      if (dailyStreak > best) best = dailyStreak;
+
+      await AsyncStorage.setItem('bf_state', JSON.stringify({ ...s, lastLoginDay: todayKey, dailyStreak, bestStreak: best }));
+      setStreak(dailyStreak);
+      setBestStreak(best);
+      showStreakPopup(dailyStreak);
+    } catch (e) {}
   }
 
   async function saveState(updates) {
@@ -162,16 +204,17 @@ export default function LearnScreen({ navigation }) {
     ]).start();
     const newUsed = [...usedIds];
     if (card && !newUsed.includes(card.id)) newUsed.push(card.id);
-    if (newUsed.length > 80) newUsed.splice(0, 30);
     const newSeen = seen + 1;
     const newGrad = gradIdx + 1;
-    setUsedIds(newUsed);
+    const picked = pickCard(newUsed, cat);
+    // Immediately mark the newly displayed card as seen too
+    const finalUsed = picked && !newUsed.includes(picked.id) ? [...newUsed, picked.id] : newUsed;
+    setUsedIds(finalUsed);
     setSeen(newSeen);
     setGradIdx(newGrad);
-    const picked = pickCard(newUsed, cat);
     const newHist = [{ card: picked, ts: Date.now() }, ...history].slice(0, 200);
     setHistory(newHist);
-    saveState({ usedIds: newUsed, seen: newSeen, gradIdx: newGrad, history: newHist });
+    saveState({ usedIds: finalUsed, seen: newSeen, gradIdx: newGrad, history: newHist });
     if (autoplay) setTimeout(() => startAutoplay(), 400);
   }
 
@@ -180,7 +223,12 @@ export default function LearnScreen({ navigation }) {
     Speech.stop();
     setSpeaking(false);
     stopAutoplay();
-    pickCard(usedIds, c);
+    const picked = pickCard(usedIds, c);
+    if (picked && !usedIds.includes(picked.id)) {
+      const newUsed = [...usedIds, picked.id];
+      setUsedIds(newUsed);
+      saveState({ usedIds: newUsed });
+    }
   }
 
   function toggleFav() {
@@ -308,6 +356,21 @@ export default function LearnScreen({ navigation }) {
           <Text style={[styles.heroSub, { color: t.textMuted }]}>Feed your brain. One card at a time.</Text>
         </View>
 
+        {/* PUB QUIZ SPECIAL BANNER */}
+        <TouchableOpacity
+          onPress={() => { Speech.stop(); setSpeaking(false); stopAutoplay(); setAutoplay(false); navigation.navigate('PubQuiz'); }}
+          style={{ borderRadius: 18, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(255,215,0,0.5)', backgroundColor: '#12120a' }}
+          activeOpacity={0.85}
+        >
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
+            <View>
+              <Text style={{ color: 'gold', fontWeight: '900', fontSize: 13, letterSpacing: 1.5 }}>{'🍺 PUB QUIZ SPECIAL'}</Text>
+              <Text style={{ color: 'rgba(255,215,0,0.6)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Who Wants to Be a Millionaire style</Text>
+            </View>
+            <Text style={{ fontSize: 28 }}>🎯</Text>
+          </View>
+        </TouchableOpacity>
+
         {/* WORD OF THE DAY */}
         <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
           <Text style={[styles.wotdLbl, { color: t.textMuted }]}>{'📖 WORD OF THE DAY'}</Text>
@@ -389,21 +452,6 @@ export default function LearnScreen({ navigation }) {
         <Text style={[styles.nextHint, { color: t.textMuted }]}>
           {autoplay ? '🚗 Hands-free on — sit back and listen' : 'One card a day keeps the ignorance away 🏆'}
         </Text>
-
-        {/* PUB QUIZ SPECIAL BANNER */}
-        <TouchableOpacity
-          onPress={() => { Speech.stop(); setSpeaking(false); stopAutoplay(); setAutoplay(false); navigation.navigate('PubQuiz'); }}
-          style={{ borderRadius: 18, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(255,215,0,0.5)', backgroundColor: '#12120a' }}
-          activeOpacity={0.85}
-        >
-          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
-            <View>
-              <Text style={{ color: 'gold', fontWeight: '900', fontSize: 13, letterSpacing: 1.5 }}>{'🍺 PUB QUIZ SPECIAL'}</Text>
-              <Text style={{ color: 'rgba(255,215,0,0.6)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Who Wants to Be a Millionaire style</Text>
-            </View>
-            <Text style={{ fontSize: 28 }}>🎯</Text>
-          </View>
-        </TouchableOpacity>
 
         {/* STATS */}
         <View style={styles.statsRow}>
