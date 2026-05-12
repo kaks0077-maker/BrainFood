@@ -220,19 +220,6 @@ export default function LearnScreen({ navigation }) {
     if (autoplay) setTimeout(() => startAutoplay(), 400);
   }
 
-  function changeCat(c) {
-    setCat(c);
-    Speech.stop();
-    setSpeaking(false);
-    stopAutoplay();
-    const picked = pickCard(usedIds, c);
-    if (picked && !usedIds.includes(picked.id)) {
-      const newUsed = [...usedIds, picked.id];
-      setUsedIds(newUsed);
-      saveState({ usedIds: newUsed });
-    }
-  }
-
   function toggleFav() {
     if (!card) return;
     const newFavs = favs.includes(card.id) ? favs.filter(f => f !== card.id) : [...favs, card.id];
@@ -404,7 +391,7 @@ export default function LearnScreen({ navigation }) {
 
         {/* CARD */}
         {card && (
-          <Animated.View style={[styles.card, { opacity: fadeAnim, backgroundColor: grad }]}>
+          <Animated.View style={[styles.card, { opacity: fadeAnim, backgroundColor: cardColor }]}>
             <View style={styles.cardGlow} />
             <View style={styles.cardRing} />
             <View style={styles.cardRing2} />
@@ -539,7 +526,3 @@ const styles = StyleSheet.create({
   modalBtn: { borderRadius: 16, paddingHorizontal: 32, paddingVertical: 14 },
   modalBtnTxt: { fontSize: 16, fontWeight: '900', color: '#1a0533' },
 });
-
-
-
-
