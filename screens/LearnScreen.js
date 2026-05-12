@@ -252,7 +252,7 @@ export default function LearnScreen({ navigation }) {
   function speakCard() {
     if (!card) return;
     if (speaking) { Speech.stop(); setSpeaking(false); return; }
-    Speech.speak(`${card.hook}. ${card.fact}.`, {
+    Speech.speak(card.fact, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => setSpeaking(false),
       onError: () => setSpeaking(false),
@@ -264,7 +264,7 @@ export default function LearnScreen({ navigation }) {
     if (!card) return;
     Speech.stop();
     clearInterval(apInterval.current);
-    Speech.speak(`${card.hook}. ${card.fact}.`, {
+    Speech.speak(card.fact, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => {
         let secs = apSpeed;
