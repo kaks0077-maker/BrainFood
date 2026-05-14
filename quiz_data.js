@@ -9141,2102 +9141,10960 @@ const QUIZ_DATA = [
   {
     "id": "pq704",
     "question": "What is the capital of Australia?",
-    "answers": { "A": "Sydney", "B": "Melbourne", "C": "Canberra", "D": "Brisbane" },
+    "answers": {
+      "A": "Sydney",
+      "B": "Melbourne",
+      "C": "Canberra",
+      "D": "Brisbane"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq705",
     "question": "Which country has the most natural lakes?",
-    "answers": { "A": "Russia", "B": "USA", "C": "Brazil", "D": "Canada" },
+    "answers": {
+      "A": "Russia",
+      "B": "USA",
+      "C": "Brazil",
+      "D": "Canada"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq706",
     "question": "What is the longest river in Africa?",
-    "answers": { "A": "Congo", "B": "Nile", "C": "Niger", "D": "Zambezi" },
+    "answers": {
+      "A": "Congo",
+      "B": "Nile",
+      "C": "Niger",
+      "D": "Zambezi"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq707",
     "question": "Which country is home to the Patagonia region?",
-    "answers": { "A": "Chile and Argentina", "B": "Brazil and Bolivia", "C": "Peru and Ecuador", "D": "Colombia and Venezuela" },
+    "answers": {
+      "A": "Chile and Argentina",
+      "B": "Brazil and Bolivia",
+      "C": "Peru and Ecuador",
+      "D": "Colombia and Venezuela"
+    },
     "correct": "A",
     "difficulty": "medium"
   },
   {
     "id": "pq708",
     "question": "The Strait of Gibraltar connects the Atlantic Ocean to which sea?",
-    "answers": { "A": "Red Sea", "B": "Black Sea", "C": "Mediterranean Sea", "D": "Caspian Sea" },
+    "answers": {
+      "A": "Red Sea",
+      "B": "Black Sea",
+      "C": "Mediterranean Sea",
+      "D": "Caspian Sea"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq709",
     "question": "Which African country was formerly known as Rhodesia?",
-    "answers": { "A": "Zambia", "B": "Mozambique", "C": "Zimbabwe", "D": "Malawi" },
+    "answers": {
+      "A": "Zambia",
+      "B": "Mozambique",
+      "C": "Zimbabwe",
+      "D": "Malawi"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq710",
     "question": "What is the smallest country in South America by area?",
-    "answers": { "A": "Guyana", "B": "Suriname", "C": "Uruguay", "D": "Ecuador" },
+    "answers": {
+      "A": "Guyana",
+      "B": "Suriname",
+      "C": "Uruguay",
+      "D": "Ecuador"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq711",
     "question": "Which ocean is the deepest?",
-    "answers": { "A": "Atlantic", "B": "Indian", "C": "Arctic", "D": "Pacific" },
+    "answers": {
+      "A": "Atlantic",
+      "B": "Indian",
+      "C": "Arctic",
+      "D": "Pacific"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq712",
     "question": "Istanbul is located on which two continents?",
-    "answers": { "A": "Europe and Asia", "B": "Africa and Asia", "C": "Europe and Africa", "D": "Asia and Oceania" },
+    "answers": {
+      "A": "Europe and Asia",
+      "B": "Africa and Asia",
+      "C": "Europe and Africa",
+      "D": "Asia and Oceania"
+    },
     "correct": "A",
     "difficulty": "medium"
   },
   {
     "id": "pq713",
     "question": "Which country has the most official languages?",
-    "answers": { "A": "India", "B": "South Africa", "C": "Bolivia", "D": "Switzerland" },
+    "answers": {
+      "A": "India",
+      "B": "South Africa",
+      "C": "Bolivia",
+      "D": "Switzerland"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq714",
     "question": "The Atacama Desert is located primarily in which country?",
-    "answers": { "A": "Peru", "B": "Bolivia", "C": "Chile", "D": "Argentina" },
+    "answers": {
+      "A": "Peru",
+      "B": "Bolivia",
+      "C": "Chile",
+      "D": "Argentina"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq715",
     "question": "What is the capital of New Zealand?",
-    "answers": { "A": "Auckland", "B": "Wellington", "C": "Christchurch", "D": "Dunedin" },
+    "answers": {
+      "A": "Auckland",
+      "B": "Wellington",
+      "C": "Christchurch",
+      "D": "Dunedin"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq716",
     "question": "Which country does the island of Sardinia belong to?",
-    "answers": { "A": "France", "B": "Spain", "C": "Italy", "D": "Greece" },
+    "answers": {
+      "A": "France",
+      "B": "Spain",
+      "C": "Italy",
+      "D": "Greece"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq717",
     "question": "The Mekong River flows through how many countries?",
-    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "answers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq718",
     "question": "Which country is known as the Land of the Rising Sun?",
-    "answers": { "A": "South Korea", "B": "China", "C": "Japan", "D": "Thailand" },
+    "answers": {
+      "A": "South Korea",
+      "B": "China",
+      "C": "Japan",
+      "D": "Thailand"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq719",
     "question": "What is the currency of Norway?",
-    "answers": { "A": "Krone", "B": "Krona", "C": "Euro", "D": "Florin" },
+    "answers": {
+      "A": "Krone",
+      "B": "Krona",
+      "C": "Euro",
+      "D": "Florin"
+    },
     "correct": "A",
     "difficulty": "medium"
   },
   {
     "id": "pq720",
     "question": "Which desert is the largest hot desert in the world?",
-    "answers": { "A": "Arabian Desert", "B": "Gobi Desert", "C": "Sahara Desert", "D": "Kalahari Desert" },
+    "answers": {
+      "A": "Arabian Desert",
+      "B": "Gobi Desert",
+      "C": "Sahara Desert",
+      "D": "Kalahari Desert"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq721",
     "question": "The Amazon Rainforest covers approximately what percentage of Earth's land surface?",
-    "answers": { "A": "2%", "B": "4%", "C": "6%", "D": "8%" },
+    "answers": {
+      "A": "2%",
+      "B": "4%",
+      "C": "6%",
+      "D": "8%"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq722",
     "question": "Which European country has the most castles per square kilometre?",
-    "answers": { "A": "Germany", "B": "France", "C": "Wales", "D": "Czech Republic" },
+    "answers": {
+      "A": "Germany",
+      "B": "France",
+      "C": "Wales",
+      "D": "Czech Republic"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq723",
     "question": "What is the largest country in Africa by area?",
-    "answers": { "A": "Sudan", "B": "Congo", "C": "Nigeria", "D": "Algeria" },
+    "answers": {
+      "A": "Sudan",
+      "B": "Congo",
+      "C": "Nigeria",
+      "D": "Algeria"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq724",
     "question": "The element gold has which chemical symbol?",
-    "answers": { "A": "Go", "B": "Gd", "C": "Au", "D": "Ag" },
+    "answers": {
+      "A": "Go",
+      "B": "Gd",
+      "C": "Au",
+      "D": "Ag"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq725",
     "question": "What is the powerhouse of the cell?",
-    "answers": { "A": "Nucleus", "B": "Ribosome", "C": "Mitochondria", "D": "Golgi apparatus" },
+    "answers": {
+      "A": "Nucleus",
+      "B": "Ribosome",
+      "C": "Mitochondria",
+      "D": "Golgi apparatus"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq726",
     "question": "How many bones are in the adult human body?",
-    "answers": { "A": "196", "B": "206", "C": "216", "D": "226" },
+    "answers": {
+      "A": "196",
+      "B": "206",
+      "C": "216",
+      "D": "226"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq727",
     "question": "What is the speed of light in a vacuum (approximately)?",
-    "answers": { "A": "200,000 km/s", "B": "250,000 km/s", "C": "300,000 km/s", "D": "350,000 km/s" },
+    "answers": {
+      "A": "200,000 km/s",
+      "B": "250,000 km/s",
+      "C": "300,000 km/s",
+      "D": "350,000 km/s"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq728",
     "question": "Which planet has the most moons?",
-    "answers": { "A": "Jupiter", "B": "Saturn", "C": "Uranus", "D": "Neptune" },
+    "answers": {
+      "A": "Jupiter",
+      "B": "Saturn",
+      "C": "Uranus",
+      "D": "Neptune"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq729",
     "question": "What is the most abundant gas in Earth's atmosphere?",
-    "answers": { "A": "Oxygen", "B": "Carbon dioxide", "C": "Argon", "D": "Nitrogen" },
+    "answers": {
+      "A": "Oxygen",
+      "B": "Carbon dioxide",
+      "C": "Argon",
+      "D": "Nitrogen"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq730",
     "question": "DNA stands for what?",
-    "answers": { "A": "Deoxyribonucleic Acid", "B": "Diribonucleic Acid", "C": "Deoxyribonitric Acid", "D": "Dinitrogen Acid" },
+    "answers": {
+      "A": "Deoxyribonucleic Acid",
+      "B": "Diribonucleic Acid",
+      "C": "Deoxyribonitric Acid",
+      "D": "Dinitrogen Acid"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq731",
     "question": "Which scientist formulated the three laws of motion?",
-    "answers": { "A": "Galileo Galilei", "B": "Albert Einstein", "C": "Isaac Newton", "D": "Nikola Tesla" },
+    "answers": {
+      "A": "Galileo Galilei",
+      "B": "Albert Einstein",
+      "C": "Isaac Newton",
+      "D": "Nikola Tesla"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq732",
     "question": "What is the hardest natural substance on Earth?",
-    "answers": { "A": "Quartz", "B": "Graphite", "C": "Diamond", "D": "Corundum" },
+    "answers": {
+      "A": "Quartz",
+      "B": "Graphite",
+      "C": "Diamond",
+      "D": "Corundum"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq733",
     "question": "The human body has how many pairs of chromosomes?",
-    "answers": { "A": "21", "B": "23", "C": "25", "D": "46" },
+    "answers": {
+      "A": "21",
+      "B": "23",
+      "C": "25",
+      "D": "46"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq734",
     "question": "Which organ produces insulin?",
-    "answers": { "A": "Liver", "B": "Kidney", "C": "Pancreas", "D": "Spleen" },
+    "answers": {
+      "A": "Liver",
+      "B": "Kidney",
+      "C": "Pancreas",
+      "D": "Spleen"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq735",
     "question": "What is the chemical formula for water?",
-    "answers": { "A": "HO", "B": "H2O", "C": "H3O", "D": "OH2" },
+    "answers": {
+      "A": "HO",
+      "B": "H2O",
+      "C": "H3O",
+      "D": "OH2"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq736",
     "question": "Which planet is known as the Red Planet?",
-    "answers": { "A": "Venus", "B": "Jupiter", "C": "Mars", "D": "Mercury" },
+    "answers": {
+      "A": "Venus",
+      "B": "Jupiter",
+      "C": "Mars",
+      "D": "Mercury"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq737",
     "question": "How many chambers does the human heart have?",
-    "answers": { "A": "2", "B": "3", "C": "4", "D": "6" },
+    "answers": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "6"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq738",
     "question": "What type of animal is a Komodo dragon?",
-    "answers": { "A": "Snake", "B": "Lizard", "C": "Crocodilian", "D": "Salamander" },
+    "answers": {
+      "A": "Snake",
+      "B": "Lizard",
+      "C": "Crocodilian",
+      "D": "Salamander"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq739",
     "question": "Which gas do plants absorb during photosynthesis?",
-    "answers": { "A": "Oxygen", "B": "Nitrogen", "C": "Carbon monoxide", "D": "Carbon dioxide" },
+    "answers": {
+      "A": "Oxygen",
+      "B": "Nitrogen",
+      "C": "Carbon monoxide",
+      "D": "Carbon dioxide"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq740",
     "question": "What is the atomic number of carbon?",
-    "answers": { "A": "4", "B": "6", "C": "8", "D": "12" },
+    "answers": {
+      "A": "4",
+      "B": "6",
+      "C": "8",
+      "D": "12"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq741",
     "question": "Which blood type is the universal donor?",
-    "answers": { "A": "A positive", "B": "B negative", "C": "O negative", "D": "AB positive" },
+    "answers": {
+      "A": "A positive",
+      "B": "B negative",
+      "C": "O negative",
+      "D": "AB positive"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq742",
     "question": "A light year measures what?",
-    "answers": { "A": "Time", "B": "Weight", "C": "Distance", "D": "Energy" },
+    "answers": {
+      "A": "Time",
+      "B": "Weight",
+      "C": "Distance",
+      "D": "Energy"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq743",
     "question": "What is the largest organ of the human body?",
-    "answers": { "A": "Liver", "B": "Brain", "C": "Lungs", "D": "Skin" },
+    "answers": {
+      "A": "Liver",
+      "B": "Brain",
+      "C": "Lungs",
+      "D": "Skin"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq744",
     "question": "Which planet has a great red spot?",
-    "answers": { "A": "Saturn", "B": "Neptune", "C": "Jupiter", "D": "Uranus" },
+    "answers": {
+      "A": "Saturn",
+      "B": "Neptune",
+      "C": "Jupiter",
+      "D": "Uranus"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq745",
     "question": "What is the boiling point of water at sea level in Celsius?",
-    "answers": { "A": "90°C", "B": "95°C", "C": "100°C", "D": "105°C" },
+    "answers": {
+      "A": "90°C",
+      "B": "95°C",
+      "C": "100°C",
+      "D": "105°C"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq746",
     "question": "Penicillin was discovered by which scientist?",
-    "answers": { "A": "Louis Pasteur", "B": "Alexander Fleming", "C": "Joseph Lister", "D": "Robert Koch" },
+    "answers": {
+      "A": "Louis Pasteur",
+      "B": "Alexander Fleming",
+      "C": "Joseph Lister",
+      "D": "Robert Koch"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq747",
     "question": "Which animal has the largest brain relative to its body size?",
-    "answers": { "A": "Dolphin", "B": "Chimpanzee", "C": "Human", "D": "Elephant" },
+    "answers": {
+      "A": "Dolphin",
+      "B": "Chimpanzee",
+      "C": "Human",
+      "D": "Elephant"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq748",
     "question": "What is the name of the force that keeps planets in orbit?",
-    "answers": { "A": "Magnetism", "B": "Gravity", "C": "Centrifugal force", "D": "Nuclear force" },
+    "answers": {
+      "A": "Magnetism",
+      "B": "Gravity",
+      "C": "Centrifugal force",
+      "D": "Nuclear force"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq749",
     "question": "How many legs does a spider have?",
-    "answers": { "A": "6", "B": "8", "C": "10", "D": "12" },
+    "answers": {
+      "A": "6",
+      "B": "8",
+      "C": "10",
+      "D": "12"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq750",
     "question": "What is the most common element in the universe?",
-    "answers": { "A": "Oxygen", "B": "Carbon", "C": "Helium", "D": "Hydrogen" },
+    "answers": {
+      "A": "Oxygen",
+      "B": "Carbon",
+      "C": "Helium",
+      "D": "Hydrogen"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq751",
     "question": "Who was the first person to walk on the moon?",
-    "answers": { "A": "Buzz Aldrin", "B": "Yuri Gagarin", "C": "Neil Armstrong", "D": "John Glenn" },
+    "answers": {
+      "A": "Buzz Aldrin",
+      "B": "Yuri Gagarin",
+      "C": "Neil Armstrong",
+      "D": "John Glenn"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq752",
     "question": "In which year did World War I begin?",
-    "answers": { "A": "1912", "B": "1914", "C": "1916", "D": "1918" },
+    "answers": {
+      "A": "1912",
+      "B": "1914",
+      "C": "1916",
+      "D": "1918"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq753",
     "question": "The Berlin Wall fell in which year?",
-    "answers": { "A": "1987", "B": "1988", "C": "1989", "D": "1990" },
+    "answers": {
+      "A": "1987",
+      "B": "1988",
+      "C": "1989",
+      "D": "1990"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq754",
     "question": "Which empire was ruled by Genghis Khan?",
-    "answers": { "A": "Ottoman Empire", "B": "Mongol Empire", "C": "Roman Empire", "D": "Byzantine Empire" },
+    "answers": {
+      "A": "Ottoman Empire",
+      "B": "Mongol Empire",
+      "C": "Roman Empire",
+      "D": "Byzantine Empire"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq755",
     "question": "The French Revolution began in which year?",
-    "answers": { "A": "1776", "B": "1783", "C": "1789", "D": "1799" },
+    "answers": {
+      "A": "1776",
+      "B": "1783",
+      "C": "1789",
+      "D": "1799"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq756",
     "question": "Who was the first female Prime Minister of the UK?",
-    "answers": { "A": "Theresa May", "B": "Margaret Thatcher", "C": "Hillary Clinton", "D": "Angela Merkel" },
+    "answers": {
+      "A": "Theresa May",
+      "B": "Margaret Thatcher",
+      "C": "Hillary Clinton",
+      "D": "Angela Merkel"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq757",
     "question": "The ancient wonder, the Colossus of Rhodes, was located in which country?",
-    "answers": { "A": "Italy", "B": "Turkey", "C": "Greece", "D": "Egypt" },
+    "answers": {
+      "A": "Italy",
+      "B": "Turkey",
+      "C": "Greece",
+      "D": "Egypt"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq758",
     "question": "Julius Caesar was assassinated in which year BC?",
-    "answers": { "A": "23 BC", "B": "44 BC", "C": "63 BC", "D": "100 BC" },
+    "answers": {
+      "A": "23 BC",
+      "B": "44 BC",
+      "C": "63 BC",
+      "D": "100 BC"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq759",
     "question": "The Titanic sank in which year?",
-    "answers": { "A": "1910", "B": "1911", "C": "1912", "D": "1913" },
+    "answers": {
+      "A": "1910",
+      "B": "1911",
+      "C": "1912",
+      "D": "1913"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq760",
     "question": "Which civilisation built Machu Picchu?",
-    "answers": { "A": "Aztec", "B": "Maya", "C": "Inca", "D": "Olmec" },
+    "answers": {
+      "A": "Aztec",
+      "B": "Maya",
+      "C": "Inca",
+      "D": "Olmec"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq761",
     "question": "In which century did the Black Death devastate Europe?",
-    "answers": { "A": "12th", "B": "13th", "C": "14th", "D": "15th" },
+    "answers": {
+      "A": "12th",
+      "B": "13th",
+      "C": "14th",
+      "D": "15th"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq762",
     "question": "The Cold War was primarily a conflict between which two nations?",
-    "answers": { "A": "USA and China", "B": "USA and USSR", "C": "UK and Germany", "D": "France and Russia" },
+    "answers": {
+      "A": "USA and China",
+      "B": "USA and USSR",
+      "C": "UK and Germany",
+      "D": "France and Russia"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq763",
     "question": "Which country first gave women the right to vote?",
-    "answers": { "A": "Australia", "B": "UK", "C": "New Zealand", "D": "USA" },
+    "answers": {
+      "A": "Australia",
+      "B": "UK",
+      "C": "New Zealand",
+      "D": "USA"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq764",
     "question": "Who was the last pharaoh of ancient Egypt?",
-    "answers": { "A": "Nefertiti", "B": "Cleopatra VII", "C": "Hatshepsut", "D": "Tutankhamun" },
+    "answers": {
+      "A": "Nefertiti",
+      "B": "Cleopatra VII",
+      "C": "Hatshepsut",
+      "D": "Tutankhamun"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq765",
     "question": "The D-Day landings took place in which country?",
-    "answers": { "A": "Belgium", "B": "Netherlands", "C": "France", "D": "Germany" },
+    "answers": {
+      "A": "Belgium",
+      "B": "Netherlands",
+      "C": "France",
+      "D": "Germany"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq766",
     "question": "Which ancient wonder was located in Alexandria?",
-    "answers": { "A": "Hanging Gardens", "B": "Colossus", "C": "Temple of Artemis", "D": "Lighthouse" },
+    "answers": {
+      "A": "Hanging Gardens",
+      "B": "Colossus",
+      "C": "Temple of Artemis",
+      "D": "Lighthouse"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq767",
     "question": "Napoleon Bonaparte was exiled to which island after his final defeat?",
-    "answers": { "A": "Elba", "B": "Corsica", "C": "Saint Helena", "D": "Sardinia" },
+    "answers": {
+      "A": "Elba",
+      "B": "Corsica",
+      "C": "Saint Helena",
+      "D": "Sardinia"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq768",
     "question": "The Great Wall of China was primarily built to defend against which people?",
-    "answers": { "A": "Persians", "B": "Mongols", "C": "Japanese", "D": "Russians" },
+    "answers": {
+      "A": "Persians",
+      "B": "Mongols",
+      "C": "Japanese",
+      "D": "Russians"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq769",
     "question": "Which country hosted the 2016 Summer Olympics?",
-    "answers": { "A": "Argentina", "B": "Mexico", "C": "Brazil", "D": "Colombia" },
+    "answers": {
+      "A": "Argentina",
+      "B": "Mexico",
+      "C": "Brazil",
+      "D": "Colombia"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq770",
     "question": "In football, how many players are on the pitch per team?",
-    "answers": { "A": "10", "B": "11", "C": "12", "D": "13" },
+    "answers": {
+      "A": "10",
+      "B": "11",
+      "C": "12",
+      "D": "13"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq771",
     "question": "Which country has won the most FIFA World Cups?",
-    "answers": { "A": "Germany", "B": "Argentina", "C": "Italy", "D": "Brazil" },
+    "answers": {
+      "A": "Germany",
+      "B": "Argentina",
+      "C": "Italy",
+      "D": "Brazil"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq772",
     "question": "In tennis, what is the term for a score of 40-40?",
-    "answers": { "A": "Tie", "B": "Deuce", "C": "Love", "D": "Fault" },
+    "answers": {
+      "A": "Tie",
+      "B": "Deuce",
+      "C": "Love",
+      "D": "Fault"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq773",
     "question": "The Tour de France is primarily a race involving which sport?",
-    "answers": { "A": "Running", "B": "Swimming", "C": "Cycling", "D": "Triathlon" },
+    "answers": {
+      "A": "Running",
+      "B": "Swimming",
+      "C": "Cycling",
+      "D": "Triathlon"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq774",
     "question": "How many rings are on the Olympic flag?",
-    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "answers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq775",
     "question": "In basketball, how many points is a shot worth from beyond the arc?",
-    "answers": { "A": "2", "B": "3", "C": "4", "D": "1" },
+    "answers": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "1"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq776",
     "question": "Which country invented the sport of rugby?",
-    "answers": { "A": "Scotland", "B": "Australia", "C": "New Zealand", "D": "England" },
+    "answers": {
+      "A": "Scotland",
+      "B": "Australia",
+      "C": "New Zealand",
+      "D": "England"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq777",
     "question": "The Masters golf tournament is held annually in which US state?",
-    "answers": { "A": "Florida", "B": "Georgia", "C": "South Carolina", "D": "Texas" },
+    "answers": {
+      "A": "Florida",
+      "B": "Georgia",
+      "C": "South Carolina",
+      "D": "Texas"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq778",
     "question": "How many players are on a cricket team?",
-    "answers": { "A": "9", "B": "10", "C": "11", "D": "12" },
+    "answers": {
+      "A": "9",
+      "B": "10",
+      "C": "11",
+      "D": "12"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq779",
     "question": "Which boxer was known as 'The Greatest'?",
-    "answers": { "A": "Joe Frazier", "B": "George Foreman", "C": "Mike Tyson", "D": "Muhammad Ali" },
+    "answers": {
+      "A": "Joe Frazier",
+      "B": "George Foreman",
+      "C": "Mike Tyson",
+      "D": "Muhammad Ali"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq780",
     "question": "In which sport would you perform a slam dunk?",
-    "answers": { "A": "Volleyball", "B": "Basketball", "C": "Handball", "D": "Netball" },
+    "answers": {
+      "A": "Volleyball",
+      "B": "Basketball",
+      "C": "Handball",
+      "D": "Netball"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq781",
     "question": "Which country won the first ever Rugby World Cup in 1987?",
-    "answers": { "A": "Australia", "B": "England", "C": "New Zealand", "D": "South Africa" },
+    "answers": {
+      "A": "Australia",
+      "B": "England",
+      "C": "New Zealand",
+      "D": "South Africa"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq782",
     "question": "Usain Bolt is from which country?",
-    "answers": { "A": "Trinidad and Tobago", "B": "Barbados", "C": "Jamaica", "D": "Bahamas" },
+    "answers": {
+      "A": "Trinidad and Tobago",
+      "B": "Barbados",
+      "C": "Jamaica",
+      "D": "Bahamas"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq783",
     "question": "Which artist had a 2009 hit with 'Poker Face'?",
-    "answers": { "A": "Katy Perry", "B": "Beyonce", "C": "Rihanna", "D": "Lady Gaga" },
+    "answers": {
+      "A": "Katy Perry",
+      "B": "Beyonce",
+      "C": "Rihanna",
+      "D": "Lady Gaga"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq784",
     "question": "Which band performed 'Bohemian Rhapsody'?",
-    "answers": { "A": "Led Zeppelin", "B": "The Rolling Stones", "C": "Queen", "D": "The Who" },
+    "answers": {
+      "A": "Led Zeppelin",
+      "B": "The Rolling Stones",
+      "C": "Queen",
+      "D": "The Who"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq785",
     "question": "Elvis Presley was nicknamed 'The King of...' what?",
-    "answers": { "A": "Soul", "B": "Rock and Roll", "C": "Pop", "D": "Blues" },
+    "answers": {
+      "A": "Soul",
+      "B": "Rock and Roll",
+      "C": "Pop",
+      "D": "Blues"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq786",
     "question": "Which instrument does a pianist play?",
-    "answers": { "A": "Harpsichord", "B": "Organ", "C": "Piano", "D": "Clavichord" },
+    "answers": {
+      "A": "Harpsichord",
+      "B": "Organ",
+      "C": "Piano",
+      "D": "Clavichord"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq787",
     "question": "Glastonbury Festival takes place in which English county?",
-    "answers": { "A": "Devon", "B": "Cornwall", "C": "Somerset", "D": "Wiltshire" },
+    "answers": {
+      "A": "Devon",
+      "B": "Cornwall",
+      "C": "Somerset",
+      "D": "Wiltshire"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq788",
     "question": "Which music genre originated in Jamaica in the late 1960s?",
-    "answers": { "A": "Calypso", "B": "Ska", "C": "Reggae", "D": "Dancehall" },
+    "answers": {
+      "A": "Calypso",
+      "B": "Ska",
+      "C": "Reggae",
+      "D": "Dancehall"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq789",
     "question": "Michael Jackson's 'Thriller' was released in which year?",
-    "answers": { "A": "1980", "B": "1981", "C": "1982", "D": "1983" },
+    "answers": {
+      "A": "1980",
+      "B": "1981",
+      "C": "1982",
+      "D": "1983"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq790",
     "question": "Which British band released 'Wonderwall' in 1995?",
-    "answers": { "A": "Blur", "B": "Oasis", "C": "Pulp", "D": "Suede" },
+    "answers": {
+      "A": "Blur",
+      "B": "Oasis",
+      "C": "Pulp",
+      "D": "Suede"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq791",
     "question": "The Grammy Award is given for excellence in which field?",
-    "answers": { "A": "Film", "B": "Television", "C": "Music", "D": "Theatre" },
+    "answers": {
+      "A": "Film",
+      "B": "Television",
+      "C": "Music",
+      "D": "Theatre"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq792",
     "question": "Which singer is known as the 'Queen of Pop'?",
-    "answers": { "A": "Mariah Carey", "B": "Celine Dion", "C": "Whitney Houston", "D": "Madonna" },
+    "answers": {
+      "A": "Mariah Carey",
+      "B": "Celine Dion",
+      "C": "Whitney Houston",
+      "D": "Madonna"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq793",
     "question": "How many strings does a standard guitar have?",
-    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "answers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq794",
     "question": "Which film won the first ever Academy Award for Best Picture?",
-    "answers": { "A": "All Quiet on the Western Front", "B": "Wings", "C": "The Jazz Singer", "D": "Ben-Hur" },
+    "answers": {
+      "A": "All Quiet on the Western Front",
+      "B": "Wings",
+      "C": "The Jazz Singer",
+      "D": "Ben-Hur"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq795",
     "question": "The movie 'The Godfather' was based on a novel by whom?",
-    "answers": { "A": "Stephen King", "B": "Mario Puzo", "C": "Francis Ford Coppola", "D": "Elmore Leonard" },
+    "answers": {
+      "A": "Stephen King",
+      "B": "Mario Puzo",
+      "C": "Francis Ford Coppola",
+      "D": "Elmore Leonard"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq796",
     "question": "Which actor played Jack Sparrow in Pirates of the Caribbean?",
-    "answers": { "A": "Orlando Bloom", "B": "Geoffrey Rush", "C": "Johnny Depp", "D": "Javier Bardem" },
+    "answers": {
+      "A": "Orlando Bloom",
+      "B": "Geoffrey Rush",
+      "C": "Johnny Depp",
+      "D": "Javier Bardem"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq797",
     "question": "Who directed the film 'Jurassic Park'?",
-    "answers": { "A": "James Cameron", "B": "George Lucas", "C": "Steven Spielberg", "D": "Ron Howard" },
+    "answers": {
+      "A": "James Cameron",
+      "B": "George Lucas",
+      "C": "Steven Spielberg",
+      "D": "Ron Howard"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq798",
     "question": "Which Disney film features the song 'Let It Go'?",
-    "answers": { "A": "Tangled", "B": "Brave", "C": "Moana", "D": "Frozen" },
+    "answers": {
+      "A": "Tangled",
+      "B": "Brave",
+      "C": "Moana",
+      "D": "Frozen"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq799",
     "question": "In which film does the character Hannibal Lecter first appear?",
-    "answers": { "A": "Red Dragon", "B": "The Silence of the Lambs", "C": "Manhunter", "D": "Hannibal" },
+    "answers": {
+      "A": "Red Dragon",
+      "B": "The Silence of the Lambs",
+      "C": "Manhunter",
+      "D": "Hannibal"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq800",
     "question": "The TV show 'Breaking Bad' is set in which US city?",
-    "answers": { "A": "Phoenix", "B": "Denver", "C": "Albuquerque", "D": "El Paso" },
+    "answers": {
+      "A": "Phoenix",
+      "B": "Denver",
+      "C": "Albuquerque",
+      "D": "El Paso"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq801",
     "question": "Which actor played Tony Stark / Iron Man in the Marvel Cinematic Universe?",
-    "answers": { "A": "Chris Evans", "B": "Robert Downey Jr.", "C": "Chris Hemsworth", "D": "Mark Ruffalo" },
+    "answers": {
+      "A": "Chris Evans",
+      "B": "Robert Downey Jr.",
+      "C": "Chris Hemsworth",
+      "D": "Mark Ruffalo"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq802",
     "question": "How many seasons does the TV show 'Game of Thrones' have?",
-    "answers": { "A": "6", "B": "7", "C": "8", "D": "9" },
+    "answers": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "9"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq803",
     "question": "Which film is set on the spaceship Nostromo?",
-    "answers": { "A": "2001: A Space Odyssey", "B": "Predator", "C": "Interstellar", "D": "Alien" },
+    "answers": {
+      "A": "2001: A Space Odyssey",
+      "B": "Predator",
+      "C": "Interstellar",
+      "D": "Alien"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq804",
     "question": "Who played the Terminator in the original 1984 film?",
-    "answers": { "A": "Sylvester Stallone", "B": "Bruce Willis", "C": "Arnold Schwarzenegger", "D": "Dolph Lundgren" },
+    "answers": {
+      "A": "Sylvester Stallone",
+      "B": "Bruce Willis",
+      "C": "Arnold Schwarzenegger",
+      "D": "Dolph Lundgren"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq805",
     "question": "The phrase 'You talking to me?' is from which film?",
-    "answers": { "A": "Goodfellas", "B": "Raging Bull", "C": "Taxi Driver", "D": "The Godfather" },
+    "answers": {
+      "A": "Goodfellas",
+      "B": "Raging Bull",
+      "C": "Taxi Driver",
+      "D": "The Godfather"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq806",
     "question": "Which country produces Champagne?",
-    "answers": { "A": "Italy", "B": "Spain", "C": "Germany", "D": "France" },
+    "answers": {
+      "A": "Italy",
+      "B": "Spain",
+      "C": "Germany",
+      "D": "France"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq807",
     "question": "What type of pastry is used to make a croissant?",
-    "answers": { "A": "Shortcrust", "B": "Choux", "C": "Filo", "D": "Laminated/puff" },
+    "answers": {
+      "A": "Shortcrust",
+      "B": "Choux",
+      "C": "Filo",
+      "D": "Laminated/puff"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq808",
     "question": "Sushi originates from which country?",
-    "answers": { "A": "China", "B": "South Korea", "C": "Japan", "D": "Vietnam" },
+    "answers": {
+      "A": "China",
+      "B": "South Korea",
+      "C": "Japan",
+      "D": "Vietnam"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq809",
     "question": "Which spice is derived from the Crocus flower?",
-    "answers": { "A": "Turmeric", "B": "Saffron", "C": "Paprika", "D": "Cardamom" },
+    "answers": {
+      "A": "Turmeric",
+      "B": "Saffron",
+      "C": "Paprika",
+      "D": "Cardamom"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq810",
     "question": "What is the main ingredient in guacamole?",
-    "answers": { "A": "Tomato", "B": "Lime", "C": "Onion", "D": "Avocado" },
+    "answers": {
+      "A": "Tomato",
+      "B": "Lime",
+      "C": "Onion",
+      "D": "Avocado"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq811",
     "question": "Which country is the world's largest producer of coffee?",
-    "answers": { "A": "Colombia", "B": "Ethiopia", "C": "Vietnam", "D": "Brazil" },
+    "answers": {
+      "A": "Colombia",
+      "B": "Ethiopia",
+      "C": "Vietnam",
+      "D": "Brazil"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq812",
     "question": "Haggis is the national dish of which country?",
-    "answers": { "A": "Ireland", "B": "Wales", "C": "Scotland", "D": "Iceland" },
+    "answers": {
+      "A": "Ireland",
+      "B": "Wales",
+      "C": "Scotland",
+      "D": "Iceland"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq813",
     "question": "What is the main grain used in beer production?",
-    "answers": { "A": "Wheat", "B": "Rye", "C": "Barley", "D": "Oats" },
+    "answers": {
+      "A": "Wheat",
+      "B": "Rye",
+      "C": "Barley",
+      "D": "Oats"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq814",
     "question": "A 'Margherita' pizza traditionally has which toppings?",
-    "answers": { "A": "Pepperoni, olives, cheese", "B": "Tomato, mozzarella, basil", "C": "Ham, pineapple, cheese", "D": "Mushrooms, peppers, onions" },
+    "answers": {
+      "A": "Pepperoni, olives, cheese",
+      "B": "Tomato, mozzarella, basil",
+      "C": "Ham, pineapple, cheese",
+      "D": "Mushrooms, peppers, onions"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq815",
     "question": "Which fruit is used to make wine?",
-    "answers": { "A": "Apple", "B": "Cherry", "C": "Grapes", "D": "Plum" },
+    "answers": {
+      "A": "Apple",
+      "B": "Cherry",
+      "C": "Grapes",
+      "D": "Plum"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq816",
     "question": "What gives red wine its colour?",
-    "answers": { "A": "Tannins", "B": "Grape juice", "C": "Grape skins", "D": "Yeast" },
+    "answers": {
+      "A": "Tannins",
+      "B": "Grape juice",
+      "C": "Grape skins",
+      "D": "Yeast"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq817",
     "question": "Which country is famous for its Gouda cheese?",
-    "answers": { "A": "France", "B": "Belgium", "C": "Netherlands", "D": "Denmark" },
+    "answers": {
+      "A": "France",
+      "B": "Belgium",
+      "C": "Netherlands",
+      "D": "Denmark"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq818",
     "question": "What is sake brewed from?",
-    "answers": { "A": "Barley", "B": "Rice", "C": "Corn", "D": "Wheat" },
+    "answers": {
+      "A": "Barley",
+      "B": "Rice",
+      "C": "Corn",
+      "D": "Wheat"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq819",
     "question": "Stilton is a variety of which type of food?",
-    "answers": { "A": "Bread", "B": "Meat", "C": "Cheese", "D": "Wine" },
+    "answers": {
+      "A": "Bread",
+      "B": "Meat",
+      "C": "Cheese",
+      "D": "Wine"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq820",
     "question": "Which cocktail is made with vodka, tomato juice and spices?",
-    "answers": { "A": "Screwdriver", "B": "Cosmopolitan", "C": "Bloody Mary", "D": "Harvey Wallbanger" },
+    "answers": {
+      "A": "Screwdriver",
+      "B": "Cosmopolitan",
+      "C": "Bloody Mary",
+      "D": "Harvey Wallbanger"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq821",
     "question": "What is the main ingredient in hummus?",
-    "answers": { "A": "Lentils", "B": "Chickpeas", "C": "Broad beans", "D": "Black beans" },
+    "answers": {
+      "A": "Lentils",
+      "B": "Chickpeas",
+      "C": "Broad beans",
+      "D": "Black beans"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq822",
     "question": "Which country is the largest producer of olive oil?",
-    "answers": { "A": "Italy", "B": "Greece", "C": "Tunisia", "D": "Spain" },
+    "answers": {
+      "A": "Italy",
+      "B": "Greece",
+      "C": "Tunisia",
+      "D": "Spain"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq823",
     "question": "Which author wrote 'Pride and Prejudice'?",
-    "answers": { "A": "Charlotte Bronte", "B": "Jane Austen", "C": "George Eliot", "D": "Emily Bronte" },
+    "answers": {
+      "A": "Charlotte Bronte",
+      "B": "Jane Austen",
+      "C": "George Eliot",
+      "D": "Emily Bronte"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq824",
     "question": "In Shakespeare's 'Romeo and Juliet', what are the two feuding families?",
-    "answers": { "A": "Capulet and Montague", "B": "Verona and Mantua", "C": "Capulet and Benvolio", "D": "Montague and Tybalt" },
+    "answers": {
+      "A": "Capulet and Montague",
+      "B": "Verona and Mantua",
+      "C": "Capulet and Benvolio",
+      "D": "Montague and Tybalt"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq825",
     "question": "Who wrote '1984'?",
-    "answers": { "A": "Aldous Huxley", "B": "Ray Bradbury", "C": "George Orwell", "D": "Arthur Koestler" },
+    "answers": {
+      "A": "Aldous Huxley",
+      "B": "Ray Bradbury",
+      "C": "George Orwell",
+      "D": "Arthur Koestler"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq826",
     "question": "What is the name of the whale in 'Moby-Dick'?",
-    "answers": { "A": "Moby", "B": "Leviathan", "C": "The White Whale", "D": "Moby Dick is the whale's name" },
+    "answers": {
+      "A": "Moby",
+      "B": "Leviathan",
+      "C": "The White Whale",
+      "D": "Moby Dick is the whale's name"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq827",
     "question": "J.K. Rowling published Harry Potter and the Philosopher's Stone in which year?",
-    "answers": { "A": "1995", "B": "1996", "C": "1997", "D": "1998" },
+    "answers": {
+      "A": "1995",
+      "B": "1996",
+      "C": "1997",
+      "D": "1998"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq828",
     "question": "Which fictional detective lived at 221B Baker Street?",
-    "answers": { "A": "Hercule Poirot", "B": "Miss Marple", "C": "Sherlock Holmes", "D": "Inspector Morse" },
+    "answers": {
+      "A": "Hercule Poirot",
+      "B": "Miss Marple",
+      "C": "Sherlock Holmes",
+      "D": "Inspector Morse"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq829",
     "question": "Franz Kafka wrote which novel featuring a man who wakes as an insect?",
-    "answers": { "A": "The Trial", "B": "Amerika", "C": "The Castle", "D": "The Metamorphosis" },
+    "answers": {
+      "A": "The Trial",
+      "B": "Amerika",
+      "C": "The Castle",
+      "D": "The Metamorphosis"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq830",
     "question": "Which author created the character Atticus Finch?",
-    "answers": { "A": "Truman Capote", "B": "Harper Lee", "C": "John Steinbeck", "D": "William Faulkner" },
+    "answers": {
+      "A": "Truman Capote",
+      "B": "Harper Lee",
+      "C": "John Steinbeck",
+      "D": "William Faulkner"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq831",
     "question": "Don Quixote was written by which author?",
-    "answers": { "A": "Gabriel Garcia Marquez", "B": "Pablo Neruda", "C": "Miguel de Cervantes", "D": "Lope de Vega" },
+    "answers": {
+      "A": "Gabriel Garcia Marquez",
+      "B": "Pablo Neruda",
+      "C": "Miguel de Cervantes",
+      "D": "Lope de Vega"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq832",
     "question": "What is the first book of the Bible?",
-    "answers": { "A": "Exodus", "B": "Psalms", "C": "Leviticus", "D": "Genesis" },
+    "answers": {
+      "A": "Exodus",
+      "B": "Psalms",
+      "C": "Leviticus",
+      "D": "Genesis"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq833",
     "question": "Which Dickens novel features the character Ebenezer Scrooge?",
-    "answers": { "A": "Oliver Twist", "B": "Great Expectations", "C": "A Christmas Carol", "D": "David Copperfield" },
+    "answers": {
+      "A": "Oliver Twist",
+      "B": "Great Expectations",
+      "C": "A Christmas Carol",
+      "D": "David Copperfield"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq834",
     "question": "The Booker Prize is awarded annually for fiction written in which language?",
-    "answers": { "A": "French", "B": "English", "C": "Spanish", "D": "German" },
+    "answers": {
+      "A": "French",
+      "B": "English",
+      "C": "Spanish",
+      "D": "German"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq835",
     "question": "How many plays did Shakespeare write?",
-    "answers": { "A": "27", "B": "37", "C": "47", "D": "57" },
+    "answers": {
+      "A": "27",
+      "B": "37",
+      "C": "47",
+      "D": "57"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq836",
     "question": "Which element is represented by the symbol 'Fe'?",
-    "answers": { "A": "Fluorine", "B": "Iron", "C": "Francium", "D": "Fermium" },
+    "answers": {
+      "A": "Fluorine",
+      "B": "Iron",
+      "C": "Francium",
+      "D": "Fermium"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq837",
     "question": "The Eiffel Tower is located in which city?",
-    "answers": { "A": "Brussels", "B": "Lyon", "C": "Paris", "D": "Marseille" },
+    "answers": {
+      "A": "Brussels",
+      "B": "Lyon",
+      "C": "Paris",
+      "D": "Marseille"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq838",
     "question": "What does 'www' stand for in a website address?",
-    "answers": { "A": "World Wide Web", "B": "Western Web Works", "C": "Wireless World Web", "D": "Web Wide World" },
+    "answers": {
+      "A": "World Wide Web",
+      "B": "Western Web Works",
+      "C": "Wireless World Web",
+      "D": "Web Wide World"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq839",
     "question": "Which company created the iPhone?",
-    "answers": { "A": "Samsung", "B": "Google", "C": "Apple", "D": "Microsoft" },
+    "answers": {
+      "A": "Samsung",
+      "B": "Google",
+      "C": "Apple",
+      "D": "Microsoft"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq840",
     "question": "How many sides does a hexagon have?",
-    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "answers": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq841",
     "question": "In Greek mythology, who flew too close to the sun?",
-    "answers": { "A": "Prometheus", "B": "Daedalus", "C": "Hermes", "D": "Icarus" },
+    "answers": {
+      "A": "Prometheus",
+      "B": "Daedalus",
+      "C": "Hermes",
+      "D": "Icarus"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq842",
     "question": "What is the largest planet in our solar system?",
-    "answers": { "A": "Saturn", "B": "Neptune", "C": "Jupiter", "D": "Uranus" },
+    "answers": {
+      "A": "Saturn",
+      "B": "Neptune",
+      "C": "Jupiter",
+      "D": "Uranus"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq843",
     "question": "Which currency is used in Japan?",
-    "answers": { "A": "Won", "B": "Yuan", "C": "Yen", "D": "Ringgit" },
+    "answers": {
+      "A": "Won",
+      "B": "Yuan",
+      "C": "Yen",
+      "D": "Ringgit"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq844",
     "question": "How many continents are there on Earth?",
-    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "answers": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq845",
     "question": "What is the phobia of spiders called?",
-    "answers": { "A": "Arachnophobia", "B": "Acrophobia", "C": "Agoraphobia", "D": "Ophidiophobia" },
+    "answers": {
+      "A": "Arachnophobia",
+      "B": "Acrophobia",
+      "C": "Agoraphobia",
+      "D": "Ophidiophobia"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq846",
     "question": "Which gas makes up most of the air we breathe (by volume)?",
-    "answers": { "A": "Oxygen", "B": "Carbon dioxide", "C": "Nitrogen", "D": "Hydrogen" },
+    "answers": {
+      "A": "Oxygen",
+      "B": "Carbon dioxide",
+      "C": "Nitrogen",
+      "D": "Hydrogen"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq847",
     "question": "What do bees collect from flowers to make honey?",
-    "answers": { "A": "Pollen only", "B": "Nectar", "C": "Resin", "D": "Sap" },
+    "answers": {
+      "A": "Pollen only",
+      "B": "Nectar",
+      "C": "Resin",
+      "D": "Sap"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq848",
     "question": "A group of lions is called a what?",
-    "answers": { "A": "Pack", "B": "Herd", "C": "Pride", "D": "Colony" },
+    "answers": {
+      "A": "Pack",
+      "B": "Herd",
+      "C": "Pride",
+      "D": "Colony"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq849",
     "question": "Which planet is closest to the Sun?",
-    "answers": { "A": "Venus", "B": "Earth", "C": "Mars", "D": "Mercury" },
+    "answers": {
+      "A": "Venus",
+      "B": "Earth",
+      "C": "Mars",
+      "D": "Mercury"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq850",
     "question": "What is two to the power of ten?",
-    "answers": { "A": "512", "B": "1024", "C": "2048", "D": "256" },
+    "answers": {
+      "A": "512",
+      "B": "1024",
+      "C": "2048",
+      "D": "256"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq851",
     "question": "The Louvre museum is located in which city?",
-    "answers": { "A": "Rome", "B": "Madrid", "C": "London", "D": "Paris" },
+    "answers": {
+      "A": "Rome",
+      "B": "Madrid",
+      "C": "London",
+      "D": "Paris"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq852",
     "question": "Which US state has the most people?",
-    "answers": { "A": "Texas", "B": "New York", "C": "Florida", "D": "California" },
+    "answers": {
+      "A": "Texas",
+      "B": "New York",
+      "C": "Florida",
+      "D": "California"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq853",
     "question": "The Great Barrier Reef is located off the coast of which country?",
-    "answers": { "A": "New Zealand", "B": "Australia", "C": "Philippines", "D": "Indonesia" },
+    "answers": {
+      "A": "New Zealand",
+      "B": "Australia",
+      "C": "Philippines",
+      "D": "Indonesia"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq854",
     "question": "Which language is spoken in Brazil?",
-    "answers": { "A": "Spanish", "B": "English", "C": "Portuguese", "D": "French" },
+    "answers": {
+      "A": "Spanish",
+      "B": "English",
+      "C": "Portuguese",
+      "D": "French"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq855",
     "question": "How many days are in a leap year?",
-    "answers": { "A": "364", "B": "365", "C": "366", "D": "367" },
+    "answers": {
+      "A": "364",
+      "B": "365",
+      "C": "366",
+      "D": "367"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq856",
     "question": "What shape is a stop sign?",
-    "answers": { "A": "Circle", "B": "Hexagon", "C": "Octagon", "D": "Pentagon" },
+    "answers": {
+      "A": "Circle",
+      "B": "Hexagon",
+      "C": "Octagon",
+      "D": "Pentagon"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq857",
     "question": "Which country gifted the Statue of Liberty to the USA?",
-    "answers": { "A": "UK", "B": "France", "C": "Italy", "D": "Spain" },
+    "answers": {
+      "A": "UK",
+      "B": "France",
+      "C": "Italy",
+      "D": "Spain"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq858",
     "question": "Which is the only mammal capable of true flight?",
-    "answers": { "A": "Flying squirrel", "B": "Sugar glider", "C": "Bat", "D": "Colugos" },
+    "answers": {
+      "A": "Flying squirrel",
+      "B": "Sugar glider",
+      "C": "Bat",
+      "D": "Colugos"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq859",
     "question": "How many zeros are in one million?",
-    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "answers": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq860",
     "question": "The tallest building in the world (as of 2024) is in which city?",
-    "answers": { "A": "Shanghai", "B": "New York", "C": "Dubai", "D": "Kuala Lumpur" },
+    "answers": {
+      "A": "Shanghai",
+      "B": "New York",
+      "C": "Dubai",
+      "D": "Kuala Lumpur"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq861",
     "question": "What is the name of the largest ocean current system?",
-    "answers": { "A": "Gulf Stream", "B": "Thermohaline circulation", "C": "El Nino", "D": "Pacific Gyre" },
+    "answers": {
+      "A": "Gulf Stream",
+      "B": "Thermohaline circulation",
+      "C": "El Nino",
+      "D": "Pacific Gyre"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq862",
     "question": "Which country has the longest coastline in the world?",
-    "answers": { "A": "Russia", "B": "USA", "C": "Norway", "D": "Canada" },
+    "answers": {
+      "A": "Russia",
+      "B": "USA",
+      "C": "Norway",
+      "D": "Canada"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq863",
     "question": "The philosopher Socrates was from which ancient city?",
-    "answers": { "A": "Sparta", "B": "Corinth", "C": "Athens", "D": "Thebes" },
+    "answers": {
+      "A": "Sparta",
+      "B": "Corinth",
+      "C": "Athens",
+      "D": "Thebes"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq864",
     "question": "Mahatma Gandhi led independence movement in which country?",
-    "answers": { "A": "Pakistan", "B": "India", "C": "Bangladesh", "D": "Ceylon" },
+    "answers": {
+      "A": "Pakistan",
+      "B": "India",
+      "C": "Bangladesh",
+      "D": "Ceylon"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq865",
     "question": "In which decade was the internet made publicly available?",
-    "answers": { "A": "1970s", "B": "1980s", "C": "1990s", "D": "2000s" },
+    "answers": {
+      "A": "1970s",
+      "B": "1980s",
+      "C": "1990s",
+      "D": "2000s"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq866",
     "question": "What is the national animal of Scotland?",
-    "answers": { "A": "Stag", "B": "Lion", "C": "Unicorn", "D": "Eagle" },
+    "answers": {
+      "A": "Stag",
+      "B": "Lion",
+      "C": "Unicorn",
+      "D": "Eagle"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq867",
     "question": "Which TV show features the Stark family?",
-    "answers": { "A": "The Crown", "B": "Peaky Blinders", "C": "Game of Thrones", "D": "Vikings" },
+    "answers": {
+      "A": "The Crown",
+      "B": "Peaky Blinders",
+      "C": "Game of Thrones",
+      "D": "Vikings"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq868",
     "question": "A dodecagon has how many sides?",
-    "answers": { "A": "10", "B": "11", "C": "12", "D": "13" },
+    "answers": {
+      "A": "10",
+      "B": "11",
+      "C": "12",
+      "D": "13"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq869",
     "question": "Which country's flag features a maple leaf?",
-    "answers": { "A": "Australia", "B": "New Zealand", "C": "Ireland", "D": "Canada" },
+    "answers": {
+      "A": "Australia",
+      "B": "New Zealand",
+      "C": "Ireland",
+      "D": "Canada"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq870",
     "question": "What does the 'E' stand for in E=mc²?",
-    "answers": { "A": "Electrons", "B": "Entropy", "C": "Energy", "D": "Electromagnetism" },
+    "answers": {
+      "A": "Electrons",
+      "B": "Entropy",
+      "C": "Energy",
+      "D": "Electromagnetism"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq871",
     "question": "Which country invented paper?",
-    "answers": { "A": "Egypt", "B": "Greece", "C": "China", "D": "India" },
+    "answers": {
+      "A": "Egypt",
+      "B": "Greece",
+      "C": "China",
+      "D": "India"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq872",
     "question": "The Pyramids of Giza are located near which city?",
-    "answers": { "A": "Luxor", "B": "Alexandria", "C": "Aswan", "D": "Cairo" },
+    "answers": {
+      "A": "Luxor",
+      "B": "Alexandria",
+      "C": "Aswan",
+      "D": "Cairo"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq873",
     "question": "What fraction of the Earth is covered by water?",
-    "answers": { "A": "About 50%", "B": "About 61%", "C": "About 71%", "D": "About 81%" },
+    "answers": {
+      "A": "About 50%",
+      "B": "About 61%",
+      "C": "About 71%",
+      "D": "About 81%"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq874",
     "question": "Which famous scientist was born on Pi Day (March 14)?",
-    "answers": { "A": "Isaac Newton", "B": "Nikola Tesla", "C": "Stephen Hawking", "D": "Albert Einstein" },
+    "answers": {
+      "A": "Isaac Newton",
+      "B": "Nikola Tesla",
+      "C": "Stephen Hawking",
+      "D": "Albert Einstein"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq875",
     "question": "Which sport uses a shuttlecock?",
-    "answers": { "A": "Squash", "B": "Badminton", "C": "Racquetball", "D": "Pickleball" },
+    "answers": {
+      "A": "Squash",
+      "B": "Badminton",
+      "C": "Racquetball",
+      "D": "Pickleball"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq876",
     "question": "In which year did the first iPhone launch?",
-    "answers": { "A": "2005", "B": "2006", "C": "2007", "D": "2008" },
+    "answers": {
+      "A": "2005",
+      "B": "2006",
+      "C": "2007",
+      "D": "2008"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq877",
     "question": "Which programming language shares its name with a type of coffee?",
-    "answers": { "A": "Python", "B": "Ruby", "C": "Java", "D": "Perl" },
+    "answers": {
+      "A": "Python",
+      "B": "Ruby",
+      "C": "Java",
+      "D": "Perl"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq878",
     "question": "What is the most spoken language in the world by number of native speakers?",
-    "answers": { "A": "English", "B": "Spanish", "C": "Hindi", "D": "Mandarin Chinese" },
+    "answers": {
+      "A": "English",
+      "B": "Spanish",
+      "C": "Hindi",
+      "D": "Mandarin Chinese"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq879",
     "question": "Which organ is affected by cirrhosis?",
-    "answers": { "A": "Kidney", "B": "Heart", "C": "Liver", "D": "Lung" },
+    "answers": {
+      "A": "Kidney",
+      "B": "Heart",
+      "C": "Liver",
+      "D": "Lung"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq880",
     "question": "What is the tallest mountain in the world?",
-    "answers": { "A": "K2", "B": "Kangchenjunga", "C": "Lhotse", "D": "Mount Everest" },
+    "answers": {
+      "A": "K2",
+      "B": "Kangchenjunga",
+      "C": "Lhotse",
+      "D": "Mount Everest"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq881",
     "question": "Which vitamin is produced by the skin in sunlight?",
-    "answers": { "A": "Vitamin A", "B": "Vitamin B12", "C": "Vitamin C", "D": "Vitamin D" },
+    "answers": {
+      "A": "Vitamin A",
+      "B": "Vitamin B12",
+      "C": "Vitamin C",
+      "D": "Vitamin D"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq882",
     "question": "What is the largest internal organ in the human body?",
-    "answers": { "A": "Heart", "B": "Lungs", "C": "Liver", "D": "Brain" },
+    "answers": {
+      "A": "Heart",
+      "B": "Lungs",
+      "C": "Liver",
+      "D": "Brain"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq883",
     "question": "Which gas is commonly called 'laughing gas'?",
-    "answers": { "A": "Carbon dioxide", "B": "Nitrous oxide", "C": "Helium", "D": "Nitrogen" },
+    "answers": {
+      "A": "Carbon dioxide",
+      "B": "Nitrous oxide",
+      "C": "Helium",
+      "D": "Nitrogen"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq884",
     "question": "The speed of sound at sea level is approximately how many km/h?",
-    "answers": { "A": "900 km/h", "B": "1100 km/h", "C": "1234 km/h", "D": "1500 km/h" },
+    "answers": {
+      "A": "900 km/h",
+      "B": "1100 km/h",
+      "C": "1234 km/h",
+      "D": "1500 km/h"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq885",
     "question": "What is the capital of Canada?",
-    "answers": { "A": "Toronto", "B": "Montreal", "C": "Vancouver", "D": "Ottawa" },
+    "answers": {
+      "A": "Toronto",
+      "B": "Montreal",
+      "C": "Vancouver",
+      "D": "Ottawa"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq886",
     "question": "Which country has the longest land border with Russia?",
-    "answers": { "A": "China", "B": "Kazakhstan", "C": "Mongolia", "D": "Finland" },
+    "answers": {
+      "A": "China",
+      "B": "Kazakhstan",
+      "C": "Mongolia",
+      "D": "Finland"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq887",
     "question": "The Amazon River flows into which ocean?",
-    "answers": { "A": "Pacific", "B": "Caribbean Sea", "C": "Atlantic", "D": "Gulf of Mexico" },
+    "answers": {
+      "A": "Pacific",
+      "B": "Caribbean Sea",
+      "C": "Atlantic",
+      "D": "Gulf of Mexico"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq888",
     "question": "Which country has the most UNESCO World Heritage Sites?",
-    "answers": { "A": "France", "B": "China", "C": "Italy", "D": "Spain" },
+    "answers": {
+      "A": "France",
+      "B": "China",
+      "C": "Italy",
+      "D": "Spain"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq889",
     "question": "What is pi (approximately) to two decimal places?",
-    "answers": { "A": "3.12", "B": "3.14", "C": "3.16", "D": "3.18" },
+    "answers": {
+      "A": "3.12",
+      "B": "3.14",
+      "C": "3.16",
+      "D": "3.18"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq890",
     "question": "How many keys are on a standard piano?",
-    "answers": { "A": "76", "B": "80", "C": "84", "D": "88" },
+    "answers": {
+      "A": "76",
+      "B": "80",
+      "C": "84",
+      "D": "88"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq891",
     "question": "Which artist painted 'The Starry Night'?",
-    "answers": { "A": "Paul Gauguin", "B": "Claude Monet", "C": "Vincent van Gogh", "D": "Paul Cezanne" },
+    "answers": {
+      "A": "Paul Gauguin",
+      "B": "Claude Monet",
+      "C": "Vincent van Gogh",
+      "D": "Paul Cezanne"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq892",
     "question": "Which planet rotates on its side?",
-    "answers": { "A": "Neptune", "B": "Saturn", "C": "Uranus", "D": "Venus" },
+    "answers": {
+      "A": "Neptune",
+      "B": "Saturn",
+      "C": "Uranus",
+      "D": "Venus"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq893",
     "question": "Which famous ship sank on its maiden voyage in 1912?",
-    "answers": { "A": "Lusitania", "B": "Olympic", "C": "Britannic", "D": "Titanic" },
+    "answers": {
+      "A": "Lusitania",
+      "B": "Olympic",
+      "C": "Britannic",
+      "D": "Titanic"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq894",
     "question": "In the human body, where are red blood cells produced?",
-    "answers": { "A": "Liver", "B": "Spleen", "C": "Bone marrow", "D": "Kidneys" },
+    "answers": {
+      "A": "Liver",
+      "B": "Spleen",
+      "C": "Bone marrow",
+      "D": "Kidneys"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq895",
     "question": "Which war was fought between the North and South in the United States?",
-    "answers": { "A": "The Revolutionary War", "B": "The Civil War", "C": "The War of 1812", "D": "The Spanish-American War" },
+    "answers": {
+      "A": "The Revolutionary War",
+      "B": "The Civil War",
+      "C": "The War of 1812",
+      "D": "The Spanish-American War"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq896",
     "question": "What is the currency of India?",
-    "answers": { "A": "Rupee", "B": "Taka", "C": "Lira", "D": "Baht" },
+    "answers": {
+      "A": "Rupee",
+      "B": "Taka",
+      "C": "Lira",
+      "D": "Baht"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq897",
     "question": "Who wrote 'The Canterbury Tales'?",
-    "answers": { "A": "William Shakespeare", "B": "John Milton", "C": "Geoffrey Chaucer", "D": "Edmund Spenser" },
+    "answers": {
+      "A": "William Shakespeare",
+      "B": "John Milton",
+      "C": "Geoffrey Chaucer",
+      "D": "Edmund Spenser"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq898",
     "question": "Which country is the birthplace of the Olympic Games?",
-    "answers": { "A": "Italy", "B": "Greece", "C": "Turkey", "D": "France" },
+    "answers": {
+      "A": "Italy",
+      "B": "Greece",
+      "C": "Turkey",
+      "D": "France"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq899",
     "question": "How many players are on a standard volleyball team on court?",
-    "answers": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "answers": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq900",
     "question": "What is the chemical symbol for sodium?",
-    "answers": { "A": "So", "B": "Sd", "C": "Na", "D": "Nm" },
+    "answers": {
+      "A": "So",
+      "B": "Sd",
+      "C": "Na",
+      "D": "Nm"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq901",
     "question": "Which US president appears on the $100 bill?",
-    "answers": { "A": "Abraham Lincoln", "B": "George Washington", "C": "Benjamin Franklin", "D": "Thomas Jefferson" },
+    "answers": {
+      "A": "Abraham Lincoln",
+      "B": "George Washington",
+      "C": "Benjamin Franklin",
+      "D": "Thomas Jefferson"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq902",
     "question": "A group of crows is called a what?",
-    "answers": { "A": "Flock", "B": "Murder", "C": "Colony", "D": "Gaggle" },
+    "answers": {
+      "A": "Flock",
+      "B": "Murder",
+      "C": "Colony",
+      "D": "Gaggle"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq903",
     "question": "Which vitamin is most associated with eyesight?",
-    "answers": { "A": "Vitamin A", "B": "Vitamin B", "C": "Vitamin C", "D": "Vitamin E" },
+    "answers": {
+      "A": "Vitamin A",
+      "B": "Vitamin B",
+      "C": "Vitamin C",
+      "D": "Vitamin E"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq904",
     "question": "Who painted the Sistine Chapel ceiling?",
-    "answers": { "A": "Leonardo da Vinci", "B": "Raphael", "C": "Donatello", "D": "Michelangelo" },
+    "answers": {
+      "A": "Leonardo da Vinci",
+      "B": "Raphael",
+      "C": "Donatello",
+      "D": "Michelangelo"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq905",
     "question": "What is the capital of Argentina?",
-    "answers": { "A": "Montevideo", "B": "Santiago", "C": "Buenos Aires", "D": "Lima" },
+    "answers": {
+      "A": "Montevideo",
+      "B": "Santiago",
+      "C": "Buenos Aires",
+      "D": "Lima"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq906",
     "question": "Which monarch was known as the 'Virgin Queen'?",
-    "answers": { "A": "Mary Queen of Scots", "B": "Queen Victoria", "C": "Queen Elizabeth I", "D": "Queen Anne" },
+    "answers": {
+      "A": "Mary Queen of Scots",
+      "B": "Queen Victoria",
+      "C": "Queen Elizabeth I",
+      "D": "Queen Anne"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq907",
     "question": "What is the main component of the Sun?",
-    "answers": { "A": "Liquid lava", "B": "Helium plasma", "C": "Hydrogen plasma", "D": "Carbon gas" },
+    "answers": {
+      "A": "Liquid lava",
+      "B": "Helium plasma",
+      "C": "Hydrogen plasma",
+      "D": "Carbon gas"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq908",
     "question": "Which country is home to the Taj Mahal?",
-    "answers": { "A": "Pakistan", "B": "Bangladesh", "C": "India", "D": "Nepal" },
+    "answers": {
+      "A": "Pakistan",
+      "B": "Bangladesh",
+      "C": "India",
+      "D": "Nepal"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq909",
     "question": "How many planets are in our solar system?",
-    "answers": { "A": "7", "B": "8", "C": "9", "D": "10" },
+    "answers": {
+      "A": "7",
+      "B": "8",
+      "C": "9",
+      "D": "10"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq910",
     "question": "Which of these is NOT a primary colour (in traditional painting)?",
-    "answers": { "A": "Red", "B": "Blue", "C": "Green", "D": "Yellow" },
+    "answers": {
+      "A": "Red",
+      "B": "Blue",
+      "C": "Green",
+      "D": "Yellow"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq911",
     "question": "In computing, what does CPU stand for?",
-    "answers": { "A": "Central Processing Unit", "B": "Computer Power Unit", "C": "Core Processing Unit", "D": "Coded Program Utility" },
+    "answers": {
+      "A": "Central Processing Unit",
+      "B": "Computer Power Unit",
+      "C": "Core Processing Unit",
+      "D": "Coded Program Utility"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq912",
     "question": "Which country gave us the word 'sauna'?",
-    "answers": { "A": "Sweden", "B": "Norway", "C": "Finland", "D": "Iceland" },
+    "answers": {
+      "A": "Sweden",
+      "B": "Norway",
+      "C": "Finland",
+      "D": "Iceland"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq913",
     "question": "What is the smallest prime number?",
-    "answers": { "A": "0", "B": "1", "C": "2", "D": "3" },
+    "answers": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "3"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq914",
     "question": "Which country has a flag with just one colour and one symbol (a cedar tree)?",
-    "answers": { "A": "Jordan", "B": "Lebanon", "C": "Cyprus", "D": "Bahrain" },
+    "answers": {
+      "A": "Jordan",
+      "B": "Lebanon",
+      "C": "Cyprus",
+      "D": "Bahrain"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq915",
     "question": "Who invented the telephone?",
-    "answers": { "A": "Thomas Edison", "B": "Nikola Tesla", "C": "Alexander Graham Bell", "D": "Guglielmo Marconi" },
+    "answers": {
+      "A": "Thomas Edison",
+      "B": "Nikola Tesla",
+      "C": "Alexander Graham Bell",
+      "D": "Guglielmo Marconi"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq916",
     "question": "How many sides does a pentagon have?",
-    "answers": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "answers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq917",
     "question": "The battle of Waterloo took place in which modern-day country?",
-    "answers": { "A": "France", "B": "Netherlands", "C": "Belgium", "D": "Germany" },
+    "answers": {
+      "A": "France",
+      "B": "Netherlands",
+      "C": "Belgium",
+      "D": "Germany"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq918",
     "question": "What is the most widely practiced religion in the world?",
-    "answers": { "A": "Islam", "B": "Hinduism", "C": "Christianity", "D": "Buddhism" },
+    "answers": {
+      "A": "Islam",
+      "B": "Hinduism",
+      "C": "Christianity",
+      "D": "Buddhism"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq919",
     "question": "A horse with a mix of white and another colour coat is called what?",
-    "answers": { "A": "Roan", "B": "Pinto", "C": "Bay", "D": "Dun" },
+    "answers": {
+      "A": "Roan",
+      "B": "Pinto",
+      "C": "Bay",
+      "D": "Dun"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq920",
     "question": "Which country is home to the Serengeti National Park?",
-    "answers": { "A": "Kenya", "B": "South Africa", "C": "Tanzania", "D": "Botswana" },
+    "answers": {
+      "A": "Kenya",
+      "B": "South Africa",
+      "C": "Tanzania",
+      "D": "Botswana"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq921",
     "question": "Which country is home to the ancient city of Petra?",
-    "answers": { "A": "Israel", "B": "Jordan", "C": "Saudi Arabia", "D": "Lebanon" },
+    "answers": {
+      "A": "Israel",
+      "B": "Jordan",
+      "C": "Saudi Arabia",
+      "D": "Lebanon"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq922",
     "question": "What is the term for a baby kangaroo?",
-    "answers": { "A": "Cub", "B": "Pup", "C": "Joey", "D": "Kit" },
+    "answers": {
+      "A": "Cub",
+      "B": "Pup",
+      "C": "Joey",
+      "D": "Kit"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq923",
     "question": "Which famous wall runs across northern England?",
-    "answers": { "A": "Offa's Dyke", "B": "Antonine Wall", "C": "Hardian's Wall", "D": "Hadrian's Wall" },
+    "answers": {
+      "A": "Offa's Dyke",
+      "B": "Antonine Wall",
+      "C": "Hardian's Wall",
+      "D": "Hadrian's Wall"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq924",
     "question": "Who wrote 'The Divine Comedy'?",
-    "answers": { "A": "Petrarch", "B": "Boccaccio", "C": "Dante Alighieri", "D": "Virgil" },
+    "answers": {
+      "A": "Petrarch",
+      "B": "Boccaccio",
+      "C": "Dante Alighieri",
+      "D": "Virgil"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq925",
     "question": "What is the rarest blood type?",
-    "answers": { "A": "A negative", "B": "B negative", "C": "O negative", "D": "AB negative" },
+    "answers": {
+      "A": "A negative",
+      "B": "B negative",
+      "C": "O negative",
+      "D": "AB negative"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq926",
     "question": "The Great Sphinx of Giza has the head of what?",
-    "answers": { "A": "A lion", "B": "A pharaoh", "C": "A ram", "D": "A falcon" },
+    "answers": {
+      "A": "A lion",
+      "B": "A pharaoh",
+      "C": "A ram",
+      "D": "A falcon"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq927",
     "question": "Which US state is known as the 'Sunshine State'?",
-    "answers": { "A": "California", "B": "Arizona", "C": "Florida", "D": "Hawaii" },
+    "answers": {
+      "A": "California",
+      "B": "Arizona",
+      "C": "Florida",
+      "D": "Hawaii"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq928",
     "question": "What is the national sport of Japan?",
-    "answers": { "A": "Judo", "B": "Karate", "C": "Baseball", "D": "Sumo" },
+    "answers": {
+      "A": "Judo",
+      "B": "Karate",
+      "C": "Baseball",
+      "D": "Sumo"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq929",
     "question": "Which French artist is famous for painting ballerinas?",
-    "answers": { "A": "Edouard Manet", "B": "Paul Gauguin", "C": "Edgar Degas", "D": "Henri Matisse" },
+    "answers": {
+      "A": "Edouard Manet",
+      "B": "Paul Gauguin",
+      "C": "Edgar Degas",
+      "D": "Henri Matisse"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq930",
     "question": "What is the longest bone in the human body?",
-    "answers": { "A": "Humerus", "B": "Tibia", "C": "Femur", "D": "Radius" },
+    "answers": {
+      "A": "Humerus",
+      "B": "Tibia",
+      "C": "Femur",
+      "D": "Radius"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq931",
     "question": "The Nobel Peace Prize is awarded in which city?",
-    "answers": { "A": "Stockholm", "B": "Copenhagen", "C": "Helsinki", "D": "Oslo" },
+    "answers": {
+      "A": "Stockholm",
+      "B": "Copenhagen",
+      "C": "Helsinki",
+      "D": "Oslo"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq932",
     "question": "What is the hardest rock (geologically)?",
-    "answers": { "A": "Granite", "B": "Obsidian", "C": "Basalt", "D": "Quartzite" },
+    "answers": {
+      "A": "Granite",
+      "B": "Obsidian",
+      "C": "Basalt",
+      "D": "Quartzite"
+    },
     "correct": "A",
     "difficulty": "hard"
   },
   {
     "id": "pq933",
     "question": "In which country was the game of chess invented?",
-    "answers": { "A": "Persia", "B": "China", "C": "India", "D": "Arabia" },
+    "answers": {
+      "A": "Persia",
+      "B": "China",
+      "C": "India",
+      "D": "Arabia"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq934",
     "question": "Which ocean is the smallest in the world?",
-    "answers": { "A": "Indian", "B": "Southern", "C": "Atlantic", "D": "Arctic" },
+    "answers": {
+      "A": "Indian",
+      "B": "Southern",
+      "C": "Atlantic",
+      "D": "Arctic"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq935",
     "question": "Mandela served as President of South Africa from 1994 to which year?",
-    "answers": { "A": "1997", "B": "1999", "C": "2001", "D": "2003" },
+    "answers": {
+      "A": "1997",
+      "B": "1999",
+      "C": "2001",
+      "D": "2003"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq936",
     "question": "Which chemical element is a liquid at room temperature (besides mercury)?",
-    "answers": { "A": "Phosphorus", "B": "Gallium", "C": "Bromine", "D": "Cesium" },
+    "answers": {
+      "A": "Phosphorus",
+      "B": "Gallium",
+      "C": "Bromine",
+      "D": "Cesium"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq937",
     "question": "How many time zones does Russia span?",
-    "answers": { "A": "9", "B": "10", "C": "11", "D": "12" },
+    "answers": {
+      "A": "9",
+      "B": "10",
+      "C": "11",
+      "D": "12"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq938",
     "question": "What is the name of the largest moon of Saturn?",
-    "answers": { "A": "Io", "B": "Europa", "C": "Ganymede", "D": "Titan" },
+    "answers": {
+      "A": "Io",
+      "B": "Europa",
+      "C": "Ganymede",
+      "D": "Titan"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq939",
     "question": "The word 'robot' originates from which language?",
-    "answers": { "A": "German", "B": "Czech", "C": "Polish", "D": "Slovak" },
+    "answers": {
+      "A": "German",
+      "B": "Czech",
+      "C": "Polish",
+      "D": "Slovak"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq940",
     "question": "Which Hitchcock film features a shower scene that became iconic?",
-    "answers": { "A": "Vertigo", "B": "The Birds", "C": "Psycho", "D": "Rear Window" },
+    "answers": {
+      "A": "Vertigo",
+      "B": "The Birds",
+      "C": "Psycho",
+      "D": "Rear Window"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq941",
     "question": "What is the collective noun for a group of owls?",
-    "answers": { "A": "A gaggle", "B": "A parliament", "C": "A murder", "D": "A shrewdness" },
+    "answers": {
+      "A": "A gaggle",
+      "B": "A parliament",
+      "C": "A murder",
+      "D": "A shrewdness"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq942",
     "question": "Which two elements make up water?",
-    "answers": { "A": "Hydrogen and Nitrogen", "B": "Oxygen and Nitrogen", "C": "Hydrogen and Oxygen", "D": "Helium and Oxygen" },
+    "answers": {
+      "A": "Hydrogen and Nitrogen",
+      "B": "Oxygen and Nitrogen",
+      "C": "Hydrogen and Oxygen",
+      "D": "Helium and Oxygen"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq943",
     "question": "Which continent has the most countries?",
-    "answers": { "A": "Asia", "B": "South America", "C": "Africa", "D": "Europe" },
+    "answers": {
+      "A": "Asia",
+      "B": "South America",
+      "C": "Africa",
+      "D": "Europe"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq944",
     "question": "The Colosseum is located in which city?",
-    "answers": { "A": "Naples", "B": "Milan", "C": "Florence", "D": "Rome" },
+    "answers": {
+      "A": "Naples",
+      "B": "Milan",
+      "C": "Florence",
+      "D": "Rome"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq945",
     "question": "Which was the first country to reach the South Pole?",
-    "answers": { "A": "UK", "B": "USA", "C": "Norway", "D": "Sweden" },
+    "answers": {
+      "A": "UK",
+      "B": "USA",
+      "C": "Norway",
+      "D": "Sweden"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq946",
     "question": "In music, what does 'fortissimo' mean?",
-    "answers": { "A": "Very slow", "B": "Very quiet", "C": "Very loud", "D": "Very fast" },
+    "answers": {
+      "A": "Very slow",
+      "B": "Very quiet",
+      "C": "Very loud",
+      "D": "Very fast"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq947",
     "question": "Which country is home to the Fjords?",
-    "answers": { "A": "Sweden", "B": "Denmark", "C": "Iceland", "D": "Norway" },
+    "answers": {
+      "A": "Sweden",
+      "B": "Denmark",
+      "C": "Iceland",
+      "D": "Norway"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq948",
     "question": "Canine teeth are also known as what?",
-    "answers": { "A": "Molars", "B": "Incisors", "C": "Fangs", "D": "Bicuspids" },
+    "answers": {
+      "A": "Molars",
+      "B": "Incisors",
+      "C": "Fangs",
+      "D": "Bicuspids"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq949",
     "question": "Which letter is worth 10 points in Scrabble?",
-    "answers": { "A": "Q", "B": "Z", "C": "X", "D": "J" },
+    "answers": {
+      "A": "Q",
+      "B": "Z",
+      "C": "X",
+      "D": "J"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq950",
     "question": "What is the most visited city in the world (by international tourists)?",
-    "answers": { "A": "Paris", "B": "Bangkok", "C": "London", "D": "Dubai" },
+    "answers": {
+      "A": "Paris",
+      "B": "Bangkok",
+      "C": "London",
+      "D": "Dubai"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq951",
     "question": "Which country has the world's oldest monarchy still in existence?",
-    "answers": { "A": "UK", "B": "Sweden", "C": "Japan", "D": "Denmark" },
+    "answers": {
+      "A": "UK",
+      "B": "Sweden",
+      "C": "Japan",
+      "D": "Denmark"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq952",
     "question": "What is the name of the layer of the atmosphere closest to Earth?",
-    "answers": { "A": "Stratosphere", "B": "Mesosphere", "C": "Troposphere", "D": "Thermosphere" },
+    "answers": {
+      "A": "Stratosphere",
+      "B": "Mesosphere",
+      "C": "Troposphere",
+      "D": "Thermosphere"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq953",
     "question": "How many teeth does an adult human have (including wisdom teeth)?",
-    "answers": { "A": "28", "B": "30", "C": "32", "D": "34" },
+    "answers": {
+      "A": "28",
+      "B": "30",
+      "C": "32",
+      "D": "34"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq954",
     "question": "What is the capital of Turkey?",
-    "answers": { "A": "Istanbul", "B": "Ankara", "C": "Izmir", "D": "Bursa" },
+    "answers": {
+      "A": "Istanbul",
+      "B": "Ankara",
+      "C": "Izmir",
+      "D": "Bursa"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq955",
     "question": "Which sport is played at Wimbledon?",
-    "answers": { "A": "Cricket", "B": "Golf", "C": "Badminton", "D": "Tennis" },
+    "answers": {
+      "A": "Cricket",
+      "B": "Golf",
+      "C": "Badminton",
+      "D": "Tennis"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq956",
     "question": "What does DNA do in cells?",
-    "answers": { "A": "Carries oxygen", "B": "Stores genetic information", "C": "Produces energy", "D": "Digests nutrients" },
+    "answers": {
+      "A": "Carries oxygen",
+      "B": "Stores genetic information",
+      "C": "Produces energy",
+      "D": "Digests nutrients"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq957",
     "question": "Which country has the second largest population in the world?",
-    "answers": { "A": "China", "B": "USA", "C": "India", "D": "Indonesia" },
+    "answers": {
+      "A": "China",
+      "B": "USA",
+      "C": "India",
+      "D": "Indonesia"
+    },
     "correct": "A",
     "difficulty": "medium"
   },
   {
     "id": "pq958",
     "question": "Big Ben is the nickname for the bell in which tower?",
-    "answers": { "A": "Tower of London", "B": "Elizabeth Tower", "C": "Victoria Tower", "D": "Westminster Abbey" },
+    "answers": {
+      "A": "Tower of London",
+      "B": "Elizabeth Tower",
+      "C": "Victoria Tower",
+      "D": "Westminster Abbey"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq959",
     "question": "Which country has red and white as its flag colours (just those two)?",
-    "answers": { "A": "Poland", "B": "Austria", "C": "Switzerland", "D": "All of the above" },
+    "answers": {
+      "A": "Poland",
+      "B": "Austria",
+      "C": "Switzerland",
+      "D": "All of the above"
+    },
     "correct": "D",
     "difficulty": "hard"
   },
   {
     "id": "pq960",
     "question": "What is the name of the fairy in Peter Pan?",
-    "answers": { "A": "Silvermist", "B": "Rosetta", "C": "Tinker Bell", "D": "Periwinkle" },
+    "answers": {
+      "A": "Silvermist",
+      "B": "Rosetta",
+      "C": "Tinker Bell",
+      "D": "Periwinkle"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq961",
     "question": "In which country is the Uffizi Gallery?",
-    "answers": { "A": "Spain", "B": "France", "C": "Italy", "D": "Portugal" },
+    "answers": {
+      "A": "Spain",
+      "B": "France",
+      "C": "Italy",
+      "D": "Portugal"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq962",
     "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
-    "answers": { "A": "Mercury", "B": "Venus", "C": "Mars", "D": "Jupiter" },
+    "answers": {
+      "A": "Mercury",
+      "B": "Venus",
+      "C": "Mars",
+      "D": "Jupiter"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq963",
     "question": "Which element has the atomic number 1?",
-    "answers": { "A": "Helium", "B": "Lithium", "C": "Hydrogen", "D": "Carbon" },
+    "answers": {
+      "A": "Helium",
+      "B": "Lithium",
+      "C": "Hydrogen",
+      "D": "Carbon"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq964",
     "question": "In 'The Simpsons', what is the name of Homer's neighbour?",
-    "answers": { "A": "Ned Flanders", "B": "Ned Hardy", "C": "Ted Flanders", "D": "Rod Flanders" },
+    "answers": {
+      "A": "Ned Flanders",
+      "B": "Ned Hardy",
+      "C": "Ted Flanders",
+      "D": "Rod Flanders"
+    },
     "correct": "A",
     "difficulty": "easy"
   },
   {
     "id": "pq965",
     "question": "What is the fastest land animal?",
-    "answers": { "A": "Pronghorn antelope", "B": "Lion", "C": "Cheetah", "D": "Springbok" },
+    "answers": {
+      "A": "Pronghorn antelope",
+      "B": "Lion",
+      "C": "Cheetah",
+      "D": "Springbok"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq966",
     "question": "Which country is known as the 'Pearl of the Indian Ocean'?",
-    "answers": { "A": "Maldives", "B": "Sri Lanka", "C": "Seychelles", "D": "Mauritius" },
+    "answers": {
+      "A": "Maldives",
+      "B": "Sri Lanka",
+      "C": "Seychelles",
+      "D": "Mauritius"
+    },
     "correct": "B",
     "difficulty": "hard"
   },
   {
     "id": "pq967",
     "question": "The monetary unit of China is called what?",
-    "answers": { "A": "Won", "B": "Yen", "C": "Baht", "D": "Yuan" },
+    "answers": {
+      "A": "Won",
+      "B": "Yen",
+      "C": "Baht",
+      "D": "Yuan"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq968",
     "question": "Who was the first President of the United States?",
-    "answers": { "A": "Benjamin Franklin", "B": "John Adams", "C": "George Washington", "D": "Thomas Jefferson" },
+    "answers": {
+      "A": "Benjamin Franklin",
+      "B": "John Adams",
+      "C": "George Washington",
+      "D": "Thomas Jefferson"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq969",
     "question": "A decagon has how many sides?",
-    "answers": { "A": "8", "B": "9", "C": "10", "D": "11" },
+    "answers": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq970",
     "question": "What is the most common type of star in the Milky Way?",
-    "answers": { "A": "Blue giant", "B": "Yellow dwarf", "C": "White dwarf", "D": "Red dwarf" },
+    "answers": {
+      "A": "Blue giant",
+      "B": "Yellow dwarf",
+      "C": "White dwarf",
+      "D": "Red dwarf"
+    },
     "correct": "D",
     "difficulty": "hard"
   },
   {
     "id": "pq971",
     "question": "In which year did humans first land on the Moon?",
-    "answers": { "A": "1967", "B": "1968", "C": "1969", "D": "1970" },
+    "answers": {
+      "A": "1967",
+      "B": "1968",
+      "C": "1969",
+      "D": "1970"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq972",
     "question": "What is the capital of Egypt?",
-    "answers": { "A": "Alexandria", "B": "Luxor", "C": "Cairo", "D": "Giza" },
+    "answers": {
+      "A": "Alexandria",
+      "B": "Luxor",
+      "C": "Cairo",
+      "D": "Giza"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq973",
     "question": "The Amazon river is in which continent?",
-    "answers": { "A": "Africa", "B": "Asia", "C": "South America", "D": "North America" },
+    "answers": {
+      "A": "Africa",
+      "B": "Asia",
+      "C": "South America",
+      "D": "North America"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq974",
     "question": "What is measured in Decibels?",
-    "answers": { "A": "Light intensity", "B": "Sound intensity", "C": "Temperature", "D": "Pressure" },
+    "answers": {
+      "A": "Light intensity",
+      "B": "Sound intensity",
+      "C": "Temperature",
+      "D": "Pressure"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq975",
     "question": "How many letters are in the English alphabet?",
-    "answers": { "A": "24", "B": "25", "C": "26", "D": "27" },
+    "answers": {
+      "A": "24",
+      "B": "25",
+      "C": "26",
+      "D": "27"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq976",
     "question": "Which philosopher wrote 'The Republic'?",
-    "answers": { "A": "Aristotle", "B": "Socrates", "C": "Plato", "D": "Epicurus" },
+    "answers": {
+      "A": "Aristotle",
+      "B": "Socrates",
+      "C": "Plato",
+      "D": "Epicurus"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq977",
     "question": "What is the largest species of shark?",
-    "answers": { "A": "Great White Shark", "B": "Bull Shark", "C": "Whale Shark", "D": "Tiger Shark" },
+    "answers": {
+      "A": "Great White Shark",
+      "B": "Bull Shark",
+      "C": "Whale Shark",
+      "D": "Tiger Shark"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq978",
     "question": "Which country invented the printing press?",
-    "answers": { "A": "China", "B": "Germany", "C": "Italy", "D": "France" },
+    "answers": {
+      "A": "China",
+      "B": "Germany",
+      "C": "Italy",
+      "D": "France"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq979",
     "question": "What is the largest continent by area?",
-    "answers": { "A": "Africa", "B": "North America", "C": "Antarctica", "D": "Asia" },
+    "answers": {
+      "A": "Africa",
+      "B": "North America",
+      "C": "Antarctica",
+      "D": "Asia"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq980",
     "question": "What term describes a word that reads the same forwards and backwards?",
-    "answers": { "A": "Anagram", "B": "Oxymoron", "C": "Palindrome", "D": "Homophone" },
+    "answers": {
+      "A": "Anagram",
+      "B": "Oxymoron",
+      "C": "Palindrome",
+      "D": "Homophone"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq981",
     "question": "Mount Kilimanjaro is in which country?",
-    "answers": { "A": "Kenya", "B": "Ethiopia", "C": "Uganda", "D": "Tanzania" },
+    "answers": {
+      "A": "Kenya",
+      "B": "Ethiopia",
+      "C": "Uganda",
+      "D": "Tanzania"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq982",
     "question": "Which country has the longest written constitution in the world?",
-    "answers": { "A": "USA", "B": "Germany", "C": "India", "D": "Brazil" },
+    "answers": {
+      "A": "USA",
+      "B": "Germany",
+      "C": "India",
+      "D": "Brazil"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq983",
     "question": "What is the main ingredient in falafel?",
-    "answers": { "A": "Lentils", "B": "Chickpeas", "C": "Kidney beans", "D": "Peas" },
+    "answers": {
+      "A": "Lentils",
+      "B": "Chickpeas",
+      "C": "Kidney beans",
+      "D": "Peas"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq984",
     "question": "Which band released the album 'Dark Side of the Moon'?",
-    "answers": { "A": "Led Zeppelin", "B": "The Doors", "C": "Pink Floyd", "D": "Deep Purple" },
+    "answers": {
+      "A": "Led Zeppelin",
+      "B": "The Doors",
+      "C": "Pink Floyd",
+      "D": "Deep Purple"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq985",
     "question": "How many metres in a kilometre?",
-    "answers": { "A": "100", "B": "500", "C": "1000", "D": "10000" },
+    "answers": {
+      "A": "100",
+      "B": "500",
+      "C": "1000",
+      "D": "10000"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq986",
     "question": "What does the term 'teetotaller' mean?",
-    "answers": { "A": "Someone who drinks only tea", "B": "Someone who abstains from alcohol entirely", "C": "Someone who only drinks beer", "D": "Someone who drinks very little" },
+    "answers": {
+      "A": "Someone who drinks only tea",
+      "B": "Someone who abstains from alcohol entirely",
+      "C": "Someone who only drinks beer",
+      "D": "Someone who drinks very little"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq987",
     "question": "What sport involves yelling 'FORE!'?",
-    "answers": { "A": "Cricket", "B": "Golf", "C": "Tennis", "D": "Polo" },
+    "answers": {
+      "A": "Cricket",
+      "B": "Golf",
+      "C": "Tennis",
+      "D": "Polo"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq988",
     "question": "Which country is Mount Fuji located in?",
-    "answers": { "A": "China", "B": "Japan", "C": "South Korea", "D": "Nepal" },
+    "answers": {
+      "A": "China",
+      "B": "Japan",
+      "C": "South Korea",
+      "D": "Nepal"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq989",
     "question": "The constellation Orion is named after a figure from which mythology?",
-    "answers": { "A": "Roman", "B": "Norse", "C": "Egyptian", "D": "Greek" },
+    "answers": {
+      "A": "Roman",
+      "B": "Norse",
+      "C": "Egyptian",
+      "D": "Greek"
+    },
     "correct": "D",
     "difficulty": "medium"
   },
   {
     "id": "pq990",
     "question": "Which number is considered unlucky in many Western cultures?",
-    "answers": { "A": "11", "B": "12", "C": "13", "D": "14" },
+    "answers": {
+      "A": "11",
+      "B": "12",
+      "C": "13",
+      "D": "14"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq991",
     "question": "In which city is the Sagrada Familia located?",
-    "answers": { "A": "Madrid", "B": "Seville", "C": "Valencia", "D": "Barcelona" },
+    "answers": {
+      "A": "Madrid",
+      "B": "Seville",
+      "C": "Valencia",
+      "D": "Barcelona"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq992",
     "question": "Which country was the first to use paper money?",
-    "answers": { "A": "Egypt", "B": "India", "C": "China", "D": "Persia" },
+    "answers": {
+      "A": "Egypt",
+      "B": "India",
+      "C": "China",
+      "D": "Persia"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq993",
     "question": "Bram Stoker's 'Dracula' is set primarily in which country?",
-    "answers": { "A": "Bulgaria", "B": "Hungary", "C": "Romania", "D": "Slovakia" },
+    "answers": {
+      "A": "Bulgaria",
+      "B": "Hungary",
+      "C": "Romania",
+      "D": "Slovakia"
+    },
     "correct": "C",
     "difficulty": "medium"
   },
   {
     "id": "pq994",
     "question": "What is the most popular sport in the world by participation and viewership?",
-    "answers": { "A": "Basketball", "B": "Cricket", "C": "Football (Soccer)", "D": "Tennis" },
+    "answers": {
+      "A": "Basketball",
+      "B": "Cricket",
+      "C": "Football (Soccer)",
+      "D": "Tennis"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq995",
     "question": "Which country has the highest number of Nobel Prize winners per capita?",
-    "answers": { "A": "USA", "B": "UK", "C": "Sweden", "D": "Switzerland" },
+    "answers": {
+      "A": "USA",
+      "B": "UK",
+      "C": "Sweden",
+      "D": "Switzerland"
+    },
     "correct": "C",
     "difficulty": "hard"
   },
   {
     "id": "pq996",
     "question": "What is the Beaufort scale used to measure?",
-    "answers": { "A": "Earthquakes", "B": "Wind speed", "C": "Ocean depth", "D": "Rainfall" },
+    "answers": {
+      "A": "Earthquakes",
+      "B": "Wind speed",
+      "C": "Ocean depth",
+      "D": "Rainfall"
+    },
     "correct": "B",
     "difficulty": "medium"
   },
   {
     "id": "pq997",
     "question": "Which is the only vowel not on the top row of a standard QWERTY keyboard?",
-    "answers": { "A": "A", "B": "I", "C": "O", "D": "E" },
+    "answers": {
+      "A": "A",
+      "B": "I",
+      "C": "O",
+      "D": "E"
+    },
     "correct": "A",
     "difficulty": "medium"
   },
   {
     "id": "pq998",
     "question": "What is the capital of Iceland?",
-    "answers": { "A": "Akureyri", "B": "Hafnarfjordur", "C": "Reykjavik", "D": "Selfoss" },
+    "answers": {
+      "A": "Akureyri",
+      "B": "Hafnarfjordur",
+      "C": "Reykjavik",
+      "D": "Selfoss"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq999",
     "question": "Which element is used in thermometers (traditionally)?",
-    "answers": { "A": "Tin", "B": "Lead", "C": "Silver", "D": "Mercury" },
+    "answers": {
+      "A": "Tin",
+      "B": "Lead",
+      "C": "Silver",
+      "D": "Mercury"
+    },
     "correct": "D",
     "difficulty": "easy"
   },
   {
     "id": "pq1000",
     "question": "How many strings does a standard violin have?",
-    "answers": { "A": "3", "B": "4", "C": "5", "D": "6" },
+    "answers": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq1001",
     "question": "In which country is the Kremlin located?",
-    "answers": { "A": "Ukraine", "B": "Belarus", "C": "Russia", "D": "Kazakhstan" },
+    "answers": {
+      "A": "Ukraine",
+      "B": "Belarus",
+      "C": "Russia",
+      "D": "Kazakhstan"
+    },
     "correct": "C",
     "difficulty": "easy"
   },
   {
     "id": "pq1002",
     "question": "What is the name of the ship in which the Pilgrims sailed to America in 1620?",
-    "answers": { "A": "Santa Maria", "B": "Mayflower", "C": "Golden Hind", "D": "Discovery" },
+    "answers": {
+      "A": "Santa Maria",
+      "B": "Mayflower",
+      "C": "Golden Hind",
+      "D": "Discovery"
+    },
     "correct": "B",
     "difficulty": "easy"
   },
   {
     "id": "pq1003",
     "question": "Which bird is the symbol of peace?",
-    "answers": { "A": "Swan", "B": "Crane", "C": "White Dove", "D": "Albatross" },
+    "answers": {
+      "A": "Swan",
+      "B": "Crane",
+      "C": "White Dove",
+      "D": "Albatross"
+    },
     "correct": "C",
     "difficulty": "easy"
+  },
+  {
+    "id": "pq1004",
+    "fact": "Canberra was purpose-built as the capital of Australia as a compromise between rival cities Sydney and Melbourne, and was officially named in 1913.",
+    "question": "What is the capital city of Australia?",
+    "answers": {
+      "A": "Sydney",
+      "B": "Melbourne",
+      "C": "Canberra",
+      "D": "Perth"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1005",
+    "fact": "The Nile flows northward through northeastern Africa for approximately 6,650 km and has historically been considered the longest river in the world.",
+    "question": "Which river is traditionally regarded as the longest in the world?",
+    "answers": {
+      "A": "Amazon",
+      "B": "Nile",
+      "C": "Yangtze",
+      "D": "Mississippi"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1006",
+    "fact": "Mount Everest sits on the border between Nepal and the Tibet Autonomous Region of China and stands at 8,848.86 metres above sea level.",
+    "question": "Mount Everest lies on the border between Nepal and which other country?",
+    "answers": {
+      "A": "India",
+      "B": "Bhutan",
+      "C": "China",
+      "D": "Pakistan"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1007",
+    "fact": "The Pacific Ocean is the largest and deepest of Earth's oceans, covering more than 30% of the planet's surface.",
+    "question": "Which is the largest ocean on Earth?",
+    "answers": {
+      "A": "Atlantic",
+      "B": "Indian",
+      "C": "Arctic",
+      "D": "Pacific"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1008",
+    "fact": "Russia shares land borders with 14 countries, more than any other nation tied with China.",
+    "question": "How many countries share a land border with Russia?",
+    "answers": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "16"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1009",
+    "fact": "Greenland is the world's largest island that is not a continent, covering approximately 2.16 million square kilometres.",
+    "question": "What is the largest island in the world?",
+    "answers": {
+      "A": "New Guinea",
+      "B": "Borneo",
+      "C": "Madagascar",
+      "D": "Greenland"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1010",
+    "fact": "Lake Baikal in Siberia is the world's deepest lake, reaching depths of 1,642 metres, and contains about 20% of the world's unfrozen freshwater.",
+    "question": "Which is the deepest lake in the world?",
+    "answers": {
+      "A": "Lake Tanganyika",
+      "B": "Lake Baikal",
+      "C": "Caspian Sea",
+      "D": "Lake Superior"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1011",
+    "fact": "Quito, Ecuador's capital, sits at an elevation of about 2,850 metres and is officially the highest official capital city in the world (La Paz is the seat of government but not the constitutional capital of Bolivia).",
+    "question": "What is the capital of Ecuador?",
+    "answers": {
+      "A": "Guayaquil",
+      "B": "Lima",
+      "C": "Quito",
+      "D": "La Paz"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1012",
+    "fact": "The Danube flows through more countries than any other river, passing through or bordering 10 nations including Germany, Austria, Hungary and Romania.",
+    "question": "Which European river flows through 10 countries, more than any other river in the world?",
+    "answers": {
+      "A": "Rhine",
+      "B": "Volga",
+      "C": "Danube",
+      "D": "Elbe"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1013",
+    "fact": "The Atacama Desert in northern Chile is the driest non-polar desert on Earth, with some weather stations having never recorded any rainfall.",
+    "question": "The Atacama Desert, the driest non-polar desert in the world, is located primarily in which country?",
+    "answers": {
+      "A": "Peru",
+      "B": "Bolivia",
+      "C": "Argentina",
+      "D": "Chile"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1014",
+    "fact": "Vatican City is an independent city-state of just 0.49 square kilometres surrounded entirely by Rome, Italy.",
+    "question": "What is the smallest country in the world by area?",
+    "answers": {
+      "A": "Monaco",
+      "B": "San Marino",
+      "C": "Vatican City",
+      "D": "Liechtenstein"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1015",
+    "fact": "The Ural Mountains, running roughly north-south through western Russia, are traditionally considered the boundary between Europe and Asia.",
+    "question": "Which mountain range is traditionally considered to divide Europe from Asia?",
+    "answers": {
+      "A": "Caucasus",
+      "B": "Carpathians",
+      "C": "Urals",
+      "D": "Alps"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1016",
+    "fact": "Lesotho is entirely surrounded by South Africa, making it one of only three countries in the world completely enclosed by another nation.",
+    "question": "Which country is completely surrounded by South Africa?",
+    "answers": {
+      "A": "Eswatini",
+      "B": "Botswana",
+      "C": "Lesotho",
+      "D": "Zimbabwe"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1017",
+    "fact": "The Strait of Gibraltar separates Spain from Morocco and connects the Atlantic Ocean to the Mediterranean Sea, with a narrowest point of about 13 km.",
+    "question": "The Strait of Gibraltar separates Spain from which African country?",
+    "answers": {
+      "A": "Algeria",
+      "B": "Tunisia",
+      "C": "Mauritania",
+      "D": "Morocco"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1018",
+    "fact": "Astana, renamed Nur-Sultan in 2019 and then back to Astana in 2022, is the capital of Kazakhstan, the world's largest landlocked country.",
+    "question": "What is the capital of Kazakhstan?",
+    "answers": {
+      "A": "Almaty",
+      "B": "Astana",
+      "C": "Tashkent",
+      "D": "Bishkek"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1019",
+    "fact": "Aconcagua in the Argentine Andes reaches 6,961 metres, making it the highest peak in both the Western and Southern Hemispheres.",
+    "question": "What is the highest mountain in South America?",
+    "answers": {
+      "A": "Chimborazo",
+      "B": "Huascarán",
+      "C": "Aconcagua",
+      "D": "Ojos del Salado"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1020",
+    "fact": "The Caspian Sea, bordered by Russia, Kazakhstan, Turkmenistan, Iran and Azerbaijan, is the largest enclosed inland body of water on Earth.",
+    "question": "Which is the largest enclosed inland body of water in the world?",
+    "answers": {
+      "A": "Lake Superior",
+      "B": "Caspian Sea",
+      "C": "Lake Victoria",
+      "D": "Aral Sea"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1021",
+    "fact": "The Mariana Trench in the western Pacific contains the Challenger Deep, which at about 10,935 metres is the deepest known point on Earth.",
+    "question": "In which ocean is the Mariana Trench, the deepest place on Earth, located?",
+    "answers": {
+      "A": "Atlantic",
+      "B": "Indian",
+      "C": "Pacific",
+      "D": "Southern"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1022",
+    "fact": "Suriname, on the northeastern coast of South America, was a Dutch colony until 1975 and Dutch remains its official language.",
+    "question": "Which is the only country in South America where Dutch is the official language?",
+    "answers": {
+      "A": "Guyana",
+      "B": "Suriname",
+      "C": "French Guiana",
+      "D": "Paraguay"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1023",
+    "fact": "The Volga is the longest river in Europe at about 3,530 km, flowing through western Russia and emptying into the Caspian Sea.",
+    "question": "What is the longest river in Europe?",
+    "answers": {
+      "A": "Danube",
+      "B": "Rhine",
+      "C": "Volga",
+      "D": "Dnieper"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1024",
+    "fact": "Honiara, located on the island of Guadalcanal, is the capital of the Solomon Islands in the southwestern Pacific.",
+    "question": "Honiara is the capital of which Pacific island nation?",
+    "answers": {
+      "A": "Vanuatu",
+      "B": "Fiji",
+      "C": "Samoa",
+      "D": "Solomon Islands"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1025",
+    "fact": "K2, on the China–Pakistan border in the Karakoram range, is the world's second-highest mountain at 8,611 metres and is notorious for being one of the most dangerous to climb.",
+    "question": "What is the second-highest mountain in the world?",
+    "answers": {
+      "A": "Kangchenjunga",
+      "B": "Lhotse",
+      "C": "K2",
+      "D": "Makalu"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1026",
+    "fact": "The Bosporus Strait in Turkey separates the European and Asian parts of Istanbul and connects the Black Sea to the Sea of Marmara.",
+    "question": "The Bosporus Strait runs through which city?",
+    "answers": {
+      "A": "Athens",
+      "B": "Istanbul",
+      "C": "Odesa",
+      "D": "Sofia"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1027",
+    "fact": "Tajikistan, Kyrgyzstan, Uzbekistan, Turkmenistan and Kazakhstan are the five Central Asian 'stans', all former Soviet republics that gained independence in 1991.",
+    "question": "Which of these countries does NOT border Afghanistan?",
+    "answers": {
+      "A": "Tajikistan",
+      "B": "Uzbekistan",
+      "C": "Kyrgyzstan",
+      "D": "Turkmenistan"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1028",
+    "fact": "Cape Agulhas in South Africa, not the more famous Cape of Good Hope, is the true southernmost point of the African continent and marks the official dividing line between the Atlantic and Indian Oceans.",
+    "question": "What is the southernmost point of the African continent?",
+    "answers": {
+      "A": "Cape of Good Hope",
+      "B": "Cape Agulhas",
+      "C": "Cape Point",
+      "D": "Cape Hangklip"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1029",
+    "fact": "The Rosetta Stone, discovered in 1799, contains a decree issued in 196 BC and is inscribed in hieroglyphic, Demotic, and Ancient Greek scripts.",
+    "question": "How many different scripts appear on the Rosetta Stone?",
+    "answers": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Four",
+      "D": "Five"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1030",
+    "fact": "The Battle of Marathon was fought in 490 BC between the Athenians (with Plataean allies) and the invading Persian forces of Darius I.",
+    "question": "In which year was the Battle of Marathon fought?",
+    "answers": {
+      "A": "480 BC",
+      "B": "490 BC",
+      "C": "510 BC",
+      "D": "431 BC"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1031",
+    "fact": "Hammurabi, the sixth king of the First Babylonian Dynasty, created one of the earliest and most complete written legal codes, dating to around 1754 BC.",
+    "question": "Which Mesopotamian ruler is famous for creating one of the earliest known written law codes?",
+    "answers": {
+      "A": "Sargon of Akkad",
+      "B": "Nebuchadnezzar II",
+      "C": "Hammurabi",
+      "D": "Gilgamesh"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1032",
+    "fact": "The Great Pyramid of Giza was built as a tomb for Pharaoh Khufu (also known as Cheops) during the Fourth Dynasty of the Old Kingdom.",
+    "question": "For which pharaoh was the Great Pyramid of Giza built?",
+    "answers": {
+      "A": "Khafre",
+      "B": "Khufu",
+      "C": "Menkaure",
+      "D": "Djoser"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1033",
+    "fact": "Julius Caesar was assassinated on the Ides of March (15 March) in 44 BC by a group of Roman senators led by Brutus and Cassius.",
+    "question": "On what date was Julius Caesar assassinated?",
+    "answers": {
+      "A": "15 March 44 BC",
+      "B": "1 January 49 BC",
+      "C": "1 March 44 BC",
+      "D": "15 May 44 BC"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1034",
+    "fact": "Qin Shi Huang, the first emperor of unified China, was buried with the Terracotta Army near modern-day Xi'an around 210 BC.",
+    "question": "Which Chinese emperor was buried with the famous Terracotta Army?",
+    "answers": {
+      "A": "Han Wudi",
+      "B": "Qin Shi Huang",
+      "C": "Tang Taizong",
+      "D": "Sui Wendi"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1035",
+    "fact": "The Maya civilization developed a sophisticated writing system and is renowned for the Long Count calendar, which famously 'ended' a cycle on 21 December 2012.",
+    "question": "The Maya Long Count calendar is most associated with which type of cycle?",
+    "answers": {
+      "A": "Lunar months",
+      "B": "Solar equinoxes",
+      "C": "Great cycles of approximately 5,125 years",
+      "D": "Venus transits"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1036",
+    "fact": "Cyrus the Great founded the Achaemenid Empire around 550 BC after defeating the Median king Astyages, becoming the first Persian emperor.",
+    "question": "Who founded the Achaemenid Persian Empire?",
+    "answers": {
+      "A": "Darius I",
+      "B": "Xerxes I",
+      "C": "Cyrus the Great",
+      "D": "Cambyses II"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1037",
+    "fact": "The Hanging Gardens were said to be in Babylon, while the other six wonders include the Pyramid of Giza, the Statue of Zeus at Olympia, and the Lighthouse of Alexandria.",
+    "question": "In which ancient city were the legendary Hanging Gardens located?",
+    "answers": {
+      "A": "Nineveh",
+      "B": "Babylon",
+      "C": "Ur",
+      "D": "Persepolis"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1038",
+    "fact": "The Peloponnesian War was fought between Athens (and the Delian League) and Sparta (with the Peloponnesian League) from 431 to 404 BC, ending in Spartan victory.",
+    "question": "Which two Greek city-states were the main combatants in the Peloponnesian War?",
+    "answers": {
+      "A": "Athens and Thebes",
+      "B": "Sparta and Corinth",
+      "C": "Athens and Sparta",
+      "D": "Thebes and Sparta"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1039",
+    "fact": "Cleopatra VII, the last active pharaoh of Ptolemaic Egypt, died in 30 BC, traditionally said to be by the bite of an asp following Mark Antony's defeat at Actium.",
+    "question": "Cleopatra VII was the last ruling pharaoh of which Egyptian dynasty?",
+    "answers": {
+      "A": "Ptolemaic Dynasty",
+      "B": "Eighteenth Dynasty",
+      "C": "Saite Dynasty",
+      "D": "Kushite Dynasty"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1040",
+    "fact": "The Battle of Thermopylae in 480 BC saw King Leonidas of Sparta lead a small Greek force against the massive Persian army of Xerxes I.",
+    "question": "Which Persian king led the invasion that resulted in the Battle of Thermopylae?",
+    "answers": {
+      "A": "Cyrus the Great",
+      "B": "Darius I",
+      "C": "Xerxes I",
+      "D": "Artaxerxes I"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1041",
+    "fact": "The Han Dynasty, founded by Liu Bang in 202 BC, is considered a golden age of Chinese civilization and lasted (with a brief interruption) until 220 AD.",
+    "question": "Who founded the Han Dynasty of China?",
+    "answers": {
+      "A": "Liu Bang",
+      "B": "Sun Tzu",
+      "C": "Confucius",
+      "D": "Wang Mang"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1042",
+    "fact": "Tikal was one of the largest and most powerful Maya cities, located in the Petén Basin of modern-day Guatemala.",
+    "question": "The major Maya city of Tikal is located in which modern country?",
+    "answers": {
+      "A": "Mexico",
+      "B": "Honduras",
+      "C": "Guatemala",
+      "D": "Belize"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1043",
+    "fact": "Romulus, according to Roman legend, founded Rome in 753 BC after killing his twin brother Remus in a dispute over which hill to build the city on.",
+    "question": "According to legend, in which year was Rome founded?",
+    "answers": {
+      "A": "509 BC",
+      "B": "753 BC",
+      "C": "476 BC",
+      "D": "1000 BC"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1044",
+    "fact": "Alexander the Great died in Babylon in June 323 BC at the age of 32, possibly from fever, poisoning, or alcohol-related causes; the exact cause remains debated.",
+    "question": "In which city did Alexander the Great die in 323 BC?",
+    "answers": {
+      "A": "Alexandria",
+      "B": "Pella",
+      "C": "Persepolis",
+      "D": "Babylon"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1045",
+    "fact": "The cuneiform script, developed by the Sumerians around 3200 BC, used wedge-shaped marks pressed into clay tablets with a reed stylus.",
+    "question": "Which ancient civilization is credited with developing the cuneiform writing system?",
+    "answers": {
+      "A": "Egyptians",
+      "B": "Sumerians",
+      "C": "Hittites",
+      "D": "Phoenicians"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1046",
+    "fact": "Mount Vesuvius erupted in 79 AD, burying Pompeii and Herculaneum under volcanic ash; the eruption is famously documented by Pliny the Younger.",
+    "question": "In which year did Mount Vesuvius erupt and bury Pompeii?",
+    "answers": {
+      "A": "64 AD",
+      "B": "79 AD",
+      "C": "117 AD",
+      "D": "212 AD"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1047",
+    "fact": "The Behistun Inscription, ordered by Darius the Great around 522 BC, is a trilingual text in Old Persian, Elamite, and Babylonian that was key to deciphering cuneiform.",
+    "question": "Which Persian king commissioned the trilingual Behistun Inscription?",
+    "answers": {
+      "A": "Cyrus the Great",
+      "B": "Xerxes I",
+      "C": "Darius I",
+      "D": "Cambyses II"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1048",
+    "fact": "Pharaoh Akhenaten, who ruled around 1353–1336 BC, attempted to replace Egypt's traditional polytheism with the worship of a single sun deity, the Aten.",
+    "question": "Which pharaoh introduced a form of monotheism centered on the sun-disk Aten?",
+    "answers": {
+      "A": "Ramesses II",
+      "B": "Tutankhamun",
+      "C": "Akhenaten",
+      "D": "Thutmose III"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1049",
+    "fact": "The Battle of Cannae in 216 BC was a devastating defeat for Rome, in which Hannibal's Carthaginian army encircled and destroyed a much larger Roman force.",
+    "question": "At which 216 BC battle did Hannibal famously encircle and destroy a Roman army?",
+    "answers": {
+      "A": "Cannae",
+      "B": "Zama",
+      "C": "Trebia",
+      "D": "Lake Trasimene"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1050",
+    "fact": "The Maya city of Chichén Itzá in the Yucatán features the famous step pyramid known as El Castillo, or the Temple of Kukulcán.",
+    "question": "The pyramid known as El Castillo or the Temple of Kukulcán is located at which Maya site?",
+    "answers": {
+      "A": "Palenque",
+      "B": "Tikal",
+      "C": "Chichén Itzá",
+      "D": "Copán"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1051",
+    "fact": "Sargon of Akkad, who reigned around 2334–2279 BC, founded the Akkadian Empire, generally regarded as the world's first empire.",
+    "question": "Who founded the Akkadian Empire, often called the world's first empire?",
+    "answers": {
+      "A": "Gilgamesh",
+      "B": "Sargon of Akkad",
+      "C": "Ur-Nammu",
+      "D": "Naram-Sin"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1052",
+    "fact": "The Western Roman Empire is traditionally said to have fallen in 476 AD when the Germanic chieftain Odoacer deposed the last emperor, Romulus Augustulus.",
+    "question": "Who was the last emperor of the Western Roman Empire, deposed in 476 AD?",
+    "answers": {
+      "A": "Honorius",
+      "B": "Valentinian III",
+      "C": "Romulus Augustulus",
+      "D": "Julius Nepos"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1053",
+    "fact": "The Spring and Autumn period (roughly 771–476 BC) of Chinese history saw the lives of major philosophers including Confucius and Laozi, and preceded the Warring States period.",
+    "question": "Confucius lived during which period of ancient Chinese history?",
+    "answers": {
+      "A": "Shang Dynasty",
+      "B": "Spring and Autumn period",
+      "C": "Han Dynasty",
+      "D": "Three Kingdoms period"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1054",
+    "fact": "Gold's chemical symbol Au comes from its Latin name 'aurum', meaning 'shining dawn'.",
+    "question": "What is the chemical symbol for gold?",
+    "answers": {
+      "A": "Go",
+      "B": "Gd",
+      "C": "Au",
+      "D": "Ag"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1055",
+    "fact": "Isaac Newton formulated the three laws of motion, published in his 1687 work Principia Mathematica.",
+    "question": "Who formulated the three classical laws of motion?",
+    "answers": {
+      "A": "Galileo Galilei",
+      "B": "Isaac Newton",
+      "C": "Albert Einstein",
+      "D": "Johannes Kepler"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1056",
+    "fact": "Hydrogen is the lightest and most abundant element in the universe, making up about 75% of all normal matter.",
+    "question": "Which is the lightest chemical element?",
+    "answers": {
+      "A": "Helium",
+      "B": "Lithium",
+      "C": "Hydrogen",
+      "D": "Carbon"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1057",
+    "fact": "Marie Curie won the Nobel Prize in Physics (1903) and Chemistry (1911), making her the first person to win Nobels in two different sciences.",
+    "question": "Marie Curie won Nobel Prizes in which two scientific fields?",
+    "answers": {
+      "A": "Physics and Chemistry",
+      "B": "Chemistry and Medicine",
+      "C": "Physics and Medicine",
+      "D": "Physics and Mathematics"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1058",
+    "fact": "The Michelson-Morley experiment in 1887 failed to detect the luminiferous aether, paving the way for Einstein's theory of special relativity.",
+    "question": "The 1887 Michelson-Morley experiment failed to detect what?",
+    "answers": {
+      "A": "The neutrino",
+      "B": "The luminiferous aether",
+      "C": "Cosmic background radiation",
+      "D": "Gravitational waves"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1059",
+    "fact": "Mercury (Hg) and bromine (Br) are the only two elements that are liquid at standard room temperature and pressure.",
+    "question": "Besides mercury, which element is liquid at standard room temperature?",
+    "answers": {
+      "A": "Bromine",
+      "B": "Iodine",
+      "C": "Gallium",
+      "D": "Caesium"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1060",
+    "fact": "Dmitri Mendeleev published his version of the periodic table in 1869, arranging elements by atomic weight and predicting undiscovered elements.",
+    "question": "Who is credited with creating the first widely recognized periodic table of elements in 1869?",
+    "answers": {
+      "A": "Antoine Lavoisier",
+      "B": "John Dalton",
+      "C": "Dmitri Mendeleev",
+      "D": "Henry Moseley"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1061",
+    "fact": "Ohm's Law states that V = IR, relating voltage, current and resistance in an electrical circuit.",
+    "question": "Ohm's Law relates voltage, resistance and which other quantity?",
+    "answers": {
+      "A": "Power",
+      "B": "Current",
+      "C": "Capacitance",
+      "D": "Frequency"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1062",
+    "fact": "Ernest Rutherford's 1909 gold foil experiment, conducted with Geiger and Marsden, revealed the atomic nucleus.",
+    "question": "Rutherford's famous gold foil experiment led to the discovery of what?",
+    "answers": {
+      "A": "The electron",
+      "B": "The neutron",
+      "C": "The atomic nucleus",
+      "D": "Radioactivity"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1063",
+    "fact": "Element 118, oganesson (Og), is the heaviest element officially named on the periodic table as of 2024.",
+    "question": "What is the name of element 118, the heaviest officially named element?",
+    "answers": {
+      "A": "Tennessine",
+      "B": "Livermorium",
+      "C": "Oganesson",
+      "D": "Moscovium"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1064",
+    "fact": "Wilhelm Röntgen received the first ever Nobel Prize in Physics in 1901 for his discovery of X-rays.",
+    "question": "Who received the very first Nobel Prize in Physics in 1901?",
+    "answers": {
+      "A": "Albert Einstein",
+      "B": "Wilhelm Röntgen",
+      "C": "Henri Becquerel",
+      "D": "J.J. Thomson"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1065",
+    "fact": "The speed of light in a vacuum is exactly 299,792,458 metres per second, a defined constant since 1983.",
+    "question": "Approximately how fast does light travel in a vacuum?",
+    "answers": {
+      "A": "300,000 km/s",
+      "B": "150,000 km/s",
+      "C": "1,080,000 km/s",
+      "D": "30,000 km/s"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1066",
+    "fact": "Albert Einstein won the 1921 Nobel Prize in Physics specifically for his explanation of the photoelectric effect, not for relativity.",
+    "question": "For which discovery did Albert Einstein win the Nobel Prize in Physics?",
+    "answers": {
+      "A": "Special relativity",
+      "B": "General relativity",
+      "C": "The photoelectric effect",
+      "D": "Brownian motion"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1067",
+    "fact": "The second law of thermodynamics states that the entropy of an isolated system never decreases over time.",
+    "question": "Which physical quantity is described by the second law of thermodynamics as never decreasing in an isolated system?",
+    "answers": {
+      "A": "Enthalpy",
+      "B": "Entropy",
+      "C": "Energy",
+      "D": "Momentum"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1068",
+    "fact": "Helium has atomic number 2 and is the second most abundant element in the universe after hydrogen.",
+    "question": "What is the atomic number of helium?",
+    "answers": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1069",
+    "fact": "The Higgs boson was confirmed at CERN's Large Hadron Collider in 2012, earning Peter Higgs and François Englert the 2013 Nobel Prize in Physics.",
+    "question": "At which facility was the Higgs boson discovered in 2012?",
+    "answers": {
+      "A": "Fermilab",
+      "B": "SLAC",
+      "C": "CERN",
+      "D": "Brookhaven"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1070",
+    "fact": "Avogadro's number, approximately 6.022 × 10²³, is the number of constituent particles in one mole of a substance.",
+    "question": "Avogadro's number gives the number of particles in one what?",
+    "answers": {
+      "A": "Gram",
+      "B": "Litre",
+      "C": "Mole",
+      "D": "Kilogram"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1071",
+    "fact": "James Chadwick discovered the neutron in 1932 and was awarded the 1935 Nobel Prize in Physics for this work.",
+    "question": "Who discovered the neutron in 1932?",
+    "answers": {
+      "A": "Niels Bohr",
+      "B": "James Chadwick",
+      "C": "Ernest Rutherford",
+      "D": "Enrico Fermi"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1072",
+    "fact": "The double-slit experiment, first performed by Thomas Young in 1801, demonstrated the wave nature of light through interference patterns.",
+    "question": "Which classic experiment first demonstrated the wave nature of light through an interference pattern?",
+    "answers": {
+      "A": "The Stern-Gerlach experiment",
+      "B": "Young's double-slit experiment",
+      "C": "The Cavendish experiment",
+      "D": "The Millikan oil drop experiment"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1073",
+    "fact": "Tungsten (W) has the highest melting point of any pure metal at approximately 3,422°C, making it ideal for lightbulb filaments.",
+    "question": "Which metallic element has the highest melting point?",
+    "answers": {
+      "A": "Platinum",
+      "B": "Titanium",
+      "C": "Tungsten",
+      "D": "Osmium"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1074",
+    "fact": "Robert Millikan's oil drop experiment (1909) measured the elementary electric charge of the electron, earning him the 1923 Nobel Prize.",
+    "question": "Millikan's oil drop experiment measured the charge of which particle?",
+    "answers": {
+      "A": "Proton",
+      "B": "Neutron",
+      "C": "Electron",
+      "D": "Positron"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1075",
+    "fact": "Heisenberg's uncertainty principle states you cannot simultaneously know both the exact position and momentum of a particle.",
+    "question": "Werner Heisenberg's famous principle concerns the uncertainty between a particle's position and what other property?",
+    "answers": {
+      "A": "Momentum",
+      "B": "Spin",
+      "C": "Charge",
+      "D": "Mass"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1076",
+    "fact": "Francium (Fr), atomic number 87, is the most chemically reactive of the alkali metals, though it's extremely rare and radioactive.",
+    "question": "Which alkali metal is the most chemically reactive?",
+    "answers": {
+      "A": "Sodium",
+      "B": "Potassium",
+      "C": "Caesium",
+      "D": "Francium"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1077",
+    "fact": "John Bardeen is the only person to have won the Nobel Prize in Physics twice — in 1956 for the transistor and 1972 for superconductivity theory.",
+    "question": "Who is the only person to have won the Nobel Prize in Physics twice?",
+    "answers": {
+      "A": "John Bardeen",
+      "B": "Linus Pauling",
+      "C": "Frederick Sanger",
+      "D": "Marie Curie"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1078",
+    "fact": "The Cavendish experiment, performed in 1798, measured the gravitational constant G and effectively allowed the mass of the Earth to be calculated.",
+    "question": "What did Henry Cavendish's famous 1798 experiment measure?",
+    "answers": {
+      "A": "The speed of sound",
+      "B": "The gravitational constant",
+      "C": "The charge of the electron",
+      "D": "The wavelength of light"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1079",
+    "fact": "DNA stands for deoxyribonucleic acid, the molecule that carries genetic information in all living organisms.",
+    "question": "What does DNA stand for?",
+    "answers": {
+      "A": "Deoxyribonucleic acid",
+      "B": "Dinucleic ribose acid",
+      "C": "Diribose nucleotide acid",
+      "D": "Deoxyribose nuclear acid"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1080",
+    "fact": "The mitochondria produce ATP through cellular respiration, earning their famous nickname as the cell's powerhouse.",
+    "question": "Which organelle is commonly known as the powerhouse of the cell?",
+    "answers": {
+      "A": "Nucleus",
+      "B": "Ribosome",
+      "C": "Mitochondrion",
+      "D": "Golgi apparatus"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1081",
+    "fact": "Adult humans typically have 32 teeth, including 8 incisors, 4 canines, 8 premolars, and 12 molars (including wisdom teeth).",
+    "question": "How many teeth does a typical adult human have?",
+    "answers": {
+      "A": "28",
+      "B": "30",
+      "C": "32",
+      "D": "34"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1082",
+    "fact": "Charles Darwin published 'On the Origin of Species' in 1859, presenting the theory of evolution by natural selection.",
+    "question": "Who proposed the theory of evolution by natural selection?",
+    "answers": {
+      "A": "Gregor Mendel",
+      "B": "Charles Darwin",
+      "C": "Louis Pasteur",
+      "D": "Carl Linnaeus"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1083",
+    "fact": "Red blood cells, or erythrocytes, contain hemoglobin which binds to oxygen and transports it throughout the body.",
+    "question": "Which type of blood cell is primarily responsible for transporting oxygen?",
+    "answers": {
+      "A": "White blood cells",
+      "B": "Platelets",
+      "C": "Red blood cells",
+      "D": "Plasma cells"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1084",
+    "fact": "Carl Linnaeus developed binomial nomenclature in the 18th century, creating the basis for modern biological classification.",
+    "question": "Who is considered the father of modern taxonomy?",
+    "answers": {
+      "A": "Charles Darwin",
+      "B": "Carl Linnaeus",
+      "C": "Aristotle",
+      "D": "Gregor Mendel"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1085",
+    "fact": "The standard taxonomic hierarchy is Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+    "question": "In biological classification, which rank comes immediately above 'Order'?",
+    "answers": {
+      "A": "Family",
+      "B": "Genus",
+      "C": "Class",
+      "D": "Phylum"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1086",
+    "fact": "The four bases in DNA are adenine (A), thymine (T), guanine (G), and cytosine (C). Uracil replaces thymine in RNA.",
+    "question": "Which of the following bases is found in RNA but NOT in DNA?",
+    "answers": {
+      "A": "Adenine",
+      "B": "Guanine",
+      "C": "Uracil",
+      "D": "Cytosine"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1087",
+    "fact": "The stapes (or stirrup) in the middle ear is the smallest bone in the human body, measuring only about 3 mm long.",
+    "question": "What is the smallest bone in the human body?",
+    "answers": {
+      "A": "Malleus",
+      "B": "Incus",
+      "C": "Stapes",
+      "D": "Hyoid"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1088",
+    "fact": "Humans have 23 pairs of chromosomes (46 total), including one pair of sex chromosomes.",
+    "question": "How many pairs of chromosomes are in a typical human cell?",
+    "answers": {
+      "A": "21",
+      "B": "22",
+      "C": "23",
+      "D": "24"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1089",
+    "fact": "Watson and Crick published their double helix model of DNA in 1953, building on data from Rosalind Franklin and Maurice Wilkins.",
+    "question": "In which year was the double helix structure of DNA published by Watson and Crick?",
+    "answers": {
+      "A": "1943",
+      "B": "1953",
+      "C": "1963",
+      "D": "1973"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1090",
+    "fact": "The medulla oblongata, part of the brainstem, controls autonomic functions like breathing, heart rate and blood pressure.",
+    "question": "Which part of the brain controls breathing and heart rate?",
+    "answers": {
+      "A": "Cerebellum",
+      "B": "Cerebrum",
+      "C": "Medulla oblongata",
+      "D": "Thalamus"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1091",
+    "fact": "Gregor Mendel's pea plant experiments in the 1860s established the foundational laws of inheritance.",
+    "question": "Which scientist is regarded as the father of modern genetics due to his work on pea plants?",
+    "answers": {
+      "A": "Charles Darwin",
+      "B": "Gregor Mendel",
+      "C": "Thomas Hunt Morgan",
+      "D": "Francis Crick"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1092",
+    "fact": "Humans belong to the species Homo sapiens, with 'Homo' being the genus and 'sapiens' the specific epithet.",
+    "question": "What is the scientific (binomial) name for modern humans?",
+    "answers": {
+      "A": "Homo erectus",
+      "B": "Homo habilis",
+      "C": "Homo sapiens",
+      "D": "Homo neanderthalensis"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1093",
+    "fact": "Cytokinesis is the final stage where the cytoplasm divides; the four mitotic phases are prophase, metaphase, anaphase, and telophase.",
+    "question": "During which phase of mitosis do chromosomes align along the cell's equator?",
+    "answers": {
+      "A": "Prophase",
+      "B": "Metaphase",
+      "C": "Anaphase",
+      "D": "Telophase"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1094",
+    "fact": "The loop of Henle in the kidney's nephron is crucial for concentrating urine through countercurrent multiplication.",
+    "question": "In which organ would you find the loop of Henle?",
+    "answers": {
+      "A": "Liver",
+      "B": "Pancreas",
+      "C": "Kidney",
+      "D": "Small intestine"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1095",
+    "fact": "Golgi apparatus modifies, sorts, and packages proteins and lipids for secretion or use within the cell.",
+    "question": "Which organelle is primarily responsible for modifying and packaging proteins in a eukaryotic cell?",
+    "answers": {
+      "A": "Lysosome",
+      "B": "Ribosome",
+      "C": "Golgi apparatus",
+      "D": "Endoplasmic reticulum"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1096",
+    "fact": "Neanderthals (Homo neanderthalensis) went extinct around 40,000 years ago and were close evolutionary relatives of modern humans.",
+    "question": "Approximately how many years ago did Neanderthals become extinct?",
+    "answers": {
+      "A": "10,000 years ago",
+      "B": "40,000 years ago",
+      "C": "100,000 years ago",
+      "D": "250,000 years ago"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1097",
+    "fact": "The vagus nerve (cranial nerve X) is the longest cranial nerve and innervates organs of the chest and abdomen, including the heart and digestive tract.",
+    "question": "Which cranial nerve is responsible for parasympathetic control of the heart and digestive tract?",
+    "answers": {
+      "A": "Trigeminal nerve",
+      "B": "Optic nerve",
+      "C": "Vagus nerve",
+      "D": "Facial nerve"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1098",
+    "fact": "The human body normally has four chambers in the heart: two atria and two ventricles.",
+    "question": "How many chambers does a human heart have?",
+    "answers": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Four",
+      "D": "Five"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1100",
+    "fact": "Charles Darwin published 'On the Origin of Species' in 1859, outlining the theory of evolution by natural selection.",
+    "question": "Who published 'On the Origin of Species' in 1859?",
+    "answers": {
+      "A": "Gregor Mendel",
+      "B": "Charles Darwin",
+      "C": "Alfred Wallace",
+      "D": "Thomas Huxley"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1102",
+    "fact": "The skin is the largest organ overall, covering an area of about 1.5 to 2 square meters in adults.",
+    "question": "What is the largest organ of the human body overall?",
+    "answers": {
+      "A": "Liver",
+      "B": "Skin",
+      "C": "Lungs",
+      "D": "Intestines"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1103",
+    "fact": "Red blood cells, or erythrocytes, contain hemoglobin which binds and carries oxygen throughout the body.",
+    "question": "Which protein in red blood cells carries oxygen?",
+    "answers": {
+      "A": "Myoglobin",
+      "B": "Albumin",
+      "C": "Hemoglobin",
+      "D": "Keratin"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1104",
+    "fact": "Parasite, directed by Bong Joon-ho, made history in 2020 by becoming the first non-English language film to win the Academy Award for Best Picture.",
+    "question": "Which South Korean film won the Academy Award for Best Picture in 2020?",
+    "answers": {
+      "A": "Oldboy",
+      "B": "Parasite",
+      "C": "Burning",
+      "D": "The Handmaiden"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1105",
+    "fact": "Released in 1982, Michael Jackson's Thriller is widely cited as the best-selling album of all time, with sales estimated at over 70 million copies worldwide.",
+    "question": "Which Michael Jackson album is the best-selling album of all time?",
+    "answers": {
+      "A": "Bad",
+      "B": "Off the Wall",
+      "C": "Dangerous",
+      "D": "Thriller"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1106",
+    "fact": "Breaking Bad, created by Vince Gilligan, follows chemistry teacher Walter White as he turns to making methamphetamine after a cancer diagnosis.",
+    "question": "Who created the American TV series Breaking Bad?",
+    "answers": {
+      "A": "David Chase",
+      "B": "Vince Gilligan",
+      "C": "Matthew Weiner",
+      "D": "Shawn Ryan"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1107",
+    "fact": "ABBA represented Sweden and won the 1974 Eurovision Song Contest in Brighton with 'Waterloo', launching their global career.",
+    "question": "With which song did ABBA win the Eurovision Song Contest in 1974?",
+    "answers": {
+      "A": "Mamma Mia",
+      "B": "Dancing Queen",
+      "C": "Waterloo",
+      "D": "Fernando"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1108",
+    "fact": "Money Heist (La Casa de Papel) is a Spanish heist series created by Álex Pina that became one of Netflix's most-watched non-English series.",
+    "question": "The hit Netflix series 'Money Heist' originated in which country?",
+    "answers": {
+      "A": "Mexico",
+      "B": "Spain",
+      "C": "Argentina",
+      "D": "Italy"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1109",
+    "fact": "Pink Floyd's 1973 album The Dark Side of the Moon features the famous prism cover art designed by Storm Thorgerson of Hipgnosis.",
+    "question": "Which Pink Floyd album features a prism refracting light into a rainbow on its cover?",
+    "answers": {
+      "A": "Wish You Were Here",
+      "B": "The Wall",
+      "C": "Animals",
+      "D": "The Dark Side of the Moon"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1110",
+    "fact": "Studio Ghibli's Spirited Away, directed by Hayao Miyazaki, won the Academy Award for Best Animated Feature in 2003.",
+    "question": "Who directed the Japanese animated film 'Spirited Away'?",
+    "answers": {
+      "A": "Isao Takahata",
+      "B": "Mamoru Hosoda",
+      "C": "Hayao Miyazaki",
+      "D": "Makoto Shinkai"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1111",
+    "fact": "Shakira is a Colombian singer who rose to international fame with hits like 'Hips Don't Lie' and 'Waka Waka', the official 2010 FIFA World Cup song.",
+    "question": "Which country is pop star Shakira from?",
+    "answers": {
+      "A": "Mexico",
+      "B": "Spain",
+      "C": "Argentina",
+      "D": "Colombia"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1112",
+    "fact": "Squid Game, created by Hwang Dong-hyuk, became Netflix's most-watched series upon its 2021 release, featuring deadly versions of children's games.",
+    "question": "Who created the South Korean Netflix series 'Squid Game'?",
+    "answers": {
+      "A": "Hwang Dong-hyuk",
+      "B": "Park Chan-wook",
+      "C": "Lee Jung-jae",
+      "D": "Kim Jee-woon"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1113",
+    "fact": "Queen's iconic 1975 single 'Bohemian Rhapsody' appears on the album A Night at the Opera and was written by Freddie Mercury.",
+    "question": "On which Queen album does the song 'Bohemian Rhapsody' first appear?",
+    "answers": {
+      "A": "Sheer Heart Attack",
+      "B": "A Day at the Races",
+      "C": "A Night at the Opera",
+      "D": "News of the World"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1114",
+    "fact": "Cinema Paradiso, directed by Giuseppe Tornatore, won the Academy Award for Best Foreign Language Film in 1990 and is set in a small Sicilian village.",
+    "question": "Who directed the Italian classic film 'Cinema Paradiso'?",
+    "answers": {
+      "A": "Federico Fellini",
+      "B": "Giuseppe Tornatore",
+      "C": "Roberto Benigni",
+      "D": "Paolo Sorrentino"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1115",
+    "fact": "BTS, the South Korean boy band, debuted in 2013 under Big Hit Entertainment and consists of seven members: RM, Jin, Suga, J-Hope, Jimin, V, and Jungkook.",
+    "question": "How many members are in the K-pop group BTS?",
+    "answers": {
+      "A": "Five",
+      "B": "Six",
+      "C": "Seven",
+      "D": "Nine"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1116",
+    "fact": "The Crown, a Netflix drama created by Peter Morgan, chronicles the reign of Queen Elizabeth II, with Claire Foy playing the young queen in seasons 1 and 2.",
+    "question": "Who portrayed the young Queen Elizabeth II in the first two seasons of 'The Crown'?",
+    "answers": {
+      "A": "Olivia Colman",
+      "B": "Imelda Staunton",
+      "C": "Claire Foy",
+      "D": "Helena Bonham Carter"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1117",
+    "fact": "Rammstein is a German Neue Deutsche Härte band formed in Berlin in 1994, known for their pyrotechnic-heavy live shows and songs sung mostly in German.",
+    "question": "The industrial metal band Rammstein originated in which country?",
+    "answers": {
+      "A": "Austria",
+      "B": "Netherlands",
+      "C": "Germany",
+      "D": "Switzerland"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1118",
+    "fact": "Amélie (Le Fabuleux Destin d'Amélie Poulain), directed by Jean-Pierre Jeunet in 2001, starred Audrey Tautou as the whimsical Parisian waitress.",
+    "question": "Who starred as the title character in the 2001 French film 'Amélie'?",
+    "answers": {
+      "A": "Marion Cotillard",
+      "B": "Audrey Tautou",
+      "C": "Juliette Binoche",
+      "D": "Léa Seydoux"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1119",
+    "fact": "Fleetwood Mac's 1977 album Rumours is one of the best-selling albums of all time, featuring tracks like 'Go Your Own Way' and 'Dreams'.",
+    "question": "In what year was Fleetwood Mac's landmark album 'Rumours' released?",
+    "answers": {
+      "A": "1975",
+      "B": "1977",
+      "C": "1979",
+      "D": "1981"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1120",
+    "fact": "Dark, a German sci-fi series on Netflix created by Baran bo Odar and Jantje Friese, follows time travel across multiple generations in the town of Winden.",
+    "question": "The Netflix sci-fi series 'Dark' is set in a fictional small town in which country?",
+    "answers": {
+      "A": "Austria",
+      "B": "Belgium",
+      "C": "Germany",
+      "D": "Denmark"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1121",
+    "fact": "City of God (Cidade de Deus), released in 2002, was directed by Fernando Meirelles and Kátia Lund, depicting gang violence in Rio de Janeiro's favelas.",
+    "question": "The acclaimed 2002 film 'City of God' is set in which Brazilian city?",
+    "answers": {
+      "A": "São Paulo",
+      "B": "Salvador",
+      "C": "Brasília",
+      "D": "Rio de Janeiro"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1122",
+    "fact": "Björk is an Icelandic singer-songwriter who first gained fame with the band The Sugarcubes before launching a successful solo career with albums like Debut and Homogenic.",
+    "question": "Singer Björk hails from which country?",
+    "answers": {
+      "A": "Norway",
+      "B": "Sweden",
+      "C": "Iceland",
+      "D": "Denmark"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1123",
+    "fact": "Pedro Almodóvar's 1999 film 'All About My Mother' (Todo sobre mi madre) won the Academy Award for Best Foreign Language Film and the Best Director prize at Cannes.",
+    "question": "Which Spanish director made the 1999 film 'All About My Mother'?",
+    "answers": {
+      "A": "Alejandro Amenábar",
+      "B": "Pedro Almodóvar",
+      "C": "Guillermo del Toro",
+      "D": "Alfonso Cuarón"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1124",
+    "fact": "The Beatles' album Abbey Road was released in 1969 and features the famous cover photo of the band crossing the zebra crossing outside Abbey Road Studios.",
+    "question": "Which Beatles album features the iconic zebra crossing photograph on its cover?",
+    "answers": {
+      "A": "Let It Be",
+      "B": "Help!",
+      "C": "Abbey Road",
+      "D": "Revolver"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1125",
+    "fact": "The Bridge (Bron/Broen) is a Scandinavian noir crime series that begins with a body found exactly on the border between Sweden and Denmark on the Øresund Bridge.",
+    "question": "The Scandinavian crime drama 'The Bridge' is a co-production between Sweden and which other country?",
+    "answers": {
+      "A": "Norway",
+      "B": "Finland",
+      "C": "Denmark",
+      "D": "Iceland"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1126",
+    "fact": "Daft Punk was a French electronic music duo consisting of Thomas Bangalter and Guy-Manuel de Homem-Christo, who announced their breakup in February 2021.",
+    "question": "In what year did the French electronic duo Daft Punk officially announce their breakup?",
+    "answers": {
+      "A": "2019",
+      "B": "2020",
+      "C": "2021",
+      "D": "2022"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1127",
+    "fact": "Crouching Tiger, Hidden Dragon, directed by Ang Lee in 2000, won four Academy Awards including Best Foreign Language Film and is set during the Qing Dynasty.",
+    "question": "Who directed the 2000 wuxia film 'Crouching Tiger, Hidden Dragon'?",
+    "answers": {
+      "A": "Zhang Yimou",
+      "B": "Wong Kar-wai",
+      "C": "John Woo",
+      "D": "Ang Lee"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1128",
+    "fact": "Radiohead's third studio album OK Computer was released in 1997 and is widely regarded as one of the greatest albums of all time, featuring tracks like 'Paranoid Android' and 'Karma Police'.",
+    "question": "Which Radiohead album, released in 1997, includes the song 'Paranoid Android'?",
+    "answers": {
+      "A": "The Bends",
+      "B": "OK Computer",
+      "C": "Kid A",
+      "D": "In Rainbows"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1129",
+    "fact": "The modern Olympic Games were revived by Pierre de Coubertin and held in Athens in 1896, with 14 nations and 241 athletes competing.",
+    "question": "In which city were the first modern Olympic Games held in 1896?",
+    "answers": {
+      "A": "Paris",
+      "B": "Athens",
+      "C": "London",
+      "D": "Rome"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1130",
+    "fact": "Usain Bolt set the 100m world record of 9.58 seconds at the 2009 World Championships in Berlin.",
+    "question": "What is Usain Bolt's world record time in the men's 100 metres?",
+    "answers": {
+      "A": "9.58 seconds",
+      "B": "9.69 seconds",
+      "C": "9.63 seconds",
+      "D": "9.72 seconds"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1131",
+    "fact": "Brazil has won the FIFA World Cup five times: 1958, 1962, 1970, 1994, and 2002.",
+    "question": "How many times has Brazil won the FIFA World Cup?",
+    "answers": {
+      "A": "Three",
+      "B": "Four",
+      "C": "Five",
+      "D": "Six"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1132",
+    "fact": "Roger Federer won his first Wimbledon singles title in 2003, defeating Mark Philippoussis in the final.",
+    "question": "In which year did Roger Federer win his first Wimbledon singles title?",
+    "answers": {
+      "A": "2001",
+      "B": "2002",
+      "C": "2003",
+      "D": "2004"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1133",
+    "fact": "Muhammad Ali, born Cassius Clay, defeated Sonny Liston in 1964 to win the world heavyweight title for the first time.",
+    "question": "Who did Muhammad Ali defeat in 1964 to win his first world heavyweight title?",
+    "answers": {
+      "A": "Joe Frazier",
+      "B": "George Foreman",
+      "C": "Sonny Liston",
+      "D": "Floyd Patterson"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1134",
+    "fact": "Michael Phelps has won 23 Olympic gold medals, the most of any athlete in Olympic history.",
+    "question": "How many Olympic gold medals has Michael Phelps won?",
+    "answers": {
+      "A": "19",
+      "B": "21",
+      "C": "23",
+      "D": "25"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1135",
+    "fact": "The Tour de France typically covers around 3,500 km over 21 stages, but distances vary year to year.",
+    "question": "How many stages does the Tour de France traditionally have?",
+    "answers": {
+      "A": "18",
+      "B": "21",
+      "C": "24",
+      "D": "25"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1136",
+    "fact": "Serena Williams has won 23 Grand Slam singles titles, the most in the Open Era.",
+    "question": "How many Grand Slam singles titles has Serena Williams won?",
+    "answers": {
+      "A": "21",
+      "B": "22",
+      "C": "23",
+      "D": "24"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1137",
+    "fact": "Pelé scored his 1000th career goal in 1969 while playing for Santos against Vasco da Gama from a penalty kick.",
+    "question": "For which club did Pelé spend the majority of his career?",
+    "answers": {
+      "A": "Flamengo",
+      "B": "Santos",
+      "C": "Corinthians",
+      "D": "São Paulo"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1138",
+    "fact": "Maria Sharapova won the Wimbledon title in 2004 at age 17, defeating Serena Williams in the final.",
+    "question": "How old was Maria Sharapova when she won Wimbledon in 2004?",
+    "answers": {
+      "A": "16",
+      "B": "17",
+      "C": "18",
+      "D": "19"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1139",
+    "fact": "Mike Tyson became the youngest heavyweight world champion in history at age 20 years and 4 months when he defeated Trevor Berbick in 1986.",
+    "question": "At what age did Mike Tyson become the youngest heavyweight boxing world champion?",
+    "answers": {
+      "A": "19",
+      "B": "20",
+      "C": "21",
+      "D": "22"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1140",
+    "fact": "The 2022 FIFA World Cup was hosted by Qatar, with Argentina winning the tournament after defeating France on penalties.",
+    "question": "Which country hosted the 2022 FIFA World Cup?",
+    "answers": {
+      "A": "United Arab Emirates",
+      "B": "Saudi Arabia",
+      "C": "Qatar",
+      "D": "Kuwait"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1141",
+    "fact": "Nadia Comăneci of Romania scored the first perfect 10 in Olympic gymnastics at the 1976 Montreal Olympics.",
+    "question": "Who scored the first perfect 10 in Olympic gymnastics history?",
+    "answers": {
+      "A": "Olga Korbut",
+      "B": "Nadia Comăneci",
+      "C": "Mary Lou Retton",
+      "D": "Larisa Latynina"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1142",
+    "fact": "Rafael Nadal has won the French Open a record 14 times between 2005 and 2022.",
+    "question": "How many French Open singles titles has Rafael Nadal won?",
+    "answers": {
+      "A": "12",
+      "B": "13",
+      "C": "14",
+      "D": "15"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1143",
+    "fact": "Diego Maradona scored the infamous 'Hand of God' goal against England in the 1986 World Cup quarter-final in Mexico.",
+    "question": "Against which country did Maradona score the 'Hand of God' goal?",
+    "answers": {
+      "A": "Brazil",
+      "B": "Germany",
+      "C": "England",
+      "D": "Belgium"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1144",
+    "fact": "The 1936 Olympic Games were held in Berlin, where Jesse Owens famously won four gold medals.",
+    "question": "How many gold medals did Jesse Owens win at the 1936 Berlin Olympics?",
+    "answers": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Four",
+      "D": "Five"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1145",
+    "fact": "Floyd Mayweather retired with a professional boxing record of 50 wins and 0 losses.",
+    "question": "What was Floyd Mayweather's final professional boxing record?",
+    "answers": {
+      "A": "49-0",
+      "B": "50-0",
+      "C": "48-0",
+      "D": "51-0"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1146",
+    "fact": "Lionel Messi won his eighth Ballon d'Or in 2023, extending his record as the most decorated player in the award's history.",
+    "question": "How many Ballon d'Or awards has Lionel Messi won (as of 2023)?",
+    "answers": {
+      "A": "Six",
+      "B": "Seven",
+      "C": "Eight",
+      "D": "Nine"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1147",
+    "fact": "The marathon distance was standardized at 26 miles, 385 yards (42.195 km) at the 1908 London Olympics.",
+    "question": "What is the official distance of a marathon in kilometres?",
+    "answers": {
+      "A": "40.195 km",
+      "B": "41.195 km",
+      "C": "42.195 km",
+      "D": "43.195 km"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1148",
+    "fact": "Steffi Graf achieved the 'Golden Slam' in 1988, winning all four Grand Slam titles plus Olympic gold in the same year.",
+    "question": "In which year did Steffi Graf achieve the Golden Slam?",
+    "answers": {
+      "A": "1986",
+      "B": "1987",
+      "C": "1988",
+      "D": "1989"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1149",
+    "fact": "Cristiano Ronaldo became the all-time top scorer in men's international football, surpassing Ali Daei's record.",
+    "question": "Whose international goal-scoring record did Cristiano Ronaldo break?",
+    "answers": {
+      "A": "Pelé",
+      "B": "Ali Daei",
+      "C": "Ferenc Puskás",
+      "D": "Miroslav Klose"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1150",
+    "fact": "The 1968 Olympics in Mexico City saw Bob Beamon set a long jump world record of 8.90m that stood for 23 years.",
+    "question": "Which city hosted the 1968 Summer Olympics?",
+    "answers": {
+      "A": "Munich",
+      "B": "Mexico City",
+      "C": "Montreal",
+      "D": "Moscow"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1151",
+    "fact": "Rocky Marciano is the only heavyweight world champion to retire undefeated, with a record of 49-0.",
+    "question": "Which heavyweight boxing champion retired undefeated with a 49-0 record?",
+    "answers": {
+      "A": "Joe Louis",
+      "B": "Rocky Marciano",
+      "C": "Larry Holmes",
+      "D": "Jack Dempsey"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1152",
+    "fact": "Novak Djokovic won his 24th Grand Slam title at the 2023 US Open, tying Margaret Court's all-time record.",
+    "question": "At which 2023 Grand Slam did Novak Djokovic win his 24th major title?",
+    "answers": {
+      "A": "Australian Open",
+      "B": "French Open",
+      "C": "Wimbledon",
+      "D": "US Open"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1154",
+    "fact": "Archduke Franz Ferdinand of Austria was assassinated in Sarajevo on 28 June 1914 by Gavrilo Princip, a Bosnian Serb nationalist, triggering the chain of events that led to World War I.",
+    "question": "Whose assassination in Sarajevo in June 1914 is widely considered the trigger for World War I?",
+    "answers": {
+      "A": "Kaiser Wilhelm II",
+      "B": "Archduke Franz Ferdinand",
+      "C": "Tsar Nicholas II",
+      "D": "King Peter I of Serbia"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1155",
+    "fact": "The Treaty of Versailles, signed on 28 June 1919, formally ended World War I and imposed harsh terms on Germany, including territorial losses and reparations.",
+    "question": "In which year was the Treaty of Versailles signed?",
+    "answers": {
+      "A": "1918",
+      "B": "1919",
+      "C": "1920",
+      "D": "1921"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1156",
+    "fact": "The Bolshevik Revolution, led by Vladimir Lenin, took place in October 1917 (November by the Gregorian calendar) and overthrew the Russian Provisional Government.",
+    "question": "Who led the Bolshevik Revolution of October 1917 in Russia?",
+    "answers": {
+      "A": "Joseph Stalin",
+      "B": "Leon Trotsky",
+      "C": "Vladimir Lenin",
+      "D": "Alexander Kerensky"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1157",
+    "fact": "The D-Day landings in Normandy began on 6 June 1944, marking the start of the Allied liberation of Western Europe from Nazi occupation.",
+    "question": "On what date did the D-Day landings in Normandy take place?",
+    "answers": {
+      "A": "6 June 1944",
+      "B": "8 May 1944",
+      "C": "1 September 1944",
+      "D": "7 December 1944"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1158",
+    "fact": "The Berlin Wall, which had divided East and West Berlin since 1961, fell on 9 November 1989, symbolising the end of the Cold War division of Europe.",
+    "question": "In which year did the Berlin Wall fall?",
+    "answers": {
+      "A": "1987",
+      "B": "1988",
+      "C": "1989",
+      "D": "1991"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1159",
+    "fact": "Mahatma Gandhi led the Salt March in 1930, a 240-mile protest against the British salt tax, becoming a pivotal moment in the Indian independence movement.",
+    "question": "Who led the 1930 Salt March in protest against British rule in India?",
+    "answers": {
+      "A": "Jawaharlal Nehru",
+      "B": "Subhas Chandra Bose",
+      "C": "Mahatma Gandhi",
+      "D": "Muhammad Ali Jinnah"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1160",
+    "fact": "The Cuban Missile Crisis occurred in October 1962, when the US discovered Soviet nuclear missiles in Cuba, bringing the world to the brink of nuclear war.",
+    "question": "In which year did the Cuban Missile Crisis occur?",
+    "answers": {
+      "A": "1959",
+      "B": "1961",
+      "C": "1962",
+      "D": "1964"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1161",
+    "fact": "The atomic bomb 'Little Boy' was dropped on Hiroshima on 6 August 1945, followed by 'Fat Man' on Nagasaki on 9 August 1945.",
+    "question": "What was the codename of the atomic bomb dropped on Hiroshima on 6 August 1945?",
+    "answers": {
+      "A": "Fat Man",
+      "B": "Little Boy",
+      "C": "Trinity",
+      "D": "Thin Man"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1162",
+    "fact": "The Treaty of Brest-Litovsk was signed in March 1918 between the new Bolshevik government in Russia and the Central Powers, ending Russia's involvement in World War I.",
+    "question": "Which 1918 treaty ended Russia's participation in World War I?",
+    "answers": {
+      "A": "Treaty of Versailles",
+      "B": "Treaty of Saint-Germain",
+      "C": "Treaty of Brest-Litovsk",
+      "D": "Treaty of Sèvres"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1163",
+    "fact": "Winston Churchill delivered his 'Iron Curtain' speech at Westminster College in Fulton, Missouri, on 5 March 1946, marking a key moment in the early Cold War.",
+    "question": "In which US town did Winston Churchill deliver his famous 'Iron Curtain' speech in 1946?",
+    "answers": {
+      "A": "Fulton, Missouri",
+      "B": "Independence, Missouri",
+      "C": "Springfield, Illinois",
+      "D": "Topeka, Kansas"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1164",
+    "fact": "Ho Chi Minh led the Viet Minh against French colonial rule and later the North Vietnamese government during the Vietnam War; he declared Vietnamese independence in 1945.",
+    "question": "Who declared Vietnamese independence from France in September 1945?",
+    "answers": {
+      "A": "Ngo Dinh Diem",
+      "B": "Vo Nguyen Giap",
+      "C": "Ho Chi Minh",
+      "D": "Le Duan"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1165",
+    "fact": "Operation Barbarossa, the German invasion of the Soviet Union, began on 22 June 1941 and was the largest military operation in history.",
+    "question": "What was the codename for the German invasion of the Soviet Union in June 1941?",
+    "answers": {
+      "A": "Operation Sea Lion",
+      "B": "Operation Barbarossa",
+      "C": "Operation Market Garden",
+      "D": "Operation Typhoon"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1166",
+    "fact": "Ghana, led by Kwame Nkrumah, became the first sub-Saharan African colony to gain independence from European colonial rule, on 6 March 1957.",
+    "question": "Which country was the first sub-Saharan African nation to gain independence from European colonial rule?",
+    "answers": {
+      "A": "Kenya",
+      "B": "Nigeria",
+      "C": "Ghana",
+      "D": "Tanganyika"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1167",
+    "fact": "The Warsaw Pact was established in 1955 as a Soviet-led military alliance in response to West Germany's integration into NATO.",
+    "question": "In which year was the Warsaw Pact established?",
+    "answers": {
+      "A": "1949",
+      "B": "1953",
+      "C": "1955",
+      "D": "1961"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1168",
+    "fact": "Mikhail Gorbachev introduced the policies of 'glasnost' (openness) and 'perestroika' (restructuring) in the mid-1980s to reform the Soviet system.",
+    "question": "Which Soviet leader introduced the policies of glasnost and perestroika?",
+    "answers": {
+      "A": "Leonid Brezhnev",
+      "B": "Yuri Andropov",
+      "C": "Konstantin Chernenko",
+      "D": "Mikhail Gorbachev"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1169",
+    "fact": "The Long March (1934–1935) was a military retreat undertaken by the Red Army of the Chinese Communist Party to evade the Kuomintang forces, cementing Mao Zedong's leadership.",
+    "question": "In which decade did the Chinese Communists' Long March take place?",
+    "answers": {
+      "A": "1920s",
+      "B": "1930s",
+      "C": "1940s",
+      "D": "1950s"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1170",
+    "fact": "The Suez Crisis of 1956 was triggered when Egyptian President Gamal Abdel Nasser nationalised the Suez Canal, leading to military intervention by Britain, France, and Israel.",
+    "question": "Which Egyptian leader nationalised the Suez Canal in 1956, triggering the Suez Crisis?",
+    "answers": {
+      "A": "Anwar Sadat",
+      "B": "Gamal Abdel Nasser",
+      "C": "Hosni Mubarak",
+      "D": "Muhammad Naguib"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1171",
+    "fact": "The Battle of Stalingrad lasted from August 1942 to February 1943 and ended with the surrender of the German 6th Army under Field Marshal Friedrich Paulus.",
+    "question": "Which German Field Marshal surrendered to Soviet forces at Stalingrad in February 1943?",
+    "answers": {
+      "A": "Erwin Rommel",
+      "B": "Heinz Guderian",
+      "C": "Friedrich Paulus",
+      "D": "Walther von Brauchitsch"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1172",
+    "fact": "The Bay of Pigs Invasion in April 1961 was a failed CIA-backed attempt by Cuban exiles to overthrow Fidel Castro's government, occurring during the Kennedy administration.",
+    "question": "Who was US President during the Bay of Pigs Invasion of April 1961?",
+    "answers": {
+      "A": "Dwight D. Eisenhower",
+      "B": "John F. Kennedy",
+      "C": "Lyndon B. Johnson",
+      "D": "Richard Nixon"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1173",
+    "fact": "The Treaty of Sèvres (1920) was the post-WWI peace treaty with the Ottoman Empire, although it was later replaced by the Treaty of Lausanne in 1923 after Turkish resistance.",
+    "question": "Which 1920 treaty was the original post-WWI peace settlement imposed on the Ottoman Empire?",
+    "answers": {
+      "A": "Treaty of Trianon",
+      "B": "Treaty of Sèvres",
+      "C": "Treaty of Lausanne",
+      "D": "Treaty of Neuilly"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1174",
+    "fact": "Patrice Lumumba was the first Prime Minister of the independent Democratic Republic of the Congo in 1960 and was assassinated in January 1961 amid the Congo Crisis.",
+    "question": "Who was the first Prime Minister of the independent Democratic Republic of the Congo?",
+    "answers": {
+      "A": "Mobutu Sese Seko",
+      "B": "Joseph Kasa-Vubu",
+      "C": "Patrice Lumumba",
+      "D": "Moïse Tshombe"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1175",
+    "fact": "The Prague Spring of 1968 was a period of liberalisation in Czechoslovakia led by Alexander Dubček, which was crushed by a Warsaw Pact invasion in August 1968.",
+    "question": "Who led the Prague Spring reforms in Czechoslovakia in 1968?",
+    "answers": {
+      "A": "Gustáv Husák",
+      "B": "Antonín Novotný",
+      "C": "Alexander Dubček",
+      "D": "Václav Havel"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1176",
+    "fact": "The Lusitania, a British ocean liner, was sunk by a German U-boat on 7 May 1915, killing 1,198 people including 128 Americans, and contributing to US public opinion turning against Germany.",
+    "question": "In which year was the British ocean liner Lusitania sunk by a German U-boat?",
+    "answers": {
+      "A": "1914",
+      "B": "1915",
+      "C": "1916",
+      "D": "1917"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1177",
+    "fact": "Algeria gained independence from France in July 1962 after a brutal eight-year war of independence (1954–1962) led by the FLN (National Liberation Front).",
+    "question": "In which year did Algeria gain independence from France?",
+    "answers": {
+      "A": "1956",
+      "B": "1960",
+      "C": "1962",
+      "D": "1965"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1178",
+    "fact": "The Molotov–Ribbentrop Pact, signed on 23 August 1939, was a non-aggression treaty between Nazi Germany and the Soviet Union that included secret protocols dividing Eastern Europe into spheres of influence.",
+    "question": "The Molotov–Ribbentrop Pact of 1939 was a non-aggression agreement between which two countries?",
+    "answers": {
+      "A": "Germany and Italy",
+      "B": "Germany and the Soviet Union",
+      "C": "Soviet Union and Japan",
+      "D": "Germany and Poland"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1179",
+    "fact": "Paella originated in the Valencia region of Spain in the mid-19th century, traditionally cooked over an open fire with rabbit, chicken, and beans.",
+    "question": "From which region of Spain does the dish paella originate?",
+    "answers": {
+      "A": "Catalonia",
+      "B": "Valencia",
+      "C": "Andalusia",
+      "D": "Galicia"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1180",
+    "fact": "Sushi rice is seasoned with rice vinegar, sugar, and salt, giving it the distinctive tangy flavor that distinguishes it from plain steamed rice.",
+    "question": "What ingredient is mixed with sushi rice to give it its characteristic flavor?",
+    "answers": {
+      "A": "Lemon juice",
+      "B": "Mirin",
+      "C": "Rice vinegar",
+      "D": "Sake"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1181",
+    "fact": "Feta is a brined curd cheese traditionally made in Greece from sheep's milk, or a mixture of sheep and goat's milk.",
+    "question": "Traditional Greek feta cheese is primarily made from the milk of which animal?",
+    "answers": {
+      "A": "Cow",
+      "B": "Buffalo",
+      "C": "Goat",
+      "D": "Sheep"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1182",
+    "fact": "Tequila is produced primarily in the area surrounding the city of Tequila in the state of Jalisco, Mexico, from the blue agave plant.",
+    "question": "Tequila is distilled from which plant?",
+    "answers": {
+      "A": "Blue agave",
+      "B": "Sugar cane",
+      "C": "Maize",
+      "D": "Cactus"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1183",
+    "fact": "Bouillabaisse is a traditional Provençal fish stew originating from the port city of Marseille on the southern coast of France.",
+    "question": "Bouillabaisse, a famous fish stew, originates from which French city?",
+    "answers": {
+      "A": "Lyon",
+      "B": "Bordeaux",
+      "C": "Marseille",
+      "D": "Nice"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1184",
+    "fact": "Wasabi is a member of the Brassicaceae family, which also includes horseradish, mustard, and cabbage. True wasabi is grated from the stem of Wasabia japonica.",
+    "question": "Wasabi belongs to the same plant family as which of the following?",
+    "answers": {
+      "A": "Ginger",
+      "B": "Horseradish",
+      "C": "Chilli pepper",
+      "D": "Onion"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1185",
+    "fact": "A Negroni is a classic Italian cocktail made of equal parts gin, sweet vermouth, and Campari, garnished with an orange peel.",
+    "question": "Which three spirits/liqueurs in equal parts make up a classic Negroni cocktail?",
+    "answers": {
+      "A": "Vodka, vermouth, and Aperol",
+      "B": "Gin, sweet vermouth, and Campari",
+      "C": "Gin, dry vermouth, and Cointreau",
+      "D": "Rum, Campari, and Cointreau"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1186",
+    "fact": "Saffron comes from the dried stigmas of the Crocus sativus flower. Each flower produces only three stigmas, making it the world's most expensive spice by weight.",
+    "question": "Saffron is harvested from which part of the Crocus sativus flower?",
+    "answers": {
+      "A": "Petals",
+      "B": "Roots",
+      "C": "Stigmas",
+      "D": "Seeds"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1187",
+    "fact": "Goulash (gulyás) is a soup or stew of meat and vegetables seasoned with paprika, originating from medieval Hungary, where it was eaten by cattle herdsmen.",
+    "question": "The dish goulash originated in which country?",
+    "answers": {
+      "A": "Austria",
+      "B": "Czech Republic",
+      "C": "Romania",
+      "D": "Hungary"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1188",
+    "fact": "Kimchi is a traditional Korean side dish of salted and fermented vegetables, most commonly napa cabbage and Korean radish, seasoned with chili powder, garlic, ginger, and other spices.",
+    "question": "What is the main vegetable typically used to make traditional Korean kimchi?",
+    "answers": {
+      "A": "Bok choy",
+      "B": "Napa cabbage",
+      "C": "Daikon radish",
+      "D": "Spring onion"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1189",
+    "fact": "Pisco Sour is a cocktail that originated in Lima, Peru, in the early 1920s, made with pisco, lime juice, syrup, egg white, and Angostura bitters.",
+    "question": "The Pisco Sour cocktail originated in which country?",
+    "answers": {
+      "A": "Chile",
+      "B": "Peru",
+      "C": "Argentina",
+      "D": "Bolivia"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1190",
+    "fact": "Balsamic vinegar of Modena is made from grape must (freshly crushed grape juice with skins, seeds, and stems) that is aged in wooden barrels.",
+    "question": "Traditional balsamic vinegar from Modena is made from what base ingredient?",
+    "answers": {
+      "A": "Red wine",
+      "B": "Apple cider",
+      "C": "Grape must",
+      "D": "Fermented rice"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1191",
+    "fact": "Pho is a Vietnamese soup consisting of broth, rice noodles, herbs, and meat (usually beef or chicken). It originated in northern Vietnam in the early 20th century.",
+    "question": "Pho is a traditional noodle soup from which country?",
+    "answers": {
+      "A": "Thailand",
+      "B": "Cambodia",
+      "C": "Vietnam",
+      "D": "Laos"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1192",
+    "fact": "The Maillard reaction is a chemical reaction between amino acids and reducing sugars that gives browned foods their distinctive flavor. It was first described by French chemist Louis-Camille Maillard in 1912.",
+    "question": "What is the name of the chemical reaction that gives seared and browned foods their distinctive flavor?",
+    "answers": {
+      "A": "Maillard reaction",
+      "B": "Caramelization",
+      "C": "Fermentation",
+      "D": "Emulsification"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1193",
+    "fact": "Champagne can only legally be called Champagne if it is produced in the Champagne region of France, following strict production methods including the traditional method of secondary fermentation in the bottle.",
+    "question": "Which grape varieties are the three main grapes permitted in Champagne production?",
+    "answers": {
+      "A": "Chardonnay, Sauvignon Blanc, Riesling",
+      "B": "Chardonnay, Pinot Noir, Pinot Meunier",
+      "C": "Pinot Noir, Merlot, Cabernet Franc",
+      "D": "Chardonnay, Pinot Noir, Gamay"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1194",
+    "fact": "Ceviche is a seafood dish where raw fish is cured in citrus juices, typically lime or lemon, with chili peppers and other seasonings. Peru is widely recognized as its origin.",
+    "question": "Ceviche is most associated with the cuisine of which country?",
+    "answers": {
+      "A": "Mexico",
+      "B": "Spain",
+      "C": "Peru",
+      "D": "Portugal"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1195",
+    "fact": "Tofu is made by coagulating soy milk and then pressing the resulting curds into solid white blocks. It originated in China over 2,000 years ago.",
+    "question": "Tofu is made by coagulating which liquid?",
+    "answers": {
+      "A": "Coconut milk",
+      "B": "Rice milk",
+      "C": "Almond milk",
+      "D": "Soy milk"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1196",
+    "fact": "Béchamel is one of the five 'mother sauces' of French cuisine, made from a white roux of butter and flour mixed with milk. The others are velouté, espagnole, hollandaise, and tomato.",
+    "question": "Béchamel sauce is made by adding milk to a roux of butter and what other ingredient?",
+    "answers": {
+      "A": "Egg yolk",
+      "B": "Flour",
+      "C": "Cornstarch",
+      "D": "Cream"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1197",
+    "fact": "Biryani is a mixed rice dish with origins among the Muslims of the Indian subcontinent. Hyderabadi biryani is one of the most famous regional varieties.",
+    "question": "Hyderabadi biryani is a famous variety of which dish?",
+    "answers": {
+      "A": "A rice dish",
+      "B": "A bread",
+      "C": "A lentil stew",
+      "D": "A dessert"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1198",
+    "fact": "Roquefort is a sheep milk blue cheese from southern France, ripened in the natural Combalou caves of Roquefort-sur-Soulzon. It is one of the world's best known blue cheeses.",
+    "question": "Roquefort cheese is traditionally aged in natural caves in which country?",
+    "answers": {
+      "A": "Italy",
+      "B": "Switzerland",
+      "C": "France",
+      "D": "Belgium"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1199",
+    "fact": "Mole poblano is a rich, complex Mexican sauce that originated in the state of Puebla. It typically contains over 20 ingredients including chili peppers, chocolate, nuts, and spices.",
+    "question": "Which unusual ingredient is famously included in the Mexican sauce mole poblano?",
+    "answers": {
+      "A": "Coffee",
+      "B": "Chocolate",
+      "C": "Banana",
+      "D": "Honey"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1200",
+    "fact": "Sake is a Japanese alcoholic beverage made by fermenting rice that has been polished to remove the bran. It typically has an alcohol content of around 15-20%.",
+    "question": "Sake is brewed from which grain?",
+    "answers": {
+      "A": "Barley",
+      "B": "Wheat",
+      "C": "Rice",
+      "D": "Millet"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1201",
+    "fact": "Sous-vide, French for 'under vacuum', is a cooking technique where food is sealed in a plastic pouch and cooked in a temperature-controlled water bath for an extended period.",
+    "question": "What does the French cooking term 'sous-vide' literally translate to?",
+    "answers": {
+      "A": "Slow cooking",
+      "B": "Under vacuum",
+      "C": "Low heat",
+      "D": "Water bath"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1202",
+    "fact": "Cassava (also called manioc or yuca) is the root vegetable from which tapioca pearls are extracted. It is a staple food in many tropical regions.",
+    "question": "Tapioca is extracted from the root of which plant?",
+    "answers": {
+      "A": "Taro",
+      "B": "Yam",
+      "C": "Sweet potato",
+      "D": "Cassava"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1203",
+    "fact": "Chartreuse is a French herbal liqueur made by Carthusian monks since 1737 according to a secret recipe containing 130 herbs and plants. Its distinctive yellow-green color gave the color 'chartreuse' its name.",
+    "question": "The liqueur Chartreuse has been produced by monks of which religious order since the 18th century?",
+    "answers": {
+      "A": "Benedictines",
+      "B": "Carthusians",
+      "C": "Trappists",
+      "D": "Jesuits"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1204",
+    "fact": "Alexander Graham Bell was granted U.S. Patent 174,465 for the telephone on March 7, 1876, narrowly beating Elisha Gray to the patent office.",
+    "question": "Who was granted the first U.S. patent for the telephone in 1876?",
+    "answers": {
+      "A": "Thomas Edison",
+      "B": "Alexander Graham Bell",
+      "C": "Nikola Tesla",
+      "D": "Guglielmo Marconi"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1205",
+    "fact": "Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN, the European particle physics laboratory.",
+    "question": "At which organisation was Tim Berners-Lee working when he invented the World Wide Web?",
+    "answers": {
+      "A": "MIT",
+      "B": "IBM",
+      "C": "CERN",
+      "D": "NASA"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1206",
+    "fact": "Ada Lovelace wrote what is considered the first algorithm intended to be processed by a machine (Babbage's Analytical Engine) in 1843.",
+    "question": "Who is widely regarded as the world's first computer programmer?",
+    "answers": {
+      "A": "Grace Hopper",
+      "B": "Ada Lovelace",
+      "C": "Hedy Lamarr",
+      "D": "Mary Somerville"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1207",
+    "fact": "The ENIAC (Electronic Numerical Integrator and Computer) was unveiled in 1946 at the University of Pennsylvania and is considered one of the first general-purpose electronic computers.",
+    "question": "What was the name of the pioneering electronic general-purpose computer unveiled in 1946?",
+    "answers": {
+      "A": "UNIVAC",
+      "B": "Colossus",
+      "C": "ENIAC",
+      "D": "EDVAC"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1208",
+    "fact": "Johannes Gutenberg invented the movable-type printing press in Europe around 1440, revolutionising the spread of information.",
+    "question": "Who invented the European movable-type printing press around 1440?",
+    "answers": {
+      "A": "Leonardo da Vinci",
+      "B": "Johannes Gutenberg",
+      "C": "William Caxton",
+      "D": "Martin Luther"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1209",
+    "fact": "The first iPhone was announced by Steve Jobs on January 9, 2007, and released to the public on June 29, 2007.",
+    "question": "In which year was the first Apple iPhone released to the public?",
+    "answers": {
+      "A": "2005",
+      "B": "2006",
+      "C": "2007",
+      "D": "2008"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1210",
+    "fact": "Douglas Engelbart invented the computer mouse in the 1960s at the Stanford Research Institute, famously demonstrating it in 1968's 'Mother of All Demos'.",
+    "question": "Who invented the computer mouse?",
+    "answers": {
+      "A": "Steve Wozniak",
+      "B": "Vint Cerf",
+      "C": "Douglas Engelbart",
+      "D": "Alan Kay"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1211",
+    "fact": "Karl Benz patented the Motorwagen in 1886, widely considered the first true automobile powered by an internal combustion engine.",
+    "question": "Who patented the first practical automobile powered by an internal combustion engine in 1886?",
+    "answers": {
+      "A": "Henry Ford",
+      "B": "Gottlieb Daimler",
+      "C": "Karl Benz",
+      "D": "Rudolf Diesel"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1212",
+    "fact": "The transistor was invented at Bell Labs in 1947 by John Bardeen, Walter Brattain, and William Shockley, who later shared the 1956 Nobel Prize in Physics.",
+    "question": "At which research laboratory was the transistor invented in 1947?",
+    "answers": {
+      "A": "Bell Labs",
+      "B": "IBM Research",
+      "C": "Xerox PARC",
+      "D": "MIT Lincoln Lab"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1213",
+    "fact": "Hedy Lamarr, the Hollywood actress, co-patented a frequency-hopping spread spectrum technology in 1942 that became a foundation for Wi-Fi and Bluetooth.",
+    "question": "Which Hollywood actress co-patented a frequency-hopping technology that helped pave the way for Wi-Fi and Bluetooth?",
+    "answers": {
+      "A": "Marilyn Monroe",
+      "B": "Hedy Lamarr",
+      "C": "Ingrid Bergman",
+      "D": "Greta Garbo"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1214",
+    "fact": "James Watt significantly improved the Newcomen steam engine in the 1760s-1770s, patenting his separate condenser design in 1769.",
+    "question": "Who patented the separate condenser steam engine in 1769, vastly improving its efficiency?",
+    "answers": {
+      "A": "Thomas Newcomen",
+      "B": "George Stephenson",
+      "C": "James Watt",
+      "D": "Richard Trevithick"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1215",
+    "fact": "Tim Berners-Lee released the first web browser, called WorldWideWeb (later renamed Nexus), in 1990.",
+    "question": "What was the name of the first web browser, created by Tim Berners-Lee in 1990?",
+    "answers": {
+      "A": "Mosaic",
+      "B": "WorldWideWeb",
+      "C": "Netscape",
+      "D": "Lynx"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1216",
+    "fact": "Linus Torvalds began developing the Linux kernel in 1991 while a student at the University of Helsinki, releasing it under an open-source licence.",
+    "question": "Who created the Linux kernel in 1991?",
+    "answers": {
+      "A": "Richard Stallman",
+      "B": "Linus Torvalds",
+      "C": "Ken Thompson",
+      "D": "Dennis Ritchie"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1217",
+    "fact": "John Logie Baird, a Scottish inventor, gave the first public demonstration of a working television system in London on 26 January 1926.",
+    "question": "Who demonstrated the first working television system in 1926?",
+    "answers": {
+      "A": "Philo Farnsworth",
+      "B": "Vladimir Zworykin",
+      "C": "John Logie Baird",
+      "D": "Guglielmo Marconi"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1218",
+    "fact": "The integrated circuit (microchip) was independently invented by Jack Kilby of Texas Instruments in 1958 and Robert Noyce of Fairchild Semiconductor in 1959. Kilby won the 2000 Nobel Prize in Physics for it.",
+    "question": "Which inventor of the integrated circuit received the 2000 Nobel Prize in Physics?",
+    "answers": {
+      "A": "Robert Noyce",
+      "B": "Gordon Moore",
+      "C": "Jack Kilby",
+      "D": "William Shockley"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1219",
+    "fact": "The QWERTY keyboard layout was designed by Christopher Latham Sholes in the 1870s for his typewriter, which was commercialised by E. Remington and Sons.",
+    "question": "Who designed the QWERTY keyboard layout in the 1870s?",
+    "answers": {
+      "A": "Christopher Latham Sholes",
+      "B": "Thomas Edison",
+      "C": "Eliphalet Remington",
+      "D": "August Dvorak"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1220",
+    "fact": "Vint Cerf and Bob Kahn developed TCP/IP, the foundational protocols of the internet, in the 1970s, earning them the title 'fathers of the internet'.",
+    "question": "Which two computer scientists are known as the 'fathers of the internet' for developing TCP/IP?",
+    "answers": {
+      "A": "Bill Gates and Paul Allen",
+      "B": "Vint Cerf and Bob Kahn",
+      "C": "Larry Page and Sergey Brin",
+      "D": "Steve Jobs and Steve Wozniak"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1221",
+    "fact": "Mary Anderson patented the first windshield wiper in 1903 after observing drivers having to stop to clear their windscreens by hand.",
+    "question": "Who patented the first windshield wiper in 1903?",
+    "answers": {
+      "A": "Bertha Benz",
+      "B": "Margaret Knight",
+      "C": "Mary Anderson",
+      "D": "Josephine Cochrane"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1222",
+    "fact": "Google was founded by Larry Page and Sergey Brin in September 1998 while they were PhD students at Stanford University.",
+    "question": "In which year was Google officially founded?",
+    "answers": {
+      "A": "1996",
+      "B": "1997",
+      "C": "1998",
+      "D": "1999"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1223",
+    "fact": "Wilhelm Röntgen discovered X-rays in 1895 and was awarded the first Nobel Prize in Physics in 1901 for the discovery.",
+    "question": "Who discovered X-rays in 1895?",
+    "answers": {
+      "A": "Marie Curie",
+      "B": "Wilhelm Röntgen",
+      "C": "Henri Becquerel",
+      "D": "Ernest Rutherford"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1224",
+    "fact": "Ray Tomlinson sent the first email between computers on the ARPANET in 1971 and chose the @ symbol to separate the user name from the host.",
+    "question": "Who sent the first networked email and chose the @ symbol for email addresses?",
+    "answers": {
+      "A": "Vint Cerf",
+      "B": "Tim Berners-Lee",
+      "C": "Ray Tomlinson",
+      "D": "Larry Roberts"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1225",
+    "fact": "The first programmable, electronic, digital computer was Colossus, built by Tommy Flowers and used at Bletchley Park from 1944 to break German Lorenz ciphers.",
+    "question": "What was the name of the British codebreaking computer used at Bletchley Park from 1944?",
+    "answers": {
+      "A": "The Bombe",
+      "B": "Colossus",
+      "C": "Enigma",
+      "D": "Manchester Baby"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1226",
+    "fact": "Bluetooth wireless technology is named after the 10th-century Danish King Harald 'Bluetooth' Gormsson, who united Denmark and Norway.",
+    "question": "Bluetooth wireless technology is named after a 10th-century king of which country?",
+    "answers": {
+      "A": "Sweden",
+      "B": "Norway",
+      "C": "Denmark",
+      "D": "Finland"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1227",
+    "fact": "The first commercially successful photograph process, the daguerreotype, was announced by Louis Daguerre in France in 1839.",
+    "question": "Who introduced the daguerreotype photographic process in 1839?",
+    "answers": {
+      "A": "William Henry Fox Talbot",
+      "B": "Louis Daguerre",
+      "C": "Joseph Nicéphore Niépce",
+      "D": "George Eastman"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1228",
+    "fact": "Philo Farnsworth transmitted the first all-electronic television image in 1927 and was awarded a key patent for electronic television in 1930.",
+    "question": "Who is credited with transmitting the first all-electronic television image in 1927?",
+    "answers": {
+      "A": "John Logie Baird",
+      "B": "Vladimir Zworykin",
+      "C": "Philo Farnsworth",
+      "D": "Lee de Forest"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1229",
+    "fact": "Leo Tolstoy's 'War and Peace' was published in serial form between 1865 and 1867 before appearing as a complete novel in 1869.",
+    "question": "Who wrote the epic novel 'War and Peace'?",
+    "answers": {
+      "A": "Fyodor Dostoevsky",
+      "B": "Leo Tolstoy",
+      "C": "Anton Chekhov",
+      "D": "Ivan Turgenev"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1230",
+    "fact": "Leonardo da Vinci painted the Mona Lisa between approximately 1503 and 1519. It hangs in the Louvre in Paris.",
+    "question": "Which artist painted the Mona Lisa?",
+    "answers": {
+      "A": "Michelangelo",
+      "B": "Raphael",
+      "C": "Leonardo da Vinci",
+      "D": "Donatello"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1231",
+    "fact": "Ludwig van Beethoven composed nine symphonies, with the Ninth ('Choral') including the famous 'Ode to Joy' chorus.",
+    "question": "How many symphonies did Ludwig van Beethoven complete?",
+    "answers": {
+      "A": "Seven",
+      "B": "Nine",
+      "C": "Eleven",
+      "D": "Five"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1232",
+    "fact": "George Orwell's 'Nineteen Eighty-Four' was published in 1949 and introduced terms like 'Big Brother' and 'doublethink'.",
+    "question": "Who wrote the dystopian novel 'Nineteen Eighty-Four'?",
+    "answers": {
+      "A": "Aldous Huxley",
+      "B": "Ray Bradbury",
+      "C": "George Orwell",
+      "D": "H.G. Wells"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1233",
+    "fact": "Michelangelo sculpted the marble statue of David between 1501 and 1504. It now stands in the Galleria dell'Accademia in Florence.",
+    "question": "Which Renaissance artist sculpted the famous statue of David in Florence?",
+    "answers": {
+      "A": "Bernini",
+      "B": "Donatello",
+      "C": "Michelangelo",
+      "D": "Cellini"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1234",
+    "fact": "Giuseppe Verdi composed 'Aida', which premiered at the Khedivial Opera House in Cairo in 1871.",
+    "question": "Who composed the opera 'Aida'?",
+    "answers": {
+      "A": "Giacomo Puccini",
+      "B": "Gioachino Rossini",
+      "C": "Giuseppe Verdi",
+      "D": "Vincenzo Bellini"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1235",
+    "fact": "Vincent van Gogh painted 'The Starry Night' in June 1889 while staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence.",
+    "question": "In which year did Vincent van Gogh paint 'The Starry Night'?",
+    "answers": {
+      "A": "1889",
+      "B": "1875",
+      "C": "1901",
+      "D": "1893"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1236",
+    "fact": "Harper Lee's 'To Kill a Mockingbird' was published in 1960 and won the Pulitzer Prize for Fiction in 1961.",
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "answers": {
+      "A": "Truman Capote",
+      "B": "Harper Lee",
+      "C": "Flannery O'Connor",
+      "D": "Carson McCullers"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1237",
+    "fact": "Wolfgang Amadeus Mozart composed 'The Magic Flute' (Die Zauberflöte), which premiered in Vienna in 1791, just two months before his death.",
+    "question": "Who composed the opera 'The Magic Flute'?",
+    "answers": {
+      "A": "Joseph Haydn",
+      "B": "Johann Sebastian Bach",
+      "C": "Wolfgang Amadeus Mozart",
+      "D": "Franz Schubert"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1238",
+    "fact": "Auguste Rodin created 'The Thinker', originally part of a larger commission known as 'The Gates of Hell', in 1880.",
+    "question": "Which sculptor created 'The Thinker'?",
+    "answers": {
+      "A": "Constantin Brâncuși",
+      "B": "Auguste Rodin",
+      "C": "Henry Moore",
+      "D": "Alberto Giacometti"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1239",
+    "fact": "F. Scott Fitzgerald's 'The Great Gatsby' was published in 1925 and is set on Long Island during the Jazz Age.",
+    "question": "Who wrote 'The Great Gatsby'?",
+    "answers": {
+      "A": "Ernest Hemingway",
+      "B": "John Steinbeck",
+      "C": "F. Scott Fitzgerald",
+      "D": "William Faulkner"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1240",
+    "fact": "Edvard Munch painted 'The Scream' in 1893; the iconic work exists in four versions, including paintings and pastels.",
+    "question": "Which Norwegian artist painted 'The Scream'?",
+    "answers": {
+      "A": "Edvard Munch",
+      "B": "Gustav Klimt",
+      "C": "Egon Schiele",
+      "D": "Wassily Kandinsky"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1241",
+    "fact": "Richard Wagner composed the four-opera cycle 'Der Ring des Nibelungen' over about 26 years, completing it in 1874.",
+    "question": "Which composer created the opera cycle 'Der Ring des Nibelungen'?",
+    "answers": {
+      "A": "Richard Strauss",
+      "B": "Gustav Mahler",
+      "C": "Richard Wagner",
+      "D": "Anton Bruckner"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1242",
+    "fact": "Jane Austen's 'Pride and Prejudice' was first published in 1813 and features the romance between Elizabeth Bennet and Mr. Darcy.",
+    "question": "Who wrote 'Pride and Prejudice'?",
+    "answers": {
+      "A": "Charlotte Brontë",
+      "B": "Jane Austen",
+      "C": "Emily Brontë",
+      "D": "George Eliot"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1243",
+    "fact": "Pablo Picasso painted 'Guernica' in 1937 in response to the bombing of the Basque town during the Spanish Civil War.",
+    "question": "Which historical event inspired Picasso's painting 'Guernica'?",
+    "answers": {
+      "A": "The Cuban Missile Crisis",
+      "B": "The Russian Revolution",
+      "C": "The Bombing of a Basque town during the Spanish Civil War",
+      "D": "The Battle of the Somme"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1244",
+    "fact": "Gabriel García Márquez wrote 'One Hundred Years of Solitude', published in 1967, a landmark of magical realism.",
+    "question": "Who wrote 'One Hundred Years of Solitude'?",
+    "answers": {
+      "A": "Jorge Luis Borges",
+      "B": "Mario Vargas Llosa",
+      "C": "Gabriel García Márquez",
+      "D": "Isabel Allende"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1245",
+    "fact": "Johann Sebastian Bach composed the 'Brandenburg Concertos', a set of six instrumental works dedicated to the Margrave of Brandenburg in 1721.",
+    "question": "Who composed the 'Brandenburg Concertos'?",
+    "answers": {
+      "A": "George Frideric Handel",
+      "B": "Antonio Vivaldi",
+      "C": "Georg Philipp Telemann",
+      "D": "Johann Sebastian Bach"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1246",
+    "fact": "Sandro Botticelli painted 'The Birth of Venus' around 1484–1486. It depicts Venus arriving at the shore on a giant scallop shell.",
+    "question": "Which Renaissance artist painted 'The Birth of Venus'?",
+    "answers": {
+      "A": "Titian",
+      "B": "Sandro Botticelli",
+      "C": "Giorgione",
+      "D": "Piero della Francesca"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1247",
+    "fact": "Fyodor Dostoevsky's 'Crime and Punishment' was published in 1866 and follows the impoverished ex-student Rodion Raskolnikov.",
+    "question": "Who wrote the novel 'Crime and Punishment'?",
+    "answers": {
+      "A": "Nikolai Gogol",
+      "B": "Mikhail Bulgakov",
+      "C": "Fyodor Dostoevsky",
+      "D": "Boris Pasternak"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1248",
+    "fact": "Giacomo Puccini composed 'Madama Butterfly', which premiered at La Scala in Milan in 1904. The story is set in Nagasaki, Japan.",
+    "question": "In which country is the opera 'Madama Butterfly' set?",
+    "answers": {
+      "A": "China",
+      "B": "Japan",
+      "C": "Vietnam",
+      "D": "Korea"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1249",
+    "fact": "Salvador Dalí painted 'The Persistence of Memory' in 1931, famous for its melting pocket watches in a dreamlike landscape.",
+    "question": "Which surrealist artist painted 'The Persistence of Memory', featuring melting clocks?",
+    "answers": {
+      "A": "René Magritte",
+      "B": "Max Ernst",
+      "C": "Joan Miró",
+      "D": "Salvador Dalí"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1250",
+    "fact": "James Joyce's 'Ulysses', published in 1922, takes place over a single day — 16 June 1904 — in Dublin, now celebrated as Bloomsday.",
+    "question": "Over what time period does the action of James Joyce's 'Ulysses' take place?",
+    "answers": {
+      "A": "One year",
+      "B": "One week",
+      "C": "One single day",
+      "D": "One month"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1251",
+    "fact": "Pyotr Ilyich Tchaikovsky composed the ballet 'Swan Lake', which premiered at the Bolshoi Theatre in Moscow in 1877.",
+    "question": "Who composed the ballet 'Swan Lake'?",
+    "answers": {
+      "A": "Sergei Rachmaninoff",
+      "B": "Pyotr Ilyich Tchaikovsky",
+      "C": "Igor Stravinsky",
+      "D": "Nikolai Rimsky-Korsakov"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1252",
+    "fact": "Johannes Vermeer painted 'Girl with a Pearl Earring' around 1665. It is housed in the Mauritshuis in The Hague.",
+    "question": "Who painted 'Girl with a Pearl Earring'?",
+    "answers": {
+      "A": "Rembrandt van Rijn",
+      "B": "Pieter Bruegel the Elder",
+      "C": "Frans Hals",
+      "D": "Johannes Vermeer"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1253",
+    "fact": "Thomas Mann's novella 'Death in Venice' was published in 1912. Mann won the Nobel Prize in Literature in 1929.",
+    "question": "Who wrote the novella 'Death in Venice'?",
+    "answers": {
+      "A": "Hermann Hesse",
+      "B": "Thomas Mann",
+      "C": "Franz Kafka",
+      "D": "Stefan Zweig"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1254",
+    "fact": "Mercury is the closest planet to the Sun, orbiting at an average distance of about 58 million kilometres.",
+    "question": "Which planet in our solar system is closest to the Sun?",
+    "answers": {
+      "A": "Venus",
+      "B": "Mercury",
+      "C": "Mars",
+      "D": "Earth"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1255",
+    "fact": "Jupiter is the largest planet in the solar system, with a mass more than twice that of all the other planets combined.",
+    "question": "Which is the largest planet in our solar system?",
+    "answers": {
+      "A": "Saturn",
+      "B": "Neptune",
+      "C": "Uranus",
+      "D": "Jupiter"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1256",
+    "fact": "The Milky Way is the spiral galaxy that contains our solar system, estimated to contain 100-400 billion stars.",
+    "question": "What is the name of the galaxy that contains our solar system?",
+    "answers": {
+      "A": "Andromeda",
+      "B": "Milky Way",
+      "C": "Triangulum",
+      "D": "Sombrero"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1257",
+    "fact": "Mars is known as the Red Planet due to the iron oxide (rust) prevalent on its surface, giving it a reddish appearance.",
+    "question": "Which planet is commonly known as the 'Red Planet'?",
+    "answers": {
+      "A": "Venus",
+      "B": "Jupiter",
+      "C": "Mars",
+      "D": "Mercury"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1258",
+    "fact": "Yuri Gagarin completed one orbit of Earth aboard Vostok 1 on 12 April 1961, becoming the first human in space.",
+    "question": "Who was the first human to travel into space?",
+    "answers": {
+      "A": "Alan Shepard",
+      "B": "John Glenn",
+      "C": "Valentina Tereshkova",
+      "D": "Yuri Gagarin"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1259",
+    "fact": "The Sun is a G-type main-sequence star, classified as G2V, often referred to as a yellow dwarf.",
+    "question": "What type of star is our Sun?",
+    "answers": {
+      "A": "Red giant",
+      "B": "Yellow dwarf (G-type main sequence)",
+      "C": "White dwarf",
+      "D": "Blue supergiant"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1260",
+    "fact": "Saturn is famous for its extensive ring system, made primarily of ice particles with a smaller amount of rocky debris and dust.",
+    "question": "Which planet in our solar system is most famous for its prominent ring system?",
+    "answers": {
+      "A": "Jupiter",
+      "B": "Uranus",
+      "C": "Saturn",
+      "D": "Neptune"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1261",
+    "fact": "The Hubble Space Telescope was launched on 24 April 1990 aboard the Space Shuttle Discovery on mission STS-31.",
+    "question": "In which year was the Hubble Space Telescope launched into orbit?",
+    "answers": {
+      "A": "1985",
+      "B": "1990",
+      "C": "1995",
+      "D": "1998"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1262",
+    "fact": "Proxima Centauri, part of the Alpha Centauri system, is the closest known star to the Sun at about 4.24 light-years away.",
+    "question": "What is the closest known star to our Sun?",
+    "answers": {
+      "A": "Sirius",
+      "B": "Barnard's Star",
+      "C": "Proxima Centauri",
+      "D": "Alpha Centauri A"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1263",
+    "fact": "Valentina Tereshkova became the first woman in space when she flew aboard Vostok 6 in June 1963, orbiting Earth 48 times.",
+    "question": "Who was the first woman to travel into space?",
+    "answers": {
+      "A": "Sally Ride",
+      "B": "Valentina Tereshkova",
+      "C": "Mae Jemison",
+      "D": "Svetlana Savitskaya"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1264",
+    "fact": "Ganymede, a moon of Jupiter, is the largest moon in the solar system and is even larger than the planet Mercury.",
+    "question": "What is the largest moon in our solar system?",
+    "answers": {
+      "A": "Titan",
+      "B": "Europa",
+      "C": "Callisto",
+      "D": "Ganymede"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1265",
+    "fact": "The Andromeda Galaxy (M31) is the nearest large spiral galaxy to the Milky Way, located about 2.5 million light-years away.",
+    "question": "Which is the nearest large spiral galaxy to the Milky Way?",
+    "answers": {
+      "A": "Triangulum Galaxy",
+      "B": "Large Magellanic Cloud",
+      "C": "Andromeda Galaxy",
+      "D": "Whirlpool Galaxy"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1266",
+    "fact": "Venus has the longest day of any planet in the solar system, with one rotation taking about 243 Earth days — longer than its year of 225 Earth days.",
+    "question": "Which planet has the longest day (rotation period) in our solar system?",
+    "answers": {
+      "A": "Mercury",
+      "B": "Venus",
+      "C": "Mars",
+      "D": "Jupiter"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1267",
+    "fact": "The Voyager 1 probe, launched in 1977, became the first human-made object to enter interstellar space in August 2012.",
+    "question": "Which spacecraft was the first to enter interstellar space?",
+    "answers": {
+      "A": "Pioneer 10",
+      "B": "New Horizons",
+      "C": "Voyager 1",
+      "D": "Voyager 2"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1268",
+    "fact": "A light-year is the distance that light travels in one year in a vacuum, approximately 9.46 trillion kilometres.",
+    "question": "What does a 'light-year' measure?",
+    "answers": {
+      "A": "Time",
+      "B": "Distance",
+      "C": "Brightness",
+      "D": "Mass"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1269",
+    "fact": "Olympus Mons on Mars is the largest volcano and the tallest known mountain in the solar system, standing about 22 km high.",
+    "question": "On which planet is Olympus Mons, the largest volcano in the solar system, located?",
+    "answers": {
+      "A": "Venus",
+      "B": "Earth",
+      "C": "Mars",
+      "D": "Mercury"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1270",
+    "fact": "Pluto was reclassified from a planet to a 'dwarf planet' by the International Astronomical Union in August 2006.",
+    "question": "In which year was Pluto reclassified as a 'dwarf planet'?",
+    "answers": {
+      "A": "2001",
+      "B": "2004",
+      "C": "2006",
+      "D": "2010"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1271",
+    "fact": "The James Webb Space Telescope launched on 25 December 2021 aboard an Ariane 5 rocket from French Guiana.",
+    "question": "On what date did the James Webb Space Telescope launch?",
+    "answers": {
+      "A": "25 December 2021",
+      "B": "4 July 2021",
+      "C": "1 January 2022",
+      "D": "20 November 2020"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1272",
+    "fact": "Apollo 13 launched on 11 April 1970 but a service module oxygen tank exploded, forcing the crew to abort their lunar landing and safely return to Earth.",
+    "question": "Which Apollo mission famously suffered an in-flight emergency in 1970, forcing it to abort its Moon landing?",
+    "answers": {
+      "A": "Apollo 11",
+      "B": "Apollo 12",
+      "C": "Apollo 13",
+      "D": "Apollo 14"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1273",
+    "fact": "Betelgeuse, a red supergiant in the constellation Orion, marks Orion's right shoulder and is one of the largest stars visible to the naked eye.",
+    "question": "Betelgeuse, a famous red supergiant star, is located in which constellation?",
+    "answers": {
+      "A": "Ursa Major",
+      "B": "Cassiopeia",
+      "C": "Orion",
+      "D": "Cygnus"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1274",
+    "fact": "The event horizon is the boundary of a black hole beyond which nothing — not even light — can escape its gravitational pull.",
+    "question": "What is the name of the boundary surrounding a black hole beyond which nothing can escape?",
+    "answers": {
+      "A": "Singularity",
+      "B": "Event horizon",
+      "C": "Accretion disk",
+      "D": "Schwarzschild ring"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1275",
+    "fact": "The Chicxulub impact crater on the Yucatán Peninsula in Mexico is widely believed to be the result of the asteroid impact that contributed to the extinction of the dinosaurs about 66 million years ago.",
+    "question": "What is the name of the impact crater linked to the extinction of the dinosaurs?",
+    "answers": {
+      "A": "Vredefort",
+      "B": "Sudbury",
+      "C": "Chicxulub",
+      "D": "Tunguska"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1276",
+    "fact": "The Cassini–Huygens mission orbited Saturn from 2004 to 2017, with the Huygens probe successfully landing on Saturn's moon Titan in January 2005.",
+    "question": "The Huygens probe, part of the Cassini mission, landed on which moon in 2005?",
+    "answers": {
+      "A": "Europa",
+      "B": "Titan",
+      "C": "Enceladus",
+      "D": "Triton"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1277",
+    "fact": "A parsec is approximately 3.26 light-years, defined as the distance at which one astronomical unit subtends an angle of one arcsecond.",
+    "question": "Approximately how many light-years are in one parsec?",
+    "answers": {
+      "A": "1.0",
+      "B": "3.26",
+      "C": "9.46",
+      "D": "10.5"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1279",
+    "fact": "Pi (π) is the ratio of a circle's circumference to its diameter, approximately 3.14159.",
+    "question": "What mathematical constant represents the ratio of a circle's circumference to its diameter?",
+    "answers": {
+      "A": "e",
+      "B": "π (pi)",
+      "C": "φ (phi)",
+      "D": "γ (gamma)"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1280",
+    "fact": "The Pythagorean theorem states that in a right triangle, a² + b² = c², where c is the hypotenuse.",
+    "question": "Which theorem states that the square of the hypotenuse equals the sum of the squares of the other two sides in a right triangle?",
+    "answers": {
+      "A": "Fermat's Last Theorem",
+      "B": "Euclid's Theorem",
+      "C": "Pythagorean Theorem",
+      "D": "Thales's Theorem"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1281",
+    "fact": "Euler's number e is approximately 2.71828 and is the base of natural logarithms.",
+    "question": "What is the approximate value of Euler's number 'e' to two decimal places?",
+    "answers": {
+      "A": "3.14",
+      "B": "1.62",
+      "C": "2.72",
+      "D": "2.41"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1282",
+    "fact": "The golden ratio, denoted φ (phi), is approximately 1.618 and appears in art, architecture, and nature.",
+    "question": "What is the approximate numerical value of the golden ratio (φ)?",
+    "answers": {
+      "A": "1.414",
+      "B": "1.618",
+      "C": "2.718",
+      "D": "3.142"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1283",
+    "fact": "Andrew Wiles proved Fermat's Last Theorem in 1994, more than 350 years after it was conjectured.",
+    "question": "Which mathematician proved Fermat's Last Theorem in 1994?",
+    "answers": {
+      "A": "Grigori Perelman",
+      "B": "Terence Tao",
+      "C": "Andrew Wiles",
+      "D": "John Nash"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1284",
+    "fact": "The sum of the interior angles of any triangle in Euclidean geometry is 180 degrees.",
+    "question": "What is the sum of the interior angles of a triangle in Euclidean geometry?",
+    "answers": {
+      "A": "90°",
+      "B": "180°",
+      "C": "270°",
+      "D": "360°"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1285",
+    "fact": "Euclid, often called the 'Father of Geometry', wrote 'The Elements' around 300 BCE.",
+    "question": "Which ancient Greek mathematician wrote 'The Elements', one of the most influential mathematical works in history?",
+    "answers": {
+      "A": "Pythagoras",
+      "B": "Archimedes",
+      "C": "Euclid",
+      "D": "Thales"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1286",
+    "fact": "Euler's identity, e^(iπ) + 1 = 0, is often called the most beautiful equation in mathematics.",
+    "question": "Euler's identity famously links five fundamental constants: 0, 1, π, e, and which other?",
+    "answers": {
+      "A": "φ",
+      "B": "i (the imaginary unit)",
+      "C": "γ",
+      "D": "√2"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1287",
+    "fact": "A dodecahedron has 12 faces, each a regular pentagon. It is one of the five Platonic solids.",
+    "question": "How many faces does a regular dodecahedron have?",
+    "answers": {
+      "A": "8",
+      "B": "10",
+      "C": "12",
+      "D": "20"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1288",
+    "fact": "There are exactly five Platonic solids: tetrahedron, cube, octahedron, dodecahedron, and icosahedron.",
+    "question": "How many Platonic solids exist?",
+    "answers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1289",
+    "fact": "Grigori Perelman proved the Poincaré conjecture in the early 2000s and famously declined the Fields Medal and the $1 million Clay Millennium Prize.",
+    "question": "Which Russian mathematician proved the Poincaré conjecture and declined the Fields Medal?",
+    "answers": {
+      "A": "Andrey Kolmogorov",
+      "B": "Grigori Perelman",
+      "C": "Sergei Novikov",
+      "D": "Vladimir Arnold"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1290",
+    "fact": "The Fibonacci sequence starts 0, 1, 1, 2, 3, 5, 8, 13, 21, 34... Each number is the sum of the two preceding ones.",
+    "question": "In the Fibonacci sequence starting 0, 1, 1, 2, 3, 5, 8..., what is the next number after 8?",
+    "answers": {
+      "A": "11",
+      "B": "13",
+      "C": "15",
+      "D": "16"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1291",
+    "fact": "A googol is 10^100, a 1 followed by 100 zeros. The term was coined by 9-year-old Milton Sirotta.",
+    "question": "How many zeros follow the 1 in the number known as a 'googol'?",
+    "answers": {
+      "A": "10",
+      "B": "100",
+      "C": "1,000",
+      "D": "1,000,000"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1292",
+    "fact": "Carl Friedrich Gauss is often called the 'Prince of Mathematicians' for his immense contributions to many fields.",
+    "question": "Which German mathematician is known as the 'Prince of Mathematicians'?",
+    "answers": {
+      "A": "Bernhard Riemann",
+      "B": "Leonhard Euler",
+      "C": "Carl Friedrich Gauss",
+      "D": "David Hilbert"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1293",
+    "fact": "The Riemann Hypothesis, proposed by Bernhard Riemann in 1859, concerns the distribution of the zeros of the Riemann zeta function.",
+    "question": "The Riemann Hypothesis is concerned with the zeros of which mathematical function?",
+    "answers": {
+      "A": "Gamma function",
+      "B": "Zeta function",
+      "C": "Beta function",
+      "D": "Theta function"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1294",
+    "fact": "A regular hexagon can be divided into 6 equilateral triangles, and its interior angles each measure 120°.",
+    "question": "What is the measure of each interior angle of a regular hexagon?",
+    "answers": {
+      "A": "60°",
+      "B": "108°",
+      "C": "120°",
+      "D": "135°"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1295",
+    "fact": "The Clay Mathematics Institute announced seven Millennium Prize Problems in 2000, each with a $1 million prize.",
+    "question": "How many Millennium Prize Problems were announced by the Clay Mathematics Institute in 2000?",
+    "answers": {
+      "A": "5",
+      "B": "7",
+      "C": "10",
+      "D": "23"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1296",
+    "fact": "Ada Lovelace is often considered the first computer programmer for her work on Charles Babbage's Analytical Engine.",
+    "question": "Which 19th-century mathematician is often credited as the world's first computer programmer?",
+    "answers": {
+      "A": "Florence Nightingale",
+      "B": "Sophie Germain",
+      "C": "Ada Lovelace",
+      "D": "Emmy Noether"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1297",
+    "fact": "Square root of 2 is approximately 1.41421356 and was the first known irrational number, discovered by the Pythagoreans.",
+    "question": "What is the approximate value of √2 to three decimal places?",
+    "answers": {
+      "A": "1.414",
+      "B": "1.618",
+      "C": "1.732",
+      "D": "2.236"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1298",
+    "fact": "Archimedes is famously credited with shouting 'Eureka!' after discovering the principle of buoyancy.",
+    "question": "Which ancient Greek mathematician is said to have shouted 'Eureka!' after discovering a principle in his bath?",
+    "answers": {
+      "A": "Euclid",
+      "B": "Archimedes",
+      "C": "Plato",
+      "D": "Hipparchus"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1299",
+    "fact": "The Fields Medal is awarded every four years to mathematicians under the age of 40.",
+    "question": "What is the maximum age at which a mathematician can be awarded the Fields Medal?",
+    "answers": {
+      "A": "30",
+      "B": "35",
+      "C": "40",
+      "D": "50"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1300",
+    "fact": "Maryam Mirzakhani became the first woman to win the Fields Medal in 2014 for her work on Riemann surfaces.",
+    "question": "Who was the first woman to be awarded the Fields Medal?",
+    "answers": {
+      "A": "Emmy Noether",
+      "B": "Maryam Mirzakhani",
+      "C": "Karen Uhlenbeck",
+      "D": "Sofia Kovalevskaya"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1301",
+    "fact": "Kurt Gödel's incompleteness theorems, published in 1931, showed that any consistent formal arithmetic system contains statements that cannot be proven within it.",
+    "question": "Which Austrian-born logician is famous for his incompleteness theorems published in 1931?",
+    "answers": {
+      "A": "Ludwig Wittgenstein",
+      "B": "Alan Turing",
+      "C": "Bertrand Russell",
+      "D": "Kurt Gödel"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1302",
+    "fact": "A sphere's volume is given by V = (4/3)πr³, derived by Archimedes.",
+    "question": "What is the formula for the volume of a sphere of radius r?",
+    "answers": {
+      "A": "4πr²",
+      "B": "(4/3)πr³",
+      "C": "πr²h",
+      "D": "2πr³"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1303",
+    "fact": "Hilbert presented 23 unsolved problems at the International Congress of Mathematicians in Paris in 1900, shaping 20th-century mathematics.",
+    "question": "How many problems did David Hilbert present in his famous 1900 address to the International Congress of Mathematicians?",
+    "answers": {
+      "A": "10",
+      "B": "17",
+      "C": "23",
+      "D": "30"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1304",
+    "fact": "The Torah consists of the first five books of the Hebrew Bible: Genesis, Exodus, Leviticus, Numbers, and Deuteronomy.",
+    "question": "How many books make up the Torah?",
+    "answers": {
+      "A": "Three",
+      "B": "Five",
+      "C": "Seven",
+      "D": "Ten"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1305",
+    "fact": "Ra (or Re) was the ancient Egyptian sun god, often depicted with the head of a falcon and a sun disk above it.",
+    "question": "In ancient Egyptian mythology, who was the sun god?",
+    "answers": {
+      "A": "Anubis",
+      "B": "Osiris",
+      "C": "Ra",
+      "D": "Thoth"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1306",
+    "fact": "Mecca, in modern-day Saudi Arabia, is the birthplace of the Prophet Muhammad and the holiest city in Islam.",
+    "question": "Which city is considered the holiest in Islam?",
+    "answers": {
+      "A": "Medina",
+      "B": "Jerusalem",
+      "C": "Mecca",
+      "D": "Damascus"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1307",
+    "fact": "Thor, the Norse god of thunder, wields the mighty hammer Mjölnir, capable of leveling mountains.",
+    "question": "What is the name of Thor's hammer in Norse mythology?",
+    "answers": {
+      "A": "Gungnir",
+      "B": "Mjölnir",
+      "C": "Gram",
+      "D": "Skofnung"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1308",
+    "fact": "Siddhartha Gautama, who became known as the Buddha, is the founder of Buddhism and lived in ancient India around the 5th-6th century BCE.",
+    "question": "What was the birth name of the Buddha?",
+    "answers": {
+      "A": "Ashoka Maurya",
+      "B": "Mahavira",
+      "C": "Siddhartha Gautama",
+      "D": "Bodhidharma"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1309",
+    "fact": "The Bhagavad Gita is a 700-verse Hindu scripture that is part of the epic Mahabharata, featuring a dialogue between Prince Arjuna and Krishna.",
+    "question": "The Bhagavad Gita is part of which larger Hindu epic?",
+    "answers": {
+      "A": "Ramayana",
+      "B": "Mahabharata",
+      "C": "Vedas",
+      "D": "Puranas"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1310",
+    "fact": "Shinto is the indigenous religion of Japan, centered on the veneration of kami (spirits) found in nature and ancestors.",
+    "question": "Shinto is the indigenous religion of which country?",
+    "answers": {
+      "A": "Korea",
+      "B": "China",
+      "C": "Vietnam",
+      "D": "Japan"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1311",
+    "fact": "Anubis, the jackal-headed god, was the ancient Egyptian deity of mummification and the afterlife.",
+    "question": "Which Egyptian god is depicted with the head of a jackal and is associated with mummification?",
+    "answers": {
+      "A": "Horus",
+      "B": "Set",
+      "C": "Anubis",
+      "D": "Sobek"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1312",
+    "fact": "Guru Nanak (1469–1539) founded Sikhism in the Punjab region and was the first of the ten Sikh Gurus.",
+    "question": "Who was the founder of Sikhism?",
+    "answers": {
+      "A": "Guru Gobind Singh",
+      "B": "Guru Nanak",
+      "C": "Guru Arjan",
+      "D": "Guru Ram Das"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1313",
+    "fact": "The Greek goddess Athena was born fully grown and armored from the head of Zeus after he swallowed her mother Metis.",
+    "question": "According to Greek mythology, from which part of Zeus's body was Athena born?",
+    "answers": {
+      "A": "His heart",
+      "B": "His thigh",
+      "C": "His head",
+      "D": "His side"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1314",
+    "fact": "Ramadan is the ninth month of the Islamic lunar calendar, during which Muslims fast from dawn until sunset.",
+    "question": "Ramadan is which month in the Islamic calendar?",
+    "answers": {
+      "A": "First",
+      "B": "Sixth",
+      "C": "Ninth",
+      "D": "Twelfth"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1315",
+    "fact": "The Tripitaka, meaning 'three baskets,' is the traditional collection of Buddhist scriptures in the Pali Canon of Theravada Buddhism.",
+    "question": "What does the Buddhist scripture name 'Tripitaka' literally mean?",
+    "answers": {
+      "A": "Three jewels",
+      "B": "Three baskets",
+      "C": "Three paths",
+      "D": "Three truths"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1316",
+    "fact": "Quetzalcoatl, the feathered serpent, was a major deity in Aztec and broader Mesoamerican religion, associated with wind, learning, and creation.",
+    "question": "Which Aztec deity is known as the 'feathered serpent'?",
+    "answers": {
+      "A": "Tezcatlipoca",
+      "B": "Huitzilopochtli",
+      "C": "Quetzalcoatl",
+      "D": "Tlaloc"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1317",
+    "fact": "Yom Kippur, the Day of Atonement, is the holiest day in the Jewish calendar, marked by fasting and intensive prayer.",
+    "question": "What is the holiest day in the Jewish calendar?",
+    "answers": {
+      "A": "Passover",
+      "B": "Hanukkah",
+      "C": "Rosh Hashanah",
+      "D": "Yom Kippur"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1318",
+    "fact": "Valhalla, ruled by Odin, is the great hall in Norse mythology where warriors who die in battle are taken by the Valkyries.",
+    "question": "In Norse mythology, who rules over Valhalla?",
+    "answers": {
+      "A": "Thor",
+      "B": "Loki",
+      "C": "Odin",
+      "D": "Freyr"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1319",
+    "fact": "The Ganges River is considered sacred in Hinduism, personified as the goddess Ganga, and is believed to purify sins for those who bathe in it.",
+    "question": "Which river is considered most sacred in Hinduism?",
+    "answers": {
+      "A": "Yamuna",
+      "B": "Ganges",
+      "C": "Indus",
+      "D": "Brahmaputra"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1320",
+    "fact": "Ahura Mazda is the supreme creator deity in Zoroastrianism, founded by the prophet Zoroaster (Zarathustra) in ancient Persia.",
+    "question": "Ahura Mazda is the supreme god of which religion?",
+    "answers": {
+      "A": "Jainism",
+      "B": "Manichaeism",
+      "C": "Zoroastrianism",
+      "D": "Bahá'í Faith"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1321",
+    "fact": "The Five Pillars of Islam are Shahada (faith), Salat (prayer), Zakat (charity), Sawm (fasting), and Hajj (pilgrimage).",
+    "question": "How many Pillars of Islam are there?",
+    "answers": {
+      "A": "Three",
+      "B": "Five",
+      "C": "Seven",
+      "D": "Ten"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1322",
+    "fact": "Cerberus is the three-headed dog that guards the entrance to the underworld in Greek mythology, preventing the dead from leaving.",
+    "question": "How many heads does Cerberus, the guardian of the Greek underworld, traditionally have?",
+    "answers": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Five",
+      "D": "Seven"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1323",
+    "fact": "Jainism's principle of Ahimsa, or non-violence toward all living beings, is so strict that devout Jains often sweep paths before walking and wear masks to avoid harming insects.",
+    "question": "Which Indian religion places the strictest emphasis on Ahimsa (non-violence)?",
+    "answers": {
+      "A": "Hinduism",
+      "B": "Buddhism",
+      "C": "Sikhism",
+      "D": "Jainism"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1324",
+    "fact": "The Tao Te Ching, traditionally attributed to Laozi, is the foundational text of Taoism and dates to around the 6th–4th century BCE.",
+    "question": "Who is traditionally credited as the author of the Tao Te Ching?",
+    "answers": {
+      "A": "Confucius",
+      "B": "Mencius",
+      "C": "Laozi",
+      "D": "Zhuangzi"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1325",
+    "fact": "In Hindu cosmology, the Trimurti consists of Brahma the creator, Vishnu the preserver, and Shiva the destroyer.",
+    "question": "Which Hindu deity is known as 'the Preserver' in the Trimurti?",
+    "answers": {
+      "A": "Brahma",
+      "B": "Vishnu",
+      "C": "Shiva",
+      "D": "Indra"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1326",
+    "fact": "Ragnarök is the prophesied end-of-the-world battle in Norse mythology, during which many gods including Odin, Thor, and Loki are foretold to die.",
+    "question": "What is the name of the apocalyptic battle in Norse mythology?",
+    "answers": {
+      "A": "Götterdämmerung",
+      "B": "Ginnungagap",
+      "C": "Ragnarök",
+      "D": "Yggdrasil"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1327",
+    "fact": "Amaterasu, the sun goddess, is the most important deity in Shinto and is considered the mythological ancestor of the Japanese imperial family.",
+    "question": "Which Shinto deity is the sun goddess and mythological ancestor of the Japanese imperial line?",
+    "answers": {
+      "A": "Tsukuyomi",
+      "B": "Susanoo",
+      "C": "Inari",
+      "D": "Amaterasu"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1328",
+    "fact": "The Avesta is the primary collection of sacred texts of Zoroastrianism, composed in the Avestan language and including the Gathas attributed to Zoroaster himself.",
+    "question": "What is the name of the primary sacred scripture of Zoroastrianism?",
+    "answers": {
+      "A": "The Avesta",
+      "B": "The Vendidad",
+      "C": "The Denkard",
+      "D": "The Bundahishn"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1329",
+    "fact": "Roald Amundsen led the Norwegian expedition that reached the geographic South Pole on 14 December 1911, beating Robert Falcon Scott's British team by about five weeks.",
+    "question": "Who led the first expedition to reach the South Pole?",
+    "answers": {
+      "A": "Ernest Shackleton",
+      "B": "Roald Amundsen",
+      "C": "Robert Falcon Scott",
+      "D": "Fridtjof Nansen"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1332",
+    "fact": "On 14 October 2012, Austrian skydiver Felix Baumgartner jumped from a helium balloon at around 39 kilometres, breaking the sound barrier in free fall.",
+    "question": "Which Austrian skydiver became the first person to break the sound barrier in free fall during the 2012 Red Bull Stratos jump?",
+    "answers": {
+      "A": "Felix Baumgartner",
+      "B": "Alan Eustace",
+      "C": "Joseph Kittinger",
+      "D": "Luke Aikins"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1333",
+    "fact": "Nelson Mandela served as President of South Africa from 1994 to 1999, having been imprisoned for 27 years before his release in 1990.",
+    "question": "In which year did Nelson Mandela become President of South Africa?",
+    "answers": {
+      "A": "1990",
+      "B": "1992",
+      "C": "1994",
+      "D": "1996"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1334",
+    "fact": "Ferdinand Magellan organised the Spanish expedition that became the first to circumnavigate the globe, though Magellan himself was killed in the Philippines in 1521 before its completion.",
+    "question": "Which Portuguese explorer led the first expedition to circumnavigate the globe, although he died before its completion?",
+    "answers": {
+      "A": "Vasco da Gama",
+      "B": "Bartolomeu Dias",
+      "C": "Ferdinand Magellan",
+      "D": "Pedro Álvares Cabral"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1336",
+    "fact": "Vincent van Gogh painted 'The Starry Night' in June 1889 while staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence, France.",
+    "question": "Which artist painted 'The Starry Night' in 1889?",
+    "answers": {
+      "A": "Claude Monet",
+      "B": "Paul Gauguin",
+      "C": "Vincent van Gogh",
+      "D": "Paul Cézanne"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1338",
+    "fact": "Sir Edmund Hillary of New Zealand and Tenzing Norgay of Nepal reached the summit of Mount Everest on 29 May 1953.",
+    "question": "Along with Tenzing Norgay, who made the first confirmed ascent of Mount Everest in 1953?",
+    "answers": {
+      "A": "George Mallory",
+      "B": "Edmund Hillary",
+      "C": "Chris Bonington",
+      "D": "Reinhold Messner"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1339",
+    "fact": "Charles Darwin published 'On the Origin of Species' in 1859, presenting his theory of evolution by natural selection.",
+    "question": "In what year did Charles Darwin publish 'On the Origin of Species'?",
+    "answers": {
+      "A": "1838",
+      "B": "1849",
+      "C": "1859",
+      "D": "1871"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1340",
+    "fact": "Margaret Thatcher served as British Prime Minister from 1979 to 1990, becoming the UK's first female PM and the longest-serving of the 20th century.",
+    "question": "Who was the first woman to serve as Prime Minister of the United Kingdom?",
+    "answers": {
+      "A": "Theresa May",
+      "B": "Margaret Thatcher",
+      "C": "Liz Truss",
+      "D": "Barbara Castle"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1341",
+    "fact": "Frida Kahlo, born in Coyoacán in 1907, is renowned for her self-portraits drawing on Mexican folk art and her own physical suffering.",
+    "question": "Which Mexican artist is famous for self-portraits including 'The Two Fridas' and 'Self-Portrait with Thorn Necklace and Hummingbird'?",
+    "answers": {
+      "A": "Diego Rivera",
+      "B": "Frida Kahlo",
+      "C": "Remedios Varo",
+      "D": "Leonora Carrington"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1342",
+    "fact": "Alexander Fleming discovered penicillin in 1928 at St Mary's Hospital, London, when he noticed mould inhibiting bacterial growth on a Petri dish.",
+    "question": "Which Scottish scientist is credited with discovering penicillin in 1928?",
+    "answers": {
+      "A": "Joseph Lister",
+      "B": "Howard Florey",
+      "C": "Alexander Fleming",
+      "D": "Ernst Chain"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1343",
+    "fact": "Captain James Cook commanded HMS Endeavour on his first voyage (1768–1771), during which he charted New Zealand and the eastern coast of Australia.",
+    "question": "What was the name of the ship Captain James Cook commanded on his first voyage of discovery?",
+    "answers": {
+      "A": "HMS Resolution",
+      "B": "HMS Discovery",
+      "C": "HMS Beagle",
+      "D": "HMS Endeavour"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1344",
+    "fact": "Roger Bannister ran the first sub-four-minute mile at Iffley Road track in Oxford on 6 May 1954, clocking 3:59.4.",
+    "question": "Who was the first person to run a mile in under four minutes?",
+    "answers": {
+      "A": "John Landy",
+      "B": "Roger Bannister",
+      "C": "Herb Elliott",
+      "D": "Sebastian Coe"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1345",
+    "fact": "Pablo Picasso painted 'Guernica' in 1937 in response to the bombing of the Basque town of Guernica during the Spanish Civil War.",
+    "question": "Which 1937 painting by Pablo Picasso depicts the suffering caused by the bombing of a Basque town during the Spanish Civil War?",
+    "answers": {
+      "A": "The Weeping Woman",
+      "B": "Les Demoiselles d'Avignon",
+      "C": "Guernica",
+      "D": "The Old Guitarist"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1346",
+    "fact": "Amelia Earhart became the first woman to fly solo across the Atlantic in May 1932, flying from Newfoundland to Northern Ireland.",
+    "question": "In 1932, who became the first woman to fly solo across the Atlantic Ocean?",
+    "answers": {
+      "A": "Bessie Coleman",
+      "B": "Amy Johnson",
+      "C": "Amelia Earhart",
+      "D": "Jacqueline Cochran"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1347",
+    "fact": "Stephen Hawking was Lucasian Professor of Mathematics at the University of Cambridge from 1979 to 2009, a chair once held by Isaac Newton.",
+    "question": "Which prestigious Cambridge chair, once held by Isaac Newton, did Stephen Hawking occupy from 1979 to 2009?",
+    "answers": {
+      "A": "Plumian Professor",
+      "B": "Lucasian Professor of Mathematics",
+      "C": "Cavendish Professor of Physics",
+      "D": "Sadleirian Professor"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1348",
+    "fact": "Genghis Khan founded the Mongol Empire in 1206 after uniting the nomadic tribes of the Mongolian steppe; it became the largest contiguous land empire in history.",
+    "question": "Who founded the Mongol Empire in 1206?",
+    "answers": {
+      "A": "Kublai Khan",
+      "B": "Tamerlane",
+      "C": "Genghis Khan",
+      "D": "Ögedei Khan"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1349",
+    "fact": "Jeanne Calment of France lived to 122 years and 164 days (1875–1997), the longest confirmed human lifespan on record.",
+    "question": "Who holds the record for the longest confirmed human lifespan, dying at 122 years old in 1997?",
+    "answers": {
+      "A": "Sarah Knauss",
+      "B": "Jeanne Calment",
+      "C": "Kane Tanaka",
+      "D": "Lucile Randon"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1350",
+    "fact": "David Livingstone was the Scottish missionary and explorer whom Henry Morton Stanley famously greeted with 'Dr. Livingstone, I presume?' at Ujiji in 1871.",
+    "question": "Which African explorer was famously greeted by Henry Morton Stanley with the words 'Dr. Livingstone, I presume?'",
+    "answers": {
+      "A": "Richard Burton",
+      "B": "John Hanning Speke",
+      "C": "David Livingstone",
+      "D": "Mungo Park"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1351",
+    "fact": "Rosalind Franklin's X-ray diffraction image known as 'Photo 51', taken in 1952, was crucial in revealing the double-helix structure of DNA.",
+    "question": "Whose X-ray diffraction work, including 'Photo 51', was crucial to the discovery of DNA's double helix structure?",
+    "answers": {
+      "A": "Barbara McClintock",
+      "B": "Rosalind Franklin",
+      "C": "Dorothy Hodgkin",
+      "D": "Lise Meitner"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1352",
+    "fact": "Junko Tabei of Japan became the first woman to reach the summit of Mount Everest on 16 May 1975.",
+    "question": "Who became the first woman to summit Mount Everest in 1975?",
+    "answers": {
+      "A": "Wanda Rutkiewicz",
+      "B": "Junko Tabei",
+      "C": "Lydia Bradey",
+      "D": "Alison Hargreaves"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1353",
+    "fact": "Michelangelo painted the Sistine Chapel ceiling between 1508 and 1512 under commission from Pope Julius II.",
+    "question": "Which Renaissance artist painted the ceiling of the Sistine Chapel between 1508 and 1512?",
+    "answers": {
+      "A": "Raphael",
+      "B": "Donatello",
+      "C": "Michelangelo",
+      "D": "Titian"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1354",
+    "fact": "The blue whale (Balaenoptera musculus) can reach lengths of up to 30 metres and weigh over 180 tonnes, making it the largest animal ever known to have existed.",
+    "question": "What is the largest animal ever known to have lived on Earth?",
+    "answers": {
+      "A": "African elephant",
+      "B": "Blue whale",
+      "C": "Argentinosaurus",
+      "D": "Sperm whale"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1355",
+    "fact": "The peregrine falcon can reach speeds over 240 mph (390 km/h) during its hunting stoop (dive), making it the fastest member of the animal kingdom.",
+    "question": "Which animal holds the record for the fastest speed in the animal kingdom?",
+    "answers": {
+      "A": "Cheetah",
+      "B": "Sailfish",
+      "C": "Peregrine falcon",
+      "D": "Golden eagle"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1356",
+    "fact": "The cheetah is the fastest land animal, capable of reaching speeds of around 70 mph (112 km/h) in short bursts.",
+    "question": "Which is the fastest land animal in the world?",
+    "answers": {
+      "A": "Pronghorn antelope",
+      "B": "Lion",
+      "C": "Cheetah",
+      "D": "Greyhound"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1357",
+    "fact": "Mammals are warm-blooded vertebrates characterized by mammary glands which produce milk to feed their young.",
+    "question": "What is the defining feature that gives the class Mammalia its name?",
+    "answers": {
+      "A": "Live birth",
+      "B": "Hair or fur",
+      "C": "Mammary glands",
+      "D": "Warm-bloodedness"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1358",
+    "fact": "The giant panda was downgraded from 'Endangered' to 'Vulnerable' on the IUCN Red List in 2016 thanks to extensive conservation efforts in China.",
+    "question": "In 2016, which iconic species was downgraded from 'Endangered' to 'Vulnerable' on the IUCN Red List?",
+    "answers": {
+      "A": "Snow leopard",
+      "B": "Giant panda",
+      "C": "Mountain gorilla",
+      "D": "Bengal tiger"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1359",
+    "fact": "The ostrich (Struthio camelus) lays the largest eggs of any living bird, weighing up to 1.4 kg each.",
+    "question": "Which bird lays the largest egg of any living species?",
+    "answers": {
+      "A": "Emu",
+      "B": "Albatross",
+      "C": "Ostrich",
+      "D": "Cassowary"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1360",
+    "fact": "Echolocation is used by bats, dolphins, and some whales to navigate and hunt by emitting sounds and listening to the echoes that bounce back from objects.",
+    "question": "What is the name of the biological sonar used by bats and dolphins to navigate?",
+    "answers": {
+      "A": "Echolocation",
+      "B": "Magnetoreception",
+      "C": "Bioluminescence",
+      "D": "Thermoception"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1361",
+    "fact": "The vaquita, a small porpoise found only in the northern Gulf of California, is the world's most endangered marine mammal with fewer than 10 individuals estimated to remain.",
+    "question": "Which critically endangered porpoise found only in the Gulf of California is considered the world's rarest marine mammal?",
+    "answers": {
+      "A": "Maui dolphin",
+      "B": "Yangtze finless porpoise",
+      "C": "Vaquita",
+      "D": "Harbour porpoise"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1362",
+    "fact": "Although it has 'fish' in its name, the starfish (sea star) is an echinoderm, related to sea urchins and sand dollars, not a fish.",
+    "question": "To which phylum does the starfish belong?",
+    "answers": {
+      "A": "Mollusca",
+      "B": "Echinodermata",
+      "C": "Cnidaria",
+      "D": "Arthropoda"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1363",
+    "fact": "The Etruscan shrew (Suncus etruscus) weighs about 1.8 grams on average, making it the smallest mammal by mass.",
+    "question": "What is the smallest mammal in the world by mass?",
+    "answers": {
+      "A": "Bumblebee bat",
+      "B": "Pygmy mouse lemur",
+      "C": "Etruscan shrew",
+      "D": "African pygmy mouse"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1364",
+    "fact": "Honeybees perform a 'waggle dance' to communicate the direction and distance of food sources to other members of the hive, as discovered by Karl von Frisch.",
+    "question": "What behavior do honeybees use to communicate the location of food sources to other bees?",
+    "answers": {
+      "A": "Pheromone trails",
+      "B": "Waggle dance",
+      "C": "Buzzing patterns",
+      "D": "Antennal tapping"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1365",
+    "fact": "The Arctic tern (Sterna paradisaea) makes the longest known migration of any animal, traveling roughly 70,000 km annually between the Arctic and Antarctic.",
+    "question": "Which bird holds the record for the longest annual migration in the animal kingdom?",
+    "answers": {
+      "A": "Bar-tailed godwit",
+      "B": "Arctic tern",
+      "C": "Wandering albatross",
+      "D": "Sooty shearwater"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1366",
+    "fact": "The Komodo dragon (Varanus komodoensis), found on a few Indonesian islands, is the world's largest living lizard, growing up to 3 metres long.",
+    "question": "What is the largest living species of lizard in the world?",
+    "answers": {
+      "A": "Perentie",
+      "B": "Nile monitor",
+      "C": "Komodo dragon",
+      "D": "Saltwater crocodile"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1367",
+    "fact": "An octopus has three hearts: two pump blood through the gills, while the third circulates it through the rest of the body.",
+    "question": "How many hearts does an octopus have?",
+    "answers": {
+      "A": "One",
+      "B": "Two",
+      "C": "Three",
+      "D": "Four"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1368",
+    "fact": "The IUCN Red List categories from least to most threatened are: Least Concern, Near Threatened, Vulnerable, Endangered, Critically Endangered, Extinct in the Wild, and Extinct.",
+    "question": "On the IUCN Red List, which category indicates a higher extinction risk than 'Endangered'?",
+    "answers": {
+      "A": "Vulnerable",
+      "B": "Near Threatened",
+      "C": "Critically Endangered",
+      "D": "Threatened"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1369",
+    "fact": "The bootlace worm (Lineus longissimus), a type of ribbon worm, can reach lengths over 55 metres, making it arguably the longest animal in the world.",
+    "question": "Which marine creature is often cited as the longest animal on Earth, with some specimens exceeding 55 metres?",
+    "answers": {
+      "A": "Lion's mane jellyfish",
+      "B": "Giant squid",
+      "C": "Bootlace worm",
+      "D": "Oarfish"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1370",
+    "fact": "The Hainan gibbon (Nomascus hainanus) of China is the world's rarest primate, with around 30-40 individuals remaining on Hainan Island.",
+    "question": "Which is considered the world's rarest primate, with fewer than 40 individuals left?",
+    "answers": {
+      "A": "Mountain gorilla",
+      "B": "Hainan gibbon",
+      "C": "Cross River gorilla",
+      "D": "Tarsier"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1371",
+    "fact": "Marsupials, including kangaroos, koalas, and opossums, give birth to relatively undeveloped young that typically continue to develop in a pouch.",
+    "question": "Kangaroos, koalas, and opossums all belong to which group of mammals?",
+    "answers": {
+      "A": "Monotremes",
+      "B": "Placentals",
+      "C": "Marsupials",
+      "D": "Eutherians"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1372",
+    "fact": "The platypus and echidnas are the only living monotremes — mammals that lay eggs instead of giving birth to live young.",
+    "question": "Which two types of mammals are the only living monotremes?",
+    "answers": {
+      "A": "Platypus and echidna",
+      "B": "Platypus and wombat",
+      "C": "Echidna and koala",
+      "D": "Aardvark and pangolin"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1373",
+    "fact": "The mantis shrimp has the most complex eyes in the animal kingdom, with up to 16 types of photoreceptor cells (compared to humans' three).",
+    "question": "Which animal has the most complex eyes in the animal kingdom, with up to 16 types of photoreceptors?",
+    "answers": {
+      "A": "Dragonfly",
+      "B": "Mantis shrimp",
+      "C": "Giant squid",
+      "D": "Chameleon"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1374",
+    "fact": "The bee hummingbird (Mellisuga helenae), native to Cuba, is the smallest bird in the world, measuring just 5-6 cm in length.",
+    "question": "What is the smallest species of bird in the world?",
+    "answers": {
+      "A": "Goldcrest",
+      "B": "Bee hummingbird",
+      "C": "Pygmy nuthatch",
+      "D": "Elf owl"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1375",
+    "fact": "The Galápagos tortoise and certain species like the Aldabra giant tortoise can live over 150 years, with some individuals reportedly reaching 190+.",
+    "question": "Which animal is widely regarded as the longest-living land vertebrate?",
+    "answers": {
+      "A": "African elephant",
+      "B": "Galápagos tortoise",
+      "C": "Greenland shark",
+      "D": "Bowhead whale"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1376",
+    "fact": "The thylacine, or Tasmanian tiger, was a carnivorous marsupial declared extinct after the last known individual died in Hobart Zoo in 1936.",
+    "question": "The thylacine, declared extinct in 1936, was native to which country?",
+    "answers": {
+      "A": "New Zealand",
+      "B": "Australia",
+      "C": "Papua New Guinea",
+      "D": "Indonesia"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1377",
+    "fact": "The box jellyfish (Chironex fleckeri) found in waters off northern Australia is considered the most venomous marine creature, capable of killing a human in minutes.",
+    "question": "Which marine animal is widely considered the most venomous in the world?",
+    "answers": {
+      "A": "Stonefish",
+      "B": "Blue-ringed octopus",
+      "C": "Box jellyfish",
+      "D": "Cone snail"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1379",
+    "fact": "Coca-Cola was invented by pharmacist John Pemberton in Atlanta, Georgia in 1886, originally sold as a medicinal tonic at Jacob's Pharmacy.",
+    "question": "In which US city was Coca-Cola invented in 1886?",
+    "answers": {
+      "A": "Atlanta",
+      "B": "Charleston",
+      "C": "Nashville",
+      "D": "Memphis"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1380",
+    "fact": "The Wall Street Crash began on Black Thursday, October 24, 1929, and the most devastating day was Black Tuesday, October 29, 1929, triggering the Great Depression.",
+    "question": "In which year did the Wall Street Crash occur, marking the start of the Great Depression?",
+    "answers": {
+      "A": "1925",
+      "B": "1929",
+      "C": "1931",
+      "D": "1933"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1381",
+    "fact": "The euro was introduced as an accounting currency in 1999, with banknotes and coins entering circulation on 1 January 2002 in 12 EU member states.",
+    "question": "In which year did euro banknotes and coins enter physical circulation?",
+    "answers": {
+      "A": "1999",
+      "B": "2000",
+      "C": "2002",
+      "D": "2004"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1382",
+    "fact": "Toyota Motor Corporation was founded by Kiichiro Toyoda in 1937 as a spinoff from his father's company, Toyota Industries.",
+    "question": "Who founded Toyota Motor Corporation in 1937?",
+    "answers": {
+      "A": "Soichiro Honda",
+      "B": "Kiichiro Toyoda",
+      "C": "Masaru Ibuka",
+      "D": "Akio Morita"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1383",
+    "fact": "The Dutch East India Company (VOC), founded in 1602, is widely considered the world's first publicly traded company and issued the first shares to the public.",
+    "question": "Which company, founded in 1602, is generally regarded as the world's first publicly traded company?",
+    "answers": {
+      "A": "Hudson's Bay Company",
+      "B": "British East India Company",
+      "C": "Dutch East India Company",
+      "D": "Muscovy Company"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1384",
+    "fact": "The currency of Vietnam is the đồng, which was introduced in 1978 after the reunification of North and South Vietnam.",
+    "question": "What is the official currency of Vietnam?",
+    "answers": {
+      "A": "Kip",
+      "B": "Riel",
+      "C": "Baht",
+      "D": "Dong"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1385",
+    "fact": "Amazon was founded by Jeff Bezos on July 5, 1994, originally as an online bookstore operating out of his garage in Bellevue, Washington.",
+    "question": "In what year was Amazon founded by Jeff Bezos?",
+    "answers": {
+      "A": "1992",
+      "B": "1994",
+      "C": "1996",
+      "D": "1998"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1386",
+    "fact": "The Bretton Woods Conference was held in July 1944 at the Mount Washington Hotel in Bretton Woods, New Hampshire, establishing the IMF and World Bank.",
+    "question": "In which US state was the 1944 Bretton Woods Conference held?",
+    "answers": {
+      "A": "Vermont",
+      "B": "Maine",
+      "C": "New Hampshire",
+      "D": "Massachusetts"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1387",
+    "fact": "Nokia was founded in 1865 as a pulp mill by Fredrik Idestam on the banks of the Tammerkoski rapids in southwestern Finland.",
+    "question": "In what industry did the Finnish company Nokia originally start in 1865?",
+    "answers": {
+      "A": "Pulp/paper milling",
+      "B": "Rubber boots",
+      "C": "Telegraph cables",
+      "D": "Television manufacturing"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1388",
+    "fact": "The South Sea Bubble of 1720 in Britain was a major stock market crash centered on the South Sea Company, which had been granted a monopoly on trade with South America.",
+    "question": "In which year did the South Sea Bubble burst in Britain?",
+    "answers": {
+      "A": "1715",
+      "B": "1720",
+      "C": "1729",
+      "D": "1745"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1389",
+    "fact": "The currency of Poland is the złoty, whose name literally means 'golden' in Polish. It has been the official currency since 1924.",
+    "question": "What is the name of the official currency of Poland?",
+    "answers": {
+      "A": "Koruna",
+      "B": "Forint",
+      "C": "Złoty",
+      "D": "Leu"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1390",
+    "fact": "Lehman Brothers filed for Chapter 11 bankruptcy protection on September 15, 2008, marking the largest bankruptcy filing in US history and a key moment in the global financial crisis.",
+    "question": "In what month and year did Lehman Brothers file for bankruptcy?",
+    "answers": {
+      "A": "September 2008",
+      "B": "October 2008",
+      "C": "March 2008",
+      "D": "January 2009"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1391",
+    "fact": "Adidas was founded in 1949 by Adolf 'Adi' Dassler in Herzogenaurach, Germany, after he split from his brother Rudolf, who went on to found Puma.",
+    "question": "Who founded the sportswear company Adidas in 1949?",
+    "answers": {
+      "A": "Rudolf Dassler",
+      "B": "Adolf Dassler",
+      "C": "Hugo Boss",
+      "D": "Karl Albrecht"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1392",
+    "fact": "OPEC (Organization of the Petroleum Exporting Countries) was founded in Baghdad, Iraq on September 14, 1960, by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela.",
+    "question": "In which city was OPEC founded in 1960?",
+    "answers": {
+      "A": "Riyadh",
+      "B": "Vienna",
+      "C": "Tehran",
+      "D": "Baghdad"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1393",
+    "fact": "The London Stock Exchange traces its origins to 1571 with the founding of the Royal Exchange by Sir Thomas Gresham, though the LSE itself was formally founded in 1801.",
+    "question": "Who founded the Royal Exchange in London in 1571, a precursor to the London Stock Exchange?",
+    "answers": {
+      "A": "Sir Francis Drake",
+      "B": "Sir Thomas Gresham",
+      "C": "Sir Walter Raleigh",
+      "D": "Sir Robert Peel"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1394",
+    "fact": "The Swiss franc (CHF) is the official currency of Switzerland and Liechtenstein. Its ISO code 'CHF' stands for Confoederatio Helvetica Franc.",
+    "question": "What does the 'CH' in the Swiss franc's ISO code 'CHF' stand for?",
+    "answers": {
+      "A": "Confoederatio Helvetica",
+      "B": "Cantons Helvétiques",
+      "C": "Central Helvetia",
+      "D": "Chur Helvetia"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1395",
+    "fact": "Walmart was founded by Sam Walton in 1962, with the first store opening in Rogers, Arkansas. It is now the world's largest company by revenue.",
+    "question": "Who founded Walmart in 1962?",
+    "answers": {
+      "A": "Ray Kroc",
+      "B": "Sam Walton",
+      "C": "Richard Sears",
+      "D": "James Cash Penney"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1396",
+    "fact": "The North American Free Trade Agreement (NAFTA) came into effect on January 1, 1994, between the United States, Canada, and Mexico. It was replaced by USMCA in 2020.",
+    "question": "On what date did NAFTA come into effect?",
+    "answers": {
+      "A": "January 1, 1992",
+      "B": "January 1, 1994",
+      "C": "July 4, 1993",
+      "D": "January 1, 1995"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1397",
+    "fact": "Google was founded by Larry Page and Sergey Brin in September 1998 while they were PhD students at Stanford University.",
+    "question": "At which university were Google's founders Larry Page and Sergey Brin students when they started the company?",
+    "answers": {
+      "A": "MIT",
+      "B": "Harvard",
+      "C": "Stanford",
+      "D": "Berkeley"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1398",
+    "fact": "The Hanseatic League was a medieval commercial and defensive confederation of merchant guilds and market towns in Northwestern and Central Europe, dominant from the 13th to 17th centuries, centered on Lübeck.",
+    "question": "Which German city is considered the historical 'capital' of the medieval Hanseatic League?",
+    "answers": {
+      "A": "Hamburg",
+      "B": "Bremen",
+      "C": "Lübeck",
+      "D": "Cologne"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1399",
+    "fact": "Hyperinflation in the Weimar Republic peaked in November 1923, when 1 US dollar was worth approximately 4.2 trillion German marks.",
+    "question": "In which year did hyperinflation in Germany's Weimar Republic reach its peak?",
+    "answers": {
+      "A": "1919",
+      "B": "1921",
+      "C": "1923",
+      "D": "1926"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1400",
+    "fact": "Ferrari was founded by Enzo Ferrari in 1939 as Auto Avio Costruzioni, becoming Ferrari S.p.A. in 1947 when the first car bearing the Ferrari name was produced.",
+    "question": "Who founded the Italian sports car manufacturer Ferrari?",
+    "answers": {
+      "A": "Ferruccio Lamborghini",
+      "B": "Enzo Ferrari",
+      "C": "Battista Pininfarina",
+      "D": "Giovanni Agnelli"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1401",
+    "fact": "The yen became Japan's official currency in 1871 with the New Currency Act, replacing the complex monetary system of the Edo period.",
+    "question": "In which year was the yen established as Japan's official currency?",
+    "answers": {
+      "A": "1853",
+      "B": "1868",
+      "C": "1871",
+      "D": "1889"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1402",
+    "fact": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, in Albuquerque, New Mexico, before relocating to the Seattle area in 1979.",
+    "question": "In which US city was Microsoft originally founded in 1975?",
+    "answers": {
+      "A": "Seattle",
+      "B": "Redmond",
+      "C": "Albuquerque",
+      "D": "San Francisco"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1403",
+    "fact": "The World Trade Organization (WTO) was established on January 1, 1995, replacing the General Agreement on Tariffs and Trade (GATT) which had been in place since 1948.",
+    "question": "What organization did the World Trade Organization replace when it was established in 1995?",
+    "answers": {
+      "A": "IMF",
+      "B": "GATT",
+      "C": "OECD",
+      "D": "UNCTAD"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1405",
+    "fact": "Insulin was discovered in 1921 by Frederick Banting and Charles Best at the University of Toronto.",
+    "question": "Who is credited with the discovery of insulin in 1921, alongside Charles Best?",
+    "answers": {
+      "A": "Frederick Banting",
+      "B": "Jonas Salk",
+      "C": "Paul Ehrlich",
+      "D": "Robert Koch"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1406",
+    "fact": "The smallpox vaccine was developed by Edward Jenner in 1796 using cowpox material.",
+    "question": "Which disease was the first to be eradicated worldwide through vaccination?",
+    "answers": {
+      "A": "Polio",
+      "B": "Smallpox",
+      "C": "Measles",
+      "D": "Tuberculosis"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1407",
+    "fact": "The hippocampus, located in the temporal lobe, is critical for forming new memories and spatial navigation.",
+    "question": "Which part of the brain is primarily responsible for the formation of new memories?",
+    "answers": {
+      "A": "Cerebellum",
+      "B": "Amygdala",
+      "C": "Hippocampus",
+      "D": "Medulla oblongata"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1408",
+    "fact": "Christiaan Barnard performed the first successful human-to-human heart transplant in Cape Town in December 1967.",
+    "question": "Which surgeon performed the world's first successful human heart transplant in 1967?",
+    "answers": {
+      "A": "Michael DeBakey",
+      "B": "Denton Cooley",
+      "C": "Norman Shumway",
+      "D": "Christiaan Barnard"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1409",
+    "fact": "Hemophilia is a hereditary disorder where blood lacks sufficient clotting factors, leading to prolonged bleeding.",
+    "question": "Hemophilia is a disorder affecting which body function?",
+    "answers": {
+      "A": "Blood clotting",
+      "B": "Digestion",
+      "C": "Vision",
+      "D": "Hearing"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1410",
+    "fact": "Jonas Salk developed the first effective inactivated polio vaccine, announced in 1955.",
+    "question": "Who developed the first effective polio vaccine in the 1950s?",
+    "answers": {
+      "A": "Albert Sabin",
+      "B": "Jonas Salk",
+      "C": "Maurice Hilleman",
+      "D": "Louis Pasteur"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1411",
+    "fact": "The pancreas produces insulin and glucagon to regulate blood sugar, as well as digestive enzymes.",
+    "question": "Which organ produces insulin in the human body?",
+    "answers": {
+      "A": "Liver",
+      "B": "Kidney",
+      "C": "Pancreas",
+      "D": "Spleen"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1412",
+    "fact": "Multiple sclerosis is an autoimmune disease in which the immune system attacks the myelin sheath surrounding nerve fibres.",
+    "question": "Multiple sclerosis primarily affects which part of the body?",
+    "answers": {
+      "A": "Joints and cartilage",
+      "B": "Lungs and bronchi",
+      "C": "Central nervous system",
+      "D": "Liver and kidneys"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1413",
+    "fact": "Hippocrates, born around 460 BC on the Greek island of Kos, is often called the 'Father of Medicine'.",
+    "question": "Which ancient Greek physician is known as the 'Father of Medicine'?",
+    "answers": {
+      "A": "Galen",
+      "B": "Aristotle",
+      "C": "Hippocrates",
+      "D": "Pythagoras"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1414",
+    "fact": "The human body has 206 bones in adulthood, although babies are born with around 270 that fuse over time.",
+    "question": "How many bones are typically in the adult human body?",
+    "answers": {
+      "A": "186",
+      "B": "206",
+      "C": "226",
+      "D": "246"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1416",
+    "fact": "The medical term 'tachycardia' refers to an abnormally fast heart rate, generally over 100 beats per minute at rest.",
+    "question": "What does the medical term 'tachycardia' refer to?",
+    "answers": {
+      "A": "Low blood pressure",
+      "B": "Slow heart rate",
+      "C": "Fast heart rate",
+      "D": "Irregular breathing"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1417",
+    "fact": "Florence Nightingale, known as 'The Lady with the Lamp', pioneered modern nursing during the Crimean War.",
+    "question": "Who is considered the founder of modern nursing?",
+    "answers": {
+      "A": "Mary Seacole",
+      "B": "Clara Barton",
+      "C": "Florence Nightingale",
+      "D": "Edith Cavell"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1418",
+    "fact": "The deltoid muscle covers the shoulder joint and is responsible for arm abduction.",
+    "question": "The deltoid muscle is located in which part of the body?",
+    "answers": {
+      "A": "Thigh",
+      "B": "Shoulder",
+      "C": "Lower back",
+      "D": "Calf"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1419",
+    "fact": "Andreas Vesalius's 1543 work 'De humani corporis fabrica' revolutionised the study of human anatomy.",
+    "question": "Which 16th-century Flemish anatomist is considered the founder of modern human anatomy?",
+    "answers": {
+      "A": "William Harvey",
+      "B": "Ambroise Paré",
+      "C": "Andreas Vesalius",
+      "D": "Paracelsus"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1420",
+    "fact": "Helicobacter pylori was identified by Barry Marshall and Robin Warren as the main cause of peptic ulcers, earning them the 2005 Nobel Prize.",
+    "question": "Which bacterium was discovered to be the main cause of most stomach ulcers?",
+    "answers": {
+      "A": "Escherichia coli",
+      "B": "Helicobacter pylori",
+      "C": "Staphylococcus aureus",
+      "D": "Clostridium difficile"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1421",
+    "fact": "William Harvey published 'De Motu Cordis' in 1628, describing the circulation of blood pumped by the heart.",
+    "question": "Which English physician first accurately described the circulation of blood in 1628?",
+    "answers": {
+      "A": "Thomas Sydenham",
+      "B": "John Hunter",
+      "C": "William Harvey",
+      "D": "Edward Jenner"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1422",
+    "fact": "The cornea is the transparent front layer of the eye, responsible for most of the eye's focusing power.",
+    "question": "What is the name of the transparent front part of the eye that covers the iris and pupil?",
+    "answers": {
+      "A": "Retina",
+      "B": "Sclera",
+      "C": "Cornea",
+      "D": "Choroid"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1423",
+    "fact": "Karl Landsteiner discovered the ABO blood group system in 1901, winning the Nobel Prize in 1930.",
+    "question": "Who discovered the main human blood groups (A, B, AB and O) in 1901?",
+    "answers": {
+      "A": "Karl Landsteiner",
+      "B": "Paul Ehrlich",
+      "C": "Emil von Behring",
+      "D": "Robert Koch"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1424",
+    "fact": "Rheumatoid arthritis is an autoimmune disease that primarily attacks the synovial membranes of joints.",
+    "question": "Rheumatoid arthritis is classified as what type of disease?",
+    "answers": {
+      "A": "Infectious",
+      "B": "Autoimmune",
+      "C": "Genetic only",
+      "D": "Nutritional deficiency"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1425",
+    "fact": "The liver is the largest internal organ and performs over 500 functions including detoxification, protein synthesis, and bile production.",
+    "question": "Which is the largest internal organ in the human body?",
+    "answers": {
+      "A": "Brain",
+      "B": "Lungs",
+      "C": "Liver",
+      "D": "Kidneys"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1427",
+    "fact": "The medical term for high blood pressure is hypertension, a condition that increases the risk of heart disease and stroke.",
+    "question": "What is the medical term for high blood pressure?",
+    "answers": {
+      "A": "Hypotension",
+      "B": "Hyperglycemia",
+      "C": "Hypertension",
+      "D": "Hyperthermia"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1429",
+    "fact": "The Eiffel Tower was designed by Gustave Eiffel's engineering firm and completed in 1889 as the entrance arch for the World's Fair celebrating the centennial of the French Revolution.",
+    "question": "In which year was the Eiffel Tower completed?",
+    "answers": {
+      "A": "1879",
+      "B": "1889",
+      "C": "1899",
+      "D": "1909"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1430",
+    "fact": "The Burj Khalifa in Dubai stands at 828 meters (2,717 feet) tall and has been the world's tallest building since its opening in 2010.",
+    "question": "What is the height of the Burj Khalifa?",
+    "answers": {
+      "A": "632 meters",
+      "B": "728 meters",
+      "C": "828 meters",
+      "D": "928 meters"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1431",
+    "fact": "The Sydney Opera House was designed by Danish architect Jørn Utzon and opened in 1973. He won the Pritzker Prize in 2003 for this iconic work.",
+    "question": "Which architect designed the Sydney Opera House?",
+    "answers": {
+      "A": "Frank Lloyd Wright",
+      "B": "Jørn Utzon",
+      "C": "Le Corbusier",
+      "D": "Renzo Piano"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1433",
+    "fact": "The Leaning Tower of Pisa is the freestanding bell tower (campanile) of the cathedral of the Italian city of Pisa, and tilts due to unstable foundation soil.",
+    "question": "The Leaning Tower of Pisa is actually what type of building?",
+    "answers": {
+      "A": "A lighthouse",
+      "B": "A bell tower",
+      "C": "A watchtower",
+      "D": "A clock tower"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1434",
+    "fact": "The Guggenheim Museum Bilbao, designed by Frank Gehry and opened in 1997, is famous for its titanium-clad curving forms and is considered a landmark of contemporary architecture.",
+    "question": "Who designed the Guggenheim Museum Bilbao?",
+    "answers": {
+      "A": "Zaha Hadid",
+      "B": "I.M. Pei",
+      "C": "Frank Gehry",
+      "D": "Norman Foster"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1435",
+    "fact": "The Taj Mahal was commissioned in 1632 by Mughal emperor Shah Jahan as a mausoleum for his favorite wife, Mumtaz Mahal.",
+    "question": "The Taj Mahal was built by Shah Jahan in memory of whom?",
+    "answers": {
+      "A": "His mother",
+      "B": "His wife Mumtaz Mahal",
+      "C": "His father",
+      "D": "His daughter"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1436",
+    "fact": "The Empire State Building, completed in 1931, was the world's tallest building for nearly 40 years until the construction of the North Tower of the World Trade Center in 1970.",
+    "question": "In which year was the Empire State Building completed?",
+    "answers": {
+      "A": "1925",
+      "B": "1931",
+      "C": "1939",
+      "D": "1945"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1437",
+    "fact": "Antoni Gaudí began work on the Sagrada Família in Barcelona in 1883, and the basilica remains under construction more than 140 years later.",
+    "question": "Which architect designed Barcelona's Sagrada Família?",
+    "answers": {
+      "A": "Santiago Calatrava",
+      "B": "Antoni Gaudí",
+      "C": "Ricardo Bofill",
+      "D": "Rafael Moneo"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1438",
+    "fact": "The Colosseum, originally known as the Flavian Amphitheatre, was completed in 80 AD under Emperor Titus and could hold an estimated 50,000–80,000 spectators.",
+    "question": "Under which Roman emperor was the Colosseum completed?",
+    "answers": {
+      "A": "Nero",
+      "B": "Vespasian",
+      "C": "Titus",
+      "D": "Hadrian"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1439",
+    "fact": "The Petronas Towers in Kuala Lumpur, designed by César Pelli, were the world's tallest buildings from 1998 to 2004 at 452 meters tall.",
+    "question": "In which city are the Petronas Towers located?",
+    "answers": {
+      "A": "Singapore",
+      "B": "Jakarta",
+      "C": "Kuala Lumpur",
+      "D": "Bangkok"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1440",
+    "fact": "Frank Lloyd Wright designed Fallingwater, a residence built partly over a waterfall in southwestern Pennsylvania, completed in 1937 for the Kaufmann family.",
+    "question": "Which famous house designed by Frank Lloyd Wright is built over a waterfall?",
+    "answers": {
+      "A": "Robie House",
+      "B": "Fallingwater",
+      "C": "Taliesin West",
+      "D": "Hollyhock House"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1441",
+    "fact": "The Golden Gate Bridge, opened in 1937, spans the Golden Gate strait connecting San Francisco to Marin County. Its main span is 1,280 meters.",
+    "question": "The Golden Gate Bridge connects San Francisco to which county?",
+    "answers": {
+      "A": "Alameda County",
+      "B": "San Mateo County",
+      "C": "Marin County",
+      "D": "Contra Costa County"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1442",
+    "fact": "Christ the Redeemer, a 30-meter Art Deco statue overlooking Rio de Janeiro, was designed by Brazilian engineer Heitor da Silva Costa and sculpted by French sculptor Paul Landowski.",
+    "question": "On which mountain does the Christ the Redeemer statue stand?",
+    "answers": {
+      "A": "Sugarloaf Mountain",
+      "B": "Corcovado",
+      "C": "Pedra da Gávea",
+      "D": "Tijuca Peak"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1443",
+    "fact": "The Pantheon in Rome, completed around 126 AD under Emperor Hadrian, still holds the record for the world's largest unreinforced concrete dome.",
+    "question": "What architectural distinction does Rome's Pantheon still hold today?",
+    "answers": {
+      "A": "Oldest standing building",
+      "B": "Largest unreinforced concrete dome",
+      "C": "Tallest ancient structure",
+      "D": "Largest marble floor"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1444",
+    "fact": "The Shard in London, designed by Italian architect Renzo Piano, opened in 2012 and is 310 meters tall, making it the tallest building in the UK.",
+    "question": "Who designed The Shard in London?",
+    "answers": {
+      "A": "Norman Foster",
+      "B": "Richard Rogers",
+      "C": "Renzo Piano",
+      "D": "Zaha Hadid"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1445",
+    "fact": "The Hagia Sophia in Istanbul was completed in 537 AD under Byzantine emperor Justinian I and served as a cathedral, then a mosque, then a museum, and is again a mosque today.",
+    "question": "Under which Byzantine emperor was the Hagia Sophia completed?",
+    "answers": {
+      "A": "Constantine I",
+      "B": "Justinian I",
+      "C": "Theodosius II",
+      "D": "Basil II"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1446",
+    "fact": "Machu Picchu, the famous 15th-century Inca citadel, sits at approximately 2,430 meters above sea level on a mountain ridge in the Cusco region of Peru.",
+    "question": "In which country is Machu Picchu located?",
+    "answers": {
+      "A": "Bolivia",
+      "B": "Ecuador",
+      "C": "Peru",
+      "D": "Chile"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1447",
+    "fact": "The Chrysler Building in New York City, completed in 1930, was designed by William Van Alen in the Art Deco style and was briefly the world's tallest building before being surpassed by the Empire State Building.",
+    "question": "In which architectural style is New York's Chrysler Building designed?",
+    "answers": {
+      "A": "Beaux-Arts",
+      "B": "Art Deco",
+      "C": "International Style",
+      "D": "Gothic Revival"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1448",
+    "fact": "The Louvre Pyramid, designed by Chinese-American architect I.M. Pei, was completed in 1989 and serves as the main entrance to the Louvre Museum in Paris.",
+    "question": "Who designed the glass pyramid at the Louvre in Paris?",
+    "answers": {
+      "A": "I.M. Pei",
+      "B": "Jean Nouvel",
+      "C": "Philip Johnson",
+      "D": "Tadao Ando"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1449",
+    "fact": "The Great Wall of China is not a single continuous wall but a series of fortifications built over centuries; the most famous sections were built during the Ming Dynasty (1368–1644).",
+    "question": "During which dynasty were the most famous sections of the Great Wall of China built?",
+    "answers": {
+      "A": "Han",
+      "B": "Tang",
+      "C": "Ming",
+      "D": "Qing"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1450",
+    "fact": "Zaha Hadid, the Iraqi-British architect, became the first woman to receive the Pritzker Architecture Prize in 2004. She designed the London Aquatics Centre and Heydar Aliyev Center.",
+    "question": "Who was the first woman to win the Pritzker Architecture Prize?",
+    "answers": {
+      "A": "Kazuyo Sejima",
+      "B": "Zaha Hadid",
+      "C": "Denise Scott Brown",
+      "D": "Jeanne Gang"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1451",
+    "fact": "The Brooklyn Bridge, completed in 1883, was designed by John A. Roebling and was the first steel-wire suspension bridge ever built, spanning the East River in New York.",
+    "question": "Who designed the Brooklyn Bridge?",
+    "answers": {
+      "A": "Gustav Lindenthal",
+      "B": "John A. Roebling",
+      "C": "Othmar Ammann",
+      "D": "James Eads"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1452",
+    "fact": "St. Peter's Basilica in Vatican City, with a dome designed by Michelangelo, has the largest interior of any Christian church in the world.",
+    "question": "Who designed the dome of St. Peter's Basilica in Vatican City?",
+    "answers": {
+      "A": "Bernini",
+      "B": "Bramante",
+      "C": "Michelangelo",
+      "D": "Raphael"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1453",
+    "fact": "The CN Tower in Toronto, completed in 1976, stands 553.3 meters tall and was the world's tallest free-standing structure for over 30 years until surpassed by the Burj Khalifa.",
+    "question": "In which Canadian city is the CN Tower located?",
+    "answers": {
+      "A": "Montreal",
+      "B": "Vancouver",
+      "C": "Toronto",
+      "D": "Ottawa"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1454",
+    "fact": "The word 'salary' comes from the Latin 'salarium', which referred to payments made to Roman soldiers, possibly to buy salt ('sal').",
+    "question": "From which Latin word, meaning 'salt', does the English word 'salary' derive?",
+    "answers": {
+      "A": "Solidus",
+      "B": "Sal",
+      "C": "Sanguis",
+      "D": "Solum"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1455",
+    "fact": "Mandarin Chinese has the most native speakers of any language in the world, with around 900 million native speakers.",
+    "question": "Which language has the most native speakers worldwide?",
+    "answers": {
+      "A": "English",
+      "B": "Spanish",
+      "C": "Mandarin Chinese",
+      "D": "Hindi"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1456",
+    "fact": "The French phrase 'déjà vu' literally translates as 'already seen', describing the feeling of having experienced a present situation before.",
+    "question": "What does the French phrase 'déjà vu' literally translate to in English?",
+    "answers": {
+      "A": "Already seen",
+      "B": "Already done",
+      "C": "Already known",
+      "D": "Already felt"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1457",
+    "fact": "Esperanto was created by L. L. Zamenhof, a Polish-Jewish ophthalmologist, and published in 1887 as an easy-to-learn international auxiliary language.",
+    "question": "Who created the constructed language Esperanto, first published in 1887?",
+    "answers": {
+      "A": "Noam Chomsky",
+      "B": "J. R. R. Tolkien",
+      "C": "Ferdinand de Saussure",
+      "D": "L. L. Zamenhof"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1458",
+    "fact": "An onomatopoeia is a word that phonetically imitates the sound it describes, such as 'buzz', 'hiss', or 'sizzle'.",
+    "question": "What is the linguistic term for a word that imitates the sound it describes, like 'buzz' or 'hiss'?",
+    "answers": {
+      "A": "Onomatopoeia",
+      "B": "Alliteration",
+      "C": "Assonance",
+      "D": "Metonymy"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1459",
+    "fact": "The Latin phrase 'carpe diem' is generally translated as 'seize the day' and originates from a poem by Horace.",
+    "question": "The Latin phrase 'carpe diem' is most commonly translated as what?",
+    "answers": {
+      "A": "Live forever",
+      "B": "Seize the day",
+      "C": "Beware the day",
+      "D": "Trust the day"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1460",
+    "fact": "Basque, spoken in parts of Spain and France, is a language isolate, meaning it has no demonstrated genealogical relationship to any other living language.",
+    "question": "Which European language is considered a language isolate, with no proven relation to any other living language?",
+    "answers": {
+      "A": "Finnish",
+      "B": "Hungarian",
+      "C": "Basque",
+      "D": "Welsh"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1461",
+    "fact": "The word 'robot' was introduced to the world by Czech writer Karel Čapek in his 1920 play 'R.U.R.' (Rossum's Universal Robots), derived from the Czech word 'robota' meaning forced labour.",
+    "question": "The word 'robot' was first popularised in a 1920 play by which Czech writer?",
+    "answers": {
+      "A": "Franz Kafka",
+      "B": "Milan Kundera",
+      "C": "Karel Čapek",
+      "D": "Bohumil Hrabal"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1462",
+    "fact": "A palindrome is a word, phrase, or sequence that reads the same backwards as forwards, like 'level' or 'racecar'.",
+    "question": "What is the term for a word that reads the same forwards and backwards, like 'level' or 'kayak'?",
+    "answers": {
+      "A": "Anagram",
+      "B": "Palindrome",
+      "C": "Homophone",
+      "D": "Pangram"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1463",
+    "fact": "The German word 'Schadenfreude' combines 'Schaden' (harm) and 'Freude' (joy), describing pleasure derived from another's misfortune.",
+    "question": "The German loanword 'Schadenfreude' refers to pleasure derived from what?",
+    "answers": {
+      "A": "Another's misfortune",
+      "B": "Eating fine food",
+      "C": "Solving a puzzle",
+      "D": "Hearing music"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1464",
+    "fact": "Ferdinand de Saussure, a Swiss linguist, is widely regarded as the father of modern linguistics and structuralism, especially through his posthumously published 'Course in General Linguistics'.",
+    "question": "Which Swiss linguist is often regarded as the founder of modern structural linguistics?",
+    "answers": {
+      "A": "Noam Chomsky",
+      "B": "Roman Jakobson",
+      "C": "Ferdinand de Saussure",
+      "D": "Leonard Bloomfield"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1465",
+    "fact": "The Korean alphabet 'Hangul' was promulgated by King Sejong the Great in 1446, designed to be easy for common people to learn.",
+    "question": "Which Korean king is credited with creating the Hangul alphabet in the 15th century?",
+    "answers": {
+      "A": "Taejo",
+      "B": "Sejong the Great",
+      "C": "Gojong",
+      "D": "Jeongjo"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1466",
+    "fact": "The Latin abbreviation 'i.e.' stands for 'id est', meaning 'that is', while 'e.g.' stands for 'exempli gratia', meaning 'for example'.",
+    "question": "The abbreviation 'i.e.' stands for which Latin phrase?",
+    "answers": {
+      "A": "In extenso",
+      "B": "Id est",
+      "C": "Ipso facto",
+      "D": "Inter alia"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1467",
+    "fact": "Afrikaans evolved from 17th-century Dutch dialects brought to South Africa by settlers and is one of South Africa's 11 official languages.",
+    "question": "Afrikaans developed primarily from which European language?",
+    "answers": {
+      "A": "German",
+      "B": "Portuguese",
+      "C": "Dutch",
+      "D": "French"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1468",
+    "fact": "A pangram is a sentence that uses every letter of the alphabet at least once; 'The quick brown fox jumps over the lazy dog' is the most famous English example.",
+    "question": "What is the linguistic term for a sentence containing every letter of the alphabet?",
+    "answers": {
+      "A": "Lipogram",
+      "B": "Pangram",
+      "C": "Isogram",
+      "D": "Anagram"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1469",
+    "fact": "The Italian phrase 'al dente' literally means 'to the tooth', describing pasta cooked to be firm when bitten.",
+    "question": "The Italian culinary term 'al dente' literally translates as what?",
+    "answers": {
+      "A": "To the tooth",
+      "B": "To the taste",
+      "C": "To the fire",
+      "D": "To the plate"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1470",
+    "fact": "The Rosetta Stone, discovered in 1799, features the same decree in Egyptian hieroglyphs, Demotic script, and Ancient Greek, which enabled scholars to decipher hieroglyphs.",
+    "question": "The Rosetta Stone contains text in hieroglyphs, Demotic script, and which third language?",
+    "answers": {
+      "A": "Latin",
+      "B": "Aramaic",
+      "C": "Ancient Greek",
+      "D": "Coptic"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1471",
+    "fact": "Noam Chomsky proposed the theory of universal grammar, arguing that the ability to acquire language is innate to human beings.",
+    "question": "Which American linguist is best known for proposing the theory of universal grammar?",
+    "answers": {
+      "A": "Steven Pinker",
+      "B": "Noam Chomsky",
+      "C": "Benjamin Lee Whorf",
+      "D": "Edward Sapir"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1472",
+    "fact": "The English word 'algebra' comes from the Arabic 'al-jabr', meaning 'the reunion of broken parts', from a 9th-century treatise by al-Khwarizmi.",
+    "question": "The English word 'algebra' originates from which language?",
+    "answers": {
+      "A": "Greek",
+      "B": "Latin",
+      "C": "Arabic",
+      "D": "Persian"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1473",
+    "fact": "A morpheme is the smallest grammatical unit in a language that carries meaning; for example, 'unhappiness' contains three morphemes: 'un-', 'happy', and '-ness'.",
+    "question": "In linguistics, what is the smallest meaningful unit of language called?",
+    "answers": {
+      "A": "Phoneme",
+      "B": "Morpheme",
+      "C": "Grapheme",
+      "D": "Lexeme"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1474",
+    "fact": "The Sapir–Whorf hypothesis, also called linguistic relativity, proposes that the structure of a language affects its speakers' worldview and cognition.",
+    "question": "The hypothesis that language shapes thought is associated with Edward Sapir and which other linguist?",
+    "answers": {
+      "A": "Benjamin Lee Whorf",
+      "B": "Roman Jakobson",
+      "C": "Leonard Bloomfield",
+      "D": "Otto Jespersen"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1475",
+    "fact": "Tagalog is the basis for Filipino, the national language of the Philippines, and is widely spoken in Luzon.",
+    "question": "Which language is the principal basis for Filipino, the national language of the Philippines?",
+    "answers": {
+      "A": "Cebuano",
+      "B": "Ilocano",
+      "C": "Tagalog",
+      "D": "Hiligaynon"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1476",
+    "fact": "The word 'quarantine' comes from the Italian 'quaranta giorni', meaning 'forty days', the period ships were required to wait off Venice during plague outbreaks.",
+    "question": "The English word 'quarantine' derives from an Italian word meaning what number of days?",
+    "answers": {
+      "A": "Fourteen",
+      "B": "Thirty",
+      "C": "Forty",
+      "D": "Sixty"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1477",
+    "fact": "Mandarin Chinese is a tonal language with four main tones (plus a neutral tone), where pitch contour distinguishes word meaning.",
+    "question": "How many main tones does Standard Mandarin Chinese have (excluding the neutral tone)?",
+    "answers": {
+      "A": "Three",
+      "B": "Four",
+      "C": "Five",
+      "D": "Six"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1478",
+    "fact": "Proto-Indo-European is the reconstructed common ancestor of the Indo-European language family, which includes English, Hindi, Russian, Persian, and many others.",
+    "question": "What name is given to the reconstructed common ancestor of languages such as English, Hindi, and Russian?",
+    "answers": {
+      "A": "Proto-Germanic",
+      "B": "Proto-Indo-European",
+      "C": "Proto-Uralic",
+      "D": "Proto-Semitic"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1479",
+    "fact": "The Mariana Trench in the western Pacific Ocean reaches a depth of approximately 11,000 metres at the Challenger Deep, making it the deepest known point in Earth's oceans.",
+    "question": "What is the name of the deepest oceanic trench on Earth?",
+    "answers": {
+      "A": "Java Trench",
+      "B": "Puerto Rico Trench",
+      "C": "Mariana Trench",
+      "D": "Tonga Trench"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1480",
+    "fact": "The Sahara is the largest hot desert in the world, covering about 9.2 million square kilometres across North Africa.",
+    "question": "Which is the largest hot desert in the world?",
+    "answers": {
+      "A": "Gobi",
+      "B": "Sahara",
+      "C": "Kalahari",
+      "D": "Arabian"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1481",
+    "fact": "Mount Everest, located in the Himalayas on the border of Nepal and China, rises to approximately 8,849 metres above sea level.",
+    "question": "What is the highest mountain on Earth measured from sea level?",
+    "answers": {
+      "A": "K2",
+      "B": "Kangchenjunga",
+      "C": "Mount Everest",
+      "D": "Lhotse"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1482",
+    "fact": "The Richter scale, developed by Charles F. Richter in 1935, measures the magnitude of earthquakes based on seismic wave amplitude.",
+    "question": "Which scale was historically used to measure the magnitude of earthquakes?",
+    "answers": {
+      "A": "Beaufort",
+      "B": "Mohs",
+      "C": "Fujita",
+      "D": "Richter"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1483",
+    "fact": "Diamond is rated 10 on the Mohs scale of mineral hardness, making it the hardest naturally occurring mineral.",
+    "question": "Which mineral has a hardness of 10 on the Mohs scale?",
+    "answers": {
+      "A": "Quartz",
+      "B": "Corundum",
+      "C": "Topaz",
+      "D": "Diamond"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1484",
+    "fact": "The Amazon rainforest, located primarily in Brazil, is the world's largest tropical rainforest and produces a significant portion of Earth's atmospheric oxygen.",
+    "question": "Which country contains the largest portion of the Amazon rainforest?",
+    "answers": {
+      "A": "Peru",
+      "B": "Brazil",
+      "C": "Colombia",
+      "D": "Venezuela"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1485",
+    "fact": "The ozone layer is found primarily in the stratosphere, between about 15 and 35 kilometres above Earth's surface, where it absorbs most of the Sun's ultraviolet radiation.",
+    "question": "In which layer of Earth's atmosphere is the ozone layer primarily located?",
+    "answers": {
+      "A": "Troposphere",
+      "B": "Mesosphere",
+      "C": "Stratosphere",
+      "D": "Thermosphere"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1486",
+    "fact": "Angel Falls in Venezuela has a total height of 979 metres, making it the world's tallest uninterrupted waterfall.",
+    "question": "What is the world's tallest uninterrupted waterfall?",
+    "answers": {
+      "A": "Niagara Falls",
+      "B": "Victoria Falls",
+      "C": "Iguazu Falls",
+      "D": "Angel Falls"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1487",
+    "fact": "The Great Barrier Reef off the coast of Queensland, Australia, is the world's largest coral reef system, stretching over 2,300 kilometres.",
+    "question": "Off the coast of which country is the Great Barrier Reef located?",
+    "answers": {
+      "A": "Indonesia",
+      "B": "Philippines",
+      "C": "Australia",
+      "D": "Fiji"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1488",
+    "fact": "The Beaufort scale, devised by Sir Francis Beaufort in 1805, classifies wind speeds from 0 (calm) to 12 (hurricane force).",
+    "question": "Which scale is used to measure wind speed based on observed conditions?",
+    "answers": {
+      "A": "Saffir-Simpson",
+      "B": "Beaufort",
+      "C": "Fujita",
+      "D": "Torino"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1489",
+    "fact": "Igneous rocks form from the cooling and solidification of magma or lava. Granite and basalt are common examples.",
+    "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+    "answers": {
+      "A": "Sedimentary",
+      "B": "Metamorphic",
+      "C": "Igneous",
+      "D": "Organic"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1490",
+    "fact": "The El Niño Southern Oscillation is a climate pattern involving the warming of Pacific Ocean surface waters, which significantly affects global weather.",
+    "question": "What name is given to the periodic warming of surface waters in the central and eastern tropical Pacific Ocean?",
+    "answers": {
+      "A": "La Niña",
+      "B": "El Niño",
+      "C": "Gulf Stream",
+      "D": "Monsoon"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1491",
+    "fact": "The 1815 eruption of Mount Tambora in Indonesia is the largest volcanic eruption in recorded history, leading to the 'Year Without a Summer' in 1816.",
+    "question": "The eruption of which volcano in 1815 caused the 'Year Without a Summer' in 1816?",
+    "answers": {
+      "A": "Krakatoa",
+      "B": "Mount St. Helens",
+      "C": "Tambora",
+      "D": "Vesuvius"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1492",
+    "fact": "The Mohorovičić discontinuity, or 'Moho', marks the boundary between the Earth's crust and the mantle, discovered by Andrija Mohorovičić in 1909.",
+    "question": "What boundary in the Earth separates the crust from the mantle?",
+    "answers": {
+      "A": "Gutenberg discontinuity",
+      "B": "Conrad discontinuity",
+      "C": "Mohorovičić discontinuity",
+      "D": "Lehmann discontinuity"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1493",
+    "fact": "The Dead Sea, on the border of Israel and Jordan, has a surface about 430 metres below sea level, making it the lowest land elevation on Earth.",
+    "question": "What is the lowest land elevation on Earth's surface?",
+    "answers": {
+      "A": "Death Valley",
+      "B": "Caspian Depression",
+      "C": "Lake Assal",
+      "D": "Dead Sea shore"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1494",
+    "fact": "The Köppen climate classification system, developed by Wladimir Köppen, is the most widely used system for classifying world climates based on temperature and precipitation.",
+    "question": "Which climate classification system, widely used in geography, was developed in the late 19th and early 20th centuries?",
+    "answers": {
+      "A": "Thornthwaite",
+      "B": "Köppen",
+      "C": "Holdridge",
+      "D": "Trewartha"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1496",
+    "fact": "Pangaea was the supercontinent that existed during the late Paleozoic and early Mesozoic eras, before breaking apart around 175 million years ago.",
+    "question": "What name is given to the supercontinent that existed roughly 300 to 175 million years ago?",
+    "answers": {
+      "A": "Gondwana",
+      "B": "Laurasia",
+      "C": "Rodinia",
+      "D": "Pangaea"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1497",
+    "fact": "The Enhanced Fujita scale, introduced in 2007, rates tornado intensity from EF0 to EF5 based on estimated wind speeds and damage.",
+    "question": "What scale is used to rate the intensity of tornadoes in the United States?",
+    "answers": {
+      "A": "Saffir-Simpson scale",
+      "B": "Enhanced Fujita scale",
+      "C": "Beaufort scale",
+      "D": "TORRO scale"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1498",
+    "fact": "The taiga, also called boreal forest, is the world's largest land biome, dominated by coniferous trees and stretching across northern North America, Europe and Asia.",
+    "question": "Which is the largest land biome on Earth?",
+    "answers": {
+      "A": "Tropical rainforest",
+      "B": "Tundra",
+      "C": "Taiga (boreal forest)",
+      "D": "Savanna"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1499",
+    "fact": "The Cambrian Explosion, around 538 million years ago, was a relatively short evolutionary event during which most major animal phyla appeared.",
+    "question": "The 'Cambrian Explosion' refers to the rapid appearance of most major animal groups around how many million years ago?",
+    "answers": {
+      "A": "250 million",
+      "B": "65 million",
+      "C": "1 billion",
+      "D": "538 million"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1500",
+    "fact": "Greenland holds the world's second-largest ice sheet after Antarctica, covering about 1.7 million square kilometres.",
+    "question": "Which island contains the world's second-largest ice sheet?",
+    "answers": {
+      "A": "Iceland",
+      "B": "Baffin Island",
+      "C": "Greenland",
+      "D": "Svalbard"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1501",
+    "fact": "The Atacama Desert in Chile is regarded as the driest non-polar desert in the world, with some weather stations never recording rainfall.",
+    "question": "Which desert is considered the driest non-polar desert on Earth?",
+    "answers": {
+      "A": "Namib",
+      "B": "Atacama",
+      "C": "Mojave",
+      "D": "Patagonian"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1502",
+    "fact": "The Coriolis effect, caused by Earth's rotation, deflects moving air and water to the right in the Northern Hemisphere and to the left in the Southern Hemisphere.",
+    "question": "What is the name of the effect, caused by Earth's rotation, that deflects winds and ocean currents?",
+    "answers": {
+      "A": "Doppler effect",
+      "B": "Foucault effect",
+      "C": "Coriolis effect",
+      "D": "Magnus effect"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1503",
+    "fact": "The highest reliably recorded surface air temperature on Earth was 56.7°C (134°F) at Furnace Creek in Death Valley, California, on 10 July 1913.",
+    "question": "Where was the highest reliably recorded surface air temperature on Earth measured?",
+    "answers": {
+      "A": "Dallol, Ethiopia",
+      "B": "Death Valley, USA",
+      "C": "Kebili, Tunisia",
+      "D": "Mitribah, Kuwait"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1504",
+    "fact": "Russia spans 11 time zones and covers about 17.1 million square kilometres, making it the largest country in the world by area.",
+    "question": "Which is the largest country in the world by land area?",
+    "answers": {
+      "A": "China",
+      "B": "Canada",
+      "C": "Russia",
+      "D": "United States"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1505",
+    "fact": "China shares land borders with 14 countries, the same number as Russia, more than any other nation.",
+    "question": "How many countries share a land border with China?",
+    "answers": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "16"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1507",
+    "fact": "The Atlas Mountains stretch about 2,500 km across Morocco, Algeria, and Tunisia in northwestern Africa.",
+    "question": "Across which three countries do the Atlas Mountains primarily extend?",
+    "answers": {
+      "A": "Egypt, Libya, Sudan",
+      "B": "Morocco, Algeria, Tunisia",
+      "C": "Mali, Niger, Chad",
+      "D": "Spain, Morocco, Algeria"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1509",
+    "fact": "Astana was renamed Nur-Sultan in 2019 in honour of former president Nazarbayev, then reverted back to Astana in September 2022.",
+    "question": "What is the current name of the capital of Kazakhstan?",
+    "answers": {
+      "A": "Almaty",
+      "B": "Nur-Sultan",
+      "C": "Astana",
+      "D": "Bishkek"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1510",
+    "fact": "Indonesia is an archipelago of more than 17,000 islands stretching across the equator in Southeast Asia.",
+    "question": "Which country consists of more than 17,000 islands?",
+    "answers": {
+      "A": "Philippines",
+      "B": "Japan",
+      "C": "Indonesia",
+      "D": "Malaysia"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1512",
+    "fact": "The Drake Passage, between South America's Cape Horn and Antarctica's South Shetland Islands, is known for some of the roughest seas on Earth.",
+    "question": "The Drake Passage lies between South America and which other landmass?",
+    "answers": {
+      "A": "Australia",
+      "B": "Africa",
+      "C": "Antarctica",
+      "D": "New Zealand"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1513",
+    "fact": "Naypyidaw was designated the capital of Myanmar in 2005, replacing Yangon (formerly Rangoon).",
+    "question": "What is the capital of Myanmar (Burma)?",
+    "answers": {
+      "A": "Yangon",
+      "B": "Mandalay",
+      "C": "Naypyidaw",
+      "D": "Bagan"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1514",
+    "fact": "France borders Spain, Andorra, Monaco, Italy, Switzerland, Germany, Luxembourg, and Belgium — eight countries in mainland Europe.",
+    "question": "How many countries share a land border with mainland (metropolitan) France in Europe?",
+    "answers": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "9"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1517",
+    "fact": "Honshu is Japan's largest and most populous island, containing Tokyo, Osaka, and Kyoto.",
+    "question": "Which is the largest island of Japan?",
+    "answers": {
+      "A": "Hokkaido",
+      "B": "Kyushu",
+      "C": "Honshu",
+      "D": "Shikoku"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1519",
+    "fact": "Mount Everest, located in the Himalayas on the border of Nepal and China (Tibet), stands at 8,848.86 metres.",
+    "question": "On the border of which two countries does Mount Everest lie?",
+    "answers": {
+      "A": "Nepal and India",
+      "B": "Nepal and China",
+      "C": "India and Bhutan",
+      "D": "Pakistan and China"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1522",
+    "fact": "Russia shares land borders with 14 sovereign nations, the most of any country alongside China.",
+    "question": "Which country shares a land border with both Norway and North Korea?",
+    "answers": {
+      "A": "China",
+      "B": "Russia",
+      "C": "Mongolia",
+      "D": "Finland"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1523",
+    "fact": "The Danube flows through 10 countries, more than any other river in the world.",
+    "question": "Which European river flows through the capitals Vienna, Bratislava, Budapest and Belgrade?",
+    "answers": {
+      "A": "Rhine",
+      "B": "Danube",
+      "C": "Elbe",
+      "D": "Volga"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1525",
+    "fact": "The Bosphorus strait in Istanbul separates the European and Asian sides of Turkey.",
+    "question": "Which strait separates Europe from Asia in Turkey?",
+    "answers": {
+      "A": "Strait of Gibraltar",
+      "B": "Bosphorus",
+      "C": "Strait of Hormuz",
+      "D": "Strait of Malacca"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1528",
+    "fact": "The Amazon discharges about 209,000 cubic metres of water per second, more than the next seven largest rivers combined.",
+    "question": "Which river has the largest discharge of water by volume in the world?",
+    "answers": {
+      "A": "Congo",
+      "B": "Yangtze",
+      "C": "Amazon",
+      "D": "Ganges"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1529",
+    "fact": "The Rosetta Stone, discovered in 1799, contains the same decree written in hieroglyphic, Demotic, and Ancient Greek, which allowed Jean-François Champollion to decipher Egyptian hieroglyphs in 1822.",
+    "question": "Which three scripts appear on the Rosetta Stone?",
+    "answers": {
+      "A": "Hieroglyphic, Demotic, and Ancient Greek",
+      "B": "Hieroglyphic, Coptic, and Latin",
+      "C": "Hieratic, Demotic, and Aramaic",
+      "D": "Hieroglyphic, Hieratic, and Phoenician"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1531",
+    "fact": "The Code of Hammurabi, dating to around 1754 BC, is one of the oldest deciphered writings of significant length and was created by the sixth king of the First Babylonian Dynasty.",
+    "question": "The Code of Hammurabi was created by a king of which ancient civilization?",
+    "answers": {
+      "A": "Assyria",
+      "B": "Babylon",
+      "C": "Sumer",
+      "D": "Persia"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1532",
+    "fact": "Tutankhamun's nearly intact tomb (KV62) was discovered by British archaeologist Howard Carter in November 1922 in the Valley of the Kings.",
+    "question": "Who discovered the tomb of Tutankhamun in 1922?",
+    "answers": {
+      "A": "Heinrich Schliemann",
+      "B": "Arthur Evans",
+      "C": "Howard Carter",
+      "D": "Flinders Petrie"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1533",
+    "fact": "Qin Shi Huang unified China in 221 BC, becoming its first emperor, and is famous for the Terracotta Army that guarded his mausoleum.",
+    "question": "Who was the first emperor to unify China?",
+    "answers": {
+      "A": "Liu Bang",
+      "B": "Wu of Han",
+      "C": "Qin Shi Huang",
+      "D": "Kublai Khan"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1534",
+    "fact": "The Maya civilization developed the Long Count calendar, which famously 'ended' a cycle on 21 December 2012, sparking apocalyptic theories.",
+    "question": "Which ancient civilization developed the Long Count calendar?",
+    "answers": {
+      "A": "Aztec",
+      "B": "Inca",
+      "C": "Olmec",
+      "D": "Maya"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1535",
+    "fact": "The Epic of Gilgamesh, one of the earliest known works of literature, originated from ancient Mesopotamia and describes the adventures of the king of Uruk.",
+    "question": "Gilgamesh was the legendary king of which ancient Sumerian city?",
+    "answers": {
+      "A": "Ur",
+      "B": "Lagash",
+      "C": "Uruk",
+      "D": "Nippur"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1536",
+    "fact": "The Battle of Thermopylae in 480 BC saw King Leonidas I of Sparta lead a small Greek force against the massive Persian army of Xerxes I.",
+    "question": "Which Spartan king famously led the defense at Thermopylae in 480 BC?",
+    "answers": {
+      "A": "Leonidas I",
+      "B": "Agesilaus II",
+      "C": "Cleomenes I",
+      "D": "Pausanias"
+    },
+    "correct": "A",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1537",
+    "fact": "Hatshepsut, who ruled circa 1479–1458 BC, was one of the most successful pharaohs of the Eighteenth Dynasty and is often depicted wearing a false beard.",
+    "question": "Which female pharaoh ruled Egypt during the Eighteenth Dynasty and is known for her mortuary temple at Deir el-Bahari?",
+    "answers": {
+      "A": "Nefertiti",
+      "B": "Cleopatra VII",
+      "C": "Hatshepsut",
+      "D": "Nefertari"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1538",
+    "fact": "The Han Dynasty ruled China from 202 BC to 220 AD (with a brief interruption by the Xin Dynasty) and is considered a golden age of Chinese history.",
+    "question": "Which dynasty immediately followed the Qin Dynasty in China?",
+    "answers": {
+      "A": "Tang",
+      "B": "Han",
+      "C": "Zhou",
+      "D": "Ming"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1539",
+    "fact": "The Punic Wars were three conflicts fought between Rome and Carthage from 264 BC to 146 BC, ending with the destruction of Carthage.",
+    "question": "How many Punic Wars were fought between Rome and Carthage?",
+    "answers": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Four",
+      "D": "Five"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1541",
+    "fact": "Alexander the Great was tutored by the philosopher Aristotle from around age 13 to 16, who instructed him in philosophy, medicine, and scientific inquiry.",
+    "question": "Which famous philosopher tutored Alexander the Great as a youth?",
+    "answers": {
+      "A": "Plato",
+      "B": "Socrates",
+      "C": "Aristotle",
+      "D": "Diogenes"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1542",
+    "fact": "The Behistun Inscription, commissioned by Darius the Great around 522 BC, was crucial in deciphering cuneiform script, similar to the Rosetta Stone's role for hieroglyphs.",
+    "question": "The Behistun Inscription, key to deciphering cuneiform, was commissioned by which Persian king?",
+    "answers": {
+      "A": "Cyrus the Great",
+      "B": "Xerxes I",
+      "C": "Artaxerxes I",
+      "D": "Darius the Great"
+    },
+    "correct": "D",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1543",
+    "fact": "The Roman Emperor Hadrian built Hadrian's Wall in northern Britain around 122 AD to mark the northern boundary of the Roman Empire in Britannia.",
+    "question": "Which Roman emperor ordered the construction of the wall across northern Britain that bears his name?",
+    "answers": {
+      "A": "Trajan",
+      "B": "Hadrian",
+      "C": "Marcus Aurelius",
+      "D": "Antoninus Pius"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1544",
+    "fact": "Confucius (Kong Fuzi) lived from approximately 551 to 479 BC during the Spring and Autumn period of the Zhou dynasty.",
+    "question": "During which Chinese dynasty did the philosopher Confucius live?",
+    "answers": {
+      "A": "Han",
+      "B": "Qin",
+      "C": "Zhou",
+      "D": "Shang"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1545",
+    "fact": "The city of Persepolis served as the ceremonial capital of the Achaemenid Empire and was burned down by Alexander the Great in 330 BC.",
+    "question": "Who destroyed the Persian ceremonial capital of Persepolis in 330 BC?",
+    "answers": {
+      "A": "Philip II of Macedon",
+      "B": "Alexander the Great",
+      "C": "Seleucus I",
+      "D": "Antigonus I"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1546",
+    "fact": "The Maya script known as the Dresden Codex is one of only four surviving pre-Columbian Maya books, named after the German city where it has been held since 1739.",
+    "question": "The Dresden Codex is one of the few surviving books of which ancient civilization?",
+    "answers": {
+      "A": "Aztec",
+      "B": "Inca",
+      "C": "Maya",
+      "D": "Zapotec"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1547",
+    "fact": "The Hanging Gardens of Babylon are traditionally attributed to King Nebuchadnezzar II, who supposedly built them for his wife Amytis around 600 BC.",
+    "question": "Which Babylonian king is traditionally credited with building the Hanging Gardens?",
+    "answers": {
+      "A": "Hammurabi",
+      "B": "Nebuchadnezzar II",
+      "C": "Nabonidus",
+      "D": "Sargon II"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1549",
+    "fact": "Pythagoras of Samos was a Greek philosopher and mathematician active in the 6th century BC, credited with the theorem relating the sides of right triangles.",
+    "question": "On which Greek island was the mathematician Pythagoras born?",
+    "answers": {
+      "A": "Crete",
+      "B": "Samos",
+      "C": "Rhodes",
+      "D": "Lesbos"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1550",
+    "fact": "Chichen Itza, located in Mexico's Yucatán Peninsula, features the famous step-pyramid known as El Castillo or the Temple of Kukulcán.",
+    "question": "What is the name of the iconic step pyramid at the Maya site of Chichen Itza?",
+    "answers": {
+      "A": "Temple of the Sun",
+      "B": "El Caracol",
+      "C": "El Castillo",
+      "D": "Temple of the Inscriptions"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1551",
+    "fact": "The Rosetta Stone, discovered in 1799, contains the same decree in hieroglyphic, Demotic, and Ancient Greek scripts, allowing scholars to decipher Egyptian hieroglyphs.",
+    "question": "In which year was the Rosetta Stone discovered by French soldiers in Egypt?",
+    "answers": {
+      "A": "1789",
+      "B": "1799",
+      "C": "1812",
+      "D": "1822"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1555",
+    "fact": "Newton's Second Law of Motion states that the force acting on an object is equal to its mass multiplied by its acceleration (F = ma).",
+    "question": "Which equation represents Newton's Second Law of Motion?",
+    "answers": {
+      "A": "E = mc²",
+      "B": "F = ma",
+      "C": "PV = nRT",
+      "D": "V = IR"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1559",
+    "fact": "Mercury (Hg) is the only metallic element that is liquid at standard room temperature and pressure.",
+    "question": "Which is the only metal that is liquid at room temperature and standard pressure?",
+    "answers": {
+      "A": "Gallium",
+      "B": "Bromine",
+      "C": "Mercury",
+      "D": "Caesium"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1563",
+    "fact": "The Higgs boson was discovered at CERN's Large Hadron Collider in 2012, and Peter Higgs and François Englert shared the 2013 Nobel Prize in Physics.",
+    "question": "In which year was the Higgs boson discovery announced by CERN?",
+    "answers": {
+      "A": "2008",
+      "B": "2010",
+      "C": "2012",
+      "D": "2014"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1565",
+    "fact": "Ohm's Law states that voltage equals current multiplied by resistance (V = IR), named after Georg Simon Ohm.",
+    "question": "Which law states that V = IR, relating voltage, current, and resistance?",
+    "answers": {
+      "A": "Faraday's Law",
+      "B": "Coulomb's Law",
+      "C": "Kirchhoff's Law",
+      "D": "Ohm's Law"
+    },
+    "correct": "D",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1567",
+    "fact": "The double-slit experiment, first performed by Thomas Young in 1801, demonstrated that light exhibits wave-like interference patterns.",
+    "question": "Which physicist first performed the famous double-slit experiment with light in 1801?",
+    "answers": {
+      "A": "Isaac Newton",
+      "B": "Thomas Young",
+      "C": "Christiaan Huygens",
+      "D": "Augustin-Jean Fresnel"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1568",
+    "fact": "Avogadro's number, approximately 6.022 × 10²³, represents the number of particles in one mole of a substance.",
+    "question": "Approximately how many particles are in one mole of a substance (Avogadro's number)?",
+    "answers": {
+      "A": "6.022 × 10²³",
+      "B": "3.14 × 10¹⁰",
+      "C": "9.81 × 10²²",
+      "D": "1.602 × 10¹⁹"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1569",
+    "fact": "Linus Pauling won the Nobel Prize in Chemistry in 1954 for his work on the nature of the chemical bond, and the Nobel Peace Prize in 1962 — the only person to win two unshared Nobel Prizes.",
+    "question": "Who is the only person to have won two unshared Nobel Prizes?",
+    "answers": {
+      "A": "Marie Curie",
+      "B": "Frederick Sanger",
+      "C": "Linus Pauling",
+      "D": "John Bardeen"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1570",
+    "fact": "The Stern-Gerlach experiment (1922) demonstrated the quantization of angular momentum (spin) in atomic particles by passing silver atoms through a non-uniform magnetic field.",
+    "question": "The 1922 Stern-Gerlach experiment demonstrated the quantization of which property?",
+    "answers": {
+      "A": "Electric charge",
+      "B": "Mass",
+      "C": "Spin (angular momentum)",
+      "D": "Energy levels"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1571",
+    "fact": "Noble gases (Group 18) are characterized by having a full outer electron shell, making them very unreactive.",
+    "question": "Which group of the periodic table contains helium, neon, and argon?",
+    "answers": {
+      "A": "Alkali metals",
+      "B": "Halogens",
+      "C": "Noble gases",
+      "D": "Alkaline earth metals"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1572",
+    "fact": "Werner Heisenberg formulated the uncertainty principle in 1927, stating that the position and momentum of a particle cannot both be precisely known simultaneously.",
+    "question": "Who formulated the uncertainty principle in quantum mechanics?",
+    "answers": {
+      "A": "Erwin Schrödinger",
+      "B": "Werner Heisenberg",
+      "C": "Max Born",
+      "D": "Paul Dirac"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1573",
+    "fact": "Boyle's Law states that, at constant temperature, the pressure of a gas is inversely proportional to its volume (PV = constant).",
+    "question": "Which gas law states that pressure and volume are inversely proportional at constant temperature?",
+    "answers": {
+      "A": "Charles's Law",
+      "B": "Avogadro's Law",
+      "C": "Boyle's Law",
+      "D": "Gay-Lussac's Law"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1574",
+    "fact": "The Miller-Urey experiment in 1953 simulated early Earth conditions and produced amino acids from inorganic compounds, supporting theories of the chemical origin of life.",
+    "question": "The 1953 Miller-Urey experiment produced which class of biological molecules from inorganic compounds?",
+    "answers": {
+      "A": "Nucleotides",
+      "B": "Lipids",
+      "C": "Amino acids",
+      "D": "Carbohydrates"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1575",
+    "fact": "Absolute zero, 0 Kelvin (−273.15 °C), is the theoretical temperature at which particles have minimum thermal motion.",
+    "question": "What is absolute zero in degrees Celsius?",
+    "answers": {
+      "A": "−100 °C",
+      "B": "−212 °C",
+      "C": "−273.15 °C",
+      "D": "−459.67 °C"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1578",
+    "fact": "The speed of light in a vacuum is approximately 299,792,458 metres per second, commonly rounded to 300,000 km/s.",
+    "question": "What is the approximate speed of light in a vacuum?",
+    "answers": {
+      "A": "150,000 km/s",
+      "B": "300,000 km/s",
+      "C": "1,000,000 km/s",
+      "D": "30,000 km/s"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1580",
+    "fact": "James Watson and Francis Crick published the double helix structure of DNA in 1953, building on Rosalind Franklin's X-ray diffraction images.",
+    "question": "Which two scientists are credited with describing the double helix structure of DNA in 1953?",
+    "answers": {
+      "A": "Mendel and Darwin",
+      "B": "Watson and Crick",
+      "C": "Pasteur and Koch",
+      "D": "Fleming and Salk"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1583",
+    "fact": "The four DNA bases are adenine (A), thymine (T), guanine (G), and cytosine (C), with A pairing with T and G pairing with C.",
+    "question": "Which base in DNA pairs with adenine?",
+    "answers": {
+      "A": "Guanine",
+      "B": "Cytosine",
+      "C": "Uracil",
+      "D": "Thymine"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1584",
+    "fact": "The standard biological classification hierarchy is Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+    "question": "In biological classification, which rank comes immediately above 'Family'?",
+    "answers": {
+      "A": "Order",
+      "B": "Genus",
+      "C": "Class",
+      "D": "Phylum"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1585",
+    "fact": "The cerebellum, located at the back of the brain, coordinates voluntary movements such as posture, balance, and coordination.",
+    "question": "Which part of the brain is primarily responsible for balance and coordination?",
+    "answers": {
+      "A": "Cerebrum",
+      "B": "Medulla oblongata",
+      "C": "Cerebellum",
+      "D": "Hypothalamus"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1586",
+    "fact": "Red blood cells, or erythrocytes, contain hemoglobin which binds to oxygen and transports it throughout the body.",
+    "question": "Which protein in red blood cells is responsible for carrying oxygen?",
+    "answers": {
+      "A": "Myoglobin",
+      "B": "Albumin",
+      "C": "Hemoglobin",
+      "D": "Keratin"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1587",
+    "fact": "Humans share approximately 98.8% of their DNA with chimpanzees, our closest living relatives.",
+    "question": "Approximately what percentage of DNA do humans share with chimpanzees?",
+    "answers": {
+      "A": "About 85%",
+      "B": "About 92%",
+      "C": "About 98%",
+      "D": "About 99.9%"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1590",
+    "fact": "The alveoli are tiny air sacs in the lungs where gas exchange occurs between inhaled air and blood capillaries.",
+    "question": "What are the tiny air sacs in the lungs where gas exchange occurs?",
+    "answers": {
+      "A": "Bronchioles",
+      "B": "Alveoli",
+      "C": "Cilia",
+      "D": "Villi"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1591",
+    "fact": "Telomeres are repetitive DNA sequences at the ends of chromosomes that protect them from deterioration and shorten with each cell division.",
+    "question": "What are the protective caps at the ends of chromosomes called?",
+    "answers": {
+      "A": "Centromeres",
+      "B": "Histones",
+      "C": "Telomeres",
+      "D": "Plasmids"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1592",
+    "fact": "The three domains of life proposed by Carl Woese in 1990 are Bacteria, Archaea, and Eukarya, based on ribosomal RNA differences.",
+    "question": "What are the three domains of life in modern biological classification?",
+    "answers": {
+      "A": "Plantae, Animalia, Fungi",
+      "B": "Prokarya, Eukarya, Protista",
+      "C": "Bacteria, Archaea, Eukarya",
+      "D": "Monera, Protista, Eukarya"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1595",
+    "fact": "Mitochondrial DNA is inherited exclusively from the mother because the sperm's mitochondria are typically destroyed after fertilization.",
+    "question": "From which parent is mitochondrial DNA inherited in humans?",
+    "answers": {
+      "A": "Father only",
+      "B": "Mother only",
+      "C": "Equally from both",
+      "D": "Randomly from either"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1596",
+    "fact": "James Watson and Francis Crick proposed the double helix structure of DNA in 1953, based partly on X-ray data from Rosalind Franklin.",
+    "question": "Who, along with Francis Crick, is credited with discovering the double helix structure of DNA?",
+    "answers": {
+      "A": "Linus Pauling",
+      "B": "Gregor Mendel",
+      "C": "James Watson",
+      "D": "Louis Pasteur"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1599",
+    "fact": "The four DNA bases are adenine (A), thymine (T), guanine (G), and cytosine (C). In RNA, thymine is replaced by uracil.",
+    "question": "Which of these is NOT one of the four bases found in DNA?",
+    "answers": {
+      "A": "Adenine",
+      "B": "Guanine",
+      "C": "Uracil",
+      "D": "Cytosine"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1600",
+    "fact": "The Linnaean classification system, devised by Carl Linnaeus, uses the hierarchy: Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+    "question": "In biological classification, which level comes immediately below 'Class'?",
+    "answers": {
+      "A": "Phylum",
+      "B": "Family",
+      "C": "Order",
+      "D": "Genus"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1603",
+    "fact": "Mitosis is the process of cell division that produces two genetically identical daughter cells, while meiosis produces four genetically distinct gametes.",
+    "question": "Which type of cell division produces gametes (sex cells) in humans?",
+    "answers": {
+      "A": "Mitosis",
+      "B": "Meiosis",
+      "C": "Binary fission",
+      "D": "Cytokinesis"
+    },
+    "correct": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1604",
+    "fact": "ABBA was formed in Stockholm in 1972 and won Eurovision in 1974 with 'Waterloo'.",
+    "question": "From which country does the pop group ABBA originate?",
+    "answers": {
+      "A": "Norway",
+      "B": "Denmark",
+      "C": "Sweden",
+      "D": "Finland"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1605",
+    "fact": "'Money Heist' (La Casa de Papel) became Netflix's most-watched non-English language series following its international release.",
+    "question": "What is the original Spanish title of the Netflix hit 'Money Heist'?",
+    "answers": {
+      "A": "El Atraco",
+      "B": "La Casa de Papel",
+      "C": "Los Ladrones",
+      "D": "Robo Total"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1606",
+    "fact": "Pink Floyd's 'The Dark Side of the Moon' was released in 1973 and famously features a prism on its cover.",
+    "question": "Which iconic 1973 album features a prism refracting light into a rainbow on its cover?",
+    "answers": {
+      "A": "Wish You Were Here",
+      "B": "The Wall",
+      "C": "The Dark Side of the Moon",
+      "D": "Animals"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1608",
+    "fact": "Hayao Miyazaki's 'Spirited Away' won the Academy Award for Best Animated Feature in 2003.",
+    "question": "Which Studio Ghibli film won the Oscar for Best Animated Feature in 2003?",
+    "answers": {
+      "A": "Princess Mononoke",
+      "B": "Spirited Away",
+      "C": "Howl's Moving Castle",
+      "D": "My Neighbor Totoro"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1609",
+    "fact": "BTS debuted in 2013 under Big Hit Entertainment and became one of the best-selling music acts globally.",
+    "question": "In which year did the K-pop group BTS officially debut?",
+    "answers": {
+      "A": "2010",
+      "B": "2012",
+      "C": "2013",
+      "D": "2015"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1611",
+    "fact": "Fellini's 'La Dolce Vita' (1960) features the famous Trevi Fountain scene with Anita Ekberg.",
+    "question": "Which Italian director made the 1960 classic 'La Dolce Vita'?",
+    "answers": {
+      "A": "Vittorio De Sica",
+      "B": "Michelangelo Antonioni",
+      "C": "Federico Fellini",
+      "D": "Roberto Rossellini"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1612",
+    "fact": "Bob Marley's 'Exodus' was named Album of the Century by Time magazine in 1999.",
+    "question": "Which 1977 Bob Marley album was named Album of the Century by Time magazine?",
+    "answers": {
+      "A": "Exodus",
+      "B": "Kaya",
+      "C": "Catch a Fire",
+      "D": "Survival"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1613",
+    "fact": "'Amélie' (Le Fabuleux Destin d'Amélie Poulain) was directed by Jean-Pierre Jeunet and starred Audrey Tautou.",
+    "question": "Who directed the 2001 French film 'Amélie'?",
+    "answers": {
+      "A": "Luc Besson",
+      "B": "François Ozon",
+      "C": "Jean-Pierre Jeunet",
+      "D": "Michel Gondry"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1615",
+    "fact": "'Dark' is a German science fiction thriller that premiered on Netflix in 2017 and was created by Baran bo Odar and Jantje Friese.",
+    "question": "The Netflix series 'Dark' is set in which fictional German town?",
+    "answers": {
+      "A": "Winden",
+      "B": "Schwarzwald",
+      "C": "Hohenfeld",
+      "D": "Adlerstein"
+    },
+    "correct": "A",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1616",
+    "fact": "Daft Punk's 'Random Access Memories' won Album of the Year at the 2014 Grammy Awards.",
+    "question": "Which Daft Punk album won the Grammy for Album of the Year in 2014?",
+    "answers": {
+      "A": "Discovery",
+      "B": "Homework",
+      "C": "Human After All",
+      "D": "Random Access Memories"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1617",
+    "fact": "Pedro Almodóvar's 'Volver' (2006) starred Penélope Cruz, who received an Oscar nomination for the role.",
+    "question": "Penélope Cruz received her first Oscar nomination for which 2006 Pedro Almodóvar film?",
+    "answers": {
+      "A": "Volver",
+      "B": "Broken Embraces",
+      "C": "All About My Mother",
+      "D": "Talk to Her"
+    },
+    "correct": "A",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1618",
+    "fact": "Rammstein is a German Neue Deutsche Härte band formed in Berlin in 1994.",
+    "question": "The industrial metal band Rammstein was formed in which city?",
+    "answers": {
+      "A": "Hamburg",
+      "B": "Munich",
+      "C": "Berlin",
+      "D": "Frankfurt"
+    },
+    "correct": "C",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1620",
+    "fact": "Psy's 'Gangnam Style' became the first YouTube video to reach one billion views in December 2012.",
+    "question": "In what year did Psy release the viral hit 'Gangnam Style'?",
+    "answers": {
+      "A": "2010",
+      "B": "2011",
+      "C": "2012",
+      "D": "2013"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1622",
+    "fact": "Manu Chao's 'Clandestino' was released in 1998 and became a global hit, blending multiple languages.",
+    "question": "Manu Chao's hugely successful 1998 debut solo album is called what?",
+    "answers": {
+      "A": "Próxima Estación: Esperanza",
+      "B": "Clandestino",
+      "C": "La Radiolina",
+      "D": "Sibérie m'était contéee"
+    },
+    "correct": "B",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1623",
+    "fact": "'Lupin' starring Omar Sy is a French mystery thriller series inspired by the Arsène Lupin novels by Maurice Leblanc.",
+    "question": "Which French actor stars as the lead in the Netflix series 'Lupin'?",
+    "answers": {
+      "A": "Vincent Cassel",
+      "B": "Jean Dujardin",
+      "C": "Omar Sy",
+      "D": "Tahar Rahim"
+    },
+    "correct": "C",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1624",
+    "fact": "Kraftwerk's 'Autobahn' (1974) is considered a pioneering electronic music album that influenced generations of artists.",
+    "question": "Which German electronic group released the pioneering 1974 album 'Autobahn'?",
+    "answers": {
+      "A": "Tangerine Dream",
+      "B": "Can",
+      "C": "Neu!",
+      "D": "Kraftwerk"
+    },
+    "correct": "D",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pq1625",
+    "fact": "'Roma' by Alfonso Cuarón won three Oscars in 2019, including Best Director and Best Foreign Language Film.",
+    "question": "Alfonso Cuarón's 2018 film 'Roma' is set in which decade?",
+    "answers": {
+      "A": "1950s",
+      "B": "1960s",
+      "C": "1970s",
+      "D": "1980s"
+    },
+    "correct": "C",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pq1626",
+    "fact": "Céline Dion is from Charlemagne, Quebec, Canada, and is one of the best-selling music artists of all time.",
+    "question": "In which Canadian province was singer Céline Dion born?",
+    "answers": {
+      "A": "Ontario",
+      "B": "Quebec",
+      "C": "New Brunswick",
+      "D": "Nova Scotia"
+    },
+    "correct": "B",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pq1627",
+    "fact": "'The Bridge' (Bron/Broen) is a Scandinavian noir series that features a body found on the Øresund Bridge between Denmark and Sweden.",
+    "question": "The Scandinavian crime drama 'The Bridge' begins with a body discovered on a bridge connecting Sweden and which other country?",
+    "answers": {
+      "A": "Norway",
+      "B": "Finland",
+      "C": "Germany",
+      "D": "Denmark"
+    },
+    "correct": "D",
+    "difficulty": "hard"
   }
 ];
 
