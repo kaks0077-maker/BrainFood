@@ -2,7 +2,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
-import { StatusBar, Text } from 'react-native';
+import { Text } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
@@ -87,7 +88,7 @@ export default function App() {
     return (
       <SafeAreaProvider>
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
-          <StatusBar barStyle="light-content" backgroundColor="#0d1117" />
+          <StatusBar style="light" backgroundColor="#0d1117" />
           <OnboardingScreen onDone={finishOnboarding} />
         </ThemeContext.Provider>
       </SafeAreaProvider>
@@ -98,7 +99,7 @@ export default function App() {
     <SafeAreaProvider>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <StatusBar
-          barStyle={theme.mode === 'dark' ? 'light-content' : 'dark-content'}
+          style={theme.mode === 'dark' ? 'light' : 'dark'}
           backgroundColor={theme.bg}
         />
         <NavigationContainer>
