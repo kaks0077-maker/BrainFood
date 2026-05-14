@@ -7358,7 +7358,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1628",
     "fact": "The Amazon River discharges more water than the next seven largest rivers combined.",
     "question": "How does the water discharge of the Amazon River compare to other major rivers?",
     "answers": {
@@ -7371,7 +7371,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1629",
     "fact": "Vatican City is the smallest country in the world by both area and population.",
     "question": "Which country is the smallest in the world by both area and population?",
     "answers": {
@@ -7384,7 +7384,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1630",
     "fact": "Canada has more lakes than the rest of the world combined.",
     "question": "Which country contains more lakes than all other countries in the world combined?",
     "answers": {
@@ -7397,7 +7397,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1631",
     "fact": "Russia spans eleven time zones.",
     "question": "How many time zones does Russia span across?",
     "answers": {
@@ -7410,7 +7410,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1632",
     "fact": "Australia is wider than the Moon.",
     "question": "Which of the following statements about Australia's width compared to the Moon is true?",
     "answers": {
@@ -7423,7 +7423,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1633",
     "fact": "The Dead Sea is the lowest point on Earths surface.",
     "question": "What is the lowest point on Earth's surface?",
     "answers": {
@@ -7436,7 +7436,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1634",
     "fact": "The Mariana Trench is deeper than Mount Everest is tall.",
     "question": "By approximately how much is the Mariana Trench deeper than Mount Everest is tall?",
     "answers": {
@@ -7449,7 +7449,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1635",
     "fact": "Finland has more saunas than cars.",
     "question": "Which country is known for having more saunas than cars?",
     "answers": {
@@ -7462,7 +7462,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1636",
     "fact": "Lake Baikal contains about 20% of the worlds unfrozen fresh surface water.",
     "question": "Approximately what percentage of the world's unfrozen fresh surface water is contained in Lake Baikal?",
     "answers": {
@@ -7475,7 +7475,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1637",
     "fact": "The city of Venice is built on 118 small islands.",
     "question": "How many small islands is the city of Venice built upon?",
     "answers": {
@@ -7488,7 +7488,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1638",
     "fact": "A bolt of lightning is five times hotter than the surface of the Sun.",
     "question": "How does the temperature of a lightning bolt compare to the surface of the Sun?",
     "answers": {
@@ -7501,7 +7501,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1639",
     "fact": "Octopuses have three hearts and blue blood.",
     "question": "How many hearts does an octopus have, and what color is its blood?",
     "answers": {
@@ -7514,7 +7514,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1640",
     "fact": "A day on Mercury lasts longer than a year on Mercury.",
     "question": "Which planet has a day that is longer than its year?",
     "answers": {
@@ -7527,7 +7527,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1641",
     "fact": "Sound travels four times faster through water than through air.",
     "question": "How many times faster does sound travel through water compared to air?",
     "answers": {
@@ -7540,7 +7540,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1642",
     "fact": "A group of jellyfish is called a smack.",
     "question": "What is the collective noun for a group of jellyfish?",
     "answers": {
@@ -7553,7 +7553,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1643",
     "fact": "Butterflies taste with their feet.",
     "question": "Where do butterflies taste their food?",
     "answers": {
@@ -7566,7 +7566,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1644",
     "fact": "A snail can sleep for three years.",
     "question": "How long can a snail sleep for?",
     "answers": {
@@ -7579,7 +7579,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1645",
     "fact": "Polar bears have black skin beneath their white fur.",
     "question": "What color is the skin of a polar bear beneath its white fur?",
     "answers": {
@@ -7592,7 +7592,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1646",
     "fact": "A group of pandas is called an embarrassment.",
     "question": "What is the collective noun for a group of pandas?",
     "answers": {
@@ -7605,7 +7605,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1647",
     "fact": "Wombats produce cube-shaped droppings.",
     "question": "What distinctive shape are wombat droppings?",
     "answers": {
@@ -7618,7 +7618,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1648",
     "fact": "Mantis shrimp can punch with the force of a bullet.",
     "question": "Which sea creature is known for punching with the force of a bullet?",
     "answers": {
@@ -7631,7 +7631,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1649",
     "fact": "A group of cats is called a clowder.",
     "question": "What is the collective noun for a group of cats?",
     "answers": {
@@ -7644,7 +7644,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1650",
     "fact": "Axolotls can regenerate their heart brain and limbs.",
     "question": "Which of the following body parts can an axolotl regenerate?",
     "answers": {
@@ -7657,7 +7657,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1651",
     "fact": "Napoleon was not actually short — he was average height for his time.",
     "question": "What is the truth about Napoleon's height?",
     "answers": {
@@ -7670,7 +7670,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1652",
     "fact": "Albert Einstein was offered the presidency of Israel in 1952 but declined.",
     "question": "In 1952, Albert Einstein was offered the presidency of which country but declined the position?",
     "answers": {
@@ -7683,7 +7683,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1653",
     "fact": "The first flushing toilet was invented by John Harington in 1596.",
     "question": "In what year did John Harington invent the first flushing toilet?",
     "answers": {
@@ -7696,7 +7696,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1654",
     "fact": "Shakespeare invented over 1700 words still used in English today.",
     "question": "Approximately how many words that are still used in English today are believed to have been invented by Shakespeare?",
     "answers": {
@@ -7709,7 +7709,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1655",
     "fact": "The first speeding ticket was issued in 1896 to a driver going 8mph in a 2mph zone.",
     "question": "In what year was the first speeding ticket issued?",
     "answers": {
@@ -7722,7 +7722,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1656",
     "fact": "Marie Curie is the only person to win Nobel Prizes in two different sciences.",
     "question": "Marie Curie is the only person to win Nobel Prizes in two different sciences. Which two sciences were these?",
     "answers": {
@@ -7735,7 +7735,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1657",
     "fact": "The Wright Brothers first flight was shorter than the wingspan of a Boeing 747.",
     "question": "How does the distance of the Wright Brothers' first flight compare to the wingspan of a Boeing 747?",
     "answers": {
@@ -7748,7 +7748,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1658",
     "fact": "The first computer bug was an actual bug — a moth found in a Harvard computer in 1947.",
     "question": "In 1947, what was found inside a Harvard computer that became known as the first computer 'bug'?",
     "answers": {
@@ -7761,7 +7761,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1659",
     "fact": "Julius Caesar was once kidnapped by pirates who he later had crucified.",
     "question": "Which ancient Roman leader was kidnapped by pirates and later had them crucified?",
     "answers": {
@@ -7774,7 +7774,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1660",
     "fact": "Tutankhamun became Pharaoh of Egypt at age 9.",
     "question": "At what age did Tutankhamun become Pharaoh of Egypt?",
     "answers": {
@@ -7787,7 +7787,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1661",
     "fact": "Isaac Newton was born the same year Galileo died.",
     "question": "In what year was Isaac Newton born, which was also the year Galileo died?",
     "answers": {
@@ -7800,7 +7800,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1662",
     "fact": "Columbus never actually set foot on mainland North America.",
     "question": "Which of the following statements about Christopher Columbus is true?",
     "answers": {
@@ -7813,7 +7813,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1663",
     "fact": "The guillotine was used as a method of execution in France until 1977.",
     "question": "In what year was the guillotine last used as an official method of execution in France?",
     "answers": {
@@ -7826,7 +7826,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1664",
     "fact": "Benjamin Franklin never patented any of his inventions.",
     "question": "Benjamin Franklin famously refused to patent his inventions. Which of the following best explains why he never patented any of them?",
     "answers": {
@@ -7839,7 +7839,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1665",
     "fact": "Ketchup was sold as medicine in the 1830s.",
     "question": "In which decade was ketchup actually sold as medicine?",
     "answers": {
@@ -7852,7 +7852,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1666",
     "fact": "Peanuts are not actually nuts — they are legumes.",
     "question": "What type of plant do peanuts actually belong to?",
     "answers": {
@@ -7865,7 +7865,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1667",
     "fact": "Carrots were originally purple before Dutch growers cultivated orange ones.",
     "question": "What colour were carrots originally before Dutch growers cultivated the orange variety we know today?",
     "answers": {
@@ -7878,7 +7878,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1668",
     "fact": "Chocolate was used as currency by the ancient Aztecs.",
     "question": "Which ancient civilization used chocolate as a form of currency?",
     "answers": {
@@ -7891,7 +7891,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1669",
     "fact": "A single strand of spaghetti is called a spaghetto.",
     "question": "What is a single strand of spaghetti called?",
     "answers": {
@@ -7904,7 +7904,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1670",
     "fact": "Almonds are a member of the peach family.",
     "question": "Which of the following fruits is a member of the same family as almonds?",
     "answers": {
@@ -7917,7 +7917,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1671",
     "fact": "The Margherita pizza was named after Queen Margherita of Italy in 1889.",
     "question": "In what year was the Margherita pizza named after Queen Margherita of Italy?",
     "answers": {
@@ -7930,7 +7930,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1672",
     "fact": "Nutmeg is poisonous in large quantities.",
     "question": "At what level of consumption does nutmeg become toxic to humans?",
     "answers": {
@@ -7943,7 +7943,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1673",
     "fact": "Coca-Cola originally contained cocaine.",
     "question": "Which soft drink originally contained cocaine as one of its ingredients?",
     "answers": {
@@ -7956,7 +7956,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1674",
     "fact": "Cashews grow on the outside of the cashew apple fruit.",
     "question": "In what unusual location does the cashew nut grow?",
     "answers": {
@@ -7969,7 +7969,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1675",
     "fact": "Cheese is the most stolen food in the world.",
     "question": "Which food is the most stolen item from stores worldwide?",
     "answers": {
@@ -7982,7 +7982,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1676",
     "fact": "White chocolate contains no cocoa solids and is not technically chocolate.",
     "question": "Why is white chocolate not technically considered chocolate?",
     "answers": {
@@ -7995,7 +7995,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1677",
     "fact": "Worcestershire sauce is made from dissolved anchovies.",
     "question": "Which ingredient gives Worcestershire sauce its distinctive umami flavor?",
     "answers": {
@@ -8008,7 +8008,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1678",
     "fact": "Potatoes were the first food grown in space in 1995.",
     "question": "What was the first food ever grown in space?",
     "answers": {
@@ -8021,7 +8021,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1679",
     "fact": "The Olympic gold medal is mostly made of silver.",
     "question": "What is the primary metal used to make an Olympic gold medal?",
     "answers": {
@@ -8034,7 +8034,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1680",
     "fact": "Golf was banned in Scotland in 1457 because it distracted men from archery practice.",
     "question": "In what year did Scotland ban golf because it was distracting men from archery practice?",
     "answers": {
@@ -8047,7 +8047,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1681",
     "fact": "Tennis was originally played with bare hands before rackets were introduced.",
     "question": "Before modern tennis rackets were introduced, how was the game originally played?",
     "answers": {
@@ -8060,7 +8060,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1682",
     "fact": "Usain Bolt ate 1000 chicken nuggets during the 2008 Beijing Olympics.",
     "question": "According to legend, how many chicken nuggets did Usain Bolt consume during the 2008 Beijing Olympics?",
     "answers": {
@@ -8073,7 +8073,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1683",
     "fact": "The first World Cup was held in Uruguay in 1930.",
     "question": "In which country was the first FIFA World Cup held?",
     "answers": {
@@ -8086,7 +8086,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1684",
     "fact": "Table tennis balls were originally made from champagne corks.",
     "question": "What were table tennis balls originally made from?",
     "answers": {
@@ -8099,7 +8099,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1685",
     "fact": "The maximum score in ten-pin bowling is 300.",
     "question": "What is the maximum possible score in ten-pin bowling?",
     "answers": {
@@ -8112,7 +8112,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1686",
     "fact": "Polo is the oldest team sport still played today.",
     "question": "Which of these is recognised as the oldest team sport still played today?",
     "answers": {
@@ -8125,7 +8125,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1687",
     "fact": "The Boston Marathon did not allow women to officially compete until 1972.",
     "question": "In what year did the Boston Marathon first officially allow women to compete?",
     "answers": {
@@ -8138,7 +8138,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1688",
     "fact": "Wayne Gretzky scored more assists alone than any other NHL player scored total points.",
     "question": "Wayne Gretzky's career assists total surpassed the career total points of which player, who holds the second-most points in NHL history?",
     "answers": {
@@ -8151,7 +8151,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1689",
     "fact": "Football was banned in England for over 300 years.",
     "question": "For approximately how long was football banned in England during the medieval period?",
     "answers": {
@@ -8164,7 +8164,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1690",
     "fact": "Cricket is the second most popular sport in the world after football.",
     "question": "After football, what is the second most popular sport in the world?",
     "answers": {
@@ -8177,7 +8177,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1691",
     "fact": "More Monopoly money is printed each year than real money worldwide.",
     "question": "Which of the following is printed in greater quantities each year than actual currency?",
     "answers": {
@@ -8190,7 +8190,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1692",
     "fact": "The Lion King is based on Shakespeares Hamlet.",
     "question": "Which Shakespeare play is 'The Lion King' based on?",
     "answers": {
@@ -8203,7 +8203,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1693",
     "fact": "James Bond has been played by six different actors in official films.",
     "question": "How many different actors have played James Bond in the official film series?",
     "answers": {
@@ -8216,7 +8216,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1694",
     "fact": "Mickey Mouse was the first cartoon character to have a star on the Hollywood Walk of Fame.",
     "question": "Which cartoon character was the first to receive a star on the Hollywood Walk of Fame?",
     "answers": {
@@ -8229,7 +8229,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1695",
     "fact": "Alfred Hitchcock never won an Academy Award for directing.",
     "question": "How many Academy Awards for Best Director did Alfred Hitchcock win during his lifetime?",
     "answers": {
@@ -8242,7 +8242,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1696",
     "fact": "The word robot comes from the Czech word robota meaning forced labour.",
     "question": "The word 'robot' originates from a Czech word meaning what?",
     "answers": {
@@ -8255,7 +8255,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1697",
     "fact": "Instagram was originally called Burbn.",
     "question": "What was Instagram originally called before its launch?",
     "answers": {
@@ -8268,7 +8268,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1698",
     "fact": "The Beatles were rejected by Decca Records in 1962.",
     "question": "Which record label famously rejected The Beatles in 1962?",
     "answers": {
@@ -8281,7 +8281,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1699",
     "fact": "Charlie Chaplin once entered a Charlie Chaplin lookalike contest and came third.",
     "question": "In a famous anecdote, Charlie Chaplin entered a lookalike contest of himself. What place did he finish?",
     "answers": {
@@ -8294,7 +8294,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1700",
     "fact": "The first computer mouse was made of wood.",
     "question": "What material was used to make the first computer mouse?",
     "answers": {
@@ -8307,7 +8307,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1701",
     "fact": "Email is older than the World Wide Web.",
     "question": "Which of these technologies was invented first?",
     "answers": {
@@ -8320,7 +8320,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1702",
     "fact": "Wi-Fi was never an acronym for Wireless Fidelity.",
     "question": "What is a common misconception about the term 'Wi-Fi'?",
     "answers": {
@@ -8333,7 +8333,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1703",
     "fact": "The first text message ever sent said Merry Christmas in 1992.",
     "question": "What was the content of the first text message ever sent?",
     "answers": {
@@ -8346,7 +8346,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1704",
     "fact": "Google was originally called BackRub.",
     "question": "What was Google originally called before its famous name change?",
     "answers": {
@@ -8359,7 +8359,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1705",
     "fact": "There are more stars in the universe than grains of sand on all of Earths beaches.",
     "question": "Which of the following comparisons is used to illustrate the vast number of stars in the observable universe?",
     "answers": {
@@ -8372,7 +8372,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1706",
     "fact": "A teaspoon of neutron star material would weigh about 10 million tons.",
     "question": "Approximately how much would a teaspoon of neutron star material weigh?",
     "answers": {
@@ -8385,7 +8385,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1707",
     "fact": "Pluto was reclassified as a dwarf planet in 2006.",
     "question": "In what year was Pluto reclassified from a planet to a dwarf planet?",
     "answers": {
@@ -8398,7 +8398,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1708",
     "fact": "Humans share 60% of their DNA with bananas.",
     "question": "What percentage of their DNA do humans share with bananas?",
     "answers": {
@@ -8411,7 +8411,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1709",
     "fact": "The dot over a lowercase i or j is called a tittle.",
     "question": "What is the name of the dot that appears over a lowercase i or j?",
     "answers": {
@@ -8424,7 +8424,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1710",
     "fact": "A group of pugs is called a grumble.",
     "question": "What is the collective noun for a group of pugs?",
     "answers": {
@@ -8437,7 +8437,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1711",
     "fact": "Oxford University is older than the Aztec Empire.",
     "question": "Which of these institutions or empires was established first?",
     "answers": {
@@ -8450,7 +8450,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1712",
     "fact": "Competitive art used to be an Olympic sport between 1912 and 1948.",
     "question": "In which years was competitive art an official Olympic sport?",
     "answers": {
@@ -8463,7 +8463,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1713",
     "fact": "Vending machines kill more people annually than sharks.",
     "question": "Which of the following causes more deaths annually in the United States?",
     "answers": {
@@ -8476,7 +8476,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1714",
     "fact": "Humans are the only animals that blush.",
     "question": "Which of the following statements about blushing is true?",
     "answers": {
@@ -8489,7 +8489,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1715",
     "fact": "The name for the space between your eyebrows is called the glabella.",
     "question": "What is the anatomical name for the space between your eyebrows?",
     "answers": {
@@ -8502,7 +8502,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1716",
     "fact": "Sea otters hold hands while sleeping so they do not drift apart.",
     "question": "Sea otters have a particularly endearing behavior while sleeping. What is the main reason they hold hands with each other during sleep?",
     "answers": {
@@ -8515,7 +8515,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1717",
     "fact": "The longest hiccuping episode on record lasted 68 years.",
     "question": "What is the longest hiccuping episode ever recorded?",
     "answers": {
@@ -8528,7 +8528,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1718",
     "fact": "It rains diamonds on Neptune and Uranus.",
     "question": "On which two planets in our solar system does it rain diamonds?",
     "answers": {
@@ -8541,7 +8541,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1719",
     "fact": "The word salary comes from Latin for salt as Roman soldiers were sometimes paid in salt.",
     "question": "The word 'salary' originates from the Latin word for which commodity that Roman soldiers were sometimes paid with?",
     "answers": {
@@ -8554,7 +8554,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1720",
     "fact": "Typewriter is the longest word typed using only the top row of a keyboard.",
     "question": "Which of these words is the longest that can be typed using only the top row of a keyboard?",
     "answers": {
@@ -8567,7 +8567,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1721",
     "fact": "The technical term for a hashtag symbol is an octothorpe.",
     "question": "What is the technical term for the hashtag symbol (#)?",
     "answers": {
@@ -8580,7 +8580,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1722",
     "fact": "Apple was briefly worth more than the entire GDP of Russia.",
     "question": "In recent years, Apple's market capitalization briefly exceeded the entire GDP of which country?",
     "answers": {
@@ -8593,7 +8593,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1723",
     "fact": "The United States penny costs more to make than it is worth.",
     "question": "Which U.S. coin costs more to manufacture than its face value?",
     "answers": {
@@ -8606,7 +8606,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1724",
     "fact": "The first ATM was installed in London in 1967.",
     "question": "In which year was the first ATM installed in London?",
     "answers": {
@@ -8619,7 +8619,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1725",
     "fact": "Amazon was originally going to be called Cadabra.",
     "question": "What was Amazon originally going to be called before founder Jeff Bezos changed it?",
     "answers": {
@@ -8632,7 +8632,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1726",
     "fact": "The first credit card was introduced by Diners Club in 1950.",
     "question": "Which company introduced the first credit card in 1950?",
     "answers": {
@@ -8645,7 +8645,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1727",
     "fact": "The Mona Lisa has no eyebrows — it was fashionable to shave them in Renaissance Florence.",
     "question": "Why does the Mona Lisa famously have no eyebrows?",
     "answers": {
@@ -8658,7 +8658,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1728",
     "fact": "A group of hippos is called a bloat.",
     "question": "What is the collective noun for a group of hippos?",
     "answers": {
@@ -8671,7 +8671,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1729",
     "fact": "Pigs cannot look up at the sky.",
     "question": "Which of the following statements about pigs is true?",
     "answers": {
@@ -8684,7 +8684,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1730",
     "fact": "A group of kangaroos is called a mob.",
     "question": "What is the collective noun for a group of kangaroos?",
     "answers": {
@@ -8697,7 +8697,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1731",
     "fact": "Mosquitoes are the deadliest animals in the world killing more humans than any other creature.",
     "question": "Which animal is responsible for more human deaths than any other creature on Earth?",
     "answers": {
@@ -8710,7 +8710,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1732",
     "fact": "Crocodiles cannot stick out their tongue.",
     "question": "Which of these reptiles is physically unable to stick out its tongue?",
     "answers": {
@@ -8723,7 +8723,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1733",
     "fact": "A group of sharks is called a shiver.",
     "question": "What is the collective noun for a group of sharks?",
     "answers": {
@@ -8736,7 +8736,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1734",
     "fact": "The shortest commercial flight in the world operates between Westray and Papa Westray in Scotland's Orkney Islands, lasting about 74 seconds. The record time with a tailwind is 47 seconds. The islands are only 2.7km apart.",
     "question": "What is the approximate duration of the world's shortest commercial flight, operating between Westray and Papa Westray in Scotland?",
     "answers": {
@@ -8749,7 +8749,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1735",
     "fact": "Hot water freezes faster than cold water — this is called the Mpemba effect.",
     "question": "What is the name of the phenomenon where hot water freezes faster than cold water?",
     "answers": {
@@ -8762,7 +8762,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1736",
     "fact": "A day on Mars is 24 hours and 37 minutes.",
     "question": "How long is a day on Mars (one complete rotation)?",
     "answers": {
@@ -8775,7 +8775,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1737",
     "fact": "The Empire State Building has its own postcode.",
     "question": "Which famous New York landmark has its own postcode?",
     "answers": {
@@ -8788,7 +8788,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1738",
     "fact": "Pineapples take two years to grow.",
     "question": "How long does it typically take for a pineapple to grow from planting to harvest?",
     "answers": {
@@ -8801,7 +8801,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1739",
     "fact": "Lightning strikes the Earth about 100 times every second.",
     "question": "Approximately how many times per second does lightning strike the Earth?",
     "answers": {
@@ -8814,7 +8814,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1740",
     "fact": "A group of giraffes is called a tower.",
     "question": "What is the collective noun for a group of giraffes?",
     "answers": {
@@ -8827,7 +8827,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1741",
     "fact": "Lobsters were once considered so low-class they were fed to prisoners.",
     "question": "Historically, lobster was considered such a low-status food that it was commonly served to which group of people?",
     "answers": {
@@ -8840,7 +8840,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1742",
     "fact": "Babies are born with 300 bones but adults only have 206.",
     "question": "How many bones does a typical adult human have?",
     "answers": {
@@ -8853,7 +8853,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1743",
     "fact": "The Sahara Desert was green and lush just 6000 years ago.",
     "question": "Approximately how many years ago was the Sahara Desert a green and lush region rather than arid desert?",
     "answers": {
@@ -8866,7 +8866,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1744",
     "fact": "Saturn is the only planet in our solar system less dense than water.",
     "question": "Which planet in our solar system is the only one that would float in water because it's less dense than water?",
     "answers": {
@@ -8879,7 +8879,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1745",
     "fact": "The worlds first university was founded in Bologna Italy in 1088.",
     "question": "In what year was the world's first university founded in Bologna, Italy?",
     "answers": {
@@ -8892,7 +8892,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1746",
     "fact": "Tigers have striped skin not just striped fur.",
     "question": "What unique feature do tigers possess that many people don't realize?",
     "answers": {
@@ -8905,7 +8905,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1747",
     "fact": "Trees communicate with each other through underground fungal networks.",
     "question": "Through what underground network do trees communicate with each other?",
     "answers": {
@@ -8918,7 +8918,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1748",
     "fact": "Cleopatra spoke nine languages.",
     "question": "How many languages did Cleopatra speak?",
     "answers": {
@@ -8931,7 +8931,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1749",
     "fact": "A group of rhinos is called a crash.",
     "question": "What is the collective noun for a group of rhinos?",
     "answers": {
@@ -8944,7 +8944,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1750",
     "fact": "Polar bear fur is transparent not white.",
     "question": "What is the actual property of polar bear fur that makes it appear white?",
     "answers": {
@@ -8957,7 +8957,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1751",
     "fact": "A group of zebras is called a dazzle.",
     "question": "What is the collective noun for a group of zebras?",
     "answers": {
@@ -8970,7 +8970,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1752",
     "fact": "The longest English word without a vowel is rhythms.",
     "question": "What is the longest English word that contains no traditional vowels (a, e, i, o, u)?",
     "answers": {
@@ -8983,7 +8983,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1753",
     "fact": "The Sun makes up 99.86% of all the mass in our solar system.",
     "question": "Approximately what percentage of the total mass in our solar system does the Sun account for?",
     "answers": {
@@ -8996,7 +8996,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1754",
     "fact": "The Colosseum in Rome could hold up to 80000 spectators.",
     "question": "Approximately how many spectators could the Colosseum in Rome hold at its full capacity?",
     "answers": {
@@ -9009,7 +9009,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1755",
     "fact": "Goldfish have a memory span of at least three months not three seconds.",
     "question": "How long is the memory span of a goldfish?",
     "answers": {
@@ -9022,7 +9022,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1756",
     "fact": "The Great Pyramid of Giza was the tallest man-made structure for over 3800 years.",
     "question": "For approximately how many years was the Great Pyramid of Giza the tallest man-made structure in the world?",
     "answers": {
@@ -9035,7 +9035,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1757",
     "fact": "Cats have 32 muscles in each ear.",
     "question": "How many muscles does a cat have in each ear?",
     "answers": {
@@ -9048,7 +9048,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1758",
     "fact": "Ants do not sleep like humans. Instead, they take hundreds of brief micro-naps of about one minute each throughout the day, totalling around 4 to 5 hours of rest. Worker ants and queen ants have different rest patterns.",
     "question": "According to scientific research, which of the following statements about ant sleep patterns is true?",
     "answers": {
@@ -9061,7 +9061,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1759",
     "fact": "Angel Falls in Venezuela is the tallest waterfall in the world at 979 metres.",
     "question": "What is the tallest waterfall in the world?",
     "answers": {
@@ -9074,7 +9074,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1760",
     "fact": "Honey bees can recognise human faces.",
     "question": "Which of the following animals has been scientifically proven to be able to recognise human faces?",
     "answers": {
@@ -9087,7 +9087,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1761",
     "fact": "The Great Wall of China took over 1800 years to build.",
     "question": "Approximately how long did it take to construct the Great Wall of China?",
     "answers": {
@@ -9100,7 +9100,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1762",
     "fact": "Sharks are older than Saturns rings.",
     "question": "Which of the following is older?",
     "answers": {
@@ -9113,7 +9113,7 @@ const QUIZ_DATA = [
     "difficulty": "medium"
   },
   {
-    "id": null,
+    "id": "pq1763",
     "fact": "The coldest temperature ever recorded on Earth was minus 89.2 degrees Celsius in Antarctica.",
     "question": "What is the coldest temperature ever recorded on Earth?",
     "answers": {
@@ -9126,7 +9126,7 @@ const QUIZ_DATA = [
     "difficulty": "easy"
   },
   {
-    "id": null,
+    "id": "pq1764",
     "fact": "Snow White and the Seven Dwarfs in 1937 was the first feature-length animated film.",
     "question": "Which film was the first feature-length animated movie?",
     "answers": {
