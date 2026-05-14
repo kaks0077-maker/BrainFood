@@ -55,6 +55,7 @@ export default function LearnScreen({ navigation }) {
   const [apCountdown, setApCountdown] = useState(0);
   const [streakModal, setStreakModal] = useState(false);
   const [todayStreak, setTodayStreak] = useState(0);
+  const [wotd, setWotd] = useState(null);
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const modalScale = useRef(new Animated.Value(0.7)).current;
   const modalOpacity = useRef(new Animated.Value(0)).current;
@@ -62,7 +63,6 @@ export default function LearnScreen({ navigation }) {
   const shareRef = useRef(null);
   const isInitialized = useRef(false);
   const cardRef = useRef(null);
-  const wotd = WOTD_LIST[Math.floor(Date.now() / 86400000) % WOTD_LIST.length];
 
   useEffect(() => {
     loadState();
@@ -132,6 +132,13 @@ export default function LearnScreen({ navigation }) {
       setHistory(s.history || []);
       setGradIdx(s.gradIdx || 0);
 
+      // Pick a random WOTD per user per day
+      let wotdIdx = (s.wotdIdx !== undefined) ? s.wotdIdx : Math.floor(Math.random() * WOTD_LIST.length);
+      if (s.wotdDay !== todayKey) {
+        wotdIdx = Math.floor(Math.random() * WOTD_LIST.length);
+      }
+      setWotd(WOTD_LIST[wotdIdx]);
+
       const usedArr = s.usedIds || [];
       const picked = pickCard(usedArr, 'all');
       // Immediately mark displayed card as seen so it won't repeat if app is closed
@@ -144,6 +151,8 @@ export default function LearnScreen({ navigation }) {
         dailyStreak,
         bestStreak: best,
         usedIds: newUsed,
+        wotdDay: todayKey,
+        wotdIdx,
       }));
 
       isInitialized.current = true;
@@ -328,7 +337,7 @@ export default function LearnScreen({ navigation }) {
             <Text style={[styles.logo, { color: t.text }]}>Brain<Text style={{ color: t.accent }}>Food</Text> 🍕</Text>
             <View style={styles.heroRight}>
               <TouchableOpacity onPress={() => showStreakPopup(streak)} style={[styles.streakBadge, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
-                <Text style={styles.streakBadgeTxt}>{getStreakEmoji(streak)} {streak}</Text>
+                <Text style={[styles.streakBadgeTxt, { color: t.text }]}>{getStreakEmoji(streak)} {streak}</Text>
               </TouchableOpacity>
               <TouchableOpacity onPress={toggleTheme} style={[styles.themeBtn, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
                 <Text style={styles.themeBtnTxt}>{t.mode === 'dark' ? '☀️' : '🌙'}</Text>
@@ -354,13 +363,15 @@ export default function LearnScreen({ navigation }) {
         </TouchableOpacity>
 
         {/* WORD OF THE DAY */}
-        <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
-          <Text style={[styles.wotdLbl, { color: t.textMuted }]}>{'📖 WORD OF THE DAY'}</Text>
-          <Text style={[styles.wotdWord, { color: t.text }]}>{wotd.word}</Text>
-          <Text style={[styles.wotdPhon, { color: t.textSub }]}>{wotd.phonetic}</Text>
-          <Text style={[styles.wotdDef, { color: t.textSub }]}>{wotd.def}</Text>
-          <Text style={[styles.wotdEx, { color: t.textMuted }]}>{wotd.example}</Text>
-        </View>
+        {wotd && (
+          <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
+            <Text style={[styles.wotdLbl, { color: t.textMuted }]}>{'📖 WORD OF THE DAY'}</Text>
+            <Text style={[styles.wotdWord, { color: t.text }]}>{wotd.word}</Text>
+            <Text style={[styles.wotdPhon, { color: t.textSub }]}>{wotd.phonetic}</Text>
+            <Text style={[styles.wotdDef, { color: t.textSub }]}>{wotd.def}</Text>
+            <Text style={[styles.wotdEx, { color: t.textMuted }]}>{wotd.example}</Text>
+          </View>
+        )}
 
         {/* AUTOPLAY BAR */}
         <View style={[styles.apBar, { backgroundColor: t.card, borderColor: t.cardBorder }, autoplay && { backgroundColor: t.mode === 'dark' ? 'rgba(255,193,7,0.08)' : 'rgba(230,168,0,0.1)', borderColor: 'rgba(255,193,7,0.3)' }]}>

@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
 import { StatusBar, Text } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
 import { ThemeContext, DARK, LIGHT } from './ThemeContext';
@@ -42,11 +42,12 @@ const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 function TabNavigator({ theme }) {
+  const insets = useSafeAreaInsets();
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarStyle: { backgroundColor: theme.tabBg, borderTopColor: theme.tabBorder, height: 60, paddingBottom: 8 },
+        tabBarStyle: { backgroundColor: theme.tabBg, borderTopColor: theme.tabBorder, height: 60 + insets.bottom, paddingBottom: insets.bottom + 8 },
         tabBarActiveTintColor: theme.accent,
         tabBarInactiveTintColor: theme.textMuted,
         tabBarLabelStyle: { fontSize: 11, fontWeight: '800', letterSpacing: 0.5 },
