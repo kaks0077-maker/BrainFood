@@ -3,6 +3,13 @@
     "name": "BrainFood",
     "slug": "brainfood",
     "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/99246801-7882-4c3a-a678-a9a81b5d4704"
+    },
     "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",

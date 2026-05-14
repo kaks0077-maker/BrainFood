@@ -7,12 +7,17 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
+import * as Updates from 'expo-updates';
+import Constants from 'expo-constants';
 import { ThemeContext, DARK, LIGHT } from './ThemeContext';
 import FavoritesScreen from './screens/FavoritesScreen';
 import LearnScreen from './screens/LearnScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
 import PubQuizScreen from './screens/PubQuizScreen';
 import StatsScreen from './screens/StatsScreen';
+import UpdateModal from './components/UpdateModal';
+
+const VERSION_URL = 'https://raw.githubusercontent.com/kaks0077-maker/BrainFood/main/version.json';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -65,15 +70,40 @@ function TabNavigator() {
   );
 }
 
+async function checkOTAUpdate() {
+  try {
+    if (!Updates.isEmbeddedLaunch) return;
+    const update = await Updates.checkForUpdateAsync();
+    if (update.isAvailable) {
+      await Updates.fetchUpdateAsync();
+      await Updates.reloadAsync();
+    }
+  } catch (_) {}
+}
+
+async function checkStoreUpdate(setUpdateInfo) {
+  try {
+    const res = await fetch(VERSION_URL);
+    const remote = await res.json();
+    const localCode = Constants.expoConfig?.android?.versionCode ?? 0;
+    if (remote.versionCode > localCode) {
+      setUpdateInfo({ visible: true, message: remote.message });
+    }
+  } catch (_) {}
+}
+
 export default function App() {
   const [theme, setTheme] = useState(DARK);
   const [onboardingDone, setOnboardingDone] = useState(null);
+  const [updateInfo, setUpdateInfo] = useState({ visible: false, message: '' });
   const toggleTheme = () => setTheme(t => t.mode === 'dark' ? LIGHT : DARK);
 
   useEffect(() => {
     AsyncStorage.getItem('bf_onboarding_done')
       .then(val => setOnboardingDone(val === 'true'))
       .catch(() => setOnboardingDone(false));
+    checkOTAUpdate();
+    checkStoreUpdate(setUpdateInfo);
   }, []);
 
   const finishOnboarding = async (notifHour) => {
@@ -111,6 +141,11 @@ export default function App() {
             <Stack.Screen name="PubQuiz" component={PubQuizScreen} />
           </Stack.Navigator>
         </NavigationContainer>
+        <UpdateModal
+          visible={updateInfo.visible}
+          message={updateInfo.message}
+          onDismiss={() => setUpdateInfo(u => ({ ...u, visible: false }))}
+        />
       </ThemeContext.Provider>
     </SafeAreaProvider>
   );
