@@ -14,6 +14,7 @@ import FavoritesScreen from './screens/FavoritesScreen';
 import LearnScreen from './screens/LearnScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
 import PubQuizScreen from './screens/PubQuizScreen';
+import MultiplayerScreen from './screens/MultiplayerScreen';
 import StatsScreen from './screens/StatsScreen';
 import UpdateModal from './components/UpdateModal';
 
@@ -146,6 +147,7 @@ export default function App() {
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Main" component={TabNavigator} />
             <Stack.Screen name="PubQuiz" component={PubQuizScreen} />
+            <Stack.Screen name="Multiplayer" component={MultiplayerScreen} />
           </Stack.Navigator>
         </NavigationContainer>
         <UpdateModal

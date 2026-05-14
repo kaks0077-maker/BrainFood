@@ -375,6 +375,21 @@ export default function LearnScreen({ navigation }) {
           </View>
         </TouchableOpacity>
 
+        {/* PLAY VS FRIEND BANNER */}
+        <TouchableOpacity
+          onPress={() => { Speech.stop(); setSpeaking(false); stopAutoplay(); setAutoplay(false); navigation.navigate('Multiplayer'); }}
+          style={{ borderRadius: 18, overflow: 'hidden', borderWidth: 1.5, borderColor: 'rgba(0,210,255,0.45)', backgroundColor: '#060d14' }}
+          activeOpacity={0.85}
+        >
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, paddingHorizontal: 18 }}>
+            <View>
+              <Text style={{ color: '#00d2ff', fontWeight: '900', fontSize: 13, letterSpacing: 1.5 }}>{'⚡ PLAY VS FRIEND'}</Text>
+              <Text style={{ color: 'rgba(0,210,255,0.55)', fontWeight: '700', fontSize: 11, marginTop: 2 }}>Real-time quiz battle — who's smarter?</Text>
+            </View>
+            <Text style={{ fontSize: 28 }}>🎮</Text>
+          </View>
+        </TouchableOpacity>
+
         {/* WORD OF THE DAY */}
         {wotd && (
           <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
