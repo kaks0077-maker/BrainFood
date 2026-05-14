@@ -83,12 +83,12 @@ export default function StatsScreen() {
 
           <View style={[styles.correctWrongCard, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
             <View style={styles.cwItem}>
-              <Text style={styles.cwNum}>{'✅'} {quiz.correct}</Text>
+              <Text style={[styles.cwNum, { color: t.text }]}>{'✅'} {quiz.correct}</Text>
               <Text style={[styles.cwLabel, { color: t.textMuted }]}>CORRECT</Text>
             </View>
             <View style={[styles.cwDivider, { backgroundColor: t.cardBorder }]} />
             <View style={styles.cwItem}>
-              <Text style={styles.cwNum}>{'❌'} {quiz.wrong}</Text>
+              <Text style={[styles.cwNum, { color: t.text }]}>{'❌'} {quiz.wrong}</Text>
               <Text style={[styles.cwLabel, { color: t.textMuted }]}>WRONG</Text>
             </View>
             <View style={[styles.cwDivider, { backgroundColor: t.cardBorder }]} />
@@ -117,7 +117,7 @@ export default function StatsScreen() {
           {/* RECENT SESSIONS */}
           <Text style={[styles.sectionLabel, { color: t.textMuted, marginTop: 4 }]}>{'🕐 RECENT SESSIONS'}</Text>
           {recentSessions.map((s, i) => (
-            <View key={i} style={[styles.sessionRow, { backgroundColor: t.card, borderColor: i === 0 ? 'rgba(255,215,0,0.2)' : t.cardBorder }]}>
+            <View key={s.ts} style={[styles.sessionRow, { backgroundColor: t.card, borderColor: i === 0 ? 'rgba(255,215,0,0.2)' : t.cardBorder }]}>
               <View style={styles.sessionLeft}>
                 <Text style={styles.sessionEmoji}>{s.accuracy >= 80 ? '🏆' : s.accuracy >= 60 ? '🎯' : '💪'}</Text>
                 <View>
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
   emptyTxt: { fontSize: 13, fontWeight: '700', textAlign: 'center', lineHeight: 22 },
   correctWrongCard: { borderRadius: 16, borderWidth: 1, flexDirection: 'row', overflow: 'hidden' },
   cwItem: { flex: 1, alignItems: 'center', paddingVertical: 16, gap: 4 },
-  cwNum: { fontSize: 18, fontWeight: '900', color: '#fff' },
+  cwNum: { fontSize: 18, fontWeight: '900' },
   cwLabel: { fontSize: 9, fontWeight: '800', letterSpacing: 0.8 },
   cwDivider: { width: 1 },
   bestCard: { borderRadius: 16, borderWidth: 1, padding: 14, gap: 8 },

@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import {
-  Animated, Dimensions, ScrollView, StyleSheet,
-  Text, TouchableOpacity, View,
+  Animated, ScrollView, StyleSheet,
+  Text, TouchableOpacity, useWindowDimensions, View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
-const { width } = Dimensions.get('window');
 
 const SLIDES = [
   {
@@ -88,6 +86,7 @@ function WheelPicker({ items, selectedIndex, onSelect, accent, width: w }) {
 }
 
 export default function OnboardingScreen({ onDone }) {
+  const { width } = useWindowDimensions();
   const [page, setPage] = useState(0);
   const [hourIdx, setHourIdx] = useState(9);
   const [periodIdx, setPeriodIdx] = useState(0);

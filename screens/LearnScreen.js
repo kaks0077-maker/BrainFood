@@ -60,6 +60,7 @@ export default function LearnScreen({ navigation }) {
   const modalScale = useRef(new Animated.Value(0.7)).current;
   const modalOpacity = useRef(new Animated.Value(0)).current;
   const apInterval = useRef(null);
+  const apStartTimer = useRef(null);
   const shareRef = useRef(null);
   const isInitialized = useRef(false);
   const cardRef = useRef(null);
@@ -76,13 +77,13 @@ export default function LearnScreen({ navigation }) {
 
   function getTodayKey() {
     const d = new Date();
-    return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
   }
 
   function getYesterdayKey() {
     const d = new Date();
     d.setDate(d.getDate() - 1);
-    return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
   }
 
   function showStreakPopup(streakVal) {
@@ -225,10 +226,11 @@ export default function LearnScreen({ navigation }) {
     setUsedIds(finalUsed);
     setSeen(newSeen);
     setGradIdx(newGrad);
-    const newHist = [{ card: picked, ts: Date.now() }, ...history].slice(0, 200);
+    const newHist = [{ card: card, ts: Date.now() }, ...history].slice(0, 200);
     setHistory(newHist);
     saveState({ usedIds: finalUsed, seen: newSeen, gradIdx: newGrad, history: newHist });
-    if (autoplay) setTimeout(() => startAutoplay(), 400);
+    clearTimeout(apStartTimer.current);
+    if (autoplay) apStartTimer.current = setTimeout(() => startAutoplay(), 400);
   }
 
   function toggleFav() {
@@ -283,6 +285,7 @@ export default function LearnScreen({ navigation }) {
   function stopAutoplay() {
     Speech.stop();
     clearInterval(apInterval.current);
+    clearTimeout(apStartTimer.current);
     setApCountdown(0);
   }
 
@@ -412,7 +415,7 @@ export default function LearnScreen({ navigation }) {
                 </View>
                 <Text style={styles.diff}>{DIFF_LABELS[card.diff]}</Text>
               </View>
-              <Text style={styles.cardNum}>#{seen}</Text>
+              <Text style={styles.cardNum}>#{seen + 1}</Text>
             </View>
             <View style={styles.hookBox}>
               <Text style={styles.hookTxt}>"{card.hook}"</Text>

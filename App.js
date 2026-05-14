@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -42,8 +42,9 @@ async function scheduleDailyNotification(hour = 9) {
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-function TabNavigator({ theme }) {
+function TabNavigator() {
   const insets = useSafeAreaInsets();
+  const { theme } = useContext(ThemeContext);
   return (
     <Tab.Navigator
       screenOptions={{
@@ -70,7 +71,9 @@ export default function App() {
   const toggleTheme = () => setTheme(t => t.mode === 'dark' ? LIGHT : DARK);
 
   useEffect(() => {
-    AsyncStorage.getItem('bf_onboarding_done').then(val => setOnboardingDone(val === 'true'));
+    AsyncStorage.getItem('bf_onboarding_done')
+      .then(val => setOnboardingDone(val === 'true'))
+      .catch(() => setOnboardingDone(false));
   }, []);
 
   const finishOnboarding = async (notifHour) => {
@@ -104,9 +107,7 @@ export default function App() {
         />
         <NavigationContainer>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="Main">
-              {() => <TabNavigator theme={theme} />}
-            </Stack.Screen>
+            <Stack.Screen name="Main" component={TabNavigator} />
             <Stack.Screen name="PubQuiz" component={PubQuizScreen} />
           </Stack.Navigator>
         </NavigationContainer>

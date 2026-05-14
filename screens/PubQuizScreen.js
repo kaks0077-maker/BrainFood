@@ -67,7 +67,7 @@ export default function PubQuizScreen({ navigation }) {
   const q = questions[index];
 
   const handleAnswer = useCallback((letter) => {
-    if (selected) return;
+    if (selected !== null) return;
     setSelected(letter);
     if (letter === q.correct) setCorrect(c => c + 1);
     else setWrong(w => w + 1);
