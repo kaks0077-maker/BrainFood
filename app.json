@@ -28,7 +28,7 @@
         "backgroundColor": "#0d1117"
       },
       "package": "com.brainfoodapp.main",
-      "versionCode": 3,
+      "versionCode": 5,
       "permissions": [
         "RECEIVE_BOOT_COMPLETED",
         "SCHEDULE_EXACT_ALARM",

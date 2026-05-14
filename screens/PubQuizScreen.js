@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import * as Haptics from 'expo-haptics';
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  StatusBar, Animated, ScrollView
+  Animated, ScrollView
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -74,8 +75,8 @@ export default function PubQuizScreen({ navigation }) {
   const handleAnswer = useCallback((letter) => {
     if (selected !== null) return;
     setSelected(letter);
-    if (letter === q.correct) setCorrect(c => c + 1);
-    else setWrong(w => w + 1);
+    if (letter === q.correct) { setCorrect(c => c + 1); Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success); }
+    else { setWrong(w => w + 1); Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error); }
     // Persist this question as seen so it doesn't repeat next session
     AsyncStorage.getItem('bf_quiz_seen').then(raw => {
       const seenIds = raw ? JSON.parse(raw) : [];
@@ -148,7 +149,6 @@ export default function PubQuizScreen({ navigation }) {
     const emoji = accuracy >= 80 ? '🏆' : accuracy >= 60 ? '🎯' : '💪';
     return (
       <SafeAreaView style={styles.safe}>
-        <StatusBar barStyle="light-content" backgroundColor="#0a0a0f" />
         <View style={styles.header}>
           <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
             <Text style={styles.backText}>← Back</Text>
@@ -181,8 +181,6 @@ export default function PubQuizScreen({ navigation }) {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" backgroundColor="#0a0a0f" />
-
       {/* HEADER */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
@@ -213,6 +211,14 @@ export default function PubQuizScreen({ navigation }) {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
+        {/* PROGRESS BAR */}
+        <View style={styles.progressWrap}>
+          <View style={styles.progressTrack}>
+            <View style={[styles.progressFill, { width: `${Math.min(((index) / Math.max(questions.length, 1)) * 100, 100)}%` }]} />
+          </View>
+          <Text style={styles.progressTxt}>Q{index + 1}</Text>
+        </View>
+
         {/* QUESTION CARD */}
         <View style={styles.card}>
           <View style={styles.cardTop}>
@@ -339,6 +345,10 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
     gap: 10,
   },
+  progressWrap: { flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 2 },
+  progressTrack: { flex: 1, height: 4, backgroundColor: 'rgba(255,215,0,0.1)', borderRadius: 2, overflow: 'hidden' },
+  progressFill: { height: '100%', backgroundColor: 'gold', borderRadius: 2 },
+  progressTxt: { fontSize: 11, color: 'rgba(255,215,0,0.5)', fontWeight: '800', width: 30 },
   card: {
     backgroundColor: '#12120a',
     borderRadius: 20,

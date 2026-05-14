@@ -1,4 +1,5 @@
 ﻿import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Haptics from 'expo-haptics';
 import * as Speech from 'expo-speech';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -70,6 +71,7 @@ export default function LearnScreen({ navigation }) {
     loadState();
     const sub = AppState.addEventListener('change', (nextState) => {
       if (nextState === 'active' && isInitialized.current) checkDailyStreak();
+      if (nextState === 'background' || nextState === 'inactive') { Speech.stop(); setSpeaking(false); stopAutoplay(); setAutoplay(false); }
     });
     return () => { sub.remove(); stopAutoplay(); };
   }, []);
@@ -138,7 +140,10 @@ export default function LearnScreen({ navigation }) {
       // Pick a random WOTD per user per day
       let wotdIdx = (s.wotdIdx !== undefined) ? s.wotdIdx : Math.floor(Math.random() * WOTD_LIST.length);
       if (s.wotdDay !== todayKey) {
-        wotdIdx = Math.floor(Math.random() * WOTD_LIST.length);
+        let newIdx;
+        do { newIdx = Math.floor(Math.random() * WOTD_LIST.length); }
+        while (newIdx === s.wotdIdx && WOTD_LIST.length > 1);
+        wotdIdx = newIdx;
       }
       setWotd(WOTD_LIST[wotdIdx]);
 
@@ -210,6 +215,7 @@ export default function LearnScreen({ navigation }) {
   }
 
   function nextCard() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     Speech.stop();
     setSpeaking(false);
     clearInterval(apInterval.current);
@@ -237,6 +243,7 @@ export default function LearnScreen({ navigation }) {
 
   function toggleFav() {
     if (!card) return;
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     const newFavs = favs.includes(card.id) ? favs.filter(f => f !== card.id) : [...favs, card.id];
     setFavs(newFavs);
     saveState({ favs: newFavs });
@@ -256,6 +263,7 @@ export default function LearnScreen({ navigation }) {
   function speakCard() {
     if (!card) return;
     if (speaking) { Speech.stop(); setSpeaking(false); return; }
+    Speech.stop();
     Speech.speak(card.fact, {
       rate: 0.88, pitch: 1.0, language: 'en-US',
       onDone: () => setSpeaking(false),
@@ -371,7 +379,12 @@ export default function LearnScreen({ navigation }) {
         {wotd && (
           <View style={[styles.wotd, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
             <Text style={[styles.wotdLbl, { color: t.textMuted }]}>{'📖 WORD OF THE DAY'}</Text>
-            <Text style={[styles.wotdWord, { color: t.text }]}>{wotd.word}</Text>
+            <View style={styles.wotdWordRow}>
+              <Text style={[styles.wotdWord, { color: t.text }]}>{wotd.word}</Text>
+              <TouchableOpacity onPress={() => { Speech.stop(); setSpeaking(false); Speech.speak(wotd.word, { language: 'en', rate: 0.8 }); }} style={styles.wotdSpeakBtn}>
+                <Text style={styles.wotdSpeakIcon}>🔊</Text>
+              </TouchableOpacity>
+            </View>
             <Text style={[styles.wotdPhon, { color: t.textSub }]}>{wotd.phonetic}</Text>
             <Text style={[styles.wotdDef, { color: t.textSub }]}>{wotd.def}</Text>
             <Text style={[styles.wotdEx, { color: t.textMuted }]}>{wotd.example}</Text>
@@ -397,7 +410,7 @@ export default function LearnScreen({ navigation }) {
             </View>
             <Switch
               value={autoplay}
-              onValueChange={v => { setAutoplay(v); if (!v) stopAutoplay(); }}
+              onValueChange={v => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light); setAutoplay(v); if (!v) stopAutoplay(); }}
               trackColor={{ false: t.mode === 'dark' ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)', true: '#ffd93d' }}
               thumbColor="#fff"
             />
@@ -479,7 +492,10 @@ const styles = StyleSheet.create({
   themeBtnTxt: { fontSize: 18 },
   wotd: { borderWidth: 1, borderRadius: 16, padding: 14, gap: 3 },
   wotdLbl: { fontSize: 10, fontWeight: '900', letterSpacing: 1.2 },
+  wotdWordRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   wotdWord: { fontSize: 22, fontWeight: '900' },
+  wotdSpeakBtn: { padding: 4 },
+  wotdSpeakIcon: { fontSize: 18 },
   wotdPhon: { fontSize: 12, fontStyle: 'italic' },
   wotdDef: { fontSize: 13, fontWeight: '700', lineHeight: 20, marginTop: 4 },
   wotdEx: { fontSize: 12, fontWeight: '600', fontStyle: 'italic' },

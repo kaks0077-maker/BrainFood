@@ -96,12 +96,18 @@ export default function App() {
   const [theme, setTheme] = useState(DARK);
   const [onboardingDone, setOnboardingDone] = useState(null);
   const [updateInfo, setUpdateInfo] = useState({ visible: false, message: '' });
-  const toggleTheme = () => setTheme(t => t.mode === 'dark' ? LIGHT : DARK);
+
+  const toggleTheme = () => {
+    const next = theme.mode === 'dark' ? LIGHT : DARK;
+    setTheme(next);
+    AsyncStorage.setItem('bf_theme', next.mode).catch(() => {});
+  };
 
   useEffect(() => {
-    AsyncStorage.getItem('bf_onboarding_done')
-      .then(val => setOnboardingDone(val === 'true'))
-      .catch(() => setOnboardingDone(false));
+    AsyncStorage.multiGet(['bf_onboarding_done', 'bf_theme']).then(([[, ob], [, th]]) => {
+      setOnboardingDone(ob === 'true');
+      if (th === 'light') setTheme(LIGHT);
+    }).catch(() => setOnboardingDone(false));
     checkOTAUpdate();
     checkStoreUpdate(setUpdateInfo);
   }, []);
@@ -121,7 +127,7 @@ export default function App() {
     return (
       <SafeAreaProvider>
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
-          <StatusBar style="light" backgroundColor="#0d1117" />
+          <StatusBar style="light" backgroundColor="#0d1117" hidden />
           <OnboardingScreen onDone={finishOnboarding} />
         </ThemeContext.Provider>
       </SafeAreaProvider>
@@ -134,6 +140,7 @@ export default function App() {
         <StatusBar
           style={theme.mode === 'dark' ? 'light' : 'dark'}
           backgroundColor={theme.bg}
+          hidden
         />
         <NavigationContainer>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
