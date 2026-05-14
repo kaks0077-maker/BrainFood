@@ -41,7 +41,7 @@ async function scheduleDailyNotification(hour = 9) {
       content: { title: msg.title, body: msg.body, sound: true },
       trigger: { type: 'daily', hour, minute: 0 },
     });
-  } catch (e) { console.log('Notif error:', e); }
+  } catch (_) {}
 }
 
 const Tab = createBottomTabNavigator();
