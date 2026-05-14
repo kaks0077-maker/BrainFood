@@ -72,7 +72,7 @@ function TabNavigator() {
 
 async function checkOTAUpdate() {
   try {
-    if (!Updates.isEmbeddedLaunch) return;
+    if (__DEV__) return;
     const update = await Updates.checkForUpdateAsync();
     if (update.isAvailable) {
       await Updates.fetchUpdateAsync();

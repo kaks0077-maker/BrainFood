@@ -64,6 +64,7 @@ export default function LearnScreen({ navigation }) {
   const shareRef = useRef(null);
   const isInitialized = useRef(false);
   const cardRef = useRef(null);
+  const nextCardRef = useRef(null);
 
   useEffect(() => {
     loadState();
@@ -73,6 +74,7 @@ export default function LearnScreen({ navigation }) {
     return () => { sub.remove(); stopAutoplay(); };
   }, []);
   useEffect(() => { cardRef.current = card; }, [card]);
+  useEffect(() => { nextCardRef.current = nextCard; });
   useEffect(() => { if (autoplay && card) startAutoplay(); else stopAutoplay(); }, [autoplay]);
 
   function getTodayKey() {
@@ -275,7 +277,7 @@ export default function LearnScreen({ navigation }) {
         apInterval.current = setInterval(() => {
           secs--;
           setApCountdown(secs);
-          if (secs <= 0) { clearInterval(apInterval.current); nextCard(); }
+          if (secs <= 0) { clearInterval(apInterval.current); nextCardRef.current(); }
         }, 1000);
       },
       onError: () => {},
