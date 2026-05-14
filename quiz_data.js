@@ -10913,7 +10913,7 @@ const QUIZ_DATA = [
     "id": "pq957",
     "question": "Which country has the second largest population in the world?",
     "answers": { "A": "China", "B": "USA", "C": "India", "D": "Indonesia" },
-    "correct": "C",
+    "correct": "A",
     "difficulty": "medium"
   },
   {
