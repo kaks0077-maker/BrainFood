@@ -1,8 +1,8 @@
 const QUIZ_DATA = [
   {
     "id": "pq1",
-    "fact": "Ireland has won the Eurovision Song Contest 7 times — 1970, 1980, 1987, 1992, 1993, 1994, and 1996. Sweden is tied with 7 wins as of 2023. Ireland's three consecutive wins (1992–94) remain unmatched.",
-    "question": "Which country has won the Eurovision Song Contest 7 times, tied with Sweden as of 2023?",
+    "fact": "Ireland has won the Eurovision Song Contest 7 times — 1970, 1980, 1987, 1992, 1993, 1994, and 1996. Sweden holds the record with 8 wins, including Loreen's second victory in 2023. Ireland's three consecutive wins (1992–94) remain unmatched by any country.",
+    "question": "Which country has won the Eurovision Song Contest 7 times, the second most of any country behind Sweden's record 8 wins?",
     "answers": {
       "A": "Ireland",
       "B": "Norway",
@@ -4759,7 +4759,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq369",
-    "fact": "The canine nose has about 300 million olfactory receptors compared to about 6 million in humans. The part of a dog brain devoted to smell is about 40 times greater proportionally than in humans.",
+    "fact": "The canine nose has about 300 million olfactory receptors compared to about 6 million in humans. That is 300 ÷ 6 = 50 times more. The part of a dog brain devoted to smell is about 40 times greater proportionally than in humans.",
     "question": "Approximately how many times more olfactory receptors does a dog's nose have compared to a human's nose?",
     "answers": {
       "A": "50 times more",
@@ -4767,7 +4767,7 @@ const QUIZ_DATA = [
       "C": "6 times more",
       "D": "40 times more"
     },
-    "correct": "B",
+    "correct": "A",
     "difficulty": "easy"
   },
   {
@@ -7216,7 +7216,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq557",
-    "fact": "Hippos are not aquatic but spend up to 16 hours per day submerged in water or mud to stay cool and prevent sunburn. They emerge at night to graze on grass. They can hold their breath for 5 minutes.",
+    "fact": "Hippos are classified as semi-aquatic mammals. They spend up to 16 hours per day submerged in water or mud to stay cool and prevent sunburn, but they cannot breathe underwater and must surface regularly. They emerge at night to graze on grass.",
     "question": "Despite spending up to 16 hours a day submerged in water, hippos are technically classified as which type of animal?",
     "answers": {
       "A": "Semi-aquatic mammals",
@@ -7224,7 +7224,7 @@ const QUIZ_DATA = [
       "C": "Terrestrial mammals that are excellent swimmers",
       "D": "Amphibians"
     },
-    "correct": "C",
+    "correct": "A",
     "difficulty": "medium"
   },
   {
@@ -8737,12 +8737,12 @@ const QUIZ_DATA = [
   },
   {
     "id": null,
-    "fact": "The shortest commercial flight in the world lasts just 57 seconds between two Scottish islands.",
-    "question": "What is the duration of the world's shortest commercial flight, which operates between two Scottish islands?",
+    "fact": "The shortest commercial flight in the world operates between Westray and Papa Westray in Scotland's Orkney Islands, lasting about 74 seconds. The record time with a tailwind is 47 seconds. The islands are only 2.7km apart.",
+    "question": "What is the approximate duration of the world's shortest commercial flight, operating between Westray and Papa Westray in Scotland?",
     "answers": {
-      "A": "57 seconds",
+      "A": "About 74 seconds",
       "B": "2 minutes and 15 seconds",
-      "C": "90 seconds",
+      "C": "About 57 seconds",
       "D": "3 minutes and 30 seconds"
     },
     "correct": "A",
@@ -9049,13 +9049,13 @@ const QUIZ_DATA = [
   },
   {
     "id": null,
-    "fact": "Ants never sleep.",
+    "fact": "Ants do not sleep like humans. Instead, they take hundreds of brief micro-naps of about one minute each throughout the day, totalling around 4 to 5 hours of rest. Worker ants and queen ants have different rest patterns.",
     "question": "According to scientific research, which of the following statements about ant sleep patterns is true?",
     "answers": {
-      "A": "Ants never sleep",
+      "A": "Ants take hundreds of brief micro-naps throughout the day totalling about 4-5 hours of rest",
       "B": "Ants sleep for about 8 hours per day like humans",
       "C": "Ants only sleep during winter months",
-      "D": "Ants sleep for several hours each night but are inactive during the day"
+      "D": "Ants never sleep or rest at all"
     },
     "correct": "A",
     "difficulty": "easy"
