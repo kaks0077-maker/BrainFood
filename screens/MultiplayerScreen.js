@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   View, Text, TouchableOpacity, TextInput,
-  StyleSheet, ScrollView
+  StyleSheet, ScrollView, BackHandler
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -59,15 +59,20 @@ export default function MultiplayerScreen({ navigation }) {
   const timerRef = useRef(null);
   const roomRef = useRef(null);
   const advancedRef = useRef(false);
+  const answeringRef = useRef(false);
+  const startingRef = useRef(false);
   const isHostRef = useRef(false);
   const roomCodeRef = useRef('');
   const myIdRef = useRef('');
+  const phaseRef = useRef('setup');
 
   useEffect(() => {
     AsyncStorage.getItem('bf_player_name').then(n => { if (n) setNameInput(n); });
     getPlayerId().then(id => { setMyId(id); myIdRef.current = id; });
     return cleanup;
   }, []);
+
+  useEffect(() => { phaseRef.current = phase; }, [phase]);
 
   // Phase transitions driven by Firebase
   useEffect(() => {
@@ -89,8 +94,21 @@ export default function MultiplayerScreen({ navigation }) {
     if (phase !== 'playing' || !roomData?.questionStartedAt) return;
     setMyAnswer(null);
     advancedRef.current = false;
+    answeringRef.current = false;
     startTimer(roomData.questionStartedAt);
   }, [phase, roomData?.currentQ, roomData?.questionStartedAt]);
+
+  // Android hardware back — same cleanup as the Leave button
+  useEffect(() => {
+    const sub = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (phase === 'create' || phase === 'lobby' || phase === 'playing') {
+        leaveGame();
+        return true;
+      }
+      return false;
+    });
+    return () => sub.remove();
+  }, [phase]);
 
   // Both answered → advance early (host only)
   useEffect(() => {
@@ -130,7 +148,10 @@ export default function MultiplayerScreen({ navigation }) {
     roomRef.current = r;
     onValue(r, snap => {
       const data = snap.val();
-      if (!data) { setError('Room was closed.'); cleanup(); setRoomData(null); setPhase('setup'); return; }
+      if (!data) {
+        if (phaseRef.current === 'results') return;
+        setError('Room was closed.'); cleanup(); setRoomData(null); setPhase('setup'); return;
+      }
       setRoomData(data);
     });
   }
@@ -192,7 +213,8 @@ export default function MultiplayerScreen({ navigation }) {
   }
 
   async function startGame() {
-    if (!isHostRef.current) return;
+    if (!isHostRef.current || startingRef.current) return;
+    startingRef.current = true;
     const selected = shuffle(QUIZ_DATA).slice(0, NUM_QUESTIONS).map(q => q.id);
     await update(ref(db, `rooms/${roomCodeRef.current}`), {
       status: 'playing',
@@ -204,10 +226,11 @@ export default function MultiplayerScreen({ navigation }) {
   }
 
   async function handleAnswer(letter) {
-    if (myAnswer !== null || !roomData) return;
+    if (myAnswer !== null || !roomData || answeringRef.current) return;
+    answeringRef.current = true;
     const currentQ = roomData.currentQ ?? 0;
     const q = getQuestion(currentQ);
-    if (!q) return;
+    if (!q) { answeringRef.current = false; return; }
     const correct = letter === q.correct;
     const elapsed = (Date.now() - roomData.questionStartedAt) / 1000;
     const remaining = Math.max(0, QUESTION_TIME - elapsed);
@@ -225,6 +248,7 @@ export default function MultiplayerScreen({ navigation }) {
 
   async function doAdvance(qIdx) {
     const code = roomCodeRef.current;
+    if (!code) return;
     if (qIdx + 1 >= NUM_QUESTIONS) {
       await update(ref(db, `rooms/${code}`), { status: 'finished' });
     } else {
@@ -240,8 +264,12 @@ export default function MultiplayerScreen({ navigation }) {
     const code = roomCodeRef.current;
     if (isHostRef.current && code) {
       try { await remove(ref(db, `rooms/${code}`)); } catch (_) {}
+    } else if (!isHostRef.current && code && phase === 'lobby') {
+      try { await remove(ref(db, `rooms/${code}/players/${myIdRef.current}`)); } catch (_) {}
     }
-    setRoomData(null); setRoomCode(''); setIsHost(false);
+    setMyAnswer(null);
+    setError('');
+    setRoomData(null); setRoomCode(''); setCodeInput(''); setIsHost(false);
     isHostRef.current = false; roomCodeRef.current = '';
     setPhase('setup');
   }
@@ -291,7 +319,7 @@ export default function MultiplayerScreen({ navigation }) {
     return (
       <SafeAreaView style={[styles.safe, { backgroundColor: t.bg }]}>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => phase === 'join' ? setPhase('setup') : navigation.goBack()} style={styles.backBtn}>
+          <TouchableOpacity onPress={() => { if (phase === 'join') { setError(''); setPhase('setup'); } else navigation.goBack(); }} style={styles.backBtn}>
             <Text style={[styles.backTxt, { color: t.textMuted }]}>← Back</Text>
           </TouchableOpacity>
           <Text style={[styles.headerTitle, { color: t.text }]}>⚔️ Play vs Friend</Text>
@@ -490,8 +518,8 @@ export default function MultiplayerScreen({ navigation }) {
               </Text>
               <Text style={styles.resultOpp}>
                 {oppAns
-                  ? (oppAns.correct ? `${opponent?.name}: ✅ +${oppAns.pts}` : `${opponent?.name}: ❌`)
-                  : `${opponent?.name}: thinking…`}
+                  ? (oppAns.correct ? `${opponent?.name || '?'}: ✅ +${oppAns.pts}` : `${opponent?.name || '?'}: ❌`)
+                  : `${opponent?.name || '?'}: thinking…`}
               </Text>
             </View>
           )}
@@ -513,7 +541,7 @@ export default function MultiplayerScreen({ navigation }) {
         <View style={styles.centerContent}>
           <Text style={{ fontSize: 72, marginBottom: 16 }}>{isDraw ? '🤝' : iWon ? '🏆' : '💪'}</Text>
           <Text style={[styles.resultTitle, { color: t.text }]}>
-            {isDraw ? "It's a Draw!" : iWon ? 'You Win! 🎉' : `${winner?.name} Wins!`}
+            {isDraw ? "It's a Draw!" : iWon ? 'You Win! 🎉' : `${winner?.name || '?'} Wins!`}
           </Text>
           {players.map((p, i) => (
             <View key={p.id} style={[styles.playerRow, { backgroundColor: t.card, borderColor: i === 0 && !isDraw ? t.accent : t.cardBorder }]}>
