@@ -80,6 +80,7 @@ export default function MultiplayerScreen({ navigation }) {
   const phaseRef = useRef('setup');
   const sessionResultSavedRef = useRef(false);
   const rematchingRef = useRef(false);
+  const usedQuestionsRef = useRef([]);
 
   useEffect(() => {
     AsyncStorage.getItem('bf_player_name').then(n => { if (n) setNameInput(n); });
@@ -255,10 +256,19 @@ export default function MultiplayerScreen({ navigation }) {
     setLoading(false);
   }
 
+  function pickFreshQuestions() {
+    const used = usedQuestionsRef.current;
+    const available = QUIZ_DATA.filter(q => !used.includes(q.id));
+    const pool = available.length >= NUM_QUESTIONS ? available : QUIZ_DATA;
+    const selected = shuffle(pool).slice(0, NUM_QUESTIONS).map(q => q.id);
+    usedQuestionsRef.current = [...used, ...selected];
+    return selected;
+  }
+
   async function startGame() {
     if (!isHostRef.current || startingRef.current) return;
     startingRef.current = true;
-    const selected = shuffle(QUIZ_DATA).slice(0, NUM_QUESTIONS).map(q => q.id);
+    const selected = pickFreshQuestions();
     await update(ref(db, `rooms/${roomCodeRef.current}`), {
       status: 'playing',
       questions: selected,
@@ -310,7 +320,7 @@ export default function MultiplayerScreen({ navigation }) {
       const snap = await get(ref(db, `rooms/${code}`));
       if (!snap.exists()) return;
       const freshRoom = snap.val();
-      const selected = shuffle(QUIZ_DATA).slice(0, NUM_QUESTIONS).map(q => q.id);
+      const selected = pickFreshQuestions();
       const updates = {};
       Object.keys(freshRoom.players || {}).forEach(pid => {
         updates[`players/${pid}/score`] = 0;
@@ -350,6 +360,7 @@ export default function MultiplayerScreen({ navigation }) {
     isHostRef.current = false; roomCodeRef.current = '';
     setSessionWins({});
     setRematchPending(false);
+    usedQuestionsRef.current = [];
     setPhase('setup');
   }
 
