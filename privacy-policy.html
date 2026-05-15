@@ -14,11 +14,11 @@
 </head>
 <body>
 <h1>BrainFood Privacy Policy</h1>
-<p>Last updated: May 14, 2026</p>
-<p><strong style="color:#fff">BrainFood does not collect, store, or share any personal data. Everything stays on your device.</strong></p>
+<p>Last updated: May 15, 2026</p>
+<p>BrainFood is designed with privacy in mind. The core app — facts, pub quiz, streaks, favourites — works entirely on your device and sends nothing personal anywhere. The optional <strong style="color:#fff">Play vs Friend</strong> multiplayer feature does send limited data to Firebase (see below).</p>
 
-<h2>Data We Do Not Collect</h2>
-<p>We do not collect names, emails, location, device identifiers, analytics, or any personal information.</p>
+<h2>Data We Never Collect</h2>
+<p>We do not collect email addresses, passwords, location, device identifiers, advertising IDs, analytics, or any data that identifies you personally.</p>
 
 <h2>Data Stored Locally On Your Device</h2>
 <p>The following is stored only on your device and never sent anywhere:</p>
@@ -29,21 +29,35 @@
   <li>Pub Quiz session results and accuracy stats</li>
   <li>Which quiz questions you have already answered</li>
   <li>Word of the Day rotation</li>
+  <li>Your chosen app theme (dark / light)</li>
+  <li>An anonymous random player ID used to identify you in multiplayer games (contains no personal information)</li>
 </ul>
 <p>Uninstalling the app deletes all this data permanently.</p>
+
+<h2>Play vs Friend — Multiplayer Data</h2>
+<p>When you use the Play vs Friend feature, the following data is temporarily stored on Firebase (Google's servers) for the duration of the game:</p>
+<ul>
+  <li>The nickname you enter before the game</li>
+  <li>Your anonymous random player ID (generated locally, contains no personal information)</li>
+  <li>Your answers and score for that session</li>
+  <li>The room code and game state</li>
+</ul>
+<p>This data is deleted from Firebase automatically when the game ends. It is not linked to any account, email address, or identity. The nickname you enter is the only user-provided text — choose any name you like.</p>
+<p>Firebase is operated by Google. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a> for Google's data practices.</p>
 
 <h2>Notifications</h2>
 <p>Daily reminders are scheduled locally on your device at the time you choose. No data is sent to any server. You can disable them in your device settings at any time.</p>
 
 <h2>Network Requests</h2>
-<p>BrainFood makes two outbound network requests, neither of which sends any personal data:</p>
+<p>BrainFood makes the following outbound network requests:</p>
 <ul>
-  <li><strong>Version check:</strong> On launch, the app fetches a small JSON file from GitHub to check if a newer version is available on Google Play. No personal information is included in this request.</li>
+  <li><strong>Version check:</strong> On launch, the app fetches a small JSON file from GitHub to check if a newer version is available on Google Play. No personal information is included.</li>
   <li><strong>Over-the-air updates:</strong> The app checks Expo's update servers for bug-fix updates. No personal information is sent.</li>
+  <li><strong>Multiplayer (Play vs Friend only):</strong> When you start or join a game, temporary game data is sent to and received from Firebase Realtime Database. This only occurs when you actively use the multiplayer feature.</li>
 </ul>
 
 <h2>Third-Party Services</h2>
-<p>BrainFood uses no analytics, advertising, or tracking services of any kind.</p>
+<p>BrainFood uses no analytics, advertising, or tracking services. The only third-party service used is Firebase Realtime Database (Google), and only during active multiplayer sessions.</p>
 
 <h2>Children</h2>
 <p>BrainFood is suitable for all ages. We collect no personal data from anyone.</p>
