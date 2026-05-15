@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   View, Text, TouchableOpacity, TextInput,
-  StyleSheet, ScrollView, BackHandler
+  StyleSheet, ScrollView, BackHandler, Share
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Haptics from 'expo-haptics';
+import * as Clipboard from 'expo-clipboard';
 import { ref, set, get, update, onValue, off, remove } from 'firebase/database';
 import { db, isFirebaseConfigured } from '../firebase';
 import QUIZ_DATA from '../quiz_data.js';
@@ -16,6 +17,15 @@ const NUM_QUESTIONS = 10;
 const MAX_PTS = 1000;
 const MIN_PTS = 100;
 const LETTERS = ['A', 'B', 'C', 'D'];
+
+const WINNER_QUIPS = [
+  n => `${n} is smarter! (or just luckier 🍀)`,
+  n => `Brains of the match: ${n} 🧠`,
+  n => `${n} wins — lucky guess or genius? 😏`,
+  n => `${n} dominated! Pure talent 🚀`,
+  n => `The BrainFood champion: ${n}! 📚`,
+  n => `${n} wins! Been eating the right BrainFood 🍕`,
+];
 
 function shuffle(arr) {
   const a = [...arr];
@@ -55,6 +65,9 @@ export default function MultiplayerScreen({ navigation }) {
   const [timeLeft, setTimeLeft] = useState(QUESTION_TIME);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [sessionWins, setSessionWins] = useState({});
+  const [rematchPending, setRematchPending] = useState(false);
+  const [copiedCode, setCopiedCode] = useState(false);
 
   const timerRef = useRef(null);
   const roomRef = useRef(null);
@@ -65,6 +78,8 @@ export default function MultiplayerScreen({ navigation }) {
   const roomCodeRef = useRef('');
   const myIdRef = useRef('');
   const phaseRef = useRef('setup');
+  const sessionResultSavedRef = useRef(false);
+  const rematchingRef = useRef(false);
 
   useEffect(() => {
     AsyncStorage.getItem('bf_player_name').then(n => { if (n) setNameInput(n); });
@@ -77,8 +92,12 @@ export default function MultiplayerScreen({ navigation }) {
   // Phase transitions driven by Firebase
   useEffect(() => {
     if (!roomData) return;
-    if (roomData.status === 'playing' && phase !== 'playing' && phase !== 'results') {
+    if (roomData.status === 'playing' && phase !== 'playing') {
       setPhase('playing');
+      setMyAnswer(null);
+      setRematchPending(false);
+      sessionResultSavedRef.current = false;
+      rematchingRef.current = false;
     }
     if (roomData.status === 'finished') {
       clearTimer();
@@ -89,6 +108,30 @@ export default function MultiplayerScreen({ navigation }) {
     }
   }, [roomData]);
 
+  // Track session wins when results come in (once per game)
+  useEffect(() => {
+    if (phase !== 'results' || sessionResultSavedRef.current || !roomData?.players) return;
+    sessionResultSavedRef.current = true;
+    const players = Object.entries(roomData.players)
+      .map(([id, data]) => ({ id, ...data }))
+      .sort((a, b) => b.score - a.score);
+    if (players.length < 2 || players[0].score === players[1].score) return;
+    setSessionWins(prev => ({
+      ...prev,
+      [players[0].id]: (prev[players[0].id] || 0) + 1,
+    }));
+  }, [phase]);
+
+  // Detect both players ready for rematch (host only)
+  useEffect(() => {
+    if (!roomData?.rematch || !isHostRef.current || rematchingRef.current) return;
+    const playerIds = Object.keys(roomData.players || {});
+    if (playerIds.length < 2) return;
+    if (!playerIds.every(pid => roomData.rematch[pid])) return;
+    rematchingRef.current = true;
+    doRematch();
+  }, [roomData?.rematch]);
+
   // New question: reset answer, start timer
   useEffect(() => {
     if (phase !== 'playing' || !roomData?.questionStartedAt) return;
@@ -98,7 +141,7 @@ export default function MultiplayerScreen({ navigation }) {
     startTimer(roomData.questionStartedAt);
   }, [phase, roomData?.currentQ, roomData?.questionStartedAt]);
 
-  // Android hardware back — same cleanup as the Leave button
+  // Android hardware back
   useEffect(() => {
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
       if (phase === 'create' || phase === 'lobby' || phase === 'playing') {
@@ -259,6 +302,40 @@ export default function MultiplayerScreen({ navigation }) {
     }
   }
 
+  async function doRematch() {
+    const code = roomCodeRef.current;
+    if (!code) return;
+    startingRef.current = false;
+    try {
+      const snap = await get(ref(db, `rooms/${code}`));
+      if (!snap.exists()) return;
+      const freshRoom = snap.val();
+      const selected = shuffle(QUIZ_DATA).slice(0, NUM_QUESTIONS).map(q => q.id);
+      const updates = {};
+      Object.keys(freshRoom.players || {}).forEach(pid => {
+        updates[`players/${pid}/score`] = 0;
+      });
+      updates['status'] = 'playing';
+      updates['questions'] = selected;
+      updates['currentQ'] = 0;
+      updates['questionStartedAt'] = Date.now();
+      updates['answers'] = null;
+      updates['rematch'] = null;
+    await update(ref(db, `rooms/${code}`), updates);
+    } catch (e) {}
+  }
+
+  async function requestRematch() {
+    setRematchPending(true);
+    const code = roomCodeRef.current;
+    const pid = myIdRef.current;
+    try {
+      await update(ref(db, `rooms/${code}/rematch`), { [pid]: true });
+    } catch (e) {
+      setRematchPending(false);
+    }
+  }
+
   async function leaveGame() {
     cleanup();
     const code = roomCodeRef.current;
@@ -271,7 +348,24 @@ export default function MultiplayerScreen({ navigation }) {
     setError('');
     setRoomData(null); setRoomCode(''); setCodeInput(''); setIsHost(false);
     isHostRef.current = false; roomCodeRef.current = '';
+    setSessionWins({});
+    setRematchPending(false);
     setPhase('setup');
+  }
+
+  async function copyCode() {
+    await Clipboard.setStringAsync(roomCode);
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    setCopiedCode(true);
+    setTimeout(() => setCopiedCode(false), 2000);
+  }
+
+  async function shareInvite() {
+    try {
+      await Share.share({
+        message: `🎮 BrainFood Challenge!\nJoin my quiz battle — enter this code:\n\n${roomCode}\n\nDownload BrainFood to play! 🧠`,
+      });
+    } catch (e) {}
   }
 
   function getQuestion(idx) {
@@ -388,7 +482,29 @@ export default function MultiplayerScreen({ navigation }) {
           <View style={[styles.codeBox, { backgroundColor: t.card, borderColor: t.accent }]}>
             <Text style={[styles.bigCodeTxt, { color: t.accent }]}>{roomCode}</Text>
           </View>
-          <Text style={[styles.waitSub, { color: t.textMuted }]}>Waiting for your friend to join…</Text>
+
+          {/* Copy + Share buttons */}
+          <View style={styles.codeActions}>
+            <TouchableOpacity
+              style={[styles.codeActionBtn, { backgroundColor: copiedCode ? '#2ecc71' : t.card, borderColor: copiedCode ? '#2ecc71' : t.cardBorder }]}
+              onPress={copyCode}
+            >
+              <Text style={styles.codeActionEmoji}>{copiedCode ? '✅' : '📋'}</Text>
+              <Text style={[styles.codeActionTxt, { color: copiedCode ? '#fff' : t.text }]}>
+                {copiedCode ? 'Copied!' : 'Copy Code'}
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.codeActionBtn, { backgroundColor: t.accent, borderColor: t.accent }]}
+              onPress={shareInvite}
+            >
+              <Text style={styles.codeActionEmoji}>📤</Text>
+              <Text style={[styles.codeActionTxt, { color: '#1a0533' }]}>Invite Friend</Text>
+            </TouchableOpacity>
+          </View>
+
+          <Text style={[styles.waitSub, { color: t.textMuted, marginTop: 20 }]}>Waiting for your friend to join…</Text>
         </View>
       </SafeAreaView>
     );
@@ -535,14 +651,43 @@ export default function MultiplayerScreen({ navigation }) {
     const loser = players[1];
     const iWon = winner?.id === myIdRef.current;
     const isDraw = loser && winner.score === loser.score;
+    const opponent = getOpponent();
+
+    const quipIdx = winner ? (winner.score % WINNER_QUIPS.length) : 0;
+    const winnerQuip = isDraw
+      ? 'Same brain cells — perfectly matched! 🤝'
+      : WINNER_QUIPS[quipIdx](iWon ? 'You' : (winner?.name || '?'));
+
+    const myWins = sessionWins[myIdRef.current] || 0;
+    const oppWins = sessionWins[opponent?.id] || 0;
+    const totalGames = myWins + oppWins;
+
+    const oppWantsRematch = !!(roomData?.rematch?.[opponent?.id]);
 
     return (
       <SafeAreaView style={[styles.safe, { backgroundColor: t.bg }]}>
-        <View style={styles.centerContent}>
-          <Text style={{ fontSize: 72, marginBottom: 16 }}>{isDraw ? '🤝' : iWon ? '🏆' : '💪'}</Text>
+        <ScrollView contentContainerStyle={styles.resultsContent}>
+          <Text style={{ fontSize: 72, textAlign: 'center', marginBottom: 8 }}>
+            {isDraw ? '🤝' : iWon ? '🏆' : '💪'}
+          </Text>
+
           <Text style={[styles.resultTitle, { color: t.text }]}>
             {isDraw ? "It's a Draw!" : iWon ? 'You Win! 🎉' : `${winner?.name || '?'} Wins!`}
           </Text>
+
+          <Text style={[styles.winnerQuip, { color: t.textMuted }]}>{winnerQuip}</Text>
+
+          {/* Session score */}
+          {totalGames > 0 && (
+            <View style={[styles.sessionRow, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
+              <Text style={[styles.sessionLabel, { color: t.textMuted }]}>SESSION SCORE</Text>
+              <Text style={[styles.sessionScore, { color: t.text }]}>
+                {getMe()?.name || 'You'} {myWins} — {oppWins} {opponent?.name || '?'}
+              </Text>
+            </View>
+          )}
+
+          {/* Player score rows */}
           {players.map((p, i) => (
             <View key={p.id} style={[styles.playerRow, { backgroundColor: t.card, borderColor: i === 0 && !isDraw ? t.accent : t.cardBorder }]}>
               <Text style={styles.playerEmoji}>{i === 0 ? (isDraw ? '🤝' : '🥇') : '🥈'}</Text>
@@ -550,19 +695,43 @@ export default function MultiplayerScreen({ navigation }) {
               <Text style={[styles.scoreNum, { color: i === 0 ? t.accent : t.textMuted, fontSize: 18 }]}>{p.score} pts</Text>
             </View>
           ))}
+
+          {/* Rematch button */}
+          {oppWantsRematch && !rematchPending && (
+            <Text style={[styles.rematchHint, { color: '#f5c842' }]}>
+              ⚡ {opponent?.name || 'Your friend'} wants a rematch!
+            </Text>
+          )}
+
+          {rematchPending ? (
+            <View style={[styles.rematchWaiting, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
+              <Text style={[styles.waitSub, { color: t.textMuted }]}>⏳ Waiting for {opponent?.name || 'friend'}…</Text>
+            </View>
+          ) : (
+            <TouchableOpacity
+              style={[styles.bigBtn, { backgroundColor: t.accent, marginTop: 8, width: '100%' }]}
+              onPress={requestRematch}
+            >
+              <Text style={styles.bigBtnTxt}>⚔️ Rematch!</Text>
+              <Text style={styles.bigBtnSub}>New questions, same rivals</Text>
+            </TouchableOpacity>
+          )}
+
+          {/* Leave */}
           <TouchableOpacity
-            style={[styles.bigBtn, { backgroundColor: t.accent, marginTop: 32, width: '100%' }]}
+            style={[styles.leaveBtn, { borderColor: t.cardBorder }]}
             onPress={() => {
               cleanup();
               if (isHostRef.current && roomCodeRef.current) {
                 remove(ref(db, `rooms/${roomCodeRef.current}`)).catch(() => {});
               }
+              setSessionWins({});
               navigation.goBack();
             }}
           >
-            <Text style={styles.bigBtnTxt}>Back to BrainFood 🍕</Text>
+            <Text style={[styles.leaveBtnTxt, { color: t.textMuted }]}>Back to BrainFood 🍕</Text>
           </TouchableOpacity>
-        </View>
+        </ScrollView>
       </SafeAreaView>
     );
   }
@@ -586,8 +755,12 @@ const styles = StyleSheet.create({
   error: { color: '#e8457a', fontWeight: '700', fontSize: 13, textAlign: 'center' },
   centerContent: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },
   waitSub: { fontSize: 14, fontWeight: '700' },
-  codeBox: { borderWidth: 2, borderRadius: 20, paddingHorizontal: 32, paddingVertical: 20, marginVertical: 20 },
+  codeBox: { borderWidth: 2, borderRadius: 20, paddingHorizontal: 32, paddingVertical: 20, marginVertical: 16 },
   bigCodeTxt: { fontSize: 42, fontWeight: '900', letterSpacing: 10 },
+  codeActions: { flexDirection: 'row', gap: 12, width: '100%' },
+  codeActionBtn: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6, borderWidth: 1.5, borderRadius: 14, paddingVertical: 12, paddingHorizontal: 10 },
+  codeActionEmoji: { fontSize: 16 },
+  codeActionTxt: { fontSize: 13, fontWeight: '800' },
   playerRow: { flexDirection: 'row', alignItems: 'center', gap: 12, borderWidth: 1.5, borderRadius: 14, padding: 14, width: '100%', marginBottom: 8 },
   playerEmoji: { fontSize: 20 },
   playerName: { flex: 1, fontSize: 15, fontWeight: '800' },
@@ -610,5 +783,14 @@ const styles = StyleSheet.create({
   resultRow: { borderRadius: 14, borderWidth: 1, padding: 14, gap: 6 },
   resultTxt: { fontSize: 15, fontWeight: '800' },
   resultOpp: { fontSize: 12, fontWeight: '700', color: 'rgba(255,255,255,0.4)' },
-  resultTitle: { fontSize: 26, fontWeight: '900', marginBottom: 24, textAlign: 'center' },
+  resultsContent: { padding: 24, paddingBottom: 48, alignItems: 'center', gap: 12 },
+  resultTitle: { fontSize: 26, fontWeight: '900', textAlign: 'center' },
+  winnerQuip: { fontSize: 14, fontWeight: '700', textAlign: 'center', marginBottom: 4 },
+  sessionRow: { width: '100%', borderWidth: 1, borderRadius: 14, padding: 14, alignItems: 'center', gap: 4 },
+  sessionLabel: { fontSize: 9, fontWeight: '900', letterSpacing: 1.5 },
+  sessionScore: { fontSize: 18, fontWeight: '900' },
+  rematchHint: { fontSize: 13, fontWeight: '800', textAlign: 'center' },
+  rematchWaiting: { width: '100%', borderWidth: 1, borderRadius: 16, padding: 18, alignItems: 'center' },
+  leaveBtn: { width: '100%', borderWidth: 1.5, borderRadius: 16, padding: 16, alignItems: 'center', marginTop: 4 },
+  leaveBtnTxt: { fontSize: 14, fontWeight: '700' },
 });
