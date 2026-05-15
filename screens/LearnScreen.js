@@ -19,6 +19,14 @@ import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
 
+function getWotdIdx(dateKey) {
+  let h = 0;
+  for (let i = 0; i < dateKey.length; i++) {
+    h = Math.imul(31, h) + dateKey.charCodeAt(i) | 0;
+  }
+  return Math.abs(h) % WOTD_LIST.length;
+}
+
 function getStreakEmoji(streak) {
   if (streak >= 365) return '🏆';
   if (streak >= 100) return '💎';
@@ -110,16 +118,21 @@ export default function LearnScreen({ navigation }) {
 
   async function loadState() {
     try {
-      const raw = await AsyncStorage.getItem('bf_state');
+      const [[, raw], [, backupBestStr], [, backupFavsRaw]] = await AsyncStorage.multiGet([
+        'bf_state', 'bf_best_streak', 'bf_favs',
+      ]);
       const s = raw ? JSON.parse(raw) : {};
 
       const todayKey = getTodayKey();
       const yesterdayKey = getYesterdayKey();
       const lastLogin = s.lastLoginDay || null;
       let dailyStreak = s.dailyStreak || 0;
-      let best = s.bestStreak || 0;
-      let newDay = false;
 
+      // Recover bestStreak from dedicated backup if bf_state was lost
+      const backupBest = backupBestStr ? parseInt(backupBestStr, 10) : 0;
+      let best = Math.max(s.bestStreak || 0, backupBest);
+
+      let newDay = false;
       if (lastLogin !== todayKey) {
         newDay = true;
         if (lastLogin === yesterdayKey) {
@@ -133,35 +146,37 @@ export default function LearnScreen({ navigation }) {
       setStreak(dailyStreak);
       setBestStreak(best);
       setSeen(s.seen || 0);
-      setFavs(s.favs || []);
+
+      // Recover favs from dedicated backup if bf_state was lost
+      const backupFavs = backupFavsRaw ? JSON.parse(backupFavsRaw) : [];
+      const mergedFavs = [...new Set([...(s.favs || []), ...backupFavs])];
+      setFavs(mergedFavs);
+
       setHistory(s.history || []);
       setGradIdx(s.gradIdx || 0);
 
-      // Pick a random WOTD per user per day
-      let wotdIdx = (s.wotdIdx !== undefined) ? s.wotdIdx : Math.floor(Math.random() * WOTD_LIST.length);
-      if (s.wotdDay !== todayKey) {
-        let newIdx;
-        do { newIdx = Math.floor(Math.random() * WOTD_LIST.length); }
-        while (newIdx === s.wotdIdx && WOTD_LIST.length > 1);
-        wotdIdx = newIdx;
-      }
-      setWotd(WOTD_LIST[wotdIdx]);
+      // WOTD: deterministic from date — same day always same word, survives any data loss
+      setWotd(WOTD_LIST[getWotdIdx(todayKey)]);
 
-      const usedArr = s.usedIds || [];
+      // Filter out stale card IDs left over from previous app versions
+      const validCardIds = new Set(CARDS.map(c => c.id));
+      const usedArr = (s.usedIds || []).filter(id => validCardIds.has(id));
       const picked = pickCard(usedArr, 'all');
-      // Immediately mark displayed card as seen so it won't repeat if app is closed
       const newUsed = picked && !usedArr.includes(picked.id) ? [...usedArr, picked.id] : usedArr;
       setUsedIds(newUsed);
 
-      await AsyncStorage.setItem('bf_state', JSON.stringify({
-        ...s,
-        lastLoginDay: todayKey,
-        dailyStreak,
-        bestStreak: best,
-        usedIds: newUsed,
-        wotdDay: todayKey,
-        wotdIdx,
-      }));
+      await AsyncStorage.multiSet([
+        ['bf_state', JSON.stringify({
+          ...s,
+          lastLoginDay: todayKey,
+          dailyStreak,
+          bestStreak: best,
+          usedIds: newUsed,
+          favs: mergedFavs,
+        })],
+        ['bf_best_streak', String(best)],
+        ['bf_favs', JSON.stringify(mergedFavs)],
+      ]);
 
       isInitialized.current = true;
       if (newDay) setTimeout(() => showStreakPopup(dailyStreak), 800);
@@ -186,7 +201,10 @@ export default function LearnScreen({ navigation }) {
       }
       if (dailyStreak > best) best = dailyStreak;
 
-      await AsyncStorage.setItem('bf_state', JSON.stringify({ ...s, lastLoginDay: todayKey, dailyStreak, bestStreak: best }));
+      await AsyncStorage.multiSet([
+        ['bf_state', JSON.stringify({ ...s, lastLoginDay: todayKey, dailyStreak, bestStreak: best })],
+        ['bf_best_streak', String(best)],
+      ]);
       setStreak(dailyStreak);
       setBestStreak(best);
       showStreakPopup(dailyStreak);
@@ -197,7 +215,11 @@ export default function LearnScreen({ navigation }) {
     try {
       const raw = await AsyncStorage.getItem('bf_state');
       const s = raw ? JSON.parse(raw) : {};
-      await AsyncStorage.setItem('bf_state', JSON.stringify({ ...s, ...updates }));
+      const newState = { ...s, ...updates };
+      const pairs = [['bf_state', JSON.stringify(newState)]];
+      if (updates.favs !== undefined) pairs.push(['bf_favs', JSON.stringify(updates.favs)]);
+      if (updates.bestStreak !== undefined) pairs.push(['bf_best_streak', String(updates.bestStreak)]);
+      await AsyncStorage.multiSet(pairs);
     } catch (e) {}
   }
 

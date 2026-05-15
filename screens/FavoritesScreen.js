@@ -31,7 +31,10 @@ export default function FavoritesScreen() {
       const raw = await AsyncStorage.getItem('bf_state');
       const s = raw ? JSON.parse(raw) : {};
       s.favs = newFavs;
-      await AsyncStorage.setItem('bf_state', JSON.stringify(s));
+      await AsyncStorage.multiSet([
+        ['bf_state', JSON.stringify(s)],
+        ['bf_favs', JSON.stringify(newFavs)],
+      ]);
     } catch (e) {}
   }
 
