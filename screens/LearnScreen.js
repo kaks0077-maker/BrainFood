@@ -19,12 +19,10 @@ import ViewShot from 'react-native-view-shot';
 import { CARDS, DIFF_LABELS, GRADS, WOTD_LIST } from '../data';
 
 
-function getWotdIdx(dateKey) {
-  let h = 0;
-  for (let i = 0; i < dateKey.length; i++) {
-    h = Math.imul(31, h) + dateKey.charCodeAt(i) | 0;
-  }
-  return Math.abs(h) % WOTD_LIST.length;
+function getWotdIdx() {
+  const epoch = new Date(2024, 0, 1).getTime();
+  const day = Math.floor((Date.now() - epoch) / 86400000);
+  return day % WOTD_LIST.length;
 }
 
 function getStreakEmoji(streak) {
@@ -156,7 +154,7 @@ export default function LearnScreen({ navigation }) {
       setGradIdx(s.gradIdx || 0);
 
       // WOTD: deterministic from date — same day always same word, survives any data loss
-      setWotd(WOTD_LIST[getWotdIdx(todayKey)]);
+      setWotd(WOTD_LIST[getWotdIdx()]);
 
       // Filter out stale card IDs left over from previous app versions
       const validCardIds = new Set(CARDS.map(c => c.id));
