@@ -139,7 +139,7 @@ export default function MultiplayerScreen({ navigation }) {
     setMyAnswer(null);
     advancedRef.current = false;
     answeringRef.current = false;
-    startTimer(roomData.questionStartedAt);
+    startTimer(roomData.questionStartedAt, roomData.currentQ ?? 0);
   }, [phase, roomData?.currentQ, roomData?.questionStartedAt]);
 
   // Android hardware back
@@ -147,6 +147,10 @@ export default function MultiplayerScreen({ navigation }) {
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
       if (phase === 'create' || phase === 'lobby' || phase === 'playing') {
         leaveGame();
+        return true;
+      }
+      if (phase === 'results') {
+        leaveResults();
         return true;
       }
       return false;
@@ -166,7 +170,7 @@ export default function MultiplayerScreen({ navigation }) {
     }
   }, [roomData?.answers]);
 
-  function startTimer(startedAt) {
+  function startTimer(startedAt, currentQ) {
     clearTimer();
     timerRef.current = setInterval(() => {
       const elapsed = (Date.now() - startedAt) / 1000;
@@ -176,7 +180,6 @@ export default function MultiplayerScreen({ navigation }) {
         clearTimer();
         if (isHostRef.current && !advancedRef.current) {
           advancedRef.current = true;
-          const currentQ = roomData?.currentQ ?? 0;
           doAdvance(currentQ);
         }
       }
@@ -194,7 +197,16 @@ export default function MultiplayerScreen({ navigation }) {
       const data = snap.val();
       if (!data) {
         if (phaseRef.current === 'results') return;
-        setError('Room was closed.'); cleanup(); setRoomData(null); setPhase('setup'); return;
+        cleanup();
+        setError('Room was closed.');
+        setMyAnswer(null);
+        setRoomData(null); setRoomCode(''); setCodeInput(''); setIsHost(false);
+        isHostRef.current = false; roomCodeRef.current = '';
+        setSessionWins({});
+        setRematchPending(false);
+        usedQuestionsRef.current = [];
+        setPhase('setup');
+        return;
       }
       setRoomData(data);
     });
@@ -336,6 +348,7 @@ export default function MultiplayerScreen({ navigation }) {
   }
 
   async function requestRematch() {
+    if (!roomData) return;
     setRematchPending(true);
     const code = roomCodeRef.current;
     const pid = myIdRef.current;
@@ -362,6 +375,18 @@ export default function MultiplayerScreen({ navigation }) {
     setRematchPending(false);
     usedQuestionsRef.current = [];
     setPhase('setup');
+  }
+
+  function leaveResults() {
+    cleanup();
+    if (isHostRef.current && roomCodeRef.current) {
+      remove(ref(db, `rooms/${roomCodeRef.current}`)).catch(() => {});
+    }
+    isHostRef.current = false;
+    roomCodeRef.current = '';
+    usedQuestionsRef.current = [];
+    setSessionWins({});
+    navigation.goBack();
   }
 
   async function copyCode() {
@@ -731,14 +756,7 @@ export default function MultiplayerScreen({ navigation }) {
           {/* Leave */}
           <TouchableOpacity
             style={[styles.leaveBtn, { borderColor: t.cardBorder }]}
-            onPress={() => {
-              cleanup();
-              if (isHostRef.current && roomCodeRef.current) {
-                remove(ref(db, `rooms/${roomCodeRef.current}`)).catch(() => {});
-              }
-              setSessionWins({});
-              navigation.goBack();
-            }}
+            onPress={leaveResults}
           >
             <Text style={[styles.leaveBtnTxt, { color: t.textMuted }]}>Back to BrainFood 🍕</Text>
           </TouchableOpacity>
