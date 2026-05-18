@@ -40,7 +40,7 @@ function getStreakMessage(streak) {
   if (streak < 7) return `${streak} days straight! Keep it up!`;
   if (streak < 14) return `${streak} days! You're on fire! 🔥`;
   if (streak < 30) return `${streak} days! Impressive consistency!`;
-  if (streak < 100) return `${streak} days! You're a BrainFood legend!`;
+  if (streak < 100) return `${streak} days! You're a Fact Fight legend!`;
   return `${streak} days! Absolutely unstoppable! 🏆`;
 }
 
@@ -273,10 +273,10 @@ export default function LearnScreen({ navigation }) {
     if (!card) return;
     try {
       const uri = await shareRef.current.capture();
-      await Share.share({ url: uri, message: '🍕 BrainFood — Feed your brain!' });
+      await Share.share({ url: uri, message: '⚡ Fact Fight — Fight for facts!' });
     } catch (e) {
       // Fallback to text share
-      await Share.share({ message: `🍕 BrainFood\n\n${card.fact}\n\nbrainfood.app` });
+      await Share.share({ message: `⚡ Fact Fight\n\n${card.fact}` });
     }
   }
 

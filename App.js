@@ -27,11 +27,11 @@ Notifications.setNotificationHandler({
 });
 
 const NOTIF_MSGS = [
-  { title: '🍕 Your BrainFood is ready!', body: 'A fresh fact is waiting for you.' },
+  { title: '⚡ Your Fact Fight is ready!', body: 'A fresh fact is waiting for you.' },
   { title: '🧠 Feed your brain!', body: 'One new thing to learn today.' },
   { title: '⚡ Quick brain boost?', body: 'Only takes 30 seconds.' },
-  { title: '🌟 Did you know...', body: 'Open BrainFood to find out!' },
-  { title: '🔥 Keep your streak alive!', body: 'Open BrainFood before midnight.' },
+  { title: '🌟 Did you know...', body: 'Open Fact Fight to find out!' },
+  { title: '🔥 Keep your streak alive!', body: 'Open Fact Fight before midnight.' },
 ];
 
 async function scheduleDailyNotification(hour = 9) {

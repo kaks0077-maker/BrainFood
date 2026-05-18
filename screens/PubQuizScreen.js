@@ -169,7 +169,7 @@ export default function PubQuizScreen({ navigation }) {
           <View style={styles.finishedDivider} />
           <Text style={styles.finishedTeaser}>{'🍺 Stay tuned — more questions\ncoming soon!'}</Text>
           <TouchableOpacity style={styles.finishedBtn} onPress={() => navigation.goBack()}>
-            <Text style={styles.finishedBtnTxt}>Back to BrainFood</Text>
+            <Text style={styles.finishedBtnTxt}>Back to Fact Fight</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>

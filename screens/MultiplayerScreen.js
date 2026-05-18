@@ -23,8 +23,8 @@ const WINNER_QUIPS = [
   n => `Brains of the match: ${n} 🧠`,
   n => `${n} wins — lucky guess or genius? 😏`,
   n => `${n} dominated! Pure talent 🚀`,
-  n => `The BrainFood champion: ${n}! 📚`,
-  n => `${n} wins! Been eating the right BrainFood 🍕`,
+  n => `The Fact Fight champion: ${n}! ⚡`,
+  n => `${n} wins! Knows their facts! ⚡`,
 ];
 
 function shuffle(arr) {
@@ -399,7 +399,7 @@ export default function MultiplayerScreen({ navigation }) {
   async function shareInvite() {
     try {
       await Share.share({
-        message: `🎮 BrainFood Challenge!\nJoin my quiz battle — enter this code:\n\n${roomCode}\n\nDownload BrainFood to play! 🧠`,
+        message: `⚡ Fact Fight Challenge!\nJoin my quiz battle — enter this code:\n\n${roomCode}\n\nDownload Fact Fight to play! 🧠`,
       });
     } catch (e) {}
   }
@@ -758,7 +758,7 @@ export default function MultiplayerScreen({ navigation }) {
             style={[styles.leaveBtn, { borderColor: t.cardBorder }]}
             onPress={leaveResults}
           >
-            <Text style={[styles.leaveBtnTxt, { color: t.textMuted }]}>Back to BrainFood 🍕</Text>
+            <Text style={[styles.leaveBtnTxt, { color: t.textMuted }]}>Back to Fact Fight ⚡</Text>
           </TouchableOpacity>
         </ScrollView>
       </SafeAreaView>

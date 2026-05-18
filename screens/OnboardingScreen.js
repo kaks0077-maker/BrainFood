@@ -7,8 +7,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 const SLIDES = [
   {
-    emoji: '🍕',
-    title: 'Welcome to BrainFood',
+    emoji: '⚡',
+    title: 'Welcome to Fact Fight',
     sub: 'Bite-sized knowledge that actually sticks. One fascinating fact at a time.',
     accent: '#ffd93d',
   },

@@ -39,7 +39,7 @@ export default function FavoritesScreen() {
   }
 
   async function shareCard(card) {
-    await Share.share({ message: `🍕 BrainFood\n\n"${card.hook}"\n\n${card.fact}` });
+    await Share.share({ message: `⚡ Fact Fight\n\n"${card.hook}"\n\n${card.fact}` });
   }
 
   function speakCard(card) {
