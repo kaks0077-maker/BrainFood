@@ -73,10 +73,16 @@ export default function LearnScreen({ navigation }) {
   const cardRef = useRef(null);
   const nextCardRef = useRef(null);
 
+  const lastAppState = useRef(AppState.currentState);
+
   useEffect(() => {
     loadState();
     const sub = AppState.addEventListener('change', (nextState) => {
-      if (nextState === 'active' && isInitialized.current) checkDailyStreak();
+      const prev = lastAppState.current;
+      lastAppState.current = nextState;
+      if (nextState === 'active' && prev === 'background' && isInitialized.current) {
+        checkDailyStreak();
+      }
       if (nextState === 'background' || nextState === 'inactive') { Speech.stop(); setSpeaking(false); stopAutoplay(); setAutoplay(false); }
     });
     return () => { sub.remove(); stopAutoplay(); };
@@ -126,10 +132,6 @@ export default function LearnScreen({ navigation }) {
       const lastLogin = s.lastLoginDay || null;
       let dailyStreak = s.dailyStreak || 0;
 
-      console.log('[Streak] loadState fired');
-      console.log('[Streak] todayKey:', todayKey, '| yesterdayKey:', yesterdayKey, '| lastLogin:', lastLogin);
-      console.log('[Streak] storedStreak:', s.dailyStreak);
-
       // Recover bestStreak from dedicated backup if bf_state was lost
       const backupBest = backupBestStr ? parseInt(backupBestStr, 10) : 0;
       let best = Math.max(s.bestStreak || 0, backupBest);
@@ -139,14 +141,10 @@ export default function LearnScreen({ navigation }) {
         newDay = true;
         if (lastLogin === yesterdayKey) {
           dailyStreak += 1;
-          console.log('[Streak] loadState: consecutive day → streak:', dailyStreak);
         } else {
           dailyStreak = 1;
-          console.log('[Streak] loadState: gap/first open → reset to 1. lastLogin was:', lastLogin);
         }
         if (dailyStreak > best) best = dailyStreak;
-      } else {
-        console.log('[Streak] loadState: same day, no change. streak stays:', dailyStreak);
       }
 
       setStreak(dailyStreak);
@@ -197,23 +195,14 @@ export default function LearnScreen({ navigation }) {
       const yesterdayKey = getYesterdayKey();
       const lastLogin = s.lastLoginDay || null;
 
-      console.log('[Streak] checkDailyStreak fired');
-      console.log('[Streak] todayKey:', todayKey, '| yesterdayKey:', yesterdayKey, '| lastLogin:', lastLogin);
-      console.log('[Streak] storedStreak:', s.dailyStreak);
-
-      if (lastLogin === todayKey) {
-        console.log('[Streak] Already counted today — skipping');
-        return;
-      }
+      if (lastLogin === todayKey) return;
 
       let dailyStreak = s.dailyStreak || 0;
       let best = s.bestStreak || 0;
       if (lastLogin === yesterdayKey) {
         dailyStreak += 1;
-        console.log('[Streak] Consecutive day → streak:', dailyStreak);
       } else {
         dailyStreak = 1;
-        console.log('[Streak] Gap detected — reset to 1. lastLogin was:', lastLogin);
       }
       if (dailyStreak > best) best = dailyStreak;
 
@@ -225,7 +214,7 @@ export default function LearnScreen({ navigation }) {
       setBestStreak(best);
       setWotd(WOTD_LIST[getWotdIdx()]);
       showStreakPopup(dailyStreak);
-    } catch (e) { console.log('[Streak] checkDailyStreak error:', e); }
+    } catch (e) {}
   }
 
   async function saveState(updates) {
