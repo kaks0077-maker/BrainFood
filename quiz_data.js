@@ -3537,13 +3537,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq275",
-    "fact": "Seahorses are the only species where males become pregnant and give birth. The female deposits eggs in the males pouch. He fertilises them and carries the young for 10 to 25 days before birth.",
-    "question": "In which species do males become pregnant and give birth to live young?",
+    "fact": "Seahorses are the best-known species in which males become pregnant and give birth. The female deposits eggs in the male's pouch, where he fertilises and carries the young for 10 to 25 days before birth.",
+    "question": "Which animal is most famous for the males becoming pregnant and giving birth?",
     "answers": {
-      "A": "Seahorses",
-      "B": "Pipefish",
-      "C": "Sea dragons",
-      "D": "All of the above"
+      "A": "Seahorse",
+      "B": "Octopus",
+      "C": "Clownfish",
+      "D": "Dolphin"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -3892,9 +3892,9 @@ const QUIZ_DATA = [
     "question": "Honey badgers are known for their remarkable escape abilities. Which of the following have they been documented using to climb out of enclosures?",
     "answers": {
       "A": "Sticks, stones, and mud",
-      "B": "Digging tunnels and sharpening claws",
-      "C": "Jumping up to 10 feet high and breaking locks",
-      "D": "Coordinating in groups to create ladders"
+      "B": "Digging tunnels beneath the fence",
+      "C": "Biting through cage bars with their powerful jaws",
+      "D": "Using their sharp claws to scale smooth walls"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -8469,8 +8469,8 @@ const QUIZ_DATA = [
     "answers": {
       "A": "Vending machines (tipping accidents)",
       "B": "Shark attacks",
-      "C": "Crocodile attacks",
-      "D": "Piranha attacks"
+      "C": "Alligator attacks",
+      "D": "Jellyfish stings"
     },
     "correct": "A",
     "difficulty": "medium"
@@ -9768,8 +9768,8 @@ const QUIZ_DATA = [
     "answers": {
       "A": "Theresa May",
       "B": "Margaret Thatcher",
-      "C": "Hillary Clinton",
-      "D": "Angela Merkel"
+      "C": "Barbara Castle",
+      "D": "Shirley Williams"
     },
     "correct": "B",
     "difficulty": "easy"
@@ -12200,15 +12200,16 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq959",
-    "question": "Which country has red and white as its flag colours (just those two)?",
+    "fact": "The flag of Poland consists of two horizontal stripes: white on top and red on the bottom. These are Poland's national colours, dating back to the medieval heraldry of the Polish state.",
+    "question": "The national flag of Poland has two horizontal stripes. What are its two colours?",
     "answers": {
-      "A": "Poland",
-      "B": "Austria",
-      "C": "Switzerland",
-      "D": "All of the above"
+      "A": "Red and blue",
+      "B": "White and red",
+      "C": "Green and white",
+      "D": "Red and yellow"
     },
-    "correct": "D",
-    "difficulty": "hard"
+    "correct": "B",
+    "difficulty": "easy"
   },
   {
     "id": "pq960",
