@@ -2,7 +2,7 @@
   "expo": {
     "name": "Fact Fight",
     "slug": "brainfood",
-    "version": "1.0.5",
+    "version": "1.08",
     "runtimeVersion": {
       "policy": "appVersion"
     },
@@ -28,7 +28,7 @@
         "backgroundColor": "#0d1117"
       },
       "package": "com.brainfoodapp.main",
-      "versionCode": 7,
+      "versionCode": 8,
       "permissions": [
         "RECEIVE_BOOT_COMPLETED",
         "SCHEDULE_EXACT_ALARM",
