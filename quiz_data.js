@@ -1054,13 +1054,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq82",
-    "fact": "In physics, a jiffy = the time light takes to travel one centimetre — about 33.4 picoseconds. In electronics it's 1/60 of a second. In computing, 1/100 of a second. Casual usage = unspecified short time.",
-    "question": "In physics, a 'jiffy' is defined as the time it takes light to travel one centimetre. Approximately how long is this?",
+    "fact": "In electronics engineering, a 'jiffy' is the period of one AC power cycle — 1/60 of a second (about 16.7 milliseconds) in 60-Hz countries like the US, and 1/50 of a second (20 ms) in 50-Hz countries like the UK. It is used in timer and delay calculations in circuit design.",
+    "question": "In electronics engineering, a 'jiffy' is the duration of one AC power cycle. How long is a jiffy in a 60-Hz country like the United States?",
     "answers": {
-      "A": "33.4 picoseconds",
-      "B": "33.4 nanoseconds",
-      "C": "33.4 microseconds",
-      "D": "33.4 milliseconds"
+      "A": "1/60 of a second (approximately 16.7 ms)",
+      "B": "1/100 of a second (10 ms)",
+      "C": "1/50 of a second (20 ms)",
+      "D": "1/1000 of a second (1 ms)"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -1782,13 +1782,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq138",
-    "fact": "Ancient Roman dental hygiene included recipes using powdered mouse brain, rabbit heads, urine, and ground oyster shells. Urine (containing ammonia) was actually somewhat effective for cleaning. Crushed charcoal was also common.",
-    "question": "Which of these ingredients was NOT commonly used in ancient Roman toothpaste recipes?",
+    "fact": "Ancient Roman dental hygiene included recipes using powdered mouse brain, rabbit heads, urine, ground oyster shells, volcanic pumice (as an abrasive), and crushed charcoal. Urine (containing ammonia) was actually somewhat effective for cleaning. Baking soda (sodium bicarbonate) was not available — it wasn't isolated as a compound until 1791.",
+    "question": "Which of these ingredients was NOT available for use in ancient Roman toothpaste recipes?",
     "answers": {
       "A": "Powdered mouse brain",
       "B": "Crushed charcoal",
       "C": "Ground oyster shells",
-      "D": "Volcanic pumice"
+      "D": "Baking soda (sodium bicarbonate)"
     },
     "correct": "D",
     "difficulty": "medium"
@@ -2471,13 +2471,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq191",
-    "fact": "In physics, a jiffy equals the time light takes to travel one centimetre — about 33 picoseconds. In computing it is 1/100 of a second. Casual usage just means a short time.",
-    "question": "In physics, what does a 'jiffy' measure?",
+    "fact": "The Planck time (~5.39 × 10⁻⁴⁴ seconds) is the smallest meaningful unit of time in physics — the time it takes light to travel one Planck length in a vacuum. Below this scale, our current physical theories break down and cannot describe what happens.",
+    "question": "What is the Planck time, considered the smallest meaningful unit of time in modern physics?",
     "answers": {
-      "A": "The time light takes to travel one centimetre, approximately 33 picoseconds",
-      "B": "The time light takes to travel one metre, approximately 3.3 nanoseconds",
-      "C": "One hundredth of a second in duration",
-      "D": "The time it takes sound to travel one centimetre in air"
+      "A": "Approximately 5.39 × 10⁻⁴⁴ seconds",
+      "B": "Approximately 3 × 10⁻²⁴ seconds",
+      "C": "Approximately 33 picoseconds",
+      "D": "Approximately 1 nanosecond"
     },
     "correct": "A",
     "difficulty": "medium"
@@ -3394,7 +3394,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq264",
-    "fact": "Antimatter costs an estimated 62.5 trillion dollars per gram to produce at CERN. By comparison gold costs about 60,000 dollars per gram. Antimatter is a million billion times more expensive than gold.",
+    "fact": "Antimatter costs an estimated 62.5 trillion dollars per gram to produce at CERN. By comparison gold costs about 60 dollars per gram. That makes antimatter approximately one trillion times more expensive than gold.",
     "question": "Approximately how many times more expensive is antimatter than gold, based on production costs at CERN?",
     "answers": {
       "A": "One million billion times",
@@ -3402,7 +3402,7 @@ const QUIZ_DATA = [
       "C": "One billion times",
       "D": "One trillion times"
     },
-    "correct": "A",
+    "correct": "D",
     "difficulty": "medium"
   },
   {
@@ -3641,7 +3641,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq283",
-    "fact": "Wang is the most common surname globally with over 90 million people sharing it in China alone. Li follows with about 93 million. In the US the most common surname is Smith.",
+    "fact": "Wang is the most common surname in China with over 100 million people sharing it. Li follows with about 93 million. In the US the most common surname is Smith.",
     "question": "Which of the following is the most common surname in the United States?",
     "answers": {
       "A": "Smith",
@@ -3667,7 +3667,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq285",
-    "fact": "Ants do not sleep in the conventional sense. They take hundreds of brief 1-minute power naps throughout the day totalling about 4 to 5 hours of rest. Worker ants rest more than queens.",
+    "fact": "Ants do not sleep in the conventional sense. Worker ants take hundreds of brief 1-minute power naps throughout the day totalling about 4 to 5 hours of rest. Queens sleep more — around 6 to 9 hours per day — in fewer but longer naps.",
     "question": "How do ants typically rest during the day?",
     "answers": {
       "A": "They take hundreds of brief 1-minute power naps totalling 4-5 hours of rest",
@@ -6475,13 +6475,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq500",
-    "fact": "Rungrado 1st of May Stadium in Pyongyang North Korea has a capacity of 114,000 making it the largest stadium in the world. It is used for mass games, football and athletics events.",
-    "question": "Which stadium holds the title of largest stadium in the world by capacity?",
+    "fact": "Narendra Modi Stadium in Ahmedabad, India, reopened in February 2020 with a capacity of approximately 132,000, making it the largest stadium in the world by seating capacity. The previous record holder was Rungrado 1st of May Stadium in Pyongyang, North Korea (114,000).",
+    "question": "Which stadium holds the title of largest stadium in the world by seating capacity as of 2020?",
     "answers": {
-      "A": "Rungrado 1st of May Stadium in Pyongyang, North Korea",
-      "B": "Michigan Stadium in Ann Arbor, USA",
-      "C": "Beaver Stadium in Pennsylvania, USA",
-      "D": "Tiger Stadium in Baton Rouge, USA"
+      "A": "Narendra Modi Stadium in Ahmedabad, India",
+      "B": "Rungrado 1st of May Stadium in Pyongyang, North Korea",
+      "C": "Michigan Stadium in Ann Arbor, USA",
+      "D": "Melbourne Cricket Ground in Melbourne, Australia"
     },
     "correct": "A",
     "difficulty": "medium"
@@ -7515,13 +7515,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq1640",
-    "fact": "A day on Mercury lasts longer than a year on Mercury.",
-    "question": "Which planet has a day that is longer than its year?",
+    "fact": "A solar day on Mercury lasts about 176 Earth days — twice as long as Mercury's year of 88 Earth days. This happens because Mercury rotates very slowly while racing around the Sun.",
+    "question": "On Mercury, a solar day lasts approximately how many Earth days?",
     "answers": {
-      "A": "Mercury",
-      "B": "Venus",
-      "C": "Mars",
-      "D": "Jupiter"
+      "A": "176 Earth days",
+      "B": "88 Earth days",
+      "C": "365 Earth days",
+      "D": "58 Earth days"
     },
     "correct": "A",
     "difficulty": "medium"
@@ -8464,13 +8464,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq1713",
-    "fact": "Vending machines kill more people annually than sharks.",
-    "question": "Which of the following causes more deaths annually in the United States?",
+    "fact": "Vending machines kill more people annually than sharks. In the United States, roughly 2 to 4 people die each year from vending machines tipping onto them, while sharks cause about 1 death per year on average.",
+    "question": "In the United States, which is responsible for more deaths per year on average?",
     "answers": {
-      "A": "Vending machines",
+      "A": "Vending machines (tipping accidents)",
       "B": "Shark attacks",
-      "C": "Lightning strikes",
-      "D": "Bee stings"
+      "C": "Crocodile attacks",
+      "D": "Piranha attacks"
     },
     "correct": "A",
     "difficulty": "medium"
@@ -9062,13 +9062,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq1759",
-    "fact": "Angel Falls in Venezuela is the tallest waterfall in the world at 979 metres.",
+    "fact": "Angel Falls in Venezuela is the tallest waterfall in the world at 979 metres. Yosemite Falls (739m) and Tugela Falls (948m) are the next tallest. Niagara Falls is only about 57m high, and Victoria Falls about 108m.",
     "question": "What is the tallest waterfall in the world?",
     "answers": {
-      "A": "Angel Falls, Venezuela at 979 metres",
-      "B": "Niagara Falls, Canada at 1,188 metres",
-      "C": "Victoria Falls, Zimbabwe at 1,708 metres",
-      "D": "Yosemite Falls, USA at 739 metres"
+      "A": "Angel Falls, Venezuela (979 metres)",
+      "B": "Niagara Falls, Canada (57 metres)",
+      "C": "Victoria Falls, Zimbabwe/Zambia (108 metres)",
+      "D": "Yosemite Falls, USA (739 metres)"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -9101,13 +9101,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq1762",
-    "fact": "Sharks are older than Saturns rings.",
-    "question": "Which of the following is older?",
+    "fact": "Sharks first appeared about 450 million years ago. Saturn's rings are estimated to be only 10 to 100 million years old based on Cassini mission data. Sharks predate Saturn's rings by hundreds of millions of years.",
+    "question": "Sharks first appeared about 450 million years ago. Which of these did sharks appear BEFORE?",
     "answers": {
-      "A": "Sharks as a species",
-      "B": "Saturn's rings",
-      "C": "The dinosaurs",
-      "D": "The Moon"
+      "A": "Saturn's rings (estimated 10-100 million years old)",
+      "B": "The first fish (appeared ~530 million years ago)",
+      "C": "Trilobites (appeared ~520 million years ago)",
+      "D": "The first multicellular animals (~700 million years ago)"
     },
     "correct": "A",
     "difficulty": "medium"
@@ -11883,7 +11883,7 @@ const QUIZ_DATA = [
       "C": "Basalt",
       "D": "Quartzite"
     },
-    "correct": "A",
+    "correct": "D",
     "difficulty": "hard"
   },
   {
@@ -12082,7 +12082,7 @@ const QUIZ_DATA = [
     "id": "pq949",
     "question": "Which letter is worth 10 points in Scrabble?",
     "answers": {
-      "A": "Q",
+      "A": "K",
       "B": "Z",
       "C": "X",
       "D": "J"
