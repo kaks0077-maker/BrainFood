@@ -1496,8 +1496,8 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq116",
-    "fact": "Both Amelia Earhart and Walt Disney were born in 1901. Earhart became the first woman to fly solo across the Atlantic in 1932. Disney founded his studio in 1923. Two cultural icons, same birth year.",
-    "question": "Amelia Earhart and Walt Disney shared the same birth year. In what year were both of these cultural icons born?",
+    "fact": "Both Walt Disney and Marlene Dietrich were born in 1901 — Disney on 5 December in Chicago, Dietrich on 27 December in Berlin. Disney founded his studio in 1923; Dietrich became one of Hollywood's biggest stars in the 1930s.",
+    "question": "Walt Disney and Marlene Dietrich shared the same birth year. In what year were both of these cultural icons born?",
     "answers": {
       "A": "1901",
       "B": "1899",
@@ -2744,13 +2744,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq212",
-    "fact": "Walt Disney had musophobia, a fear of mice, which makes his creation of Mickey Mouse particularly ironic. He was supposedly inspired to create the character while watching a mouse in his studio.",
-    "question": "What was the ironic aspect of Walt Disney creating Mickey Mouse, given his personal phobia?",
+    "fact": "Walt Disney originally wanted to name Mickey Mouse 'Mortimer Mouse', after the pet mouse he kept in his Kansas City studio in the 1920s. His wife Lillian convinced him to change the name, saying 'Mortimer' sounded too pompous. 'Mortimer Mouse' later became Mickey's rival in the cartoons.",
+    "question": "What was Walt Disney's original name for Mickey Mouse before his wife Lillian convinced him to change it?",
     "answers": {
-      "A": "He had musophobia, a fear of mice",
-      "B": "He had arachnophobia, a fear of spiders",
-      "C": "He had nomophobia, a fear of being without his phone",
-      "D": "He had cynophobia, a fear of dogs"
+      "A": "Mortimer Mouse",
+      "B": "Marty Mouse",
+      "C": "Maxwell Mouse",
+      "D": "Morris Mouse"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -3199,10 +3199,10 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq248",
-    "fact": "A Posidonia oceanica seagrass meadow in Shark Bay Australia is estimated to be 200,000 years old, making it the oldest known living organism on Earth. It covers 180 square km.",
-    "question": "What is the world's oldest known living organism, found in Shark Bay, Australia?",
+    "fact": "A Posidonia australis seagrass meadow in Shark Bay, Western Australia, is estimated to be at least 4,500 years old (possibly much older) and covers approximately 180 km², making it the world's largest known plant. It grew from a single seed and spread by cloning itself.",
+    "question": "What is the world's largest known plant, found in Shark Bay, Western Australia?",
     "answers": {
-      "A": "A Posidonia oceanica seagrass meadow estimated to be 200,000 years old",
+      "A": "A Posidonia australis seagrass meadow covering approximately 180 km²",
       "B": "A Great Basin bristlecone pine tree estimated to be 5,000 years old",
       "C": "A giant sequoia tree estimated to be 3,500 years old",
       "D": "An Antarctic sponge estimated to be 11,000 years old"
@@ -3784,7 +3784,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq294",
-    "fact": "The Hawaiian alphabet has 12 consonants H K L M N P W and the okina glottal stop, plus 5 vowels A E I O U. Despite only 13 letters it can express a rich and complete language.",
+    "fact": "The Hawaiian alphabet has 8 consonants (H, K, L, M, N, P, W, plus the ʻokina glottal stop) and 5 vowels (A, E, I, O, U), giving 13 letters in total. Despite only 13 letters it can express a rich and complete language.",
     "question": "How many letters are in the Hawaiian alphabet?",
     "answers": {
       "A": "13",
@@ -3953,13 +3953,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq307",
-    "fact": "The yo-yo originated in the Philippines where it was reportedly used as a hunting weapon with a 6-metre cord. The word yo-yo means come-come in Filipino. It became a toy in the West in the 1920s.",
-    "question": "The yo-yo originated in the Philippines, where it was used as a hunting weapon with a cord of what length?",
+    "fact": "The word yo-yo comes from a Filipino/Tagalog word meaning 'come-come' or 'return.' The toy became hugely popular in the Philippines, but the story that Filipinos used yo-yos as hunting weapons with a 6-metre cord is a marketing myth invented in the 1920s with no historical basis. Early yo-yo-like devices appear in ancient Greece and China.",
+    "question": "The word 'yo-yo' comes from which language, meaning 'come-come' or 'return'?",
     "answers": {
-      "A": "6 metres",
-      "B": "3 metres",
-      "C": "10 metres",
-      "D": "4 metres"
+      "A": "Filipino (Tagalog)",
+      "B": "Japanese",
+      "C": "Chinese",
+      "D": "Portuguese"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -4538,15 +4538,15 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq352",
-    "fact": "The Colosseum was built between 70 and 80 AD using tens of thousands of Jewish prisoners of war captured during the siege of Jerusalem in 70 AD by Emperor Titus.",
-    "question": "Which Roman Emperor oversaw the construction of the Colosseum between 70 and 80 AD?",
+    "fact": "Emperor Vespasian began construction of the Colosseum around 70-72 AD, funded partly by the spoils from the siege of Jerusalem. His son Titus completed and opened it in 80 AD. Emperor Domitian later added the top tier.",
+    "question": "Which Roman Emperor ordered the construction of the Colosseum and began building it around 70-72 AD?",
     "answers": {
       "A": "Titus",
       "B": "Nero",
       "C": "Vespasian",
       "D": "Domitian"
     },
-    "correct": "A",
+    "correct": "C",
     "difficulty": "medium"
   },
   {
@@ -6124,13 +6124,13 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq473",
-    "fact": "Bumblebees have been found at elevations of over 9000 metres in the Himalayas, above the altitude of Everest base camp. Scientists trained bees to fly in a simulated high-altitude chamber equivalent to Everest summit.",
-    "question": "At what elevation have bumblebees been found in the Himalayas?",
+    "fact": "Bumblebees have been found at elevations of around 5,640 metres in the Himalayas, which is above Everest Base Camp (~5,380 metres). In laboratory experiments, scientists showed bees could fly in low-pressure chambers simulating even higher altitudes.",
+    "question": "At what elevation have bumblebees been found in the wild in the Himalayas?",
     "answers": {
-      "A": "Over 9,000 metres",
-      "B": "Over 7,000 metres",
-      "C": "Over 11,000 metres",
-      "D": "Over 6,000 metres"
+      "A": "Around 5,600 metres",
+      "B": "Around 3,000 metres",
+      "C": "Around 7,500 metres",
+      "D": "Around 1,500 metres"
     },
     "correct": "A",
     "difficulty": "easy"
@@ -6527,8 +6527,8 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq504",
-    "fact": "Alfred Nobel established the original five Nobel Prizes in his 1895 will: Physics, Chemistry, Medicine, Literature and Peace. The Economics prize (Sveriges Riksbank Prize) was added in 1968 by the Swedish central bank.",
-    "question": "In what year was the Nobel Prize in Economics first awarded?",
+    "fact": "Alfred Nobel established the original five Nobel Prizes in his 1895 will: Physics, Chemistry, Medicine, Literature and Peace. The Economics prize (Sveriges Riksbank Prize) was added by the Swedish central bank in 1968 and first awarded in 1969.",
+    "question": "In what year was the Nobel Prize in Economics established by the Swedish central bank?",
     "answers": {
       "A": "1968",
       "B": "1895",
@@ -6553,7 +6553,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq506",
-    "fact": "The first commercial mobile phone networks in the early 1980s charged about 50 cents per minute in todays money for calls but that is wrong. Early analog calls cost several dollars per minute making a one-hour call as expensive as a small car.",
+    "fact": "Early analog mobile phone calls in the 1980s cost several dollars per minute in real terms. A one-hour call could cost as much as a small car. The technology was only accessible to the very wealthy.",
     "question": "In the early 1980s, how much did a one-hour call cost on the first commercial mobile phone networks when adjusted for inflation to today's money?",
     "answers": {
       "A": "Several hundred dollars, roughly equivalent to the cost of a small car",
@@ -9127,8 +9127,8 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq1764",
-    "fact": "Snow White and the Seven Dwarfs in 1937 was the first feature-length animated film.",
-    "question": "Which film was the first feature-length animated movie?",
+    "fact": "Snow White and the Seven Dwarfs (1937) was the first American feature-length animated film and the first commercially successful animated feature worldwide.",
+    "question": "Which film was the first American feature-length animated movie?",
     "answers": {
       "A": "Snow White and the Seven Dwarfs (1937)",
       "B": "Fantasia (1940)",
@@ -11504,7 +11504,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq901",
-    "question": "Which US president appears on the $100 bill?",
+    "question": "Which Founding Father, who was never president, appears on the $100 bill?",
     "answers": {
       "A": "Abraham Lincoln",
       "B": "George Washington",
@@ -11660,7 +11660,7 @@ const QUIZ_DATA = [
   },
   {
     "id": "pq914",
-    "question": "Which country has a flag with just one colour and one symbol (a cedar tree)?",
+    "question": "Which country's flag features a cedar tree as its central symbol?",
     "answers": {
       "A": "Jordan",
       "B": "Lebanon",
@@ -11772,7 +11772,7 @@ const QUIZ_DATA = [
     "answers": {
       "A": "Offa's Dyke",
       "B": "Antonine Wall",
-      "C": "Hardian's Wall",
+      "C": "Offa's Wall",
       "D": "Hadrian's Wall"
     },
     "correct": "D",
