@@ -1,5 +1,5 @@
 {
-  "versionCode": 8,
-  "version": "1.08",
-  "message": "Rebrand to Fact Fight, new logo, background refresh fix for WOTD & streak, fact/card audit fixes"
+  "versionCode": 9,
+  "version": "1.09",
+  "message": "Header rebrand to Fact Fight, update check on foreground resume"
 }

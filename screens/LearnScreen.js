@@ -338,7 +338,7 @@ export default function LearnScreen({ navigation }) {
           <View style={[styles.shareInner, { backgroundColor: cardColor }]}>
             <View style={styles.shareGlow} />
             <View style={styles.shareRing} />
-            <Text style={styles.shareLogo}>Brain<Text style={{ color: '#ffd93d' }}>Food</Text> 🍕</Text>
+            <Text style={styles.shareLogo}>Fact <Text style={{ color: '#ffd93d' }}>Fight</Text> ⚡</Text>
             {card && <Text style={styles.shareEmoji}>{card.emoji}</Text>}
             {card && <Text style={styles.shareFact}>{card.fact}</Text>}
             <View style={styles.shareFooter}>
@@ -375,7 +375,7 @@ export default function LearnScreen({ navigation }) {
         {/* HERO */}
         <View style={styles.hero}>
           <View style={styles.heroRow}>
-            <Text style={[styles.logo, { color: t.text }]}>Brain<Text style={{ color: t.accent }}>Food</Text> 🍕</Text>
+            <Text style={[styles.logo, { color: t.text }]}>Fact <Text style={{ color: t.accent }}>Fight</Text> ⚡</Text>
             <View style={styles.heroRight}>
               <TouchableOpacity onPress={() => showStreakPopup(streak)} style={[styles.streakBadge, { backgroundColor: t.card, borderColor: t.cardBorder }]}>
                 <Text style={[styles.streakBadgeTxt, { color: t.text }]}>{getStreakEmoji(streak)} {streak}</Text>

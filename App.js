@@ -1,8 +1,8 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { useContext, useEffect, useState } from 'react';
-import { Text } from 'react-native';
+import { useContext, useEffect, useRef, useState } from 'react';
+import { AppState, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -104,6 +104,8 @@ export default function App() {
     AsyncStorage.setItem('bf_theme', next.mode).catch(() => {});
   };
 
+  const lastAppState = useRef(AppState.currentState);
+
   useEffect(() => {
     AsyncStorage.multiGet(['bf_onboarding_done', 'bf_theme']).then(([[, ob], [, th]]) => {
       setOnboardingDone(ob === 'true');
@@ -111,6 +113,15 @@ export default function App() {
     }).catch(() => setOnboardingDone(false));
     checkOTAUpdate();
     checkStoreUpdate(setUpdateInfo);
+
+    const sub = AppState.addEventListener('change', (nextState) => {
+      const prev = lastAppState.current;
+      lastAppState.current = nextState;
+      if (nextState === 'active' && prev === 'background') {
+        checkStoreUpdate(setUpdateInfo);
+      }
+    });
+    return () => sub.remove();
   }, []);
 
   const finishOnboarding = async (notifHour) => {
